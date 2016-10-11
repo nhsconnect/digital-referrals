@@ -9,7 +9,7 @@ summary: An overview of the technical assurance process and tools.
 
 ## Integration Testing
 
-Details of the integration testing tools.
+Details of Pauls integration testing tools.
 
 ## Technical Accediation
 
