@@ -1,120 +1,147 @@
 entries:
-- title: Product Title
-  product: Product Title<br/>
-  version: 1.0.0-alpha.1
-  levels: one
+
+- title: e-RS APIs
   folders:
 
-  - title: Get Started
+  - title: Overview
     output: web
     folderitems:
+
     - title: Introduction
       url: /index.html
       output: web, pdf
       type: homepage
-    - title: Workshops
-      url: /overview_workshops.html
+    - title: News and Events
+      url: /news_and_events.html
       output: web
-    - title: Glossary
-      url: /overview_glossary.html
+    - title: Deployment History
+      url: /deployment_history.html
+      output: web
+#    - title: Coming Soon
+#      url: /coming_soon.html
+#      output: web
+
+  - title: Get Started
+    output: web
+    folderitems:
+
+    - title: Development Journey
+      url: /getstarted_development_journey.html
+      output: web
+    - title: Get Connected
+      url: /getstarted_get_connected.html
+      output: web
+#    - title: Capabilities
+#      url: /getstarted_capabilities.html
+#      output: web
+#    - title: Glossary of Terms
+#      url: /getstarted_glossary_of_terms.html
+#      output: web
+#    - title: Partner Registration
+#      url: /getstarted_partner_registration.html
+#      output: web
+    - title: Frequently Asked Questions
+      url: /getstarted_faq.html
       output: web
 
   - title: Explore
     output: web
     folderitems:
-    - title: Overview
-      url: /explore_overview.html
+
+    - title: API Environments
+      url: /explore_api_environments.html
+      output: web
+
+      subfolders:
+      - title: Endpoint Catalogue
+        output: web
+        subfolderitems:
+
+        - title: "Overview"
+          url: /explore_endpoint_catalogue.html
+          output: web
+        - title: "A001: Create Professional Session"
+          url: /explore_endpoint_a001.html
+          output: web
+        - title: "A002: Professional Session Select Role"
+          url: /explore_endpoint_a002.html
+          output: web
+        - title: "A003: Delete Professional Session"
+          url: /explore_endpoint_a003.html
+          output: web
+        - title: "A004: Retrieve Reference Data"
+          url: /explore_endpoint_a004.html
+          output: web
+        - title: "A005: Retrieve Referral Request"
+          url: /explore_endpoint_a005.html
+          output: web
+        - title: "A006: Retrieve Attachment"
+          url: /explore_endpoint_a006.html
+          output: web
+        - title: "A007: Retrieve Clinical Information"
+          url: /explore_endpoint_a007.html
+          output: web
+        - title: "A008: Retrieve Worklist"
+          url: /explore_endpoint_a008.html
+          output: web
+        - title: "A009: Directory Service Search"
+          url: /explore_endpoint_a009.html
+          output: web
+        - title: "A010: Patient Service Search"
+          url: /explore_endpoint_a010.html
+          output: web
+        - title: "A011: Create Referral Request Through Shortlist"
+          url: /explore_endpoint_a011.html
+          output: web
+        - title: "A012: Upload Attachments"
+          url: /explore_endpoint_a012.html
+          output: web
+        - title: "A013: Accept Referral"
+          url: /explore_endpoint_a013.html
+          output: web
+        - title: "A014: Reject Referral"
+          url: /explore_endpoint_a014.html
+          output: web
+
+    - title: Standard Resources
+      url: /explore_resources.html
+      output: web
+    - title: Standard Models
+      url: /explore_models.html
       output: web
 
   - title: Develop
     output: web
     folderitems:
-    - title: Overview
-      url: /develop_overview.html
-      output: web
 
-  - title: Capabilities
-    output: web
-    folderitems:
-    - title: Capability One
-      url: /capability_one.html
+    - title: Business Flows
+      url: /develop_business_flows.html
+      output: web
+#    - title: Code Samples
+#      url: /develop_code_samples.html
+#      output: web
+    - title: Test Data
+      url: /develop_test_data.html
       output: web
 
   - title: Assure
     output: web
     folderitems:
-    - title: Overview
-      url: /assure_overview.html
+
+    - title: Business Partners
+      url: /assure_business_partners.html
       output: web
+    - title: Assurance Approach
+      url: /assure_assurance_approach.html
+      output: web
+#    - title: Path-To-Live
+#      url: /assure_path_to_live.html
+#      output: web
 
   - title: Deploy
     output: web
     folderitems:
-    - title: Overview
-      url: /deploy_overview.html
-      output: web
 
-  - title: Communications
-    output: web
-    folderitems:    
-    - title: Overview
-      url: /communications_overview.html
-      output: web
-    - title: Frequently Asked Questions (FAQ)
-      url: /communications_faq.html
-      output: web
-
-  - title: Tags
-    output: web
-    folderitems:
-    - title: News
-      url: /tag_news.html
-      output: web
-    - title: Getting Started
-      url: /tag_getting_started.html
-      output: web
-    - title: First of Type
-      url: /tag_first_of_type.html
-      output: web
-    - title: FHIR&reg;
-      url: /tag_fhir.html
-      output: web
-    - title: Use Case
-      url: /tag_use_case.html
-      output: web
-    - title: Engagement
-      url: /tag_engagement.html
-      output: web
-    - title: Design
-      url: /tag_design.html
-      output: web	  
-    - title: Development
-      url: /tag_development.html
-      output: web
-    - title: Integration
-      url: /tag_integration.html
-      output: web
-    - title: Testing
-      url: /tag_testing.html
-      output: web
-    - title: Assurance
-      url: /tag_assurance.html
-      output: web
-    - title: Deployment
-      url: /tag_deployment.html
-      output: web
-    - title: Support
-      url: /tag_support.html
-      output: web	  
-    - title: Clinical Safety
-      url: /tag_clinical_safety.html
-      output: web
-    - title: Information Governance
-      url: /tag_information_governance.html
-      output: web
-    - title: Commissioning
-      url: /tag_commissioning.html
-      output: web
-    - title: Code Snippet
-      url: /tag_code_snippet.html
+    - title: Release Methodology
+      url: /deploy_release_methodology.html
       output: web

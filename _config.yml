@@ -2,30 +2,30 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: NHS Digital Referrals
+topnav_title: NHS e-Referrals Service API
 # this appears on the top navigation bar next to the home button
 
-site_title: NHS Digital Referrals
+site_title: NHS e-Referrals Service API
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
 company_name: NHS Digital
 # this appears in the footer
 
-github_editme_path: /edit/gh-pages/
+github_editme_path:
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #disqus: true
-#disqus_shortname: disqus_shortname
+disqus_shortname: nhsconnect
 
-#gitter: true
-#gitter_room: gitter_account/gitter_room
+gitter: false
+gitter_room: gpconnect/Lobby
 
-#tiny_letter: true
-#tiny_letter_username: tiny_letter_username
+tiny_letter: true
+tiny_letter_username: nhsconnectapi
 
-#twitter: true
-#twitter_username: twitter_username
-#twitter_site_hashtags: twitter_site_hashtags
+twitter: false
+twitter_username: nhsconnectapi
+twitter_site_hashtags: GPConnect
 
 host: 127.0.0.1
 # the preview server used. Leave as is.
@@ -34,12 +34,12 @@ port: 4005
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
 exclude:
-  - .vscode/
   - .idea/
   - .gitignore
+  - pages/development/development_github_repositories.md
 # these are the files and directories that jekyll will exclude from the build
 
-feedback_email: dummy@nhs.net
+feedback_email:
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: true
@@ -62,7 +62,13 @@ kramdown:
  syntax_highlighter: rouge
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
+excerpt_separator: ""
+
 collections:
+  developer-journey:
+    output: false
+  accessrecord_examples:
+    output: true
 
 defaults:
   -
@@ -75,36 +81,26 @@ defaults:
       search: true
       sidebar: overview_sidebar
 
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true
-      search: true
-      sidebar: overview_sidebar
-
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
 - overview_sidebar
-- capability_one_sidebar
+- getstarted_sidebar
 
-description: "Digital Referrals aims to support better clinical care by..."
+description: ""
 # the description is used in the feed.xml file
 
 sitemap: true
 
 # needed for sitemap.xml file only
-url: https://nhsconnect.github.io/digital-referrals
+url: https://wurble369.github.io/websitetest
 
-repository: nhsconnect/digital-referrals
+repository: websitetest
 
 gist:
   noscript: false
 
-plugins:
+gems:
    - jekyll-github-metadata
    - jekyll-mentions
    - jemoji
