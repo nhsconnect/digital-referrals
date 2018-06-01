@@ -4,21 +4,17 @@ keywords: explore, environments
 sidebar: overview_sidebar
 toc: false
 permalink: /explore_api_environments.html
-summary: "Access and explore the two supporting API environments"
+summary: "Access and explore the two supporting e-Referral API environments"
 ---
 
-To support the development of APIs within the Ecosystem, there are two supporting environments. These comprise:
+To support the development of APIs within the Ecosystem, there are three supporting environments. These comprise:
 
-## API Development Sandpit ##
+* Development
+* Integration
+* Deployment
 
-* [Access](http://api1:82/login_dev_work?nocardreader=1)
+![Environments](images/explore/Environments.png)
 
-This comprises a full Virtual Machine installation of a NHS e-RS environment. This environment is operated through mock (non-Spine connected) authentication routines and test data.
+All of these environments reside on the N3 network and access therefore requires proper registration and physical smart cards. This is managed by SA Service Desk.
 
-## API Console ##
-
-* [Access](http://api1:8080/swagger-ui/)
-
-This is uses the Swagger open source tool to present a simple yet powerful representation of the NHS e-RS APIs, to provide interactive documentation, endpoint generation and discoverability.
-
-_(N3 Connection and registration is required)_
+We use the existing Path to Live structure - more information about connectivity can be found at the [Assurance Portal](http://www.assurancesupport.digital.nhs.uk/) (only available on N3) - further information available from SA Service Desk

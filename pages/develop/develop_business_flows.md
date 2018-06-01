@@ -3,7 +3,7 @@ title: Business Flows
 keywords: business, flows
 sidebar: overview_sidebar
 toc: false
-permalink: develop_business_flows.html
+permalink: /develop_business_flows.html
 summary: "Business flows and their related endpoints"
 ---
 

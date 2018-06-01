@@ -2,8 +2,8 @@
 title: Deployment History
 keywords: deployment, history
 sidebar: overview_sidebar
-permalink: /deployment_history.html
 toc: false
+permalink: /deployment_history.html
 summary: "Deployment history for the e-RS APIs"
 ---
 

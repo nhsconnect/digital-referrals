@@ -3,7 +3,7 @@ title: Code Samples
 keywords: code, samples
 sidebar: overview_sidebar
 toc: false
-permalink: develop_code_samples.html
+permalink: /develop_code_samples.html
 summary: "Example demonstrator applications for third partner solution providers"
 ---
 

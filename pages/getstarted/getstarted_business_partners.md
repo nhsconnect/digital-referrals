@@ -1,9 +1,9 @@
 ---
 title: Business Partners
-keywords: assurance, partners
+keywords: business, partners
 sidebar: overview_sidebar
 toc: false
-permalink: /assure_business_partners.html
+permalink: /getstarted_business_partners.html
 summary: "Business Partners"
 ---
 

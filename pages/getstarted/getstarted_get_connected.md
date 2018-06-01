@@ -11,7 +11,7 @@ summary: "How to get connected to the e-RS APIs in a few simple steps"
 
 Getting Connected is simple, but there are 3 important things to know:
 
-1. Your organisation needs to be using a secure Health and Social Care Network (HSCN) Connection (this was previously N3)
+1. Your organisation needs to be using a secure Health and Social Care Network (HSCN) Connection (previously N3)
 2. APIs can only be accessed using a smartcard
 3. You will need to apply for a unique End Point and some test data
 
@@ -37,7 +37,7 @@ Once you have downloaded the form, please enter the following information and re
 
 ## Generating a Certificate Signing Request ##
 
-You will also need to generate and submit a Certificate Signing Request (CSR) to obtain an endpoint certificate for the requested FQDN, the csr must have a key length of 2048 and have the common name set to the FQDN value.
+You will also need to generate and submit a Certificate Signing Request (CSR) and a Private Key to obtain an endpoint certificate for the requested FQDN. The CSR must have a key length of 2048 and have the common name set to the FQDN value. We recommend using [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) for this.
 
 Please do specify alongside the request to the SA Service Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
 
@@ -51,8 +51,14 @@ If you have any queries about connecting to Spine Development (smartcards, endpo
 
 ## Final steps ##
 
-Once you have received a certificate from our Solutions Assurance Desk you will need to follow a few simple steps that will allow you to begin your e-Referral Service Integration journey
+Once you have received a certificate from our Solutions Assurance Desk you will need to follow a few simple steps that will allow you to begin your e-Referral Service Integration journey.
 
-First, you’ll need to install ROOT and SUBCA certificates. Here’s a handy guide to get you started:
+You need to install ROOT and SUBCA certificates. Here’s a handy guide to get you started:
 
 * [Certificate Installation Guide.pdf](https://developer.nhs.uk/wp-content/uploads/2018/01/Install-ROOTCA-and-SUBCA-certificates-v1.0.pdf)
+
+## Tools for exploration ##
+
+After this is all set up, you can use either the API Client Demonstrator Tool (also known as Quick Connect) or [Postman](https://www.getpostman.com). In the latter case we recommend you install the full version of Postman tool and not just the Chrome add-in for Postman.
+
+If you go down the API Client Demonstrator Tool route you will need to install [Keystore Explorer](http://keystore-explorer.org) in order to convert the CSR and private key into a JKS file. Please contact the NHS e-Referrals Integration team and they will be happy to provide more information about how to access this tool.

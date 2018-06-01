@@ -1,9 +1,9 @@
 ---
-title: Standard Resources
-keywords: fhir, resources
+title: Implementation Guidelines
+keywords: fhir, guidelines
 sidebar: overview_sidebar
 toc: false
-permalink: /explore_resources.html
+permalink: /explore_implementation_guidelines.html
 summary: "FHIR standard guidance and data models"
 ---
 

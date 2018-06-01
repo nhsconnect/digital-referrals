@@ -14,12 +14,15 @@ entries:
     - title: News and Events
       url: /news_and_events.html
       output: web
+    - title: Strategic Approach
+      url: /strategic_approach.html
+      output: web
     - title: Deployment History
       url: /deployment_history.html
       output: web
-#    - title: Coming Soon
-#      url: /coming_soon.html
-#      output: web
+    - title: Forward Notices
+      url: /forward_notices.html
+      output: web
 
   - title: Get Started
     output: web
@@ -28,18 +31,24 @@ entries:
     - title: Development Journey
       url: /getstarted_development_journey.html
       output: web
+    - title: Implementation Steps
+      url: /getstarted_implementation_steps.html
+      output: web
     - title: Get Connected
       url: /getstarted_get_connected.html
+      output: web
+    - title: Business Partners
+      url: /getstarted_business_partners.html
       output: web
 #    - title: Capabilities
 #      url: /getstarted_capabilities.html
 #      output: web
-#    - title: Glossary of Terms
-#      url: /getstarted_glossary_of_terms.html
-#      output: web
-#    - title: Partner Registration
-#      url: /getstarted_partner_registration.html
-#      output: web
+    - title: Partner Registration
+      url: /getstarted_partner_registration.html
+      output: web
+    - title: Glossary of Terms
+      url: /getstarted_glossary_of_terms.html
+      output: web
     - title: Frequently Asked Questions
       url: /getstarted_faq.html
       output: web
@@ -103,36 +112,58 @@ entries:
           url: /explore_endpoint_a014.html
           output: web
 
-    - title: Standard Resources
-      url: /explore_resources.html
+    - title: Implementation Guidelines
+      url: /explore_implementation_guidelines.html
       output: web
     - title: Standard Models
       url: /explore_models.html
+      output: web
+    - title: Error Messages
+      url: /explore_error_messages.html
       output: web
 
   - title: Develop
     output: web
     folderitems:
 
-    - title: Business Flows
-      url: /develop_business_flows.html
+    - title: Test Data
+      url: /develop_test_data.html
       output: web
+
+      subfolders:
+      - title: Business Flows
+        output: web
+        subfolderitems:
+
+        - title: "BF001: Authentication and Authorisation"
+          url: /develop_business_flow_bf001.html
+          output: web
+        - title: "BF002: Clinical Referral Information"
+          url: /develop_business_flow_bf002.html
+          output: web
+
 #    - title: Code Samples
 #      url: /develop_code_samples.html
 #      output: web
-    - title: Test Data
-      url: /develop_test_data.html
+    - title: Support
+      url: /develop_support.html
       output: web
 
   - title: Assure
     output: web
     folderitems:
 
-    - title: Business Partners
-      url: /assure_business_partners.html
-      output: web
     - title: Assurance Approach
       url: /assure_assurance_approach.html
+      output: web
+    - title: Target Operating Model
+      url: /assure_tom.html
+      output: web
+    - title: Agreements
+      url: /assure_agreements.html
+      output: web
+    - title: Supporting Requirements
+      url: /assure_supporting_requirements.html
       output: web
 #    - title: Path-To-Live
 #      url: /assure_path_to_live.html

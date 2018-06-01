@@ -2,8 +2,8 @@
 title: Coming Soon
 keywords: coming, soon
 sidebar: overview_sidebar
-permalink: /coming_soon.html
 toc: false
+permalink: /coming_soon.html
 summary: "Planned deployments for the e-RS APIs"
 ---
 
