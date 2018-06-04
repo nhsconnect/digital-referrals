@@ -17,7 +17,7 @@ We want to stimulate and assist your development of applications linked to the N
 
 The site has five main parts. Each aligns to a phase of development and partner engagement with NHS Digital, as shown below. The Communication Channels let you engage with each phase of the Ecosystem. They are enabling components.
 
-<img src="./images/images/ecosystem/eRS-ecosystem.gif" alt="NHS e-RS API Development Journey"/>
+<img src="./images/ecosystem/eRS-ecosystem.gif" alt="NHS e-RS API Development Journey"/>
 
 A summary of the activities and the support material in each of the phases are as follows:
 
