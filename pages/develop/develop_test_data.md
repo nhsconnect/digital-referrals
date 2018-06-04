@@ -4,7 +4,7 @@ keywords: test, data
 sidebar: overview_sidebar
 toc: false
 permalink: /develop_test_data.html
-summary: "Details on synthetic test data and how to access it"
+summary: "Details on synthetic e-Referral test data and how to access it"
 ---
 
 The Path-To-Live (PTL) environments, such as e-RS/DEV1 are populated with non-live data known as “Synthetic Test Data”. Test Data, such as Patient Demographic Data, Summary Care Records, Electronic Prescriptions and Organisational Data (including users and positions), can be requested from the Test Data Team.

@@ -4,7 +4,7 @@ keywords: development, journey
 sidebar: overview_sidebar
 toc: false
 permalink: getstarted_development_journey.html
-summary: "Development Journey"
+summary: "Describing the development journey when working with the e-Referral APIs"
 ---
 
 The diagram below provides a more detailed view of a typical Development Journey as a sequence of phases together with the key activities, support materials and/or services provided by the Ecosystem.

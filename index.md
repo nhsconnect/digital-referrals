@@ -4,7 +4,7 @@ keywords: homepage
 sidebar: overview_sidebar
 permalink: index.html
 toc: false
-summary: "A brief introduction to getting started with the e-RS APIs"
+summary: "A brief introduction to getting started with the e-Referral APIs"
 ---
 
 ## Application Programming Interface (API) ##
@@ -32,3 +32,9 @@ A summary of the activities and the support material in each of the phases are a
 <p>&nbsp;</p>
 
 To begin head to the [Development Journey](getstarted_development_journey.html) page.
+
+## The wider perspective ##
+
+With new models of care emerging and evolving, there is a clear need for more effective information sharing between care settings, organisations and geographies, as well as between professionals and citizens, to optimise patient outcomes and quality of care. This is reliant on the ability of IT systems across health and care to be interoperable with one another, and is key to the delivery of the future vision of care in England. To learn more about the Interoperability efforts at the NHS Digital, visit the [NHS Digital Interoperability](https://www.england.nhs.uk/digitaltechnology/info-revolution/health-and-care-data/interoperability/) pages.
+
+A key consideration for any remote access service is the requirement that patient data is safe and protected. There are many rules that govern controls and protection when accessing systems and application remotely. To learn more about the Government Digital Service standards visit the [NHS Digital Industry Standards](https://digital.nhs.uk/services/health-and-social-care-network/hscn-technical-guidance/business-applications-guidance/industry-standards) pages.

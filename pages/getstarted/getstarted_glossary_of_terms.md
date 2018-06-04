@@ -4,7 +4,7 @@ keywords: development, glossary
 sidebar: overview_sidebar
 toc: false
 permalink: getstarted_glossary_of_terms.html
-summary: "Glossary of terms used in the field of electronic referral system integration"
+summary: "Glossary of terms used in the field of e-Referral system integration"
 ---
 
 ### API

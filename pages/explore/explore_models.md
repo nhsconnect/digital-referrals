@@ -4,7 +4,7 @@ keywords: fhir, models
 sidebar: overview_sidebar
 toc: false
 permalink: /explore_models.html
-summary: "In-depth information about relevant data models"
+summary: "In-depth information about relevant e-Referral data models"
 ---
 
 ## ProfessionalSession ##

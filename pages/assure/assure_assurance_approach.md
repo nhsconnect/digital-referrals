@@ -4,7 +4,7 @@ keywords: assurance, approach
 sidebar: overview_sidebar
 toc: false
 permalink: /assure_assurance_approach.html
-summary: "Assurance Approach"
+summary: "Assurance approach for the e-Referral APIs"
 ---
 
 The selected methodology for the assurance of the NHS e-Referral Service APIs will comprise the implementation of the Target Operating Model (TOM) as generically recorded within NHS Digital’s  online Technology Reference data Update Distribution (TRUD) repository.

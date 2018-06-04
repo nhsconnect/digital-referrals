@@ -4,7 +4,7 @@ keywords: development, connection
 sidebar: overview_sidebar
 toc: false
 permalink: getstarted_get_connected.html
-summary: "How to get connected to the e-RS APIs in a few simple steps"
+summary: "How to get connected to the e-Referral APIs in a few simple steps"
 ---
 
 ## Three important things to know ##

@@ -4,7 +4,7 @@ keywords: business, partners
 sidebar: overview_sidebar
 toc: false
 permalink: /getstarted_business_partners.html
-summary: "Business Partners"
+summary: "Information for business partners working with the e-Referral APIs"
 ---
 
 The NHS e-Referral Service works hand in hand with the NHS Digital Business Partners team. As the NHS has evolved, the range of NHS providers from the independent and third sectors offering NHS-commissioned services and requiring information management and technology (IM&T) integration has increased significantly.
