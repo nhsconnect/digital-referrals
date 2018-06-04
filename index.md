@@ -29,5 +29,6 @@ A summary of the activities and the support material in each of the phases are a
 |4.&nbsp;Assure|NHS Digital validation, integration testing, technical accreditation, and guidance to clinical safety and information governance|
 |5.&nbsp;Deploy|Registration, deployment certificates and monitoring|
 
-&nbsp;
+<p>&nbsp;</p>
+
 To begin head to the [Development Journey](getstarted_development_journey.html) page.
