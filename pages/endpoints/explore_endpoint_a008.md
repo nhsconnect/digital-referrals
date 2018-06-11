@@ -11,7 +11,7 @@ summary: false
 
 | Request Type | URL |
 | -------------| --- |
-| POST [/v1/Binary/$ers.generateCRI?UBRN={UBRN}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Binary/$ers.generateCRI?UBRN={UBRN})
+| POST [/v1/ReferralRequest/$ers.fetchworklist](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/$ers.fetchworklist)
 
 ## Description
 This API lets authorised users retrieve the ‘Referrals for Review’ work list. This is the same as the existing interface. This work list gives details of new referrals sent to the service by GPs and others. It includes their key attributes.
