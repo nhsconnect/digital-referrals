@@ -1107,7 +1107,7 @@ definitions:
       ModifierExtension: []
       Meta:
         ProfileElement:
-          - Value: 'http://fhir.nhs.net/StructureDefinition/gpconnect-appointment-1-0'
+          - Value: 'http://fhir.nhs.uk/StructureDefinition/gpconnect-appointment-1-0'
             Extension: []
         Security: []
         Tag: []
@@ -2502,7 +2502,7 @@ definitions:
       ModifierExtension: []
       Meta:
         ProfileElement:
-          - Value: 'http://fhir.nhs.net/StructureDefinition/gpconnect-order-1-0'
+          - Value: 'http://fhir.nhs.uk/StructureDefinition/gpconnect-order-1-0'
             Extension: []
         Security: []
         Tag: []
@@ -2683,7 +2683,7 @@ definitions:
     example:
       Identifier:
         - SystemElement:
-            Value: 'http://fhir.nhs.net/Id/ods-organization-code'
+            Value: 'http://fhir.nhs.uk/Id/ods-organization-code'
             Extension: []
           ValueElement:
             Value: O001
@@ -2703,7 +2703,7 @@ definitions:
       ModifierExtension: []
       Meta:
         ProfileElement:
-          - Value: 'http://fhir.nhs.net/StructureDefinition/gpconnect-organization-1-0'
+          - Value: 'http://fhir.nhs.uk/StructureDefinition/gpconnect-organization-1-0'
             Extension: []
         Security: []
         Tag: []
@@ -2900,7 +2900,7 @@ definitions:
     example:
       Identifier:
         - SystemElement:
-            Value: 'http://fhir.nhs.net/Id/nhs-number'
+            Value: 'http://fhir.nhs.uk/Id/nhs-number'
             Extension: []
           ValueElement:
             Value: '1234567890'
@@ -2939,7 +2939,7 @@ definitions:
       ModifierExtension: []
       Meta:
         ProfileElement:
-          - Value: 'http://fhir.nhs.net/StructureDefinition/gpconnect-patient-1-0'
+          - Value: 'http://fhir.nhs.uk/StructureDefinition/gpconnect-patient-1-0'
             Extension: []
         Security: []
         Tag: []
@@ -3161,7 +3161,7 @@ definitions:
     example:
       Identifier:
         - SystemElement:
-            Value: 'http://fhir.nhs.net/sds-user-id'
+            Value: 'http://fhir.nhs.uk/sds-user-id'
             Extension: []
           ValueElement:
             Value: S001
@@ -3196,7 +3196,7 @@ definitions:
       ModifierExtension: []
       Meta:
         ProfileElement:
-          - Value: 'http://fhir.nhs.net/StructureDefinition/gpconnect-practitioner-1-0'
+          - Value: 'http://fhir.nhs.uk/StructureDefinition/gpconnect-practitioner-1-0'
             Extension: []
         Security: []
         Tag: []

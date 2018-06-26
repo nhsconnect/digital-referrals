@@ -1637,7 +1637,7 @@
         "Meta": {
           "ProfileElement": [
             {
-              "Value": "http://fhir.nhs.net/StructureDefinition/gpconnect-appointment-1-0",
+              "Value": "http://fhir.nhs.uk/StructureDefinition/gpconnect-appointment-1-0",
               "Extension": []
             }
           ],
@@ -3592,7 +3592,7 @@
         "Meta": {
           "ProfileElement": [
             {
-              "Value": "http://fhir.nhs.net/StructureDefinition/gpconnect-order-1-0",
+              "Value": "http://fhir.nhs.uk/StructureDefinition/gpconnect-order-1-0",
               "Extension": []
             }
           ],
@@ -3857,7 +3857,7 @@
         "Identifier": [
           {
             "SystemElement": {
-              "Value": "http://fhir.nhs.net/Id/ods-organization-code",
+              "Value": "http://fhir.nhs.uk/Id/ods-organization-code",
               "Extension": []
             },
             "ValueElement": {
@@ -3884,7 +3884,7 @@
         "Meta": {
           "ProfileElement": [
             {
-              "Value": "http://fhir.nhs.net/StructureDefinition/gpconnect-organization-1-0",
+              "Value": "http://fhir.nhs.uk/StructureDefinition/gpconnect-organization-1-0",
               "Extension": []
             }
           ],
@@ -4180,7 +4180,7 @@
         "Identifier": [
           {
             "SystemElement": {
-              "Value": "http://fhir.nhs.net/Id/nhs-number",
+              "Value": "http://fhir.nhs.uk/Id/nhs-number",
               "Extension": []
             },
             "ValueElement": {
@@ -4239,7 +4239,7 @@
         "Meta": {
           "ProfileElement": [
             {
-              "Value": "http://fhir.nhs.net/StructureDefinition/gpconnect-patient-1-0",
+              "Value": "http://fhir.nhs.uk/StructureDefinition/gpconnect-patient-1-0",
               "Extension": []
             }
           ],
@@ -4574,7 +4574,7 @@
         "Identifier": [
           {
             "SystemElement": {
-              "Value": "http://fhir.nhs.net/sds-user-id",
+              "Value": "http://fhir.nhs.uk/sds-user-id",
               "Extension": []
             },
             "ValueElement": {
@@ -4626,7 +4626,7 @@
         "Meta": {
           "ProfileElement": [
             {
-              "Value": "http://fhir.nhs.net/StructureDefinition/gpconnect-practitioner-1-0",
+              "Value": "http://fhir.nhs.uk/StructureDefinition/gpconnect-practitioner-1-0",
               "Extension": []
             }
           ],

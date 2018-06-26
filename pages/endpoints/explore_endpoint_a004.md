@@ -46,7 +46,7 @@ A [Value Set Resource](explore_models.html) profiled specifically for the given 
     "id": "SPECIALTY",
     "meta": {
         "profile": [
-            "http://fhir.nhs.net/StructureDefinition/ers-valueset-1"
+            "http://fhir.nhs.uk/StructureDefinition/ers-valueset-1"
         ]
     },
     "resourceType": "ValueSet",
@@ -55,12 +55,12 @@ A [Value Set Resource](explore_models.html) profiled specifically for the given 
     "date": "2017-07-28",
     "description": "Specialties defined in e-RS",
     "codeSystem": {
-        "system": "http://fhir.nhs.net/ValueSet/ers-specialty-1",
+        "system": "http://fhir.nhs.uk/ValueSet/ers-specialty-1",
         "concept": [
             {
                 "extension": [
                     {
-                        "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-effectivefromdate-1",
+                        "url": "http://fhir.nhs.uk/StructureDefinition/extension-ers-effectivefromdate-1",
                         "valueDateTime": "2004-06-01T00:00:00.000Z"
                     }
                 ],
@@ -74,7 +74,7 @@ A [Value Set Resource](explore_models.html) profiled specifically for the given 
             {
                 "extension": [
                     {
-                        "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-effectivefromdate-1",
+                        "url": "http://fhir.nhs.uk/StructureDefinition/extension-ers-effectivefromdate-1",
                         "valueDateTime": "2004-06-01T00:00:00.000Z"
                     }
                 ],

@@ -93,13 +93,13 @@ entries:
         - title: "A008: Retrieve Worklist"
           url: /explore_endpoint_a008.html
           output: web
-        - title: "A009: Directory Service Search"
+        - title: "A009: Retrieve Generic Service Search"
           url: /explore_endpoint_a009.html
           output: web
-        - title: "A010: Patient Service Search"
+        - title: "A010: Retrieve Patient Specific Search"
           url: /explore_endpoint_a010.html
           output: web
-        - title: "A011: Create Referral Request Through Shortlist"
+        - title: "A011: Create Referral Shortlist"
           url: /explore_endpoint_a011.html
           output: web
         - title: "A012: Upload Attachments"
@@ -141,6 +141,15 @@ entries:
         - title: "BF002: Clinical Referral Information"
           url: /develop_business_flow_bf002.html
           output: web
+        - title: "BF003: Clinical Triage"
+          url: /develop_business_flow_bf003.html
+          output: web
+        - title: "BF004: Service Search"
+          url: /develop_business_flow_bf004.html
+          output: web
+        - title: "BF005: Referral Management"
+          url: /develop_business_flow_bf005.html
+          output: web
 
 #    - title: Code Samples
 #      url: /develop_code_samples.html
@@ -156,11 +165,11 @@ entries:
     - title: Assurance Approach
       url: /assure_assurance_approach.html
       output: web
-    - title: Target Operating Model
-      url: /assure_tom.html
-      output: web
     - title: Agreements
       url: /assure_agreements.html
+      output: web
+    - title: Target Operating Model
+      url: /assure_tom.html
       output: web
     - title: Supporting Requirements
       url: /assure_supporting_requirements.html

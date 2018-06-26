@@ -36,7 +36,7 @@ Provide search criteria to retrieve the services available e.g. Patient NHS Numb
 ```javascript
 {
   "meta":{
-     "profile":"http://fhir.nhs.net/OperationDefinition/ers-PatientServiceSearch-operation-1"
+     "profile":"http://fhir.nhs.uk/OperationDefinition/ers-PatientServiceSearch-operation-1"
   },
   "parameter":[
      {
@@ -134,7 +134,7 @@ If successful the list of patient-specific services are returned. The response c
             "resource": {
                 "extension": [
                     {
-                        "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-healthcareService-1-0",
+                        "url": "http://fhir.nhs.uk/StructureDefinition/extension-ers-healthcareService-1-0",
                         "extension": [
                             {
                                 "url": "bookable",

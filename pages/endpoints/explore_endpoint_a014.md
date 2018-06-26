@@ -40,7 +40,7 @@ Provide reject details such as reject reason and reject comment.
  "resourceType": "Parameters",
  "meta": {
         "versionId": "1",
-        "profile": ["http://fhir.nhs.net/OperationDefinition/ers-rejectreferral-operation-1"]
+        "profile": ["http://fhir.nhs.uk/OperationDefinition/ers-rejectreferral-operation-1"]
     },
  "parameter": [
    {

@@ -38,7 +38,7 @@ Provide ‘Referrals for Review’ worklist parameter.
    "meta":{
       "versionId":"1",
       "profile":[
-         "http://fhir.nhs.net/OperationDefinition/ers-fetchworklist-operation-1"
+         "http://fhir.nhs.uk/OperationDefinition/ers-fetchworklist-operation-1"
       ]
    },
    "parameter":[
@@ -47,7 +47,7 @@ Provide ‘Referrals for Review’ worklist parameter.
          "valueCodeableConcept":{
             "coding":[
                {
-                  "system":"http://fhir.nhs.net/ValueSet/ers-referrallistselector-1",
+                  "system":"http://fhir.nhs.uk/ValueSet/ers-referrallistselector-1",
                   "code":"REFERRALS_FOR_REVIEW"
                }
             ]
@@ -65,7 +65,7 @@ If successful referrals under ‘Referrals for Review’ worklist are returned. 
 {
     "meta": {
         "profile": [
-            "http://fhir.nhs.net/StructureDefinition/ers-fetchworklist-list-1"
+            "http://fhir.nhs.uk/StructureDefinition/ers-fetchworklist-list-1"
         ]
     },
     "resourceType": "List",
@@ -74,13 +74,13 @@ If successful referrals under ‘Referrals for Review’ worklist are returned. 
             "id": "Practitioner-100000873988",
             "meta": {
                 "profile": [
-                    "http://fhir.nhs.net/StructureDefinition/ers-practitioner-1"
+                    "http://fhir.nhs.uk/StructureDefinition/ers-practitioner-1"
                 ]
             },
             "resourceType": "Practitioner",
             "identifier": [
                 {
-                    "system": "http://fhir.nhs.net/Id/sds-user-id",
+                    "system": "http://fhir.nhs.uk/Id/sds-user-id",
                     "value": "100000873988"
                 }
             ]
@@ -89,13 +89,13 @@ If successful referrals under ‘Referrals for Review’ worklist are returned. 
             "id": "Patient-9461838328",
             "meta": {
                 "profile": [
-                    "http://fhir.nhs.net/StructureDefinition/ers-patient-1"
+                    "http://fhir.nhs.uk/StructureDefinition/ers-patient-1"
                 ]
             },
             "resourceType": "Patient",
             "identifier": [
                 {
-                    "system": "http://fhir.nhs.net/Id/nhs-number",
+                    "system": "http://fhir.nhs.uk/Id/nhs-number",
                     "value": "9461838328"
                 }
             ]
@@ -113,7 +113,7 @@ If successful referrals under ‘Referrals for Review’ worklist are returned. 
                             "valueCodeableConcept": {
                                 "coding": [
                                     {
-                                        "system": "http://fhir.nhs.net/ValueSet/ers-specialty-1",
+                                        "system": "http://fhir.nhs.uk/ValueSet/ers-specialty-1",
                                         "code": "EAR_NOSE_THROAT"
                                     }
                                 ]
@@ -124,7 +124,7 @@ If successful referrals under ‘Referrals for Review’ worklist are returned. 
                             "valueCodeableConcept": {
                                 "coding": [
                                     {
-                                        "system": "http://fhir.nhs.net/ValueSet/ers-requestcontextstatus-1",
+                                        "system": "http://fhir.nhs.uk/ValueSet/ers-requestcontextstatus-1",
                                         "code": "NEVER_REVIEWED",
                                         "display": "Never Reviewed"
                                     }
@@ -158,7 +158,7 @@ If successful referrals under ‘Referrals for Review’ worklist are returned. 
                             "valueCodeableConcept": {
                                 "coding": [
                                     {
-                                        "system": "http://fhir.nhs.net/ValueSet/ers-priority-1",
+                                        "system": "http://fhir.nhs.uk/ValueSet/ers-priority-1",
                                         "code": "ROUTINE"
                                     }
                                 ]
@@ -171,7 +171,7 @@ If successful referrals under ‘Referrals for Review’ worklist are returned. 
                             }
                         }
                     ],
-                    "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-referralsforreview-worklistitem-1"
+                    "url": "http://fhir.nhs.uk/StructureDefinition/extension-ers-referralsforreview-worklistitem-1"
                 }
             ],
             "item": {

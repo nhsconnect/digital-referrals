@@ -36,7 +36,7 @@ Provide referral details that will need to be created e.g. Patient NHS Number, S
 {
    "extension":[
       {
-         "url":"http://fhir.nhs.net/StructureDefinition/extension-ers-referralRequest-1-0",
+         "url":"http://fhir.nhs.uk/StructureDefinition/extension-ers-referralRequest-1-0",
          "extension":[
             {
                "url":"alertedToLimitedCapacity",
@@ -122,7 +122,7 @@ Provide referral details that will need to be created e.g. Patient NHS Number, S
             "resource":{
                "extension":[
                   {
-                     "url":"http://fhir.nhs.net/StructureDefinition/extension-ers-healthcareService-1-0"
+                     "url":"http://fhir.nhs.uk/StructureDefinition/extension-ers-healthcareService-1-0"
                   }
                ],
                "resourceType":"HealthcareService",
@@ -149,7 +149,7 @@ If successful the referral request is created with UBRN and Version Id. The resp
     },
     "extension": [
         {
-            "url": "http://fhir.nhs.net/StructureDefinition/extension-ers-referralRequest-1-0",
+            "url": "http://fhir.nhs.uk/StructureDefinition/extension-ers-referralRequest-1-0",
             "extension": []
         }
     ],

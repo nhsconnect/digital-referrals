@@ -301,7 +301,7 @@ var requesting_identity = new Practitioner {
 	{
 		new role()
 		{
-			new coding("http://fhir.nhs.net/ValueSet/sds-job-role-name-1", "[SDSJobRoleName]")
+			new coding("http://fhir.nhs.uk/ValueSet/sds-job-role-name-1", "[SDSJobRoleName]")
 		}
 	},
 	Name = new HumanName()
@@ -312,7 +312,7 @@ var requesting_identity = new Practitioner {
 	},
 	Identifier =
 	{
-		new Identifier("http://fhir.nhs.net/sds-user-id", "[SDSUserID]"),
+		new Identifier("http://fhir.nhs.uk/sds-user-id", "[SDSUserID]"),
 		new Identifier("[UserSystem]", "[UserID]")
 	}
 };
@@ -326,7 +326,7 @@ var subject_patient = new Patient {
 
 var audit_event_id = "[AuditEventID]";
 var requesting_system_url = "https://[ConsumerSystemURL]";
-var requesting_system_token_url = "https://authorize.fhir.nhs.net/token";
+var requesting_system_token_url = "https://authorize.fhir.nhs.uk/token";
 
 // --this example getting local patient ID 1 at gp practice GP001
 var target_request_url = "https://http://gpconnect.aprovider.nhs.net/GP0001/DSTU2/1/Patient/1";

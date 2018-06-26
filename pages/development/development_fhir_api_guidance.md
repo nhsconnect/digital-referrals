@@ -420,21 +420,21 @@ GET [base]/Patient/1A6E1B1C-6340-4663-926C-9CD1306EAAF8?_format=application/xml+
 <Patient xmlns="http://hl7.org/fhir">
 	<id value="1A6E1B1C-6340-4663-926C-9CD1306EAAF8" />
 	<meta>
-		<profile value="http://fhir.nhs.net/StructureDefinition/gpconnect-patient-1" />
+		<profile value="http://fhir.nhs.uk/StructureDefinition/gpconnect-patient-1" />
 	</meta>
 	<identifier>
-		<system value="http://fhir.nhs.net/Id/nhs-number" />
+		<system value="http://fhir.nhs.uk/Id/nhs-number" />
 		<value value="9900002831" />
 	</identifier>
 	<identifier>
 		<type>
 			<coding>
-				<system value="http://fhir.nhs.net/ValueSet/gpconnect-patient-identifier-type-1" />
+				<system value="http://fhir.nhs.uk/ValueSet/gpconnect-patient-identifier-type-1" />
 				<code value="Local" />
 				<display value="Local identifier" />
 			</coding>
 		</type>
-		<system value="http://fhir.nhs.net/Id/local-identifier" />
+		<system value="http://fhir.nhs.uk/Id/local-identifier" />
 		<value value="L12345" />
 	</identifier>
 	<name>
@@ -551,7 +551,7 @@ GET [base]/Patient/1A6E1B1C-6340-4663-926C-9CD1306EAAF8/Appointment?start=ge2014
 Servers SHALL support searching by a [chained](https://www.hl7.org/fhir/STU3/search.html#2.1.1.4.13) `Patient` identifier parameter for references to `Patient` resources that conform to the `GP-Patient` profile (and therefore have an NHS number identifier). For example:
 
 ```http
-GET [base]/AllergyIntolerance?patient.identifier=http://fhir.nhs.net/Id/nhs-number|1234569876
+GET [base]/AllergyIntolerance?patient.identifier=http://fhir.nhs.uk/Id/nhs-number|1234569876
 ```
 
 {% include important.html content="GP Connect clients and servers are not expected to support arbitrary ad hoc searching." %}
@@ -561,7 +561,7 @@ GET [base]/AllergyIntolerance?patient.identifier=http://fhir.nhs.net/Id/nhs-numb
 #### Request ####
 
 ```http
-GET [base]/Patient?identifier=http://fhir.nhs.net/Id/nhs-number|9900002831 
+GET [base]/Patient?identifier=http://fhir.nhs.uk/Id/nhs-number|9900002831 
 ```
 
 If a patient resource for NHS number 9900002831 exists then the server SHALL return a bundle containing all patient resources with the specified NHS number identifier.
@@ -573,10 +573,10 @@ If a patient resource for NHS number 9900002831 exists then the server SHALL ret
 	<Patient xmlns="http://hl7.org/fhir">
 		<id value="1A6E1B1C-6340-4663-926C-9CD1306EAAF8" />
 		<meta>
-			<profile value="http://fhir.nhs.net/StructureDefinition/gpconnect-patient-1" />
+			<profile value="http://fhir.nhs.uk/StructureDefinition/gpconnect-patient-1" />
 		</meta>
 		<identifier>
-			<system value="http://fhir.nhs.net/Id/nhs-number" />
+			<system value="http://fhir.nhs.uk/Id/nhs-number" />
 			<value value="9900002831" />
 		</identifier>
 		<name>
