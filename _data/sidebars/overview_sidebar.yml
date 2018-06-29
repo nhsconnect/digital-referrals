@@ -60,15 +60,15 @@ entries:
     - title: API Environments
       url: /explore_api_environments.html
       output: web
+    - title: Endpoint Catalogue
+      url: /explore_endpoint_catalogue.html
+      output: web
 
       subfolders:
-      - title: Endpoint Catalogue
+      - title: Live Endpoints
         output: web
         subfolderitems:
 
-        - title: "Overview"
-          url: /explore_endpoint_catalogue.html
-          output: web
         - title: "A001: Create Professional Session"
           url: /explore_endpoint_a001.html
           output: web
@@ -93,6 +93,11 @@ entries:
         - title: "A008: Retrieve Worklist"
           url: /explore_endpoint_a008.html
           output: web
+          
+      - title: Alpha Endpoints
+        output: web
+        subfolderitems:
+
         - title: "A009: Retrieve Generic Service Search"
           url: /explore_endpoint_a009.html
           output: web
