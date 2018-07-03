@@ -24,7 +24,7 @@ Provide ASID for the end-point system, Session Key and VersionId.
 #### Example
 ```http
 XAPI_ASID:200000000220
-HTTP_X_SESSION_KEY:{{sessionKey}}
+HTTP_X_SESSION_KEY:{sessionKey}
 Accept:application/json+fhir
 If-Match: W/"n"
 ```
