@@ -22,7 +22,8 @@ This API lets the professional user to re-book an already booked appointment.
 Provide ASID for the end-point system, Session Key and VersionId.
 
 #### Example
-```XAPI_ASID:200000000220
+```http
+XAPI_ASID:200000000220
 HTTP_X_SESSION_KEY:{sessionKey}
 Accept:application/json+fhir
 If-Match: W/"n"
