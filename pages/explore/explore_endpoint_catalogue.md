@@ -23,3 +23,7 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A012|[Upload Attachments](explore_endpoint_a012.html)|Referral Request|POST|/v1/ReferralRequest/{{UBRN}}/$ers.uploadReferralLetter|Alpha|&nbsp;|
 |A013|[Accept Referral](explore_endpoint_a013.html)|Referral Request|POST|/v1/ReferralRequest/{{UBRN}}/$ers.accept|Alpha|&nbsp;|
 |A014|[Reject Referral](explore_endpoint_a014.html)|Referral Request|POST|/v1/ReferralRequest/{{UBRN}}/$ers.reject|Alpha|&nbsp;|
+|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)|Referral Request|POST|/v1/Slot/$ers.searchAppointmentSlots|Alpha|&nbsp;|
+|A016|[Book Appointment](explore_endpoint_a016.html)|Referral Request|POST|/v1/ReferralRequest/{UBRN}/$ers.bookdirect|Alpha|&nbsp;|
+|A017|[Defer Booking to Provider](explore_endpoint_a017.html)|Referral Request|POST|/v1/ReferralRequest/{UBRN}/$ers.deferBooking|Alpha|&nbsp;|
+|A018|[Re-book Appointment](explore_endpoint_a018.html)|Referral Request|POST|/v1/ReferralRequest/{UBRN}/$ers.deferBooking|Alpha|&nbsp;|

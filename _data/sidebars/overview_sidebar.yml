@@ -14,9 +14,9 @@ entries:
     - title: News and Events
       url: /news_and_events.html
       output: web
-    - title: Strategic Approach
-      url: /strategic_approach.html
-      output: web
+#    - title: Strategic Approach
+#      url: /strategic_approach.html
+#      output: web
     - title: Deployment History
       url: /deployment_history.html
       output: web
@@ -31,9 +31,9 @@ entries:
     - title: Development Journey
       url: /getstarted_development_journey.html
       output: web
-    - title: Implementation Steps
-      url: /getstarted_implementation_steps.html
-      output: web
+#    - title: Implementation Steps
+#      url: /getstarted_implementation_steps.html
+#      output: web
     - title: Get Connected
       url: /getstarted_get_connected.html
       output: web
@@ -93,7 +93,7 @@ entries:
         - title: "A008: Retrieve Worklist"
           url: /explore_endpoint_a008.html
           output: web
-          
+
       - title: Alpha Endpoints
         output: web
         subfolderitems:
@@ -115,6 +115,18 @@ entries:
           output: web
         - title: "A014: Reject Referral"
           url: /explore_endpoint_a014.html
+          output: web
+        - title: "A015: Retrieve Appointment Slots"
+          url: /explore_endpoint_a015.html
+          output: web
+        - title: "A016: Book Appointment"
+          url: /explore_endpoint_a016.html
+          output: web
+        - title: "A017: Defer Booking to Provider"
+          url: /explore_endpoint_a017.html
+          output: web
+        - title: "A018: Re-book Appointment"
+          url: /explore_endpoint_a018.html
           output: web
 
     - title: Implementation Guidelines
