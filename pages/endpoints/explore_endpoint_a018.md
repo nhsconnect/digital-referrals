@@ -33,7 +33,8 @@ If-Match: W/"n"
 Provide USRN, Re-booking reason, Rebooking comments and Clinical Information Intent Indicator.
 
 #### Example
-```{
+```javascript
+{
 "resourceType":"Parameters",
 "meta":{
     "profile":"fhir.nhs.uk/OperationDefinition/ers-RebookDbsAppointment-operation-1"
