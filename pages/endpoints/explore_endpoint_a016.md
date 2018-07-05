@@ -33,7 +33,8 @@ If-Match: W/"n"
 Provide USRN (the Unique Slot Reference Number of the new Appointment Slot that is being booked) retrieved in previous step A015.
 
 #### Example
-```{
+```javascript
+{
 "resourceType":"Parameters",
 "meta":{
    "profile":"http://fhir.nhs.uk/OperationDefinition/ers-bookappointment-operation-1"
@@ -41,7 +42,7 @@ Provide USRN (the Unique Slot Reference Number of the new Appointment Slot that 
 "parameter":[
    {
     "name":"usrn",
-    "valueString":"{{USRN}}"
+    "valueString":"00000000-0002-C1E7-0000-00F012598E8C"
    }
 ]
 }
