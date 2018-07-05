@@ -24,7 +24,7 @@ Provide ASID of the end-point system and equivalent Session Key generated for th
 #### Example
 ```http
 XAPI_ASID:200000000220
-HTTP_X_SESSION_KEY:{sessionKey}
+HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 Accept:*/*
 ```
 
