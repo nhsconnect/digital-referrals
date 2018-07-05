@@ -42,7 +42,7 @@ Provide USRN, Re-booking reason, Rebooking comments and Clinical Information Int
 "parameter":[
     {
        "name":"usrn",
-       "valueString":"{{USRN}}"
+       "valueString":"00000000-0002-C1E8-0000-00F012598E8C"
     },
     {
        "name": "rebookingReason",
