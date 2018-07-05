@@ -23,8 +23,8 @@ Provide ASID for the end-point system, Session Key and Content-Type.
 
 #### Example
 ```http
-XAPI_ASID:{ASID}
-HTTP_X_SESSION_KEY:{sessionKey}
+XAPI_ASID:200000000203
+HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 Content-Type: application/json+fhir
 ```
 
@@ -101,7 +101,8 @@ Provide Service details to fetch the available appointment slots e.g. Service ID
 If successful the available appointment slots are retrieved. The response code 200 (OK) is returned.
 
 ### Example
-```{
+```javascript
+{
     "contained": [
         {
             "id": "1",
