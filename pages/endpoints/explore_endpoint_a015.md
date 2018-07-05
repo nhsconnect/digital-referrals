@@ -32,14 +32,15 @@ Content-Type: application/json+fhir
 Provide Service details to fetch the available appointment slots e.g. Service ID, Exclusion Days, Start and End Dates etc.
 
 #### Example
-```{
+```javascript
+{
   "parameter": [{
       "name": "patientNhsNumber",
-      "value": "{{NHS_Number_DEV}}"
+      "value": "9476659793"
     },
     {
       "name": "serviceID",
-      "value": "{{ServiceID1_DEV}}"
+      "value": "6473294"
     },
     {
       "name": "priority",
