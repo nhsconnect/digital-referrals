@@ -33,13 +33,14 @@ If-Match: W/"n"
 Provide Service ID and Deferral Reason where you want this referral to defer to.
 
 #### Example
-```{
+```javascript
+{
   "meta": {
     "profile": "http://fhir.nhs.uk/OperationDefinition/ers-DeferAppointment-operation-1"
   },
   "parameter": [{
     "name": "serviceId",
-    "valueString": "{{ServiceID1_DEV}}"
+    "valueString": "6473294"
   },
   {
     "name": "deferralReason",
