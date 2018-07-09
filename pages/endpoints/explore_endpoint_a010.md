@@ -102,7 +102,7 @@ Provide search criteria to retrieve the services available e.g. Patient NHS Numb
 ## Output
 If successful the list of patient-specific services are returned. The response code `200 (OK)` is returned.
 
-#### Example
+#### Example
 ```javascript
 {
     "contained": [
