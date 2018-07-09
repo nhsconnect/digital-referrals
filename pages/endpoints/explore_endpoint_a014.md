@@ -8,6 +8,7 @@ summary: false
 ---
 
 ## API
+
 | Request Type | URL |
 | -------------| --- |
 | POST | [/v1/ReferralRequest/{UBRN}/$ers.reject](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN}/$ers.reject)
