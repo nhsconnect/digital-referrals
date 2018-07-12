@@ -21,15 +21,15 @@ entries:
 #      output: web
 
     - title: Newsletters
-      url: /newsletters.html
-      output: web
-	  subfolderitems:
+    url: /newsletters.html
+    output: web
+      subfolderitems:
 
-        - title: "July 2018 Newsletter"
-          url: /201807_newsletter.html
-          output: web
+      - title: "July 2018 Newsletter"
+        url: /201807_newsletter.html
+        output: web
 
-	- title: Deployment History
+    - title: Deployment History
       url: /deployment_history.html
       output: web
     - title: Forward Notices
