@@ -26,7 +26,7 @@ entries:
         subfolderitems:
 
         - title: "July 2018 Newsletter"
-          url: /201807_newsletter.html
+          url: /newsletters/201807_newsletter.html
           output: web
 
     - title: Deployment History
