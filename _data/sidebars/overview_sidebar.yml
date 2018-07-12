@@ -20,11 +20,10 @@ entries:
 #      url: /strategic_approach.html
 #      output: web
 
-    subfolders:
        - title: Newsletters
        url: /newsletters.html
        output: web
-       subfolderitems:
+       subfolders:
 
          - title: "July 2018 Newsletter"
            url: /201807_newsletter.html
