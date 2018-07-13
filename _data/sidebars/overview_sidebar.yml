@@ -20,7 +20,7 @@ entries:
 #      url: /strategic_approach.html
 #      output: web
 
-      subfolders:
+#      subfolders:
       - title: Newsletters
         url: "/pages/newsletters/201807_newsletter.html"
         output: web
