@@ -28,7 +28,7 @@ Once you have a smartcard and a HSCN connection, you are now ready to request ac
 
 * [End Point Registration Form](https://developer.nhs.uk/wp-content/uploads/2018/01/e-RS-API-EPR-Form-v1-4.docx)
 
-Once you have downloaded the form, please enter the following information and return to (sa.servicedesk@nhs.net)
+Once you have downloaded the form, please enter the following information and return to (platforms.supportdesk@nhs.net)
 
 1. Enter your name and contact details.
 2. In section 1, enter the FQDN (must not be the same as an existing FQDN on the organisation code) and IP.
@@ -39,15 +39,15 @@ Once you have downloaded the form, please enter the following information and re
 
 You will also need to generate and submit a Certificate Signing Request (CSR) and a Private Key to obtain an endpoint certificate for the requested FQDN. The CSR must have a key length of 2048 and have the common name set to the FQDN value. We recommend using [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) for this.
 
-Please do specify alongside the request to the SA Service Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
+Please do specify alongside the request to the Platforms Support Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
 
 ## Using existing smartcards ##
 
-Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the SA Service Desk (sa.servicedesk@nhs.net) if this is required.
+Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) if this is required.
 
-Those suppliers without existing smartcards in Spine Development can be posted an RA Card for the required organisation(s) so that they can issue their allocated UUIDs locally . Please specify the requirement in your initial request to the SA Service Desk (sa.servicedesk@nhs.net) and include your Name and Postal Address.
+Those suppliers without existing smartcards in Spine Development can be posted an RA Card for the required organisation(s) so that they can issue their allocated UUIDs locally . Please specify the requirement in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) and include your Name and Postal Address.
 
-If you have any queries about connecting to Spine Development (smartcards, endpoints, certificates, connectivity, CSRs), please contact (sa.servicedesk@nhs.net)
+If you have any queries about connecting to Spine Development (smartcards, endpoints, certificates, connectivity, CSRs), please contact (platforms.supportdesk@nhs.net)
 
 ## Final steps ##
 
