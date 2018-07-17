@@ -20,14 +20,14 @@ entries:
 #      url: /strategic_approach.html
 #      output: web
 
-      subfolders:
-      - title: Newsletters
-        output: web
-        subfolderitems:
+#      subfolders:
+#      - title: Newsletters
+#        output: web
+#        subfolderitems:
 
-        - title: "July 2018 Newsletter"
-          url: "/201807_newsletter.html"
-          output: web
+#        - title: "Summer 2018 Newsletter"
+#          url: "/201807_newsletter.html"
+#          output: web
 
     - title: Deployment History
       url: /deployment_history.html
