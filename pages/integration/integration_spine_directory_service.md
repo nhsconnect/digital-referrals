@@ -105,7 +105,7 @@ TLS_KEY C:\mydir\key.pem
 
 The location of the .ldaprc file can be defined using the LDAPRC environment variable.
 
-Please contact [Assurance Support service desk](mailto:sa.servicedesk@nhs.net) for certificates and details of the LDAP server for your environment.
+Please contact [Platforms Support Desk](mailto:platforms.supportdesk@nhs.net) for certificates and details of the LDAP server for your environment.
 
 ### Worked example of the endpoint lookup process ###
 
