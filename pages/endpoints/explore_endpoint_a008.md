@@ -34,26 +34,80 @@ Provide ‘Referrals for Review’ worklist parameter.
 #### Example
 ```javascript
 {
-   "resourceType":"Parameters",
-   "meta":{
-      "versionId":"1",
-      "profile":[
-         "http://fhir.nhs.uk/OperationDefinition/ers-fetchworklist-operation-1"
-      ]
-   },
-   "parameter":[
-      {
-         "name":"listType",
-         "valueCodeableConcept":{
-            "coding":[
-               {
-                  "system":"http://fhir.nhs.uk/ValueSet/ers-referrallistselector-1",
-                  "code":"REFERRALS_FOR_REVIEW"
-               }
-            ]
-         }
+  "resourceType": "Parameters",
+  "meta": {
+    "versionId":"1",
+    "profile": [
+      "http://fhir.nhs.uk/OperationDefinition/ers-fetchworklist-operation-1"
+    ]
+  },
+  "parameter": [
+    {
+      "name": "listType",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.nhs.uk/ValueSet/ers-referrallistselector-1",
+            "code": "REFERRALS_FOR_REVIEW"
+          }
+        ]
       }
-   ]
+    },
+    {
+      "name": "service",
+      "valueIdentifier": {
+        "system": "http://fhir.nhs.uk/Id/ers-service",
+        "value": "6167685"
+      }
+    },
+    {
+      "name": "specialtyAssignedIndicator",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.nhs.uk/ValueSet/ers-assignedindicator-1",
+            "code": "ASSIGNED"
+          }
+        ]
+      }
+    },
+    {
+      "name": "specialty",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.nhs.uk/ValueSet/ers-specialty-1",
+            "code": "EAR_NOSE_THROAT"
+          }
+        ]
+      }
+    },
+    {
+      "name": "location",
+      "valueIdentifier": {
+        "system": "http://fhir.nhs.uk/Id/ods-site-code",
+        "value": "RCD00"
+      }
+    },
+    {
+      "name": "clinicianAssignedIndicator",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://fhir.nhs.uk/ValueSet/ers-assignedindicator-1",
+            "code": "ASSIGNED"
+          }
+        ]
+      }
+    },
+    {
+      "name": "clinician",
+      "valueIdentifier": {
+        "system": "http://fhir.nhs.uk/Id/sds-user-id",
+        "value": "100000873988"
+      }
+    }
+  ]
 }
 ```
 
