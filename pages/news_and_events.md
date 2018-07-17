@@ -76,4 +76,4 @@ The latest software development phase of the NHS e-Referral Service has now been
 * Retrieve Clinical Referral Information comprising Header, Referral Reason, PDF Clinical Information and Supplementary Attachments.
 * Logout from the session.
 
-Early adopters can now request e-RS/DEV1 test data packs, smartcards and prototype support tooling to commence solution elaboration, design and prototyping through the SA Service Desk.
+Early adopters can now request e-RS/DEV1 test data packs, smartcards and prototype support tooling to commence solution elaboration, design and prototyping through the Platforms Support Desk.
