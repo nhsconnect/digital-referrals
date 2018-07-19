@@ -81,7 +81,7 @@ For Major Upgrades NHS Digital shall endeavour to:
 
 #### Upgrade Schedule
 
-The upgrade schedule shall be published on the [NHS Health Developer Network Ecosystem](https://developer.nhs.uk/library/systems/e-rs/).
+The upgrade schedule shall be published on the [Forward notices for the e-Referral APIs](https://developer.nhs.uk/apis/e-Referrals/forward_notices.html) webpage.
 
 ### Transparency Policy
 
