@@ -24,7 +24,7 @@ Provide ASID for the end-point system and Session Key.
 #### Example
 ```http
 XAPI_ASID:200000000220
-HTTP_X_SESSION_KEY:{sessionKey}
+HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 Accept:application/json+fhir
 Content-Type:application/json
 ```
@@ -102,7 +102,7 @@ Provide search criteria to retrieve the services available e.g. Patient NHS Numb
 ## Output
 If successful the list of patient-specific services are returned. The response code `200 (OK)` is returned.
 
-#### Example
+#### Example
 ```javascript
 {
     "contained": [

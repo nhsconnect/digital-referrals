@@ -11,12 +11,24 @@ entries:
       url: /index.html
       output: web, pdf
       type: homepage
+
     - title: News and Events
       url: /news_and_events.html
       output: web
+
 #    - title: Strategic Approach
 #      url: /strategic_approach.html
 #      output: web
+
+#      subfolders:
+#      - title: Newsletters
+#        output: web
+#        subfolderitems:
+
+#        - title: "Summer 2018 Newsletter"
+#          url: "/201807_newsletter.html"
+#          output: web
+
     - title: Deployment History
       url: /deployment_history.html
       output: web

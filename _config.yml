@@ -93,9 +93,9 @@ description: ""
 sitemap: true
 
 # needed for sitemap.xml file only
-url: https://wurble369.github.io/websitetest
+url: https://github.com/nhsconnect/digital-referrals
 
-repository: websitetest
+repository: digital-referrals
 
 gist:
   noscript: false

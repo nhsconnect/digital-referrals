@@ -40,7 +40,7 @@ NHS Digital will announce if it intends to discontinue or make backwards incompa
 NHS Digital operates an agile development process with regular, dynamic and condensed release cycles.
 Deprecation should be interpreted as a fair warning that the either the Current or a Previous Version will soon be turned off.  End User Organisation and the Connecting Party will actively be encouraged to upgrade their implementations at that point. Sunset means that the version is no longer available.
 
-NHS Digital shall provide notification of upcoming sunsets on the NHS Digital Solution Assurance Functional Assurance and Environment Management Team Newsletters.  End User Organisations and the Connecting Party are required to register to the NHS Digital Solution Assurance Functional Assurance and Environment Management Team Newsletters by emailing the SA Service Desk (sa.servicedesk@nhs.net).
+NHS Digital shall provide notification of upcoming sunsets on the NHS Digital Solution Assurance Functional Assurance and Environment Management Team Newsletters.  End User Organisations and the Connecting Party are required to register to the NHS Digital Solution Assurance Functional Assurance and Environment Management Team Newsletters by emailing the Platforms Support Desk (platforms.supportdesk@nhs.net).
 
 NHS Digital will endeavour to provide a 6-month notice period of upcoming sunsets for the Connecting Party to update its system.  NHS Digital shall endeavour not to introduce Major Upgrades (as defined below) more than two times in any twelve-month period. This will mean NHS Digital will practically support a rolling release of two major versions of the Services at one time (beyond alpha and beta development released).
 

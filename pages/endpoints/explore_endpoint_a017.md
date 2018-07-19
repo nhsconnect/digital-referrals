@@ -24,7 +24,7 @@ Provide ASID for the end-point system, Session Key and VersionId.
 #### Example
 ```http
 XAPI_ASID:200000000220
-HTTP_X_SESSION_KEY:{sessionKey}
+HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 Accept:application/json+fhir
 If-Match: W/"n"
 ```
@@ -33,13 +33,14 @@ If-Match: W/"n"
 Provide Service ID and Deferral Reason where you want this referral to defer to.
 
 #### Example
-```{
+```javascript
+{
   "meta": {
     "profile": "http://fhir.nhs.uk/OperationDefinition/ers-DeferAppointment-operation-1"
   },
   "parameter": [{
     "name": "serviceId",
-    "valueString": "{{ServiceID1_DEV}}"
+    "valueString": "6473294"
   },
   {
     "name": "deferralReason",

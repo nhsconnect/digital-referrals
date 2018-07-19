@@ -24,7 +24,7 @@ Provide ASID for the end-point system, Session Key and VersionId.
 #### Example
 ```http
 XAPI_ASID:200000000220
-HTTP_X_SESSION_KEY:{sessionKey}
+HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 Accept:application/json+fhir
 If-Match: W/"n"
 ```
@@ -33,7 +33,8 @@ If-Match: W/"n"
 Provide USRN, Re-booking reason, Rebooking comments and Clinical Information Intent Indicator.
 
 #### Example
-```{
+```javascript
+{
 "resourceType":"Parameters",
 "meta":{
     "profile":"fhir.nhs.uk/OperationDefinition/ers-RebookDbsAppointment-operation-1"
@@ -41,7 +42,7 @@ Provide USRN, Re-booking reason, Rebooking comments and Clinical Information Int
 "parameter":[
     {
        "name":"usrn",
-       "valueString":"{{USRN}}"
+       "valueString":"00000000-0002-C1E8-0000-00F012598E8C"
     },
     {
        "name": "rebookingReason",
