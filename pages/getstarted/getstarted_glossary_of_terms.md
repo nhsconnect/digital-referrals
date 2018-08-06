@@ -13,8 +13,14 @@ Application Programming Interface
 ### CAB
 Choose and Book
 
+### CATR
+Clinical Authority To Release
+
 ### CRI
 Clinical Referral Information
+
+### CSR
+Certificate Signing Request
 
 ### e-RS
 e-Referral Service
@@ -22,20 +28,29 @@ e-Referral Service
 ### FHIR
 Fast Healthcare Interoperability Resource
 
+### FQDN
+Fully Qualified Domain Name
+
 ### GDS
 Government Digital Service
 
 ### HSCIC
 Health and Social Care Information Centre
 
+### HSCN
+Health and Social Care Network
+
 ### IT
 Information Technology
+
+### MIM
+Message Implementation Manual
 
 ### NHS
 National Health Service
 
-### MIM
-Message Implementation Manual
+### ODS
+Organisation Data Service
 
 ### PDS
 Patient Demographic Service

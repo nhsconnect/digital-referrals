@@ -23,4 +23,4 @@ after reading the provided development information (which additionally covers ot
 * after completing the TOM, they proceed to acquire a reasonable grasp of the API framework and begin the development lifecycle (**Design**, **Implement** and **System Test**) of the new software product
 <!-- * during this process, the Web Portal provides all the necessary Support including code samples, forums, and bug tracking features -->
 <!-- * the Ecosystem will provide test environments for both **System Tests** as well as **Integration Tests** -->
-* when the new software has been successfully integrated with an existing clinical system, subject to satisfying the relevant assurance process it will be certified as an NHS e-RS API **Certified Product**, after which it can be deployed in a live setting
+* when the new software has been successfully integrated with an existing clinical system, subject to satisfying the relevant assurance process, it will be certified as an NHS e-RS API **Certified Product**, after which it can be deployed in a live setting
