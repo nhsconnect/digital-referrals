@@ -23,7 +23,7 @@ A summary of the activities and the support material in each of the phases are a
 
 |Phase&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description|
 |---|---|
-|1.&nbsp;Get&nbsp;Started|Non-technical and high-level technical documentation to get started with the development, inlcuding registration for new partners, a glossary and an FAQ|
+|1.&nbsp;Get&nbsp;Started|Non-technical and high-level technical documentation to get started with the development, including registration for new partners, a glossary and an FAQ|
 |2.&nbsp;Explore|A full API reference (live and alpha) and (ReST) resource definitions, standard models and error messages|
 |3.&nbsp;Develop|Business flows related to each main user journey, access to synthetic e-Referral test data|
 |4.&nbsp;Assure|NHS Digital validation, integration testing, technical accreditation, and guidance to clinical safety and information governance|

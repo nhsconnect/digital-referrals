@@ -41,12 +41,12 @@ Once you have downloaded the form, please enter the following information and re
 
 You will also need to generate and submit a Certificate Signing Request (CSR) and a Private Key to obtain an endpoint certificate for the requested FQDN.
 
-1. The CSR must have a key length of 2048
+1. The CSR must have a key length of 2048.
 2. The common name must be set to the FQDN value.
 
 We recommend using [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) for this.
 
-Please do specify alongside the request to the Platforms Support Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
+Please specify alongside the request to the Platforms Support Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
 
 ## Using existing smartcards ##
 
