@@ -41,24 +41,24 @@ Once you have downloaded the form, please enter the following information and re
 
 You will also need to generate and submit a Certificate Signing Request (CSR) and a Private Key to obtain an endpoint certificate for the requested FQDN.
 
-* The CSR must have a key length of 2048.
-* The common name must be set to the FQDN value.
+1. The CSR must have a key length of 2048.
+2. The common name must be set to the FQDN value.
 
 We recommend using [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) for this.
 
-1. Once installed, Open Command Prompt and run the below command to configure the openssl.cfg file
+Once installed, Open Command Prompt and run the below command to configure the openssl.cfg file
 
 ```shell
 C:\OpenSSL-Win32\bin>set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg
 ```
 
-2. Change the dir to OpenSSL-Win32/bin and run the below command to generate the CSR by replacing the blue coloured FQDN and org code e.g. O=ROB with yours:
+Change the dir to OpenSSL-Win32/bin and run the below command to generate the CSR by replacing the blue coloured FQDN and org code e.g. O=ROB with yours:
 
 ```shell
 openssl req -new -newkey rsa:2048 -nodes -out Test-FQDN.cfh.nhs.uk.csr -keyout Test-FQDN.cfh.nhs.uk.key -subj "/C=GB/ST=/L=na/O=ROB/OU=na/CN=Test-FQDN.cfh.nhs.uk"
 ```
 
-3. The CSR along with the Private Key will be generated and available in C:/OpenSSL-Win32/bin folder as per the above FQDN details.
+The CSR along with the Private Key will be generated and available in C:/OpenSSL-Win32/bin folder as per the above FQDN details.
 
 Please specify alongside the request to the Platforms Support Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
 
