@@ -78,7 +78,7 @@ Please install the Identity Agent and Middleware from here:
 
 ## Unblocking IP addresses ##
 
-If you want to unblock certain IP addresses as part of this process, please reach out to NHS e-RS Partners.
+If you want to unblock certain IP addresses as part of this process, please reach out to the Platforms Support Desk (platforms.supportdesk@nhs.net).
 
 ## Using existing smartcards ##
 
@@ -90,7 +90,7 @@ If you have any queries about connecting to Spine Development (smartcards, endpo
 
 ## Final steps ##
 
-Once you have received a certificate from our Solutions Assurance Desk you will need to follow a few simple steps that will allow you to begin your e-Referral Service Integration journey.
+Once you have received a certificate from our Platforms Support Desk you will need to follow a few simple steps that will allow you to begin your e-Referral Service Integration journey.
 
 You need to install ROOT and SUBCA certificates. Here’s a handy guide to get you started:
 
