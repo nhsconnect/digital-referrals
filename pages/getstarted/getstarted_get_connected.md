@@ -76,6 +76,10 @@ Please install the Identity Agent and Middleware from here:
 
 * [Downloads](http://nww.hscic.gov.uk/dir/downloads/index.html) (Can only be accessed via N3)
 
+## Unblocking IP addresses
+
+If you want to unblock certain IP addresses as part of this process, please reach out to NHS e-RS Partners.
+
 ## Using existing smartcards ##
 
 Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) if this is required.
