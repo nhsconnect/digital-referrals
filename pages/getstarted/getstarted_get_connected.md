@@ -62,6 +62,14 @@ The CSR along with the private key will be generated and available in `C:\OpenSS
 
 Please specify alongside the request to the Platforms Support Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
 
+## Registry Settings ##
+
+Please install “IAConfig2.msi” by downloading the IAConfig.zip archive from here:
+
+* [Downloads](http://nww.hscic.gov.uk/dir/downloads/index.html#ia_config) (Can only be accessed via N3)
+
+Once installed you should be able to apply the DEV Registry settings to access the e-RS/DEV1 environment.
+
 ## Identity Agent ##
 
 Please install the Identity Agent and Middleware from here:
