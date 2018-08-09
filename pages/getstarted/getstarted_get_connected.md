@@ -76,7 +76,7 @@ Please install the Identity Agent and Middleware from here:
 
 * [Downloads](http://nww.hscic.gov.uk/dir/downloads/index.html) (Can only be accessed via N3)
 
-## Unblocking IP addresses
+## Unblocking IP addresses ##
 
 If you want to unblock certain IP addresses as part of this process, please reach out to NHS e-RS Partners.
 
