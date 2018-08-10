@@ -52,6 +52,9 @@ National Health Service
 ### ODS
 Organisation Data Service
 
+### PAS
+Patient Administration System
+
 ### PDS
 Patient Demographic Service
 
