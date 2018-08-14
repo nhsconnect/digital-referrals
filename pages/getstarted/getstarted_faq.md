@@ -9,8 +9,8 @@ summary: "A set of common questions and answers regarding the e-Referral APIs"
 
 | Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Question&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Answer |
 | -------- | -------- | ------ |
-| Overview | Can I see the NHS roadmap for the APIs? | The NHS roadmap for the APIs can be found [here](https://digital.nhs.uk/e-Referral-Service/Future-Service). |
-| Overview | Which APIs are currently available? | Please see the [API Endpoint Catalogue](explore_endpoint_catalogue.html). |
+| Overview | Can I see the NHS Digital roadmap for the APIs? | The NHS Digital roadmap for the APIs can be found on the [NHS e-Referral Service Integration](https://digital.nhs.uk/services/nhs-e-referral-service/integration) page on the NHS Digital Systems and Services website. |
+| Overview | Which APIs are currently available? | Please see the [API Endpoint Catalogue](explore_endpoint_catalogue.html) for a comprehensive list of Alpha and Live APIs. |
 | Overview | How can I register for further interest and receive future integration updates as they become available? | Please contact the NHS e-Referral Service API Integration Team directly. |
 | Overview | I have a specific scenario I want to talk through, who should I contact? | Please contact the NHS e-Referral Service API Integration Team directly. |
 | Overview | I have a question that is not listed here, who can I ask? | Please contact the NHS e-Referral Service API Integration Team directly. |
