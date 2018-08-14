@@ -7,6 +7,12 @@ permalink: /news_and_events.html
 summary: "News and events related to the e-Referral APIs"
 ---
 
+## 10 August 2018 - Release of the new NHS e-Referral Integration Roadmap
+
+Today we are pleased to announce the release the new NHS e-Referral Integration Roadmap.
+
+For more information visit the Future integration roadmap section of the [NHS e-Referral Service Integration](https://digital.nhs.uk/services/nhs-e-referral-service/integration) page on the NHS Digital Systems and Services website.
+
 ## 1st and 10th May 2018 - Tech UK Industry Briefing with NHS Digital
 
 TechUK is hosting this event in Leeds and London. The briefing covers:
@@ -19,10 +25,6 @@ TechUK is hosting this event in Leeds and London. The briefing covers:
 For more information visit the [Tech UK website](http://www.techuk.org/events/meeting/item/12637-industry-briefing-with-nhs-digital-leeds) and the [NHS Industry Briefings website](http://www.industrybriefings.co.uk/).
 
 <img src="images/news/techuk-may-2018.png" alt="Tech UK Industry Briefing with NHS Digital" style="width: 425px;"/>
-
-<!--# 1 April 2018 - New NHS e-Referral Service release-->
-
-<!--Today we are pleased to announce the release of NHS e-Referral Service version 7.5.  https://digital.nhs.uk/services/nhs-e-referral-service/the-future-of-the-nhs-e-referral-service-->
 
 ## 14th March 2018 - Technical Connectathon in Leeds
 
