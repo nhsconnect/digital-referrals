@@ -7,7 +7,7 @@ permalink: /news_and_events.html
 summary: "News and events related to the e-Referral APIs"
 ---
 
-## 10 August 2018 - Release of the new NHS e-Referral Integration Roadmap
+## 10th August 2018 - Release of the new NHS e-Referral Integration Roadmap
 
 Today we are pleased to announce the release the new NHS e-Referral Integration Roadmap.
 
