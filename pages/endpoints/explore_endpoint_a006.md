@@ -11,10 +11,10 @@ summary: false
 
 | Request Type | URL |
 | -------------| --- |
-| GET | [/v1/Binary/att-{referralRequestAttachmentId}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Binary/att-{referralRequestAttachmentId})
+| GET | [/v1/Binary/att-{AttachmentUrl}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Binary/att-{AttachmentUrl})
 
 ## Description
-This API lets users retrieve and download linked files for a referral. Identify the file using both the request and attachment identifier.
+This API lets users retrieve and download linked files for a referral. Identify the file using the attachment url as returned by [A005 Retrieve Referral Request](explore_endpoint_a005.html). .
 
 ## Input
 
