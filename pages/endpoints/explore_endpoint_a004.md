@@ -13,12 +13,12 @@ summary: false
 | -------------| --- |
 | GET | [/v1/ValueSet/{valueSetId}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ValueSet/{valueSetId})
 
-## Description
-This read-only API lets a user access a pre-populated list of reference data. The NHS e-Referral Service uses these lists throughout. For example, a list of specialities. They support data accuracy and effective re-use. It retrieves a specific Value Set (Reference Dataset) by ID.
-
 ## Related FHIR model
 
 * [eRS-Specialty-ValueSet-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.Valueset/ers-specialty-valueset-1.html)
+
+## Description
+This read-only API lets a user access a pre-populated list of reference data. The NHS e-Referral Service uses these lists throughout. For example, a list of specialities. They support data accuracy and effective re-use. It retrieves a specific Value Set (Reference Dataset) by ID.
 
 ## Input
 Applicable values for the {valueSetId}:
