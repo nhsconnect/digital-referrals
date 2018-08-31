@@ -16,6 +16,10 @@ summary: false
 ## Description
 This API gets the referral request identified by the given ID. For each new referral, the user will be able to get key data attributes. External systems can show these in their system. The user can then see status and content header info.
 
+## Related FHIR model
+
+* [eRS-ReferralRequest-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistResponse/ers-referralrequest-1.html)
+
 ## Input
 
 ### Header

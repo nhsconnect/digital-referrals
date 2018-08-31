@@ -16,6 +16,10 @@ summary: false
 ## Description
 This API lets users create a real-time Portable Document Format (PDF) of the referral. This is suitable for integration into a 3rd party system. You can find the Clinical Information for a referral request using a UBRN.
 
+## Related FHIR model
+
+* [eRS-ClinicalReferralInformation-Operation-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ClinicalReferralInformationQuery/ers-clinicalreferralinformation-operation-1.html)
+
 ## Input
 
 ### Header

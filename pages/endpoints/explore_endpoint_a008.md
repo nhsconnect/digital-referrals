@@ -16,6 +16,10 @@ summary: false
 ## Description
 This API lets authorised users retrieve the ‘Referrals for Review’ work list. This is the same as the existing interface. This work list gives details of new referrals sent to the service by GPs and others. It includes their key attributes.
 
+## Related FHIR model
+
+* [eRS-FetchWorklist-Operation-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistQuery/ers-fetchworklist-operation-1.html)
+
 ## Input
 
 ### Header
