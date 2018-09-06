@@ -37,7 +37,7 @@ These are “gettable” from e-RS; third parties should handle them as _dynamic
 * In future we will be adding _Rebooking Reasons/Cancellation Reasons_ and other dynamics lists
 
 ## Input
-Applicable values for the {valueSetId}:
+Currently applicable values for the {valueSetId}:
 
 |Value Set ID|Description|
 |---|---|
