@@ -41,7 +41,7 @@ Currently applicable values for the {valueSetId}:
 
 |Value Set ID|Description|
 |---|---|
-|SPECIALTY|Specialties defined in e-RS.|
+|SPECIALTY|Specialties defined in e-RS|
 
 ### Header
 Provide ASID of the end-point system and equivalent Session Key generated for the SSO Token-ID.

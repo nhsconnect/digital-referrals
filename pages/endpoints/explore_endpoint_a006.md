@@ -11,7 +11,7 @@ summary: false
 
 | Request Type | URL |
 | -------------| --- |
-| GET | [/v1/Binary/att-{AttachmentUrl}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Binary/att-{AttachmentUrl})
+| GET | [/v1/Binary/{AttachmentLogicalID}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Binary/{AttachmentLogicalID})
 
 ## Description
 This API lets users retrieve and download linked files for a referral. Identify the file using the attachment url as returned by [A005 Retrieve Referral Request](explore_endpoint_a005.html). .
@@ -35,13 +35,14 @@ If successful file content linked to the referral is returned. The response code
 Code snippets taken from the consumer example. See [Code Samples](develop_code_samples.html) for further details.-->
 
 ## Notes
-Get the Attachment identified by the given Referral Request Id and Attachment Id.
+The path to the attachment can be found in the “url” field of the DocumentReference.content.attachment in the contained section of the ReferralRequest resource.
 
 ### Parameters
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | --------- | ----- | ----------- | -------------- | --------- |
-| referralRequestAttachmentId |   | Referral Request Attachment Id | Path | String |
+| AttachmentLogicalID |   | The logical ID for the Binary resource (i.e. for the attachment) in the
+format _att-x-y_ where _x_ and _y_ are Integers | Path | String |
 
 ### Response Messages
 
