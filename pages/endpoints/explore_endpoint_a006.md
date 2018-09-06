@@ -14,7 +14,7 @@ summary: false
 | GET | [/v1/Binary/{AttachmentLogicalID}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Binary/{AttachmentLogicalID})
 
 ## Description
-This API lets users retrieve and download linked files for a referral. Identify the file using the attachment url as returned by [A005 Retrieve Referral Request](explore_endpoint_a005.html). .
+This API lets users retrieve and download linked files for a referral. Identify the file using the attachment url as returned by [A005 Retrieve Referral Request](explore_endpoint_a005.html).
 
 ## Input
 
@@ -41,8 +41,7 @@ The path to the attachment can be found in the “url” field of the DocumentRe
 
 | Parameter | Value | Description | Parameter Type | Data Type |
 | --------- | ----- | ----------- | -------------- | --------- |
-| AttachmentLogicalID |   | The logical ID for the Binary resource (i.e. for the attachment) in the
-format _att-x-y_ where _x_ and _y_ are Integers | Path | String |
+| AttachmentLogicalID |   | The logical ID for the Binary resource (i.e. for the attachment) in the format att-x-y where x and y are Integers | Path | String |
 
 ### Response Messages
 
