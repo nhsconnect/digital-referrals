@@ -17,6 +17,8 @@ The move to e-RS also helps to vastly reduce the amount of paper used in the ref
 
 From 1 October 2018, trusts will only take electronic referrals from GPs and NHS Digital and NHS England are working together to support full implementation of e-RS.
 
+<img src="images/news/100-percent-hospital-trusts-sept-2018.jpg" alt="Tech UK Industry Briefing with NHS Digital" style="width: 425px;"/>
+
 To learn more about this, please visit the [NHS Digital website](https://digital.nhs.uk/news-and-events/latest-news/100-per-cent-of-trusts-switched-over-to-e-referral-service).
 
 ## 5 September 2018 - PRSB sets the standards for clinical referral information
@@ -26,6 +28,8 @@ New standards for sharing clinical referral information have been published by t
 The standard has been developed with clinicians and patients, along with implementation guidance for digital referrals sent from GPs to hospitals. It is hoped that once the new standards are implemented, the exchange of referral information from GPs to hospital consultants and other professionals providing outpatient services will be improved.
 
 The publication of the new referral standards line up with NHS Digital’s October 1 deadline, by which time trusts are to only accept e-referrals from GPs.
+
+<img src="images/news/prsb-standards-sept-2018.jpg" alt="Tech UK Industry Briefing with NHS Digital" style="width: 425px;"/>
 
 To read more, visit the [Digital Health website](https://www.digitalhealth.net/2018/09/prsb-standards-clinical-referral-information/).
 
