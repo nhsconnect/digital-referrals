@@ -7,6 +7,28 @@ permalink: /news_and_events.html
 summary: "News and events related to the e-Referral APIs"
 ---
 
+## 5 September 2018 - 100 percent of trusts have now switched over to the e-Referral service
+
+A total of 150 acute hospital trusts and 7,110 GP practices have made the move to sending and receiving all first outpatient appointments through the NHS e-Referral Service (e-RS). This means that all acute trusts managed to beat the 1 October deadline to fully move to e-RS.
+
+Trusts that have already made the move to using e-RS full-time have reported that patients on average receive appointments eight days faster, that the number of patients that fail to attend appointments has dropped by up to half and patients have greater control over their appointments.
+
+The move to e-RS also helps to vastly reduce the amount of paper used in the referral process, as well as providing patients with a greater choice of when and where their appointment will take place.
+
+From 1 October 2018, trusts will only take electronic referrals from GPs and NHS Digital and NHS England are working together to support full implementation of e-RS.
+
+To learn more about this, please visit the [NHS Digital website](https://digital.nhs.uk/news-and-events/latest-news/100-per-cent-of-trusts-switched-over-to-e-referral-service).
+
+## 5 September 2018 - PRSB sets the standards for clinical referral information
+
+New standards for sharing clinical referral information have been published by the Professional Records Standards Body (PRSB) with the aim of speeding up treatment times.
+
+The standard has been developed with clinicians and patients, along with implementation guidance for digital referrals sent from GPs to hospitals. It is hoped that once the new standards are implemented, the exchange of referral information from GPs to hospital consultants and other professionals providing outpatient services will be improved.
+
+The publication of the new referral standards line up with NHS Digital’s October 1 deadline, by which time trusts are to only accept e-referrals from GPs.
+
+To read more, visit the [Digital Health website](https://www.digitalhealth.net/2018/09/prsb-standards-clinical-referral-information/).
+
 ## 10th August 2018 - Release of the new NHS e-Referral Integration Roadmap
 
 Today we are pleased to announce the release the new NHS e-Referral Integration Roadmap.
