@@ -7,7 +7,7 @@ permalink: /news_and_events.html
 summary: "News and events related to the e-Referral APIs"
 ---
 
-## 5 September 2018 - 100 percent of trusts have now switched over to the e-Referral service
+## 5th September 2018 - 100 percent of trusts have now switched over to the NHS e-Referral Service
 
 A total of 150 acute hospital trusts and 7,110 GP practices have made the move to sending and receiving all first outpatient appointments through the NHS e-Referral Service (e-RS). This means that all acute trusts managed to beat the 1 October deadline to fully move to e-RS.
 
@@ -21,7 +21,7 @@ From 1 October 2018, trusts will only take electronic referrals from GPs and NHS
 
 To learn more about this, please visit the [NHS Digital website](https://digital.nhs.uk/news-and-events/latest-news/100-per-cent-of-trusts-switched-over-to-e-referral-service).
 
-## 5 September 2018 - PRSB sets the standards for clinical referral information
+## 25th August 2018 - PRSB sets the standards for clinical referral information
 
 New standards for sharing clinical referral information have been published by the Professional Records Standards Body (PRSB) with the aim of speeding up treatment times.
 
@@ -31,7 +31,7 @@ The publication of the new referral standards line up with NHS Digital’s Octob
 
 <img src="images/news/prsb-standards-sept-2018.jpg" alt="Tech UK Industry Briefing with NHS Digital" style="width: 425px;"/>
 
-To read more, visit the [Digital Health website](https://www.digitalhealth.net/2018/09/prsb-standards-clinical-referral-information/).
+To read more, visit the [PRSB website](https://theprsb.org/2018/08/new-standard-for-clinical-referral-information/).
 
 ## 10th August 2018 - Release of the new NHS e-Referral Integration Roadmap
 
