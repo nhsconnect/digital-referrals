@@ -27,3 +27,4 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A016|[Book Appointment](explore_endpoint_a016.html)|Referral Request|POST|/v1/ReferralRequest/{UBRN}/$ers.bookdirect|Alpha|&nbsp;|
 |A017|[Defer Booking to Provider](explore_endpoint_a017.html)|Referral Request|POST|/v1/ReferralRequest/{UBRN}/$ers.deferBooking|Alpha|&nbsp;|
 |A018|[Re-book Appointment](explore_endpoint_a018.html)|Referral Request|POST|/v1/ReferralRequest/{UBRN}/$ers.deferBooking|Alpha|&nbsp;|
+|A019|[Generate Patient Letter](explore_endpoint_a019.html)|Referral Request|POST|/v1/ReferralRequest/{UBRN}/$ers.generatePatientLetter|Alpha|&nbsp;|
