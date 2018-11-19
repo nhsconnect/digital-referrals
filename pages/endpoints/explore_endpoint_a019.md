@@ -11,7 +11,7 @@ summary: false
 
 | Request Type | URL |
 | -------------| --- |
-| POST | [v1/ReferralRequest/000048425639/$ers.generatePatientLetter](https://api.{ENV}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN}/$ers.generatePatientLetter)
+| POST | [v1/ReferralRequest/{UBRN}/$ers.generatePatientLetter](https://api.{ENV}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN}/$ers.generatePatientLetter)
 
 ## Description
 This API retrieves the Patient Appointment Request Letter once the referral request has been created (with or without uploaded attachments).
