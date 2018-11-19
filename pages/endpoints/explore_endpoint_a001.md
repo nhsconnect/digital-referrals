@@ -14,7 +14,7 @@ summary: false
 | POST | [/v1/ProfessionalSession](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ProfessionalSession)
 
 ## Description
-Creates a Professional Session in the Spine using smartcard roles. This gives a secure login.
+Creates a Professiona Session in the Spine using smartcard roles. This gives a secure login.
 
 ## Input
 
