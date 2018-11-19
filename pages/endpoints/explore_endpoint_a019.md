@@ -39,7 +39,7 @@ Blank.
 
 ## Output
 If successful:
-'''
+```javascript
 Response Status: 200 OK
 Response Body: A PDF file with Patient Letter will be downloaded.
-'''
+```
