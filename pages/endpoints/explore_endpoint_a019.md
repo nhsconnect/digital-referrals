@@ -19,7 +19,7 @@ This API retrieves the Patient Appointment Request Letter once the referral requ
 ## Input
 
 ### Header
-Provide ASID for the end-point system, Session Key, Content Type and Accept.
+Provide ASID for the end-point system, Session Key, Content Type and Accept parameters.
 
 #### Example
 ```http
@@ -29,17 +29,9 @@ Content-Type: application/json+fhir
 Accept: */*
 ```
 
-### Body
-Blank.
-
-#### Example
-```javascript
-{}
-```
-
 ## Output
 If successful:
 ```javascript
 Response Status: 200 OK
-Response Body: A PDF file with Patient Letter will be downloaded.
+Response Body: A PDF file with Patient Letter will be generated.
 ```
