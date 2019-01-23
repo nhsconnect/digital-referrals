@@ -3,7 +3,7 @@ title: "A001: Create Professional Session"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a001.html
+permalink: explore_endpoint_template.html
 summary: false
 ---
 
