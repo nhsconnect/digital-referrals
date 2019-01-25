@@ -1,5 +1,5 @@
 ---
-title: "A001: Create Professional Session"
+title: "A0xx: Template"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
