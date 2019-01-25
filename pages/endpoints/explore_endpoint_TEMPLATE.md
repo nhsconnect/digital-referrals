@@ -3,7 +3,7 @@ title: "A0xx: Template"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_template.html
+permalink: /explore_endpoint_template.html
 summary: false
 ---
 
@@ -11,7 +11,7 @@ summary: false
 
 | Request Type | URL |
 | -------------| --- |
-| POST | [(URL)]
+| POST | [URL]() |
 
 ## Description
 Describe the purpose of this endpoint and what can be achieved by using it.
@@ -23,15 +23,18 @@ List any endpoints that must be used prior to calling this endpoint.
 ## Request Operation
 
 ### Request Header
+
 | Parameter | Mandatory | Value |
-| -------------| --------- | --------- |
-| Accept | application/json |
-| Accept-Encoding | gzip,deflate |
-| Content-Type:application/json |
+| --------- | --------- | ----- |
+| Accept | application/json | - |
+| Accept-Encoding | gzip,deflate | - |
+| Content-Type:application/json | - | - |
 
 ### Request Body Parameters
+
 | Parameter | Mandatory | Data Type | Length | Restrictions |
-| -------------| --------- | --------- | ------ | ------------ |
+| --------- | --------- | --------- | ------ | ------------ |
+| - | - | - | - | - |
 
 #### Example Request Header
 ```http
