@@ -53,6 +53,9 @@ Content-Type:application/json
 ```
 
 #### Example
+
+<details><summary>EXPAND</summary>
+<p>
 ```javascript
 {
     "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
@@ -94,6 +97,8 @@ Content-Type:application/json
     "permission": null
 }
 ```
+</p>
+</details>
 
 ## Response
 
