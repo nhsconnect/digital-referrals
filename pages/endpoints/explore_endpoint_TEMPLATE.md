@@ -34,64 +34,66 @@ List any endpoints that must be used prior to calling this endpoint.
 
 | Parameter | Mandatory | Data Type | Length | Restrictions |
 | --------- | --------- | --------- | ------ | ------------ |
-| - | - | - | - | - |
-
+| blank | blank |blank |blank |blank |
 
 #### Example
 
 <details><summary>Request Header</summary>
-<br>
-```http
-XAPI_ASID:200000000220
-Accept:application/json
-Accept-Encoding:gzip,deflate
-Content-Type:application/json
-```
+  <br>
+  <pre>
+  XAPI_ASID:200000000220
+  Accept:application/json
+  Accept-Encoding:gzip,deflate
+  Content-Type:application/json
+  </pre>
 </details>
 
 <details><summary>Request Body</summary>
 <br>
-```javascript
-{
-    "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
-    "id": "pro-xapi-session_222c42c7-820f-4f9b-92fb-3add4b1db9f7",
-    "token": "AQIC5wM2LY4Sfcyw62EbAOsRpdfbGYUOyvkfZ4M6U7W52lM=@AAJTSQACMDE=#",
-    "user": {
-        "identifier": "555020964101",
-        "firstName": "SA Assurance",
-        "lastName": "GP-Card",
-        "middleName": null,
-        "permissions": [
-            {
-                "businessFunction": "REFERRING_CLINICIAN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "REFERRING_CLINICIAN_ADMIN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "SERVICE_DEFINER",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "SERVICE_PROVIDER_CLINICIAN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "SERVICE_PROVIDER_CLINICIAN_ADMIN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            }
-        ]
-    },
-    "permission": null
-}
-```
+  <p>
+    <code>
+      {
+          "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
+          "id": "pro-xapi-session_222c42c7-820f-4f9b-92fb-3add4b1db9f7",
+          "token": "AQIC5wM2LY4Sfcyw62EbAOsRpdfbGYUOyvkfZ4M6U7W52lM=@AAJTSQACMDE=#",
+          "user": {
+              "identifier": "555020964101",
+              "firstName": "SA Assurance",
+              "lastName": "GP-Card",
+              "middleName": null,
+              "permissions": [
+                  {
+                      "businessFunction": "REFERRING_CLINICIAN",
+                      "orgIdentifier": "R01",
+                      "orgName": "NHST_X3"
+                  },
+                  {
+                      "businessFunction": "REFERRING_CLINICIAN_ADMIN",
+                      "orgIdentifier": "R01",
+                      "orgName": "NHST_X3"
+                  },
+                  {
+                      "businessFunction": "SERVICE_DEFINER",
+                      "orgIdentifier": "R01",
+                      "orgName": "NHST_X3"
+                  },
+                  {
+                      "businessFunction": "SERVICE_PROVIDER_CLINICIAN",
+                      "orgIdentifier": "R01",
+                      "orgName": "NHST_X3"
+                  },
+                  {
+                      "businessFunction": "SERVICE_PROVIDER_CLINICIAN_ADMIN",
+                      "orgIdentifier": "R01",
+                      "orgName": "NHST_X3"
+                  }
+              ]
+          },
+          "permission": null
+      }
+
+    </code>
+  </p>
 </details>
 
 ## Response
