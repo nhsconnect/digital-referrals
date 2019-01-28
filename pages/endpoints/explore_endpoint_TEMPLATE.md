@@ -36,26 +36,21 @@ List any endpoints that must be used prior to calling this endpoint.
 | --------- | --------- | --------- | ------ | ------------ |
 | - | - | - | - | - |
 
-#### Example Request Header
+
+#### Example
+
+<details><summary>Request Header</summary>
+<br>
 ```http
 XAPI_ASID:200000000220
 Accept:application/json
 Accept-Encoding:gzip,deflate
 Content-Type:application/json
 ```
+</details>
 
-#### Example Request Body
-```javascript
-{
- "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
- "token": " AQIC5wM2LY4Sfcyw62EbAOsRpdfbGYUOyvkfZ4M6U7W52lM=@AAJTSQACMDE=#"
-}
-```
-
-#### Example
-
-<details><summary>EXPAND</summary>
-<p>
+<details><summary>Request Body</summary>
+<br>
 ```javascript
 {
     "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
@@ -97,7 +92,6 @@ Content-Type:application/json
     "permission": null
 }
 ```
-</p>
 </details>
 
 ## Response
@@ -114,7 +108,11 @@ Empty.
 | ---------------- | ------ | -------------- | ------- |
 | 201 | Created |
 
-### Example Response Header
+### Examples
+<details><Summary>Example Response</summary>
+<br>
++++EXAMPLE HERE+++
+</details>
 
 ## Error codes
 
