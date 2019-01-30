@@ -7,14 +7,14 @@ permalink: /explore_endpoint_a008x.html
 summary: false
 ---
 
-### API
+### API URL
 Base URLs:  
 FHIR2	`https://api.ebs.ncrs.nhs.uk/ers-api/v1/`  
 FHIR3	`https://api.ebs.ncrs.nhs.uk/ers-api/STU3/v1/`
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | ReferralRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | /ReferralRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Service Provider Clinician (/Administrator)  
@@ -36,20 +36,20 @@ If using the optional filter on specialty, the value provided must be a valid co
 | Accept | `*/*`, `application/json+fhir` |
 
 
-#### Request Body Parameters
-The Operation Definition for this endpoint is available on the FHIR server:
-[FHIR 2 v1 ers-fetchworklist-operation-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistQuery/ers-fetchworklist-operation-1.html)
+#### Request Body
+The Operation Definition for this endpoint is available on the FHIR server:  
+[FHIR 2 v1 ers-fetchworklist-operation-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistQuery/ers-fetchworklist-operation-1.html)  
 [FHIR3 v1 eRS-FetchWorklist-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-FetchWorklist-Operation-1)
 
-| Parameter Name | Cardinality | Type | Notes |
-|  ---- | ---- | ---- |  ---- |
-| listType | 1..1 | CodeableConcept | Currently, only one value is supported: 'REFERRALS_FOR_REVIEW' |
-| service | 0..1 | Identifier |  |
-| specialtyAssignedIndicator |0..1|CodeableConcept |Mandatory with value 'ASSIGNED' if 'specialty' is present |
-| specialty |0..1|CodeableConcept | Obtained via a POST to `ValueSet/{ValueSetID}` (A004)  |
-| location |0..1| Identifier | ODS Location Code|
-| clinicianAssignedIndicator |0..1|CodeableConcept |Mandatory with value 'ASSIGNED' if 'clinician' is present |
-| clinician |0..1 | Identifier| |
+| Parameter Name             | Mandatory | Cardinality | Type            | Notes |
+|  ------------------------- | :-------: | :---------: | --------------- | ----- |
+| listType                   | Yes       | 1..1        | CodeableConcept | Currently, only one value is supported: 'REFERRALS_FOR_REVIEW' |
+| service                    | No        | 0..1        | Identifier      | Service ID |
+| specialtyAssignedIndicator | No        | 0..1        | CodeableConcept |Mandatory with value 'ASSIGNED' if 'specialty' is present |
+| specialty                  | No        | 0..1        | CodeableConcept | Obtained via a POST to `ValueSet/{ValueSetID}` (A004)  |
+| location                   | No        | 0..1        | Identifier      | ODS Location Code|
+| clinicianAssignedIndicator | No        | 0..1        | CodeableConcept |Mandatory with value 'ASSIGNED' if 'clinician' is present |
+| clinician                  | No        | 0..1        | Identifier      | Clinician ID |
 
 #### Mandatory Parameters
 
@@ -87,13 +87,13 @@ A response code is returned.
 
 #### Response Body
 <br>
-**FHIR2 v1:**
--  [ers-fetchworklist-list-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistResponse/ers-fetchworklist-list-1.html)
-- [ers-operationoutcome-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistResponse/ers-operationoutcome-1.html)
+FHIR2 v1:  
+[ers-fetchworklist-list-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistResponse/ers-fetchworklist-list-1.html)  
+[ers-operationoutcome-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ReferralsForReviewWorklistResponse/ers-operationoutcome-1.html)
 
-**FHIR3 v1:**
-- [eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1)
-- [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1)
+FHIR3 v1:  
+[eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1)  
+[eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1)
 
 #### Response Codes
 HTTP Status codes 401, 403, 422, 500, 501 may be returned.  
