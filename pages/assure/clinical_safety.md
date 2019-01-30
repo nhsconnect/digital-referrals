@@ -9,8 +9,21 @@ summary: "Clinical Safety Requirements & Guidance"
 
 ## Introduction
 
-Coming Soon.
+#### API clinical safety framework
+-	Roles and responsibilities
+-	Assurance documentation
+-	Patient Safety Assessment (PSA)
 
-### Links
+#### Resources available
+-	Templates
+-	Documents
+-	Training slides
+- [General Clinical Safety Documents](https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-safety-documentation)
 
-[Clinical Safety Documents](https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-safety-documentation)
+#### FAQs & Implementation Guidance
+-	How should I complete the TOM for retrieving Clinical Referral Information?
+-	How should I complete the TOM for Creating Referrals?
+-	Example TOM documentation
+-	Clinical Safety Guidance document (CS website)
+
+[*Disclaimer*]

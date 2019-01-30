@@ -7,6 +7,23 @@ permalink: /news_and_events.html
 summary: "News and events related to the e-Referral APIs"
 ---
 
+###### View the latest [NHS e-Referral Service: Integration Update.](newsletter.html)
+
+## December 2018 - Imperial College London goes live using e-RS Integration APIs
+![Imperial College London Logo](images\news\imperiallogo.png)
+
+[TEXT]
+
+## November 2018 - New Path to Live Environment for Partners  
+![Spanner Image](images/news/spanner_banner.png)
+
+[TEXT]
+
+## 1st October 2018 - Referral Request API Suite  
+![Spanner Image](images/news/gp_service.jpg)
+  
+[TEXT]
+
 ## 5th September 2018 - 100 percent of trusts have now switched over to the NHS e-Referral Service
 
 A total of 150 acute hospital trusts and 7,110 GP practices have made the move to sending and receiving all first outpatient appointments through the NHS e-Referral Service (e-RS). This means that all acute trusts managed to beat the 1 October deadline to fully move to e-RS.

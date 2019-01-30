@@ -73,7 +73,7 @@ The Operation Definition for this endpoint is available on the FHIR server:
     </pre>
   </p>
 </details>
-
+<br>
 ### Response
 
 #### Response Header

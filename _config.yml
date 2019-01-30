@@ -14,19 +14,6 @@ company_name: NHS Digital
 github_editme_path:
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
-#disqus: true
-disqus_shortname: nhsconnect
-
-gitter: false
-gitter_room: gpconnect/Lobby
-
-tiny_letter: true
-tiny_letter_username: nhsconnectapi
-
-twitter: false
-twitter_username: nhsconnectapi
-twitter_site_hashtags: GPConnect
-
 host: 127.0.0.1
 # the preview server used. Leave as is.
 

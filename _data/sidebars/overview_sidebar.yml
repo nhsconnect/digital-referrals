@@ -209,9 +209,22 @@ entries:
     - title: Supporting Requirements
       url: /assure_supporting_requirements.html
       output: web
-    - title: Clinical Safety
-      url: /clinical_safety.html
-      output: web
+
+      subfolders:
+      - title: Clinical Safety
+        output: web
+        subfolderitems:
+
+        - title: Introduction
+          url: /clinical_safety.html
+          output: web
+        - title: API Clinical Safety Framework
+          url: /clinical_safety.html
+          output: web
+        - title: FAQs & Implementation Guidance
+          url: /clinical_safety.html
+          output: web
+          
 #    - title: Path-To-Live
 #      url: /assure_path_to_live.html
 #      output: web
