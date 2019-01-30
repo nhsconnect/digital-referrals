@@ -1,5 +1,5 @@
 ---
-title: Target Operating Model
+title: Clinical Safety
 keywords: assurance, clinical, safety
 sidebar: overview_sidebar
 toc: false

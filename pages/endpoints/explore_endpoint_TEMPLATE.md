@@ -7,36 +7,40 @@ permalink: /explore_endpoint_template.html
 summary: false
 ---
 
-## API
+### API
 
-| Request Type | URL |
-| -------------| --- |
-| POST | [URL]() |
+| Method | URL | Authentication |
+| -------------| --- | ---------------- |
+| POST | URL String Example | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-## Description
+### Description
 Describe the purpose of this endpoint and what can be achieved by using it.
 
-## Prerequisites
+### Prerequisite Operations
 List any endpoints that must be used prior to calling this endpoint.
-(E.g. Authentication, Reference data etc.)  
+(E.g. Reference data etc.)  
 
-## Request Operation
+### Request Operation
 
-### Request Header
+#### Request Header
 
-| Parameter | Mandatory | Value |
+| Field Name | Value |
+| --------- | ---- |
+| XAPI_ASID | ASID |
+| Accept | application/json |
+| Accept-Encoding | gzip,deflate |
+| Content-Type | application/json |
+
+#### Request Body Parameters
+A full list of available parameters is described in the FHIR documentation available [here.](++ ADD LINK +++)
+
+#### Mandatory parameters
+
+| Parameter | Data Type | Notes |
 | --------- | --------- | ----- |
-| Accept | application/json | - |
-| Accept-Encoding | gzip,deflate | - |
-| Content-Type:application/json | - | - |
+| Parameter | String | Usage notes |
 
-### Request Body Parameters
-
-| Parameter | Mandatory | Data Type | Length | Restrictions |
-| --------- | --------- | --------- | ------ | ------------ |
-| blank | blank |blank |blank |blank |
-
-#### Example
+##### Example code
 
 <details><summary>Request Header</summary>
   <br>
@@ -51,7 +55,7 @@ List any endpoints that must be used prior to calling this endpoint.
 <details><summary>Request Body</summary>
 <br>
   <p>
-    <code>
+    <pre>
       {
           "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
           "id": "pro-xapi-session_222c42c7-820f-4f9b-92fb-3add4b1db9f7",
@@ -92,33 +96,22 @@ List any endpoints that must be used prior to calling this endpoint.
           "permission": null
       }
 
-    </code>
+    </pre>
   </p>
 </details>
 
-## Response
+### Response
 
-### Response Header
-The response code `201 (Created)` is returned.
+#### Response Header
+A response code is returned.
 
-### Response Body
-Empty.
+#### Response Body
+(Resource type expected)
 
-### Response Messages
+#### Response Messages
 
-| HTTP Status Code | Reason | Response Model | Headers |
-| ---------------- | ------ | -------------- | ------- |
-| 201 | Created |
-
-### Examples
-<details><Summary>Example Response</summary>
-<br>
-+++EXAMPLE HERE+++
-</details>
-
-## Error codes
-
-| HTTP Status Code | Reason | Response Model | Headers |
-| ---------------- | ------ | -------------- | ------- |
-| 403 | Forbidden |
-| 422 | Unprocessable Entity – Provided data could not be processed due to a validation error |
+| HTTP Code | Reason | Notes |
+| --------- | ------ |
+| 201 | Created | Operation Successful, record created  |
+| 403 | Forbidden | ... |
+| 422 | Unprocessable Entity | Provided data could not be processed due to a validation error |
