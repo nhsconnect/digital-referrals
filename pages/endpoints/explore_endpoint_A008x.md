@@ -51,12 +51,6 @@ The Operation Definition for this endpoint is available on the FHIR server:
 | clinicianAssignedIndicator | No        | 0..1        | CodeableConcept |Mandatory with value 'ASSIGNED' if 'clinician' is present |
 | clinician                  | No        | 0..1        | Identifier      | Clinician ID |
 
-#### Mandatory Parameters
-
-| Parameter Name | Notes |
-|  ---- |  ---- |
-| listType | Currently, only one value is supported: 'REFERRALS_FOR_REVIEW' |
-
 ##### Example code
 
 <details><summary>Request Header</summary>
