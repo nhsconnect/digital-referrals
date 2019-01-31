@@ -10,7 +10,7 @@ summary: "News and events related to the e-Referral APIs"
 ###### View the latest [NHS e-Referral Service: Integration Update.](newsletter.html)
 
 ## December 2018 - Imperial College London goes live using e-RS Integration APIs
-![Imperial College London Logo](images\news\imperiallogo.png)
+![Imperial College London Logo](images/news/imperiallogo.png)
 
 [TEXT]
 
@@ -21,7 +21,7 @@ summary: "News and events related to the e-Referral APIs"
 
 ## 1st October 2018 - Referral Request API Suite  
 ![Spanner Image](images/news/gp_service.jpg)
-  
+
 [TEXT]
 
 ## 5th September 2018 - 100 percent of trusts have now switched over to the NHS e-Referral Service
