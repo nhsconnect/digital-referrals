@@ -36,8 +36,12 @@ Clinical risk management training is designed to provide health and social care 
 
 
 ### Further Information:
-- #### [Clinical Safety Introduction](/clinical_safety_intro.html)
-- #### [Clinical Safety Framework](/clinical_safety_framework.html)
-- #### [FAQs & Implementation Guidance](/clinical_safety_faqs.html)
+- [Clinical Safety Introduction](/clinical_safety_intro.html)
+- [Clinical Safety Framework](/clinical_safety_framework.html)
+- [FAQs & Implementation Guidance](/clinical_safety_faqs.html)
 
-[*Disclaimer*]
+<br>
+<br>
+<br>
+________________________________________________________________________
+*The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party.*

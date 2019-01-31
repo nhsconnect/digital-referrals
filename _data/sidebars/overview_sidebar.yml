@@ -216,15 +216,18 @@ entries:
         subfolderitems:
 
         - title: Introduction
-          url: /clinical_safety.html
+          url: /clinical_safety_intro.html
           output: web
         - title: API Clinical Safety Framework
-          url: /clinical_safety.html
+          url: /clinical_safety_framework.html
+          output: web
+        - title: Clinical Safety Resources
+          url: /clinical_safety_resources.html
           output: web
         - title: FAQs & Implementation Guidance
-          url: /clinical_safety.html
+          url: /clinical_safety_faqs.html
           output: web
-          
+
 #    - title: Path-To-Live
 #      url: /assure_path_to_live.html
 #      output: web
