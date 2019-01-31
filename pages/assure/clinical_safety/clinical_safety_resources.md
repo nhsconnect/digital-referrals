@@ -43,5 +43,4 @@ Clinical risk management training is designed to provide health and social care 
 <br>
 <br>
 <br>
-________________________________________________________________________
-*The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party.*
+_**Note:** The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party._

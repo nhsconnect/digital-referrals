@@ -29,5 +29,4 @@ Using the TOM document the software company and end user organisation can assess
 <br>
 <br>
 <br>
-________________________________________________________________________
-*The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party.*
+_**Note:** The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party._
