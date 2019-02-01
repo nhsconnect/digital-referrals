@@ -16,9 +16,9 @@ summary: "Clinical Safety FAQs & Implementation Guidance"
 
 
 ### Further Information:
-- [Clinical Safety Introduction](/clinical_safety_intro.html)
-- [Clinical Safety Framework](/clinical_safety_framework.html)
-- [Resources Available](/clinical_safety_resources.html)
+- [Clinical Safety Introduction](clinical_safety_intro.html)
+- [Clinical Safety Framework](clinical_safety_framework.html)
+- [Resources Available](clinical_safety_resources.html)
 <br>
 <br>
 <br>

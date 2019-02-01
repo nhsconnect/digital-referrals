@@ -22,9 +22,9 @@ Using the TOM document the software company and end user organisation can assess
 
 #### Further Information:
 
-- [Clinical Safety Framework](/clinical_safety_framework.html)
-- [Resources Available](/clinical_safety_resources.html)
-- [FAQs & Implementation Guidance](/clinical_safety_faqs.html)
+- [Clinical Safety Framework](clinical_safety_framework.html)
+- [Resources Available](clinical_safety_resources.html)
+- [FAQs & Implementation Guidance](clinical_safety_faqs.html)
 
 <br>
 <br>
