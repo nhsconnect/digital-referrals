@@ -1,10 +1,10 @@
 ---
-title: Clinical Safety Framework
+title: Clinical Safety Assurance Framework
 keywords: assurance, clinical, safety
 sidebar: overview_sidebar
 toc: false
 permalink: /clinical_safety_framework.html
-summary: "Clinical Safety Framework"
+summary: "Clinical Safety Assurance Framework"
 ---
 
 ## Clinical Safety Framework

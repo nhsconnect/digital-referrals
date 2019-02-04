@@ -215,10 +215,10 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Introduction
+        - title: Introduction to Clinical Safety
           url: /clinical_safety_intro.html
           output: web
-        - title: API Clinical Safety Framework
+        - title: Clinical Safety Assurance Framework
           url: /clinical_safety_framework.html
           output: web
         - title: Clinical Safety Resources
