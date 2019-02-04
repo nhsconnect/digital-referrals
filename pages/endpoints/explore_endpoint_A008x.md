@@ -74,21 +74,12 @@ The Operation Definition for this endpoint is available on the FHIR server:
 <br>
 
 ### Response
+Details of the response format for this endpoint are available on the FHIR server:  
+[eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1)  
+[eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1)
 
 #### Successful Operation
-The response code `201 (ok)` is returned in the header and the body will be empty.
-
-#### Errors
-When the HTTP status code returned is 422 (Unprocessable Entity) then a FHIR OperationOutcome will also be included as detailed below.  
-
-
-| issue.details.code | Description |
-| ------------------ | ------ | ------ |
-| INVALID_VALUE | A service/location/clinician was provided that is not found in e-RS, or the Specialty Assigned value is 'NOT_ASSIGNED' |
-| MISSING_VALUE | A mandatory parameter has not been provided |
-| NO_RELATIONSHIP |The logged in user is not associated to the service (if this is provided) |
-| UNEXPECTED_FIELD  | Specialty/clinician is provided, but the value for Specialty/Cliniain Assigned is not 'ASSIGNED' |
-
+The response code `201 (ok)` is returned in the header and the body will contain the worklist data in the following FHIR3 format - [eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1)
 
 ##### Example code
 <details><summary>Response Header</summary>
@@ -105,6 +96,12 @@ When the HTTP status code returned is 422 (Unprocessable Entity) then a FHIR Ope
 </details>
 <br>
 
-##### Data Models:   
-[eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1)  
-[eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1)
+#### Errors
+When the HTTP status code returned is 422 (Unprocessable Entity) then a FHIR OperationOutcome will also be included as detailed below.  
+
+| issue.details.code | Description |
+| ------------------ | ------ | ------ |
+| INVALID_VALUE | A service/location/clinician was provided that is not found in e-RS, or the Specialty Assigned value is 'NOT_ASSIGNED' |
+| MISSING_VALUE | A mandatory parameter has not been provided |
+| NO_RELATIONSHIP |The logged in user is not associated to the service (if this is provided) |
+| UNEXPECTED_FIELD  | Specialty/clinician is provided, but the value for Specialty/Cliniain Assigned is not 'ASSIGNED' |
