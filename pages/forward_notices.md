@@ -11,4 +11,4 @@ This page details new enhancements, delivery activity, version control and confi
 
 | Issue Date | Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Item | Effective&nbsp;Date | Status |
 | ---------- | -------- | ---- | -------------- | ------ |
-| 01/07/2018 | Environments | Implementation of a New e-RS/DEV1 Path-To-Live (PTL) Environment | TBC | New |
+| 01/11/2018 | Environments | Implementation of a New e-RS/DEV3 Path-To-Live (PTL) Environment [(More information)](news_and_events.html#DEV3) | 01/12/18 | New |

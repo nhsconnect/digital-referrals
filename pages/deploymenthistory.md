@@ -7,24 +7,16 @@ permalink: /deployment_history.html
 summary: "Deployment history for the e-Referral APIs"
 ---
 
-### 7.4 (Released 17/04/18) ###
+## Latest Release
+Release 8.2 – January
+  - Consultant action (re-direction lite)  
+    This new alpha endpoint is a initial mock-stub to allow provider systems to prototype a full clinical review suite workflow.
 
-### 7.3 (Released 16/03/18) ###
+  - Clinical Referral Information  
+    Initial Beta release of FHIR 3 upgraded endpoints (subject to test)
 
-### 7.2 (Released 16/02/18) ###
+## Release History
 
-### 7.1 (Released 19/01/18) ###
-
-### 7.0 (Released 08/12/17) ###
-* New endpoint: _A014: Reject Referral API (Alpha)_
-
-### 6.9 (Released 10/11/17) ###
-* New endpoint: _A013: Accept Referral API (Alpha)_
-
-### 6.8 (Released 13/10/17) ###
-* New endpoint: _A012: Create Referral Request (Alpha)_
-* New endpoint: _A011: Upload Clinical Information (Alpha)_
-
-### 6.6 (Released 18/08/17) ###
-* New endpoint: _A010: Retrieve Patient Specific Service Search (Alpha)_
-* New endpoint: _A009: Retrieve Generic Service Search (Alpha)_
+| Release Version | Date | Notes |
+| --------------- | ---- | ----- |
+| Release 8.1 | November | Updated Patient Letter-  Initial Beta release of referral request suite patient request letter endpoints |

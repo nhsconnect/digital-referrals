@@ -9,20 +9,24 @@ summary: "News and events related to the e-Referral APIs"
 
 ###### View the latest [NHS e-Referral Service: Integration Update.](newsletter.html)
 
-## December 2018 - Imperial College London goes live using e-RS Integration APIs
-![Imperial College London Logo](images/news/imperiallogo.png)
+## 17th December 2018 - Imperial College Healthcare NHSFT goes live using e-RS Integration APIs
+![People Logo](images/news/People.png)
 
-[TEXT]
+A successful collaborative project, between Imperial College Healthcare and the NHS e-Referral Service, recently delivered the first business partner implementation of the Service’s new Application Programming Interface (API) functionality. Imperial are an innovative Trust of 10,000 people, providing care for around a million people every year, in their five hospitals and a growing number of community services in north west London. An interoperability partnership was quickly established between Imperial’s ICT Projects and the Service’s Integration Portfolio Teams and then tasked with making available the Clinical Referral Information (CRI) or ‘Referral Letter’ within the e-RS application to Imperial’s internal document repository and online vetting solution. Through close technical and implementation collaboration, a new Target Operating Model (TOM) approach for product assurance was piloted leading to a successful launch on the 17th December 2018. This is now helping the Trust to realise its NHS England Paper Switch Off (PSO) Programme benefits, reducing administrative costs, achieving quicker patient care and providing a firm foundation for deeper clinical review integration, associated to the processing of over 100,000 first outpatient appointment each year.
 
+(#DEV3)
 ## November 2018 - New Path to Live Environment for Partners  
-![Spanner Image](images/news/spanner_banner.png)
+![PTL Environments Image](images/news/PTL_Environments.PNG)
 
-[TEXT]
+The NHS e-Referral Service has now delivered a new Application Programming Interface (API) focused Path-to-Live environment (PTL). This has been called e-RS DEV3 and is now accessible through the Development (DEV) Care Identity Service (CIS) and Spine Core network domain.
+The new environment will act as a test repository for the growing range of NHS e-Referral Service (e-RS) Alpha APIs. As this environment will exist outside of the monthly PTL e-RS release cycle, it is now able to provide increased responsiveness to new user needs and change requests. The e-RS Integration Portfolio Team will be able to design, implement and release new, agile functionality and respond to changes within a period of days rather than the existing monthly release cycle. The existing Alpha APIs have now been removed from the main software branch and the existing PTL environments, to help in the maintenance of an efficient, operational code base. This does not affect existing users of the Clinical Referral Information (CRI) APIs as these are fully live and available in the core software release. Connectivity information and service notifications are now available through the NHS Digital Assurance Support Portal.
+
 
 ## 1st October 2018 - Referral Request API Suite  
-![Spanner Image](images/news/gp_service.jpg)
+![Referral Suite Image](images/news/gp_service.jpg)
 
-[TEXT]
+Through successful external stakeholder engagement, the NHS e-Referral Service has now commenced activity to design, build, release and assure a new, live Beta suite of referral APIs. This activity builds upon end user and systems supplier feedback on the elaboration and prototyping of an early Alpha suite, allowing end users the ability to create quick and easy referrals in the e-RS solution. The planned live suite will support an application workflow equivalent to the current Professional Application interface functionality, with compliant systems able to search for patient services, create a referral, upload clinical attachment(s) and print the patient referral request letter. This roadmap deliverable represents the completion of development and release of new APIs into the live service application code and made available for collaborating partners to commence development and assurance.
+
 
 ## 5th September 2018 - 100 percent of trusts have now switched over to the NHS e-Referral Service
 
