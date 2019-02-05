@@ -9,6 +9,6 @@ summary: "Forward notices for the e-Referral APIs"
 
 This page details new enhancements, delivery activity, version control and configuration notices for the NHS e-Referral APIs:
 
-| Issue Date | Category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Item | Effective&nbsp;Date | Status |
+| Issue Date | Category | Item | Effective Date | Status |
 | ---------- | -------- | ---- | -------------- | ------ |
-| 01/11/2018 | Environments | Implementation of a New e-RS/DEV3 Path-To-Live (PTL) Environment [(More information)](news_and_events.html#DEV3) | 01/12/18 | New |
+| 01/10/2018 | Environments | Implementation of a New e-RS/DEV3 Path-To-Live (PTL) Environment [(More information)](news_and_events.html#DEV3) | 01/11/18 | New |

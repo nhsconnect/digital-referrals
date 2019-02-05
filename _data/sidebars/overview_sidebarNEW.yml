@@ -1,0 +1,191 @@
+entries:
+
+- title: e-RS APIs
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: News and Events
+      url: /news_and_events.html
+      output: web
+
+    - title: Deployment History
+      url: /deployment_history.html
+      output: web
+
+    - title: Forward Notices
+      url: /forward_notices.html
+      output: web
+
+  - title: Get Started
+    output: web
+    folderitems:
+
+    - title: Development Journey
+      url: /getstarted_development_journey.html
+      output: web
+
+    - title: Get Connected
+      url: /getstarted_get_connected.html
+      output: web
+
+    - title: Business Partners
+      url: /getstarted_business_partners.html
+      output: web
+
+    - title: Partner Registration
+      url: /getstarted_partner_registration.html
+      output: web
+
+    - title: Glossary of Terms
+      url: /getstarted_glossary_of_terms.html
+      output: web
+
+    - title: Frequently Asked Questions
+      url: /getstarted_faq.html
+      output: web
+
+  - title: Explore
+    output: web
+    folderitems:
+
+    - title: API Environments
+      url: /explore_api_environments.html
+      output: web
+
+      subfolders:
+
+      - title: Business Flows
+        output: web
+        subfolderitems:
+
+        - title: "Authentication and Authorisation Suite"
+          url: /develop_business_flow_bf001.html
+          output: web
+
+        - title: "Clinical Referral Review Suite"
+          url: /develop_business_flow_bf002.html
+          output: web
+          
+        - title: "Create Referral Suite"
+          url: /develop_business_flow_bf002.html
+          output: web
+
+    - title: Error Messages
+      url: /explore_error_messages.html
+      output: web
+
+  - title: Develop
+    output: web
+    folderitems:
+
+    - title: Endpoint Catalogue
+      url: /explore_endpoint_catalogue.html
+      output: web
+
+    - title: Authentication and Authorisation Suite
+      output: web
+      subfolderitems:
+      - title: "A001: Create Professional Session"
+        url: /explore_endpoint_a001.html
+        output: web
+      - title: "A002: Professional Session Select Role"
+        url: /explore_endpoint_a002.html
+        output: web
+      - title: "A003: Delete Professional Session"
+        url: /explore_endpoint_a003.html
+        output: web
+
+    - title: Clinical Referral Review Suite
+      output: web
+      subfolderitems:
+      - title: "A004: Retrieve Reference Data"
+        url: /explore_endpoint_a004.html
+        output: web
+      - title: "A005: Retrieve Referral Request"
+        url: /explore_endpoint_a005.html
+        output: web
+      - title: "A006: Retrieve Attachment"
+        url: /explore_endpoint_a006.html
+        output: web
+      - title: "A007: Retrieve Clinical Information"
+        url: /explore_endpoint_a007.html
+        output: web
+      - title: "A008: Retrieve Worklist"
+        url: /explore_endpoint_a008.html
+        output: web
+
+    - title: Create Referral Suite
+      output: web
+      subfolderitems:
+      - title: "A004: Retrieve Reference Data"
+        url: /explore_endpoint_a004.html
+        output: web
+      - title: "A010: Retrieve Patient Specific Search"
+        url: /explore_endpoint_a010.html
+        output: web
+      - title: "A011: Create Referral Shortlist"
+        url: /explore_endpoint_a011.html
+        output: web
+      - title: "A012: Upload Attachments"
+        url: /explore_endpoint_a012.html
+        output: web
+
+    - title: Error Messages
+      url: /explore_error_messages.html
+      output: web
+
+    - title: Support
+      url: /develop_support.html
+      output: web
+
+  - title: Assure
+    output: web
+    folderitems:
+
+    - title: Assurance Approach
+      url: /assure_assurance_approach.html
+      output: web
+    - title: Agreements
+      url: /assure_agreements.html
+      output: web
+    - title: Target Operating Model
+      url: /assure_tom.html
+      output: web
+
+      subfolders:
+      - title: Clinical Safety
+        output: web
+        subfolderitems:
+
+        - title: Introduction to Clinical Safety
+          url: /clinical_safety_intro.html
+          output: web
+        - title: Clinical Safety Assurance Framework
+          url: /clinical_safety_framework.html
+          output: web
+        - title: Clinical Safety Resources
+          url: /clinical_safety_resources.html
+          output: web
+        - title: FAQs & Implementation Guidance
+          url: /clinical_safety_faqs.html
+          output: web
+
+#    - title: Path-To-Live
+#      url: /assure_path_to_live.html
+#      output: web
+
+  - title: Deploy
+    output: web
+    folderitems:
+
+    - title: Release Methodology
+      url: /deploy_release_methodology.html
+      output: web
