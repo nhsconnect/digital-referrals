@@ -84,7 +84,7 @@ entries:
       output: web
 
       subfolders:
-      - title: Authentication and Authorisation Suite
+      - title: Authentication and Authorisation
         output: web
         subfolderitems:
         - title: "A004: Retrieve Reference Data"
@@ -99,7 +99,7 @@ entries:
           url: /explore_endpoint_a003.html
           output: web
 
-      - title: Clincial Referral Information Suite
+      - title: Clincial Referral Information
         output: web
         subfolderitems:
         - title: "A004: Retrieve Reference Data"
@@ -117,7 +117,7 @@ entries:
           url: /explore_endpoint_a008.html
           output: web
 
-      - title: Referral Beta Suite
+      - title: Referral Beta
         output: web
         subfolderitems:
         - title: "A004: Retrieve Reference Data"
@@ -134,7 +134,7 @@ entries:
         - title: "A019: Generate Patient Letter"
           url: /explore_endpoint_a019.html
           output: web
-  
+
     - title: Error Messages
       url: /explore_error_messages.html
       output: web
@@ -154,9 +154,7 @@ entries:
     - title: Target Operating Model
       url: /assure_tom.html
       output: web
-    - title: Supporting Requirements
-      url: /assure_supporting_requirements.html
-      output: web
+
       subfolders:
       - title: Clinical Safety
         output: web
