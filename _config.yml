@@ -47,7 +47,6 @@ kramdown:
  auto_ids: true
  hard_wrap: false
  syntax_highlighter: rouge
- html_to_native: true
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
 excerpt_separator: ""

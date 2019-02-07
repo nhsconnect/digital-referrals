@@ -3,9 +3,18 @@ title: "A0xx: Template"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: /explore_endpoint_template.html
+permalink: explore_endpoint_template.html
 summary: false
 ---
+### Image Map test
+
+<img src="images/assure/roles_responsibilities.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="System Supplier" title="System Supplier" href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dcb0129-clinical-risk-management-its-application-in-the-manufacture-of-health-it-systems" coords="203,353,60" shape="circle">
+    <area target="_blank" alt="End User Org" title="End User Org" href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dcb0160-clinical-risk-management-its-application-in-the-deployment-and-use-of-health-it-systems" coords="948,350,58" shape="circle">
+</map>
+
 
 ### API
 
