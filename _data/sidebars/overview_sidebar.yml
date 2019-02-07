@@ -83,9 +83,9 @@ entries:
   - title: Develop
     output: web
     folderitems:
-    # - title: Endpoint Catalogue
-    #   url: /explore_endpoint_catalogue.html
-    #   output: web
+    - title: Endpoint Catalogue
+      url: /explore_endpoint_catalogue.html
+      output: web
 
       subfolders:
       - title: Authentication and Authorisation
