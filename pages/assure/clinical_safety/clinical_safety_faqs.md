@@ -7,12 +7,25 @@ permalink: /clinical_safety_faqs.html
 summary: "Clinical Safety FAQs & Implementation Guidance"
 ---
 
-#### FAQs & Implementation Guidance
--	How should I complete the TOM for retrieving Clinical Referral Information?
--	How should I complete the TOM for Creating Referrals?
--	Example TOM documentation
--	Clinical Safety Guidance document (CS website)
+#### Questions to consider:
 
+- How will your solution ensure that the right clinicians are in the correct workgroups?
+- How will your solution ensure that technical failures can be dealt with safely?
+- How will your solution handle updates to the clinical information or attachments?
+- How will your solution handle a second viewing of the document(s)?
+- How will your solution record the outcome of this second viewing?
+- How will the advice sent back to the referrer be recorded in your solution?
+- How will you prevent referrals received from e-RS being viewed by people who should not have access to the referral details?
+- How will you manage information stored in your solution after the legitimate relationship has ended?
+- Will the actions on your solution mirror the options on e-RS?
+- Will the comments sections on your solution mirror the sections in e-RS?
+- What happens if admin staff are not assigned to the correct workgroups in NHS e-RS and/or your solution?
+- What happens if an incoming referral is mapped to the wrong speciality, workgroup or named clinician?
+- What happens if the smartcard is removed?
+- What happens if a duplicate referral is received and not identified as a duplicate?
+- What happens if a referral is only partially downloaded?
+- Can your solution support all document formats?
+- What is the process if your solution or NHS e-RS is down or encounters a major incident?
 
 
 ### Further Information:
