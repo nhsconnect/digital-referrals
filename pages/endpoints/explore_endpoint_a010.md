@@ -3,7 +3,7 @@ title: "A010: Patient Specific Service Search"
 keywords: endpoint, catalogue, worklist, patient, service search
 sidebar: overview_sidebar
 toc: false
-permalink: /explore_endpoint_a008x.html
+permalink: /explore_endpoint_a010.html
 summary: false
 ---
 

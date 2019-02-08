@@ -3,7 +3,7 @@ title: "A008: Retrieve Worklist"
 keywords: endpoint, catalogue, worklist, referrals for review
 sidebar: overview_sidebar
 toc: false
-permalink: /explore_endpoint_a008x.html
+permalink: /explore_endpoint_a008.html
 summary: false
 ---
 
