@@ -15,14 +15,15 @@ Integration between healthcare systems along with the safe and secure electronic
 
 ![Photo of Matt Hancock](images/news/matt_hancock.jpg)
 
-> As we see migration towards standards, we will quickly see an increase in our ability to share data across the system, an increase in our ability to analyse and drive insights from the huge amount of data we hold across the system, and an ability to procure and redeploy technology with greater efficiency and at lower cost than has ever been possible historically.
-
-The Rt Hon Matt Hancock MP - Secretary of State for Health and Social care
-
-> The use of robust standards in the development of digital, data and technology products for the NHS is critical  in ensuring these products are safe, cost effective and meet the needs of all health and care system users;  patients, clinicians, support staff and the health research community.
-
-Sarah Wilkinson - CEO, NHS Digital
-
+_"As we see migration towards standards, we will quickly see an increase in our ability to share data across the system, an increase in our ability to analyse and drive insights from the huge amount of data we hold across the system, and an ability to procure and redeploy technology with greater efficiency and at lower cost than has ever been possible historically."_  
+<br>
+<div style="float: right"> - The Rt Hon Matt Hancock MP, Secretary of State for Health and Social care</div>
+<br>
+<br>
+_"The use of robust standards in the development of digital, data and technology products for the NHS is critical  in ensuring these products are safe, cost effective and meet the needs of all health and care system users;  patients, clinicians, support staff and the health research community."_
+<br>
+<div style="float: right"> - Sarah Wilkinson, CEO NHS Digital</div>
+<br>
 <br>
 The draft framework outlines the key standards for clinical safety, the use of data, interoperability and design interactions - See full details [here](https://digital.nhs.uk/about-nhs-digital/our-work/nhs-digital-data-and-technology-standards/framework)
 
