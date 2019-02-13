@@ -13,7 +13,7 @@ summary: "News and events related to the e-Referral APIs"
 
 Integration between healthcare systems along with the safe and secure electronic transfer of data gains further momentum as a draft new NHS Digital, Data and Technology Standards Framework, which describes new expectations around the use of data, interoperability, and design standards within the NHS is published for consultation.
 
-![Photo of Matt Hancock](images/news/matt_hancock.jpg)
+![Photo of Matt Hancock](images/news/matt_hancock_sml.jpg)
 
 _"As we see migration towards standards, we will quickly see an increase in our ability to share data across the system, an increase in our ability to analyse and drive insights from the huge amount of data we hold across the system, and an ability to procure and redeploy technology with greater efficiency and at lower cost than has ever been possible historically."_  
 <br>
