@@ -20,7 +20,7 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A009|[Directory Service Search](explore_endpoint_a009.html)|POST|/HealthcareService/$dos.serviceSearch|<span class="api_status_indicator Alpha"><span style="color: orange">Alpha</span></span>| TBC |
 |A010|[Patient Service Search](explore_endpoint_a010.html)|POST|/HealthcareService/$patient.serviceSearch|<span style="color: orange">Alpha</span>|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/servicesearch_resources_stu3.html)|
 |A011|[Create Referral](explore_endpoint_a011.html)|POST|/CreateReferral|<span style="color: orange">Alpha</span>|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/createreferral_resources_stu3.html)|
-|A012|[Upload Attachments](explore_endpoint_a012.html)|POST|/ReferralRequest/{{UBRN}}/$ers.uploadReferralLetter|<span style="color: orange">Alpha</span>|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/maintainreferral_resources_stu3.html)|
+|A012|[Maintain Referral Letter](explore_endpoint_a012.html)|POST|/ReferralRequest/{{UBRN}}/$ers.uploadReferralLetter|<span style="color: orange">Alpha</span>|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/maintainreferral_resources_stu3.html)|
 |A013|[Accept Referral](explore_endpoint_a013.html)|POST|/ReferralRequest/{{UBRN}}/$ers.accept|<span style="color: orange">Alpha</span>| TBC |
 |A014|[Reject Referral](explore_endpoint_a014.html)|POST|/ReferralRequest/{{UBRN}}/$ers.reject|<span style="color: orange">Alpha</span>| TBC |
 |A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)|POST|/Slot/$ers.searchAppointmentSlots|<span style="color: orange">Alpha</span>| TBC |
@@ -28,3 +28,4 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A017|[Defer Booking to Provider](explore_endpoint_a017.html)|POST|/ReferralRequest/{UBRN}/$ers.deferBooking|<span style="color: orange">Alpha</span>| TBC |
 |A018|[Re-book Appointment](explore_endpoint_a018.html)|POST|/ReferralRequest/{UBRN}/$ers.deferBooking|<span style="color: orange">Alpha</span>| TBC |
 |A019|[Generate Patient Letter](explore_endpoint_a019.html)|POST|/ReferralRequest/{UBRN}/$ers.generatePatientLetter|<span style="color: cyan">Beta</span>|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/genpatientletter_resources_stu3.html)|
+|A0xx|[Upload File to the e-RS document store](explore_endpoint_A0xx.html)|POST|/Binary|<span style="color: orange">Alpha</span>| N/A |	

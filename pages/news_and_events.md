@@ -9,17 +9,19 @@ summary: "News and events related to the e-Referral APIs"
 
 ###### View the latest [NHS e-Referral Service: Integration Update.](newsletter.html)
 
+# News
+
 ## January 2019 - New NHS digital, data and technology standards draft framework published
 
 Integration between healthcare systems along with the safe and secure electronic transfer of data gains further momentum as a draft new NHS Digital, Data and Technology Standards Framework, which describes new expectations around the use of data, interoperability, and design standards within the NHS is published for consultation.
 
 ![Photo of Matt Hancock](images/news/matt_hancock_sml.jpg)
 
-_"As we see migration towards standards, we will quickly see an increase in our ability to share data across the system, an increase in our ability to analyse and drive insights from the huge amount of data we hold across the system, and an ability to procure and redeploy technology with greater efficiency and at lower cost than has ever been possible historically."_  
+*"As we see migration towards standards, we will quickly see an increase in our ability to share data across the system, an increase in our ability to analyse and drive insights from the huge amount of data we hold across the system, and an ability to procure and redeploy technology with greater efficiency and at lower cost than has ever been possible historically."*  
 <div style="float: right"> - The Rt Hon Matt Hancock MP, Secretary of State for Health and Social care</div>
 <br>
 <br>
-_"The use of robust standards in the development of digital, data and technology products for the NHS is critical  in ensuring these products are safe, cost effective and meet the needs of all health and care system users;  patients, clinicians, support staff and the health research community."_
+*"The use of robust standards in the development of digital, data and technology products for the NHS is critical  in ensuring these products are safe, cost effective and meet the needs of all health and care system users;  patients, clinicians, support staff and the health research community."*
 <div style="float: right"> - Sarah Wilkinson, CEO NHS Digital</div>
 <br>
 <br>
@@ -31,7 +33,6 @@ Read full details [here](https://digital.nhs.uk/about-nhs-digital/our-work/nhs-d
 
 A successful collaborative project, between Imperial College Healthcare and the NHS e-Referral Service, recently delivered the first business partner implementation of the Service’s new Application Programming Interface (API) functionality. Imperial are an innovative Trust of 10,000 people, providing care for around a million people every year, in their five hospitals and a growing number of community services in north west London. An interoperability partnership was quickly established between Imperial’s ICT Projects and the Service’s Integration Portfolio Teams and then tasked with making available the Clinical Referral Information (CRI) or ‘Referral Letter’ within the e-RS application to Imperial’s internal document repository and online vetting solution. Through close technical and implementation collaboration, a new Target Operating Model (TOM) approach for product assurance was piloted leading to a successful launch on the 17th December 2018. This is now helping the Trust to realise its NHS England Paper Switch Off (PSO) Programme benefits, reducing administrative costs, achieving quicker patient care and providing a firm foundation for deeper clinical review integration, associated to the processing of over 100,000 first outpatient appointment each year.
 
-(#DEV3)
 ## November 2018 - New Path to Live Environment for Partners  
 ![PTL Environments Image](images/news/PTL_Environments.PNG)
 

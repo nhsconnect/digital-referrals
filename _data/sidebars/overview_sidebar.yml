@@ -131,7 +131,10 @@ entries:
         - title: "A011: Create Referral Shortlist"
           url: /explore_endpoint_a011.html
           output: web
-        - title: "A012: Upload Attachments"
+        - title: "A0xx: Upload File"
+          url: /explore_endpoint_a0xx.html
+          output: web
+        - title: "A012: Maintain Referral Letter"
           url: /explore_endpoint_a012.html
           output: web
         - title: "A019: Generate Patient Letter"
