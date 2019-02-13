@@ -1,164 +1,122 @@
 ---
-title: "A011: Create Referral Shortlist"
-keywords: endpoint, catalogue
+title: "A011: Create Referral"
+keywords: endpoint, catalogue, create referral, shortlist
 sidebar: overview_sidebar
 toc: false
 permalink: explore_endpoint_a011.html
 summary: false
 ---
 
-## API
+### API URL
 
-| Request Type | URL |
-| -------------| --- |
-| POST | [/v1/CreateReferral](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/CreateReferral)
+Base URL (Dev3): `https://api.dev3.ers.ncrs.nhs.uk`
 
-## Description
-This API lets the professional user create a referral request through shortlist.
+| Method | URL | Authentication |
+| -------------| --- | ---------------- |
+| POST | /ReferralRequest/$ers.createReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-## Input
+### Description
+As a Referring Clinician (/Administrator)  
+I want to create a referral for my patient with a shortlist of services
+so that I can progress the care of my patient while leaving them the freedom to choose the service that best suits them.
 
-### Header
-Provide ASID for the end-point system and Session Key.
+This endpoint is to be used as part of the [Create New Referral workflow](placeholder)
 
-#### Example
-```http
-XAPI_ASID:200000000220
-HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
-Accept:application/json+fhir
-```
+### Prerequisite Operations
+The shortlisted services must be the result of a previously run [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
+Some of the parameters provided in input to the Create Referral endpoint are dependent on the services selected:
+- If any of the shortlisted services have the _referral letter required_ flag set to true then, when calling the Create Referral endpoint, the _intention to add a referral letter_ must be set to _NEED_TO_ADD_LATER_ (and the referrer will later need to attach some files with a separte call to the  [Maintain Referral Letter (A012)](explore_endpoint_a012.html))
+- If any of the shortlisted services are marked as 'unaccredited' for the referrer (and only in this case) then, when calling the Create Referral endpoint, the referrer will need to provide a meaningful comment as to why they decided to override the accreditation
 
-### Body
-Provide referral details that will need to be created e.g. Patient NHS Number, Service details etc.
+These two service attributes are available from the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
 
-#### Example
-```javascript
-{
-   "extension":[
-      {
-         "url":"http://fhir.nhs.uk/StructureDefinition/extension-ers-referralRequest-1-0",
-         "extension":[
-            {
-               "url":"alertedToLimitedCapacity",
-               "valueBoolean":false
-            },
-            {
-               "url":"clinicalInformationIntent",
-               "valueBoolean":true
-            },
-            {
-               "url":"contentSensitive",
-               "valueBoolean":false
-            },
-            {
-               "url":"firstReminderFollowUpDays",
-               "valueInteger":14
-            },
-            {
-               "url":"referrerRightOverrideComment",
-               "valueString":""
-            }
-         ]
-      }
-   ],
-   "resourceType":"ReferralRequest",
-   "searchCriteria":{
-      "parameter":[
-         {
-            "name":"patientNhsNumber",
-            "valueString":"9476659793"
-         },
-         {
-            "name":"priority",
-            "valueString":"ROUTINE"
-         },
-         {
-            "name":"specialty",
-            "valueString":"EAR_NOSE_THROAT"
-         },
-         {
-            "name":"clinicType",
-            "valueString":"EAR"
-         },
-         {
-            "name":"namedClinicianId",
-        	"valueString":""
-         },
-         {
-            "name":"requestType",
-            "valueString":"APPOINTMENT_REQUEST"
-         },
-         {
-            "name":"patientPostcode",
-            "valueString":"LS1 4HR"
-         },
-         {
-            "name":"commissioningProvisioning",
-            "valueString":"ALL_AVAILABLE_FOR_BOOKING"
-         },
-         {
-            "name":"organisationCode",
-        	"valueString":""
-         },
-         {
-        	"name":"sortBy",
-        	"valueString":"DISTANCE"
-         },
-         {
-        	"name":"referringClinicianId",
-        	"valueString":""
-         },
-         {
-        	"name":"distanceLimit",
-        	"valueString":""
-         }
-      ]
-   },
-   "shortlist":{
-      "resourceType":"Bundle",
-      "total":1,
-      "entry":[
-         {
-            "resource":{
-               "extension":[
-                  {
-                     "url":"http://fhir.nhs.uk/StructureDefinition/extension-ers-healthcareService-1-0"
-                  }
-               ],
-               "resourceType":"HealthcareService",
-               "identifier":[
-                  {
-                     "value":"6473294"
-                  }
-               ]
-            }
-         }
-      ]
-   }
-}
-```
+### Request Operation
 
-## Output
-If successful the referral request is created with UBRN and Version Id. The response code `201 (Created)` is returned.
+#### Request Header
 
-#### Example
-```javascript
-{
-    "meta": {
-        "versionId": "3"
-    },
-    "extension": [
-        {
-            "url": "http://fhir.nhs.uk/StructureDefinition/extension-ers-referralRequest-1-0",
-            "extension": []
-        }
-    ],
-    "identifier": {
-        "value": "000048421055"
-    },
-    "resourceType": "ReferralRequest"
-}
-```
+| Field Name | Value |
+| ---- | ---- |
+| XAPI_ASID | The "Accredited System ID" issued to the third party |
+| HTTP_X_SESSION_KEY | The session key generated by the Create Session endpoint (A001)  |
+| XAPI_FQDN | The "common name" of the API-specific endpoint certificate issued to the third party |
+| Accept | `*/*`, `application/json+fhir` |
+|Content-Type |	`application/json+fhir` |
 
-<!--## Code Sample
-Refer to the `API Client Demonstrator tool` source code.-->
+
+#### Request Body
+The Operation Definition for this endpoint is available on the FHIR server:  [FHIR3 v1 eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0)
+
+| Parameter Name             | Cardinality | Type            | Notes |
+|  ------------------------- | --------- | --------------- | ----- |
+| patient                   | 1..1        | Identifier |The master NHS Number for the patient  |
+| referringClinician        | 0..1        | Identifier      |    |
+| contentSensitive            | 1..1        | Boolean | |
+| shortlist                   | 1..1        | Resource      |The structure defintion of this resource is:  [eRS-Shortlist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1). Please note that in turn this Resource needs to have a contained reference to an [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
+| unaccreditedComment | 0..1| String | If shortlisting a service flagged as 'unaccredited' by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then a comment must be provided |
+| firstReminderLetterFollowUpDays | 1..1 | UnsignedInt | |
+| intentionToAddReferralLetter | 1..1| Coding | If shortlisting a service flagged as requiring a referral letter by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then the value of this field must be NEED_TO_ADD_LATER |
+
+
+
+##### Example code
+
+<details><summary>Request Header</summary>
+<br>
+  <pre>
+    EXAMPLE CODE HERE
+  </pre>
+</details>
+
+<details><summary>Request Body</summary>
+<br>
+  <pre>
+    EXAMPLE CODE HERE
+  </pre>
+</details>
+<br>
+
+### Response
+
+#### Success
+HTTP Status code `201 (Created)` is returned.
+The response body contains the just created [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
+
+##### Example code
+<details><summary>Response Header</summary>
+<br>
+  <pre>
+    EXAMPLE CODE HERE
+  </pre>
+</details>
+<details><summary>Response Body</summary>
+<br>
+  <pre>
+    EXAMPLE CODE HERE
+  </pre>
+</details>
+<br>
+
+#### Failure
+If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
+Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+
+| issue.details.code | Description |
+| ------------------ | ------ |
+| FIELD_NOT_PERMITTED | A _referring clinician_ *is* provided when the logged in user is *not* an RCA, or: a _referrer right override comment_ *is* provided when none of the shortlisted services is marked as unaccredisted|
+| INAPPROPRIATE_VALUE | The value of _commissioning provisioning_ is ALL_SERVICES (this value is not supported), or: the _intention to add a referral letter_ is set to NOT_INTENDING_TO_ADD when one or more of the shortlisted services has the _referral letter required_ set to true|
+| INVALID VALUE | The input provided does not conform with the expected data types and format specifically documented on the FHIR OperationDefinition or on the related FHIR profiles |
+| MISSING_VALUE | One of the parameters described as mandatory on the FHIR OperationDefinition or on the related FHIR profiles has not been supplied
+| NO_REG_GP_PRACTICE | The patient provided was found *not* to have a registered GP practice. The patient is not eligible to be referred via e-RS while this problem persists |
+| ORGANISATION_IS_CLOSED | The organisation indentifier supplied corresponds to an organisation that is closed |
+| ORGANISATION_NOT_APPROPRIATE | The organisation indentifier supplied corresponds to an organisation of a type other than 'Service location' and 'Service providing organisation' |
+| PATIENT_ERROR | There was a problem with the patient's record in SDS. The patient is not eligible to be referred via e-RS while this problem persists|
+| REFERENCE_NOT_FOUND | An entity referenced (e.g. the patient, the postcode, the organisation or a clinician) is not found |
+| REFERENCED_USER_IS_NOT_ACTIVE | The SDS user provided as the _referring clinician_ or the _named clinician_ is found to be *not* active in SDS |
+| REFERENCED_USER_IS_NOT_RC | The SDS user provided as the _referring clinician_ does not actually have the Referring Clinician business function in e-RS |
+| REFERENCED_USER_IS_NOT_SPC | The SDS user provided as the _named clinician_ does not actually have the Service Provider Clinician business function in e-RS |
+| REFERENCED_USER_NOT_IN_ORG | The  _referring clinician_ provided does not belong to the same organisation as the logged in user |
+| SHORTLISTED_SERVICE_IS_RESTRICTED | A service in the shortlist submitted is marked as restricted. Although it may satify the search criteria provided, the user can't refer into it directly but needs to first refer into one of its authorised pathway services. This also applies to pathway services|
+| SHORTLISTED_SERVICE_NOT_AUTH_PATHWAY | Service "A" is shortlisted as an authorised pathway fror service "B", but e-RS finds that actually "A" is *not* an authorised pathway for "B"|
+| SHORTLISTED_SERVICE_NOT_IN_RESULTS | A service in the shortlist submitted does not satify the search criteria provided. This also applies to the scenario of services shortlisted as authorised pathways of a restricted service, in the case where the restricted service specified in the _pathway for_ field does not satisfy the search criteria|
+| UNEXPECTED_FIELD | One of the following occurs: the _distance limit_ is specified when the _postcode_ is not provided, the _IWT limit_ is specified when the _priority_ is TWO_WEEK_WAIT or the _clinic type_ is specified when the _specialty_ is not provided |
+| VALUE_IS_REQUIRED | A _referring clinician_ is *not* provided when the logged in user *is* an RCA, or: a _referrer right override comment_ is *not* provided when one or more of the shortlisted services is marked as unaccredisted |

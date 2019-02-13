@@ -12,12 +12,16 @@ summary: "Clinical Safety Assurance Framework"
 ### Clinical Safety Assurance Process
 - #### Risk Assessment
   An initial assessment of potential risks.
+
 - #### Hazard Log  
-  A list of identified hazards with details of impact and mitigations.
+  A list of identified hazards with details of impact and mitigations [(Download template)](https://digital.nhs.uk/binaries/content/assets/legacy/excel/g/m/hazard_log_template.xlsx).
+
 - #### Patient Safety Assessment (PSA)
   A recorded meeting where patient safety is reviewed.
+
 - #### Clinical Safety Case Report
-  A document bringing together the Risk Assessment, Hazard Log and minutes of the PSA.
+  A document bringing together the Risk Assessment, Hazard Log and PSA [(Download Template)](downloads/Clinical_Safety_Case_Report_Guidance_e-RS_APIs.docx).
+
 - #### Target Operating Model
   A self-assessment declaration that the above documentation and processes have taken place and been recorded. A completed TOM must be submitted to NHS Digital and signed off prior to any deployment of software utilising any e-RS APIs. Information on the TOM can be found [here](assure_tom.html).  
 

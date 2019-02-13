@@ -31,6 +31,10 @@ Clinical risk management training is designed to provide health and social care 
 [More information about training.](https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-risk-management-training)
 
 <br>
+## Guidance
+Download the NHS Digital [Clinical Safety Guidance](https://digital.nhs.uk/binaries/content/assets/legacy/word/f/p/clincal_safety_guidance1.docx) document.
+
+<br>
 ## Assurance Documentation
 
 - [Target Operating Model](downloads/agreements/Target_Operating_Model_-_e-RS_APIs_-_Self-Evaluation_Checklist_V1.4.xlsx)

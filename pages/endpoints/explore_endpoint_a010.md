@@ -3,7 +3,7 @@ title: "A010: Patient Specific Service Search"
 keywords: endpoint, catalogue, worklist, patient, service search
 sidebar: overview_sidebar
 toc: false
-permalink: /explore_endpoint_a010.html
+permalink: explore_endpoint_a010.html
 summary: false
 ---
 
@@ -42,12 +42,12 @@ If using the filter on specialty, the value provided must be a valid code obtain
 The Operation Definition for this endpoint is available on the FHIR server:  [FHIR3 v1 eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0)
 
 | Parameter Name             | Cardinality | Type            | Notes |
-|  ------------------------- | :---------: | --------------- | ----- |
-| patient                    | 1..1        | Identifier      | The master NHS Number for the patient  |
-| referringClinician         | 0..1        | Identifier      | If the logged in user is an RCA (and only in this case) they need to specify the referring clinician on whose behalf they are operating, in the context of the current referral |
-| requestType                | 1..1        | Code            | - |
-| SearchCriteria             | 1..1        | Resource        | The StructureDefintion of this Resource is:  [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
-| sortBy                     | 1..1        | Code            | - |
+|  ------------------------- | --------- | --------------- | ----- |
+| patient                   | 1..1        | Identifier |The master NHS Number for the patient  |
+| referringClinician        | 0..1        | If the logged in user is an RCA (and only in this case) they need to specify the referring clinician on whose behalf they are operating, in the context of the current referral |
+| requestType               | 1..1        | Code      |    |
+| SearchCriteria            | 1..1        | Resource | The StructureDefintion of this Resource is:  [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
+| sortBy                   | 1..1        | Code      | |
 
 ##### Example code
 
