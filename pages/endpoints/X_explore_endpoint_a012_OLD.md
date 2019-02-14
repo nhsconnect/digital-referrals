@@ -3,7 +3,7 @@ title: "A012: Upload Attachments"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a012.html
+permalink: explore_endpoint_a012_old.html
 summary: false
 ---
 

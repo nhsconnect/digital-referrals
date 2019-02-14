@@ -8,8 +8,7 @@ summary: "News and events related to the e-Referral APIs"
 ---
 
 ###### View the latest [NHS e-Referral Service: Integration Update.](newsletter.html)
-
-# News
+<br>
 
 ## January 2019 - New NHS digital, data and technology standards draft framework published
 

@@ -3,7 +3,7 @@ title: "A011: Create Referral Shortlist"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a011.html
+permalink: explore_endpoint_a011_old.html
 summary: false
 ---
 
