@@ -25,7 +25,7 @@ Integration between healthcare systems along with the safe and secure electronic
 <br>
 <br>
 The draft framework outlines the key standards for clinical safety, the use of data, interoperability and design interactions.  
-Read full details [here](https://digital.nhs.uk/about-nhs-digital/our-work/nhs-digital-data-and-technology-standards/framework)
+Read full details [here](https://digital.nhs.uk/about-nhs-digital/our-work/nhs-digital-data-and-technology-standards/framework).
 
 ## 17th December 2018 - Imperial College Healthcare NHSFT goes live using e-RS Integration APIs
 ![People Logo](images/news/People.png)

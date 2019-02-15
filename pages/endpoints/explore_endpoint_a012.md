@@ -13,7 +13,7 @@ Base URL (Dev3): `https://api.dev3.ers.ncrs.nhs.uk`
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST |  [baseURL]/ReferralRequest/UBRN/$ers.maintainReferralLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST |  [baseURL]/ReferralRequest/{UBRN}/$ers.maintainReferralLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Referring Clinician (/Administrator)  
@@ -78,7 +78,7 @@ The response body contains the just updated [eRS-ReferralRequest-1](https://fhir
 <details><summary>Response Body</summary>
 <br>
   <pre>
-    N/A
+    EXAMPLE CODE HERE
   </pre>
 </details>
 <br>
