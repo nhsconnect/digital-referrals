@@ -10,6 +10,14 @@ summary: "News and events related to the e-Referral APIs"
 ###### View the latest [NHS e-Referral Service: Integration Update.](newsletter.html)
 <br>
 
+## February 2019 - Webinar with Imperial NHS Foundation Trust on implementing the e-RS Intergration APIs
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="images/news/imperiallogo.png">
+    <source src="https://developer.nhs.uk/wp-content/uploads/2019/02/Imperial-NHSFT-API-Webinar-150219.mp4" type="video/mp4">
+  </video>
+</figure>
+
 ## January 2019 - New NHS digital, data and technology standards draft framework published
 
 Integration between healthcare systems along with the safe and secure electronic transfer of data gains further momentum as a draft new NHS Digital, Data and Technology Standards Framework, which describes new expectations around the use of data, interoperability, and design standards within the NHS is published for consultation.
