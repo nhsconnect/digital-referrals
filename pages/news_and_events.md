@@ -10,7 +10,7 @@ summary: "News and events related to the e-Referral APIs"
 ###### View the latest [NHS e-Referral Service: Integration Update.](newsletter.html)
 <br>
 
-## February 2019 - Webinar with Imperial NHS Foundation Trust on implementing the e-RS Intergration APIs
+## February 2019 - Webinar with Imperial NHS Foundation Trust on implementing the e-RS Integration APIs
 
 <figure class="video_container">
   <video width="480" height="270" controls="true" allowfullscreen="true" poster="images/news/imperiallogo.png">
