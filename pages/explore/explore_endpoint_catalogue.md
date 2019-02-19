@@ -9,7 +9,7 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name | Method | URL | Status | FHIR |
 |----|------|--------|-----|--------|:----:|
-|A002|[Professional Session Select Role](explore_endpoint_a002.html)|PUT|/ProfessionalSession/{sessionKey}|<span style="color: green">Live</span>| N/A |
+|A002|[Professional Session Select Role](explore_endpoint_a002.html)|PUT|/ProfessionalSession/{sessionKey}|![Live](images/icons/api_alpha.png)| N/A |
 |A001|[Create Professional Session](explore_endpoint_a001.html)|POST|/ProfessionalSession|<span style="color: green">Live</span>| N/A |
 |A003|[Delete Professional Session](explore_endpoint_a003.html)|DELETE|/ProfessionalSession/{sessionKey}|<span style="color: green">Live</span>| N/A |
 |A004|[Retrieve Reference Data](explore_endpoint_a004.html)|GET|/ValueSet/{valueSetId}|<span style="color: green">Live</span>|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
