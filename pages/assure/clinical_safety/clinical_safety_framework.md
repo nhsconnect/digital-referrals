@@ -37,12 +37,9 @@ The Clinical Safety team are a multi-disciplinary team made up of Safety Enginee
 
 Further Clinical Safety document templates can be downloaded from the [NHS Digital Clinical Safety](https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-safety-documentation#clinical-risk-management) website.
 
-<br>
 ### Further Information:
 - [Clinical Safety Introduction](clinical_safety_intro.html)
 - [Resources Available](clinical_safety_resources.html)
 - [FAQs & Implementation Guidance](clinical_safety_faqs.html)
-<br>
-<br>
-<br>
+
 _**Note:** The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party._

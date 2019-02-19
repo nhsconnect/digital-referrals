@@ -7,6 +7,8 @@ permalink: /develop_business_flow_bf001.html
 summary: "Business flows and their related endpoints"
 ---
 
+##### Status: <span style="color: green">Live</span>
+
 #### Definition
 
 This business flow describes the process of creating an authorised professional API session based upon an authenticated Care identify Service (CIS) smartcard. It makes use of the following NHS e-RS API Endpoints in order, with persisted rights to undertake further business workflows until the session is terminated.

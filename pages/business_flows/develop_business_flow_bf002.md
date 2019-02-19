@@ -7,6 +7,8 @@ permalink: /develop_business_flow_bf002.html
 summary: "Business flows and their related endpoints"
 ---
 
+##### Status: <span style="color: orange">Alpha</span>
+
 #### Definition
 
 This business flow describes the process of accessing Clinical Referral Information (CRI) from the NHS e-RS Solution. This will require a pre-authenticated professional API session to have been established. This suite of API has four core API elements and can be supplemented by an additional Reference Data or ValueSet API, to aid with search selection criteria.

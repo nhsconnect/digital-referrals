@@ -27,12 +27,9 @@ summary: "Clinical Safety FAQs & Implementation Guidance"
 - Can your solution support all document formats?
 - What is the process if your solution or NHS e-RS is down or encounters a major incident?
 
-
 ### Further Information:
 - [Clinical Safety Introduction](clinical_safety_intro.html)
 - [Clinical Safety Framework](clinical_safety_framework.html)
 - [Resources Available](clinical_safety_resources.html)
-<br>
-<br>
-<br>
+
 _**Note:** The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party._

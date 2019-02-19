@@ -7,7 +7,7 @@ permalink: /clinical_safety_resources.html
 summary: "Clinical Safety Resources"
 ---
 
-# Resources
+## Resources
 The NHS e-Referral Service and central Clinical Safety Group (CSG) have access to a range of guide experts and a wealth of support material. Please review the following resources and contact the team if required further:
 
 ## Clinical Safety Standards
@@ -36,12 +36,9 @@ Download the NHS Digital [Clinical Safety Guidance](https://digital.nhs.uk/binar
 
 Further document templates can be downloaded from the [NHS Digital Clinical Safety](https://digital.nhs.uk/services/solution-assurance/the-clinical-safety-team/clinical-safety-documentation#clinical-risk-management) website.
 
-<br>
 ### Further Information:
 - [Clinical Safety Introduction](clinical_safety_intro.html)
 - [Clinical Safety Framework](clinical_safety_framework.html)
 - [FAQs & Implementation Guidance](clinical_safety_faqs.html)
-<br>
-<br>
-<br>
+
 _**Note:** The information contained within these pages is intended solely as a guide, assuring the clinical safety of any system remains the responsibility of the commissioning party._
