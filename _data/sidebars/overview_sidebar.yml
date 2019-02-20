@@ -63,19 +63,19 @@ entries:
         output: web
         subfolderitems:
 
-        - title: "Live: Authentication and Authorisation"
+        - title: "Authentication and Authorisation"
           url: /develop_business_flow_bf001.html
           output: web
-        - title: "Live: Clinical Referral Information"
+        - title: "Clinical Referral Information"
           url: /develop_business_flow_bf002.html
           output: web
-        - title: "Beta: Service Search"
+        - title: "Create Referral (Alpha)"
           url: /develop_business_flow_bf004.html
           output: web
-        - title: "Alpha: Clinical Triage"
+        - title: "Clinical Triage (Alpha)"
           url: /develop_business_flow_bf003.html
           output: web
-        - title: "Alpha: Referral Management"
+        - title: "Referral Management (Alpha)"
           url: /develop_business_flow_bf005.html
           output: web
 

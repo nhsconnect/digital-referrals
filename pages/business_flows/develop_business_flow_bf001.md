@@ -7,7 +7,7 @@ permalink: /develop_business_flow_bf001.html
 summary: "Business flows and their related endpoints"
 ---
 
-##### Status: ![Live](/images/icons/api_live.png)
+##### Status: ![Live](images/icons/api_live.png)
 
 #### Definition
 
