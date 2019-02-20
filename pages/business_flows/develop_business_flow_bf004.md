@@ -1,5 +1,5 @@
 ---
-title: "BF004: Service Search"
+title: "Create Referral Request"
 keywords: business, flow
 sidebar: overview_sidebar
 toc: false
@@ -7,19 +7,22 @@ permalink: /develop_business_flow_bf004.html
 summary: "Business flows and their related endpoints"
 ---
 
+##### Status: ![Alpha](/images/icons/api_alpha.png) / ![Beta](/images/icons/api_beta.png)
+
 #### Definition
 
-This business flow describes the process of an authenticated user searching for services. Two options are available:
-
-1. Generic search across the whole directory of services
-2. Search aimed at creating a referral for the selected patient.
-The second option limits the results to services which the user is able to refer the current patient into, based on the commissioning rules that apply to the user or the patient.
+This business flow describes the process of an authenticated user searching for services relevant for the selected patient. The search limits results to services which the user is able to refer the current patient into, based on the commissioning rules that apply to the user or the patient.
 
 #### This business flow involves the following APIs
 
-* [A009 - Retrieve Generic Service Search](explore_endpoint_a009.html)
-* [A010 - Retrieve Patient Specific Search](explore_endpoint_a010.html)
 
-#### Review the diagram below to learn more
+* [A010 - Patient Specific Service Search](explore_endpoint_a010.html) ![Alpha](/images/icons/api_alpha.png)
+* [A011 - Create Referral](explore_endpoint_a011.html) ![Alpha](/images/icons/api_alpha.png)
+* [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Alpha](/images/icons/api_alpha.png)
+* [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Alpha](/images/icons/api_alpha.png)
+* [A019 - Retrieve Patient Letter](explore_endpoint_a019.html) ![Beta](/images/icons/api_beta.png)
 
-![BF004: Service Search](images/develop/BF004-ServiceSearch.jpg)
+
+<!-- #### Review the diagram below to learn more -->
+
+<!-- ![BF004: Service Search](images/develop/BF004-ServiceSearch.jpg) -->
