@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| PUT | [/v1/ProfessionalSession/{sessionKey}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ProfessionalSession/{sessionKey})
+| PUT | /ers-api/v1/ProfessionalSession/{sessionKey}
 
 ## Description
 Updates a Professional Session with the appropriate NHS organisation and role. This ensures the correct access rights for the user.

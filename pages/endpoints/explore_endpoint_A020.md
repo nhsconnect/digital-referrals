@@ -1,5 +1,5 @@
 ---
-title: "A0xx: Upload file to the e-RS document store"
+title: "A020: Upload file to the e-RS document store"
 keywords: endpoint, catalogue, upload, file, referral letter, referrer clinical information
 sidebar: overview_sidebar
 toc: false
@@ -9,11 +9,11 @@ summary: false
 
 ### API URL
 
-Base URL (Dev3): `https://api.dev3.ers.ncrs.nhs.uk`
+<!-- Base URL (Dev3): `https://api.dev3.ers.ncrs.nhs.uk` -->
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | [baseURL]/Binary | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | /ers-api/STU3/V1/Binary | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Referring Clinician (/Administrator)  

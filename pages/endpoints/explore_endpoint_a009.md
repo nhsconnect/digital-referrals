@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| POST | [/v1/HealthcareService/$dos.serviceSearch](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/HealthcareService/$dos.serviceSearch)
+| POST | /ers-api/v1/HealthcareService/$dos.serviceSearch
 
 ## Description
 This API lets the professional user retrieve directory of services that are available in e-RS.

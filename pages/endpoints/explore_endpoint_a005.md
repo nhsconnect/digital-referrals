@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| GET | [/v1/ReferralRequest/{id}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN})
+| GET | /ers-api/v1/ReferralRequest/{id}
 
 ## Related FHIR model
 

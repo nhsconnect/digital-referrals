@@ -8,11 +8,11 @@ summary: false
 ---
 
 ### API URL
-Base URL: `https://api.ebs.ncrs.nhs.uk/ers-api/STU3/v1`
+<!-- Base URL: `https://api.ebs.ncrs.nhs.uk/ers-api/STU3/v1` -->
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /ReferralRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | /ers-api/STU3/V1/ReferralRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Service Provider Clinician (/Administrator)  

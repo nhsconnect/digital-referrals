@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| POST | [/v1/ReferralRequest/{UBRN}/$ers.bookdirect](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN}/$ers.bookdirect)
+| POST | /ers-api/v1/ReferralRequest/{UBRN}/$ers.bookdirect
 
 ## Description
 This API lets the professional user book appointment for the slots returned in previous step A015.
@@ -50,4 +50,3 @@ Provide USRN (the Unique Slot Reference Number of the new Appointment Slot that 
 
 ## Output
 If successful the appointment slot is booked for the UBRN. The response code 200 (OK) is returned with blank response body.
-

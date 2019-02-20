@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| GET | [/v1/Binary/{AttachmentLogicalID}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Binary/{AttachmentLogicalID})
+| GET | /ers-api/v1/Binary/{AttachmentLogicalID}
 
 ## Description
 This API lets users retrieve and download linked files for a referral, also known as attachments.

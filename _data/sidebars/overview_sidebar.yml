@@ -37,7 +37,7 @@ entries:
     - title: Business Partners
       url: /getstarted_business_partners.html
       output: web
-    - title: Partner Registration
+    - title: API Partner Registration
       url: /getstarted_partner_registration.html
       output: web
     - title: Glossary of Terms
@@ -72,7 +72,7 @@ entries:
         - title: "Create Referral (Alpha)"
           url: /develop_business_flow_bf004.html
           output: web
-        - title: "Clinical Triage (Alpha)"
+        - title: "Clinical Review (Alpha)"
           url: /develop_business_flow_bf003.html
           output: web
         - title: "Referral Management (Alpha)"

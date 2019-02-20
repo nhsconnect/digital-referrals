@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| POST | [/v1/ReferralRequest/{UBRN}/$ers.reject](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN}/$ers.reject)
+| POST | /ers-api/v1/ReferralRequest/{UBRN}/$ers.reject
 
 ## Description
 This API lets the professional user reject the Referral with reject reason and comment.

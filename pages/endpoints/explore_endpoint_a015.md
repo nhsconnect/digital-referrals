@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| POST | [/v1/Slot/$ers.searchAppointmentSlots](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/Slot/$ers.searchAppointmentSlots)
+| POST | /ers-api/v1/Slot/$ers.searchAppointmentSlots
 
 ## Description
 This API lets the professional user retrieve appointment slots to book a slot for the UBRN created in A011.

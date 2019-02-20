@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| DELETE | [/v1/ProfessionalSession/{sessionKey}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ProfessionalSession/{sessionKey})
+| DELETE | /ers-api/v1/ProfessionalSession/{sessionKey}
 
 ## Description
 Logs out of the Professional Session and closes the dialogue.

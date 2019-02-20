@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| POST | [/v1/ReferralRequest/{UBRN}/$ers.accept](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN}/$ers.accept)
+| POST | /ers-api/v1/ReferralRequest/{UBRN}/$ers.accept
 
 ## Description
 This API lets the professional user accept the Referral that has already been created and not reviewed.

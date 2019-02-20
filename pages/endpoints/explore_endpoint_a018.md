@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| POST | [/v1/ReferralRequest/{UBRN}/$ers.deferBooking](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ReferralRequest/{UBRN}/$ers.deferBooking)
+| POST | /ers-api/v1/ReferralRequest/{UBRN}/$ers.deferBooking |
 
 ## Description
 This API lets the professional user to re-book an already booked appointment.

@@ -9,11 +9,11 @@ summary: false
 
 ### API URL
 
-Base URL (Dev3): `https://api.dev3.ers.ncrs.nhs.uk`
+<!-- Base URL (Dev3): `https://api.dev3.ers.ncrs.nhs.uk` -->
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /ReferralRequest/$ers.createReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | /ers-api/STU3/V1/ReferralRequest/$ers.createReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Referring Clinician (/Administrator)  

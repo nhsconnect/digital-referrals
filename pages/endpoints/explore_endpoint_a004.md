@@ -9,9 +9,9 @@ summary: false
 
 ## API
 
-| Request Type | URL |
+| Method | URL |
 | -------------| --- |
-| GET | [/v1/ValueSet/{valueSetId}](https://api.{env}.ers.ncrs.nhs.uk/ers-api/v1/ValueSet/{valueSetId})
+| GET | /ers-api/v1/ValueSet/{valueSetId}
 
 ## Related FHIR model
 
