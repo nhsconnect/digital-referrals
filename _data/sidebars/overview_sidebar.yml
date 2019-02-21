@@ -82,9 +82,10 @@ entries:
   - title: Develop
     output: web
     folderitems:
-    - title: Endpoint Catalogue
-      url: /explore_endpoint_catalogue.html
-      # output: web
+
+    - title: Support
+      url: /develop_support.html
+      output: web
 
       subfolders:
       - title: Authentication and Authorisation
@@ -152,9 +153,6 @@ entries:
 
     - title: Error Messages
       url: /explore_error_messages.html
-      output: web
-    - title: Support
-      url: /develop_support.html
       output: web
 
   - title: Assure
