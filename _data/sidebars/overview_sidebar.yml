@@ -84,19 +84,16 @@ entries:
     folderitems:
     - title: Endpoint Catalogue
       url: /explore_endpoint_catalogue.html
-      output: web
+      # output: web
 
       subfolders:
       - title: Authentication and Authorisation
         output: web
         subfolderitems:
-        - title: "A004: Retrieve Reference Data"
-          url: /explore_endpoint_a004.html
-          output: web
         - title: "A001: Create Professional Session"
           url: /explore_endpoint_a001.html
           output: web
-        - title: "A002: Professional Session Select Role"
+        - title: "A002: Prof. Session Select Role"
           url: /explore_endpoint_a002.html
           output: web
         - title: "A003: Delete Professional Session"
@@ -125,9 +122,6 @@ entries:
       - title: Create Referral (Beta)
         output: web
         subfolderitems:
-        - title: "A004: Retrieve Reference Data"
-          url: /explore_endpoint_a004.html
-          output: web
         - title: "A010: Patient Specific Service Search"
           url: /explore_endpoint_a010.html
           output: web

@@ -7,7 +7,7 @@ permalink: /explore_endpoint_a008_STU3.html
 summary: false
 ---
 
-###### Status: ![Beta](images/icons/api_beta.png)
+##### Status: ![Beta](images/icons/api_beta.png)
 
 ### API URL
 

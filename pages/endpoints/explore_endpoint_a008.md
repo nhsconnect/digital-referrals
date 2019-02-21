@@ -7,7 +7,7 @@ permalink: explore_endpoint_a008.html
 summary: false
 ---
 
-###### Status: ![Live](images/icons/api_live.png)
+##### Status: ![Live](images/icons/api_live.png)
 
 ## API
 

@@ -7,7 +7,7 @@ permalink: explore_endpoint_a010.html
 summary: false
 ---
 
-###### Status: ![Beta](images/icons/api_beta.png)
+##### Status: ![Beta](images/icons/api_beta.png)
 
 ##### <span style="color:red">Notice: This Beta endpoint is expected to be available in E-RS/DEV3 from the end of February 2019</span>   
 

@@ -13,11 +13,17 @@ summary: "Business flows and their related endpoints"
 
 This business flow describes the process of an authenticated user searching for services relevant for the selected patient. The search limits results to services which the user is able to refer the current patient into, based on the commissioning rules that apply to the user or the patient.
 
-#### Prerequisites
-A professional session must be created and [Reference Data Retrieved](explore_endpoint_a004.html)
-
 #### This business flow involves the following APIs
 
+##### Authentication and Authorisation
+* [A001 – Create Professional Session](explore_endpoint_a001.html) ![Live](images/icons/api_live.png)
+* [A002 – Professional Session Select Role](explore_endpoint_a002.html) ![Live](images/icons/api_live.png)
+* [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
+
+##### Reference Data
+* [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
+
+##### Create Referral
 * [A010 - Patient Specific Service Search](explore_endpoint_a010.html) ![Alpha](images/icons/api_alpha.png)
 * [A011 - Create Referral](explore_endpoint_a011.html) ![Alpha](images/icons/api_alpha.png)
 * [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Alpha](images/icons/api_alpha.png)

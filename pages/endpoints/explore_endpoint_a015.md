@@ -7,7 +7,7 @@ permalink: explore_endpoint_a015.html
 summary: false
 ---
 
-###### Status: ![Alpha](images/icons/api_alpha.png)
+##### Status: ![Alpha](images/icons/api_alpha.png)
 
 ## API
 

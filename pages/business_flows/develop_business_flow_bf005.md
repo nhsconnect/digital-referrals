@@ -26,12 +26,21 @@ A professional session must be created and [Reference Data Retrieved](explore_en
 
 #### This business flow involves the following APIs
 
-* [A011 - Create Referral Shortlist](explore_endpoint_a011.html)
-* [A012 - Upload Attachments](explore_endpoint_a012.html)
-* [A015 - Retrieve Appointment Slots](explore_endpoint_a015.html)
-* [A016 - Book Appointment](explore_endpoint_a016.html)
-* [A017 - Defer to Provider](explore_endpoint_a017.html)
-* [A018 - Re-book Appointment](explore_endpoint_a018.html)
+##### Authentication and Authorisation
+* [A001 – Create Professional Session](explore_endpoint_a001.html) ![Live](images/icons/api_live.png)
+* [A002 – Professional Session Select Role](explore_endpoint_a002.html) ![Live](images/icons/api_live.png)
+* [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
+
+##### Reference Data
+* [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
+
+##### Referral Management
+* [A011 - Create Referral Shortlist](explore_endpoint_a011.html) ![Alpha](images/icons/api_alpha.png)
+* [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Alpha](images/icons/api_alpha.png)
+* [A015 - Retrieve Appointment Slots](explore_endpoint_a015.html) ![Alpha](images/icons/api_alpha.png)
+* [A016 - Book Appointment](explore_endpoint_a016.html) ![Alpha](images/icons/api_alpha.png)
+* [A017 - Defer to Provider](explore_endpoint_a017.html) ![Alpha](images/icons/api_alpha.png)
+* [A018 - Re-book Appointment](explore_endpoint_a018.html) ![Alpha](images/icons/api_alpha.png)
 
 #### Review the diagram below to learn more
 
