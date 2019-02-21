@@ -144,12 +144,10 @@ entries:
         subfolderitems:
         - title: "A013: Accept Referral"
           url: /explore_endpoint_a013.html
+          output: web
         - title: "A014: Reject Referral"
           url: /explore_endpoint_a014.html
           output: web
-        # - title: "A0xx: Referral Review Action"
-        #   url: /explore_endpoint_a0xx.html
-        #   output: web
 
     - title: Error Messages
       url: /explore_error_messages.html

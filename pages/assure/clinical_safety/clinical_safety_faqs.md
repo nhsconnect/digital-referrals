@@ -1,10 +1,10 @@
 ---
-title: Clinical Safety FAQs & Implementation Guidance
+title: Clinical Safety Advice and Guidance
 keywords: assurance, clinical, safety
 sidebar: overview_sidebar
 toc: false
 permalink: /clinical_safety_faqs.html
-summary: "Clinical Safety FAQs & Implementation Guidance"
+summary: "Advice and guidance on clinical safety issues"
 ---
 
 #### Questions to consider:
