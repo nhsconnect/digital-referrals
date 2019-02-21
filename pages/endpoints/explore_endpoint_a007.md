@@ -7,11 +7,13 @@ permalink: explore_endpoint_a007.html
 summary: false
 ---
 
+###### Status: ![Live](images/icons/api_live.png)
+
 ## API
 
 | Method | URL |
 | -------------| --- |
-| GET /ers-api/v1/Binary/$ers.generateCRI?UBRN={UBRN}
+| GET | /ers-api/v1/Binary/$ers.generateCRI?UBRN={UBRN}
 
 ## Related FHIR model
 

@@ -7,6 +7,8 @@ permalink: /develop_business_flow_bf005.html
 summary: "Business flows and their related endpoints"
 ---
 
+###### Status: ![Alpha](images/icons/api_alpha.png)
+
 #### Definition
 
 This business flow describes the process by which a referring clinician can create a referral with a selection of shortlisted services and all the necessary attributes for it to appear on the referrals for review shortlist (i.e. with a referral letter and a booked appointment).
@@ -18,6 +20,9 @@ The referral letter can be uploaded or amended at any time up a number of days b
 Appointment bookings can be amended and moved to any of the services on the shortlist whose slots are available via e-RS.
 
 While an appointment booking (or a booking deferral) is made at a specific service, referrers are supposed to shortlist more than one service where possible in order to offer patient choice, according to the [NHS Choice Framework](https://www.gov.uk/government/publications/the-nhs-choice-framework/the-nhs-choice-framework-what-choices-are-available-to-me-in-the-nhs) (item 3).
+
+#### Prerequisites
+A professional session must be created and [Reference Data Retrieved](explore_endpoint_a004.html)
 
 #### This business flow involves the following APIs
 
