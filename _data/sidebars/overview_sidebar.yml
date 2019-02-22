@@ -82,6 +82,11 @@ entries:
   - title: Develop
     output: web
     folderitems:
+
+    - title: API Suites
+      url:
+      output: web
+
       subfolders:
       - title: Authentication and Authorisation
         output: web
