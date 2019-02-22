@@ -85,7 +85,7 @@ entries:
 
     - title: Support
       url: /develop_support.html
-      output: web
+
 
       subfolders:
       - title: Authentication and Authorisation
@@ -148,6 +148,10 @@ entries:
         - title: "A014: Reject Referral"
           url: /explore_endpoint_a014.html
           output: web
+
+    - title: Support
+      url: /develop_support.html
+      output: web
 
     - title: Error Messages
       url: /explore_error_messages.html
