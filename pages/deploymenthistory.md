@@ -19,4 +19,5 @@ Release 8.2 – January
 
 | Release Version | Date | Notes |
 | --------------- | ---- | ----- |
-| Release 8.1 | November | Updated Patient Letter-  Initial Beta release of referral request suite patient request letter endpoints |
+| Release 8.2 | 21st February 2019 | Further Beta release within the referral suite, adding the [A010 Patient Service Search](explore_endpoint_a010.html) endpoint |
+| Release 8.1 | 15th November 2018 | Updated Patient Letter-  Initial Beta release of referral request suite patient request letter endpoints |

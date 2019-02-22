@@ -82,11 +82,6 @@ entries:
   - title: Develop
     output: web
     folderitems:
-
-    - title: Support
-      url: /develop_support.html
-
-
       subfolders:
       - title: Authentication and Authorisation
         output: web
@@ -183,7 +178,7 @@ entries:
         - title: Clinical Safety Resources
           url: /clinical_safety_resources.html
           output: web
-        - title: FAQs & Implementation Guidance
+        - title: Advice and Guidance
           url: /clinical_safety_faqs.html
           output: web
 
