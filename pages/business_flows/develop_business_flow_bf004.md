@@ -7,7 +7,7 @@ permalink: /develop_business_flow_bf004.html
 summary: "Business flows and their related endpoints"
 ---
 
-###### Status: ![Alpha](images/icons/api_alpha.png)
+###### Status: ![Beta](images/icons/api_beta.png)
 
 #### Definition
 
@@ -24,10 +24,10 @@ This business flow describes the process of an authenticated user searching for 
 * [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
 
 ##### Create Referral
-* [A010 - Patient Specific Service Search](explore_endpoint_a010.html) ![Alpha](images/icons/api_alpha.png)
-* [A011 - Create Referral](explore_endpoint_a011.html) ![Alpha](images/icons/api_alpha.png)
-* [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Alpha](images/icons/api_alpha.png)
-* [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Alpha](images/icons/api_alpha.png)
+* [A010 - Patient Service Search](explore_endpoint_a010.html) ![Beta](images/icons/api_beta.png)
+* [A011 - Create Referral](explore_endpoint_a011.html) ![Beta](images/icons/api_beta.png) (Coming March'19)
+* [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Beta](images/icons/api_beta.png) (Coming March'19)
+* [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Beta](images/icons/api_beta.png) (Coming March'19)
 * [A019 - Retrieve Patient Letter](explore_endpoint_a019.html) ![Beta](images/icons/api_beta.png)
 
 

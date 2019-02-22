@@ -1,5 +1,5 @@
 ---
-title: "A010: Patient Specific Service Search"
+title: "A010: Patient Service Search"
 keywords: endpoint, catalogue, worklist, patient, service search
 sidebar: overview_sidebar
 toc: false
@@ -20,14 +20,14 @@ Base URL (Dev3): 'https://api.dev3.ers.ncrs.nhs.uk/ers-api'
 | POST | /STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
-As a Referring Clinician (/Administrator) needing to refer a patient
-I want to search for services that are appropriate for my patient
-so that I can create a shortlist of services where my patient can be referred to.
+As a Referring Clinician (/Administrator) needing to refer a patient  
+I want to search for services that are appropriate for my patient  
+So that I can create a shortlist of services where my patient can be referred to.  
 
 This endpoint is to be used as part of the [Create Referral](develop_business_flow_bf004.html) workflow.
 
 ### Prerequisite Operations
-If using the filter on specialty, the value provided must be a valid code obtained via the [Get Reference Data (A004)](explore_endpoint_a008.html) endpoint.
+If using the filter on specialty, the value provided must be a valid code obtained via the [Get Reference Data (A004)](explore_endpoint_a004.html) endpoint.
 
 ### Request Operation
 
@@ -42,7 +42,7 @@ If using the filter on specialty, the value provided must be a valid code obtain
 
 
 #### Request Body
-The Operation Definition for this endpoint is available on the FHIR server:  [FHIR3 v1 eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0)
+The Operation Definition for this endpoint is available on the FHIR server: [ers.patientServiceSearch](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0)
 
 | Parameter Name             | Cardinality | Type            | Notes |
 |  ------------------------- | --------- | --------------- | ----- |
@@ -56,10 +56,7 @@ The Operation Definition for this endpoint is available on the FHIR server:  [FH
 <details><summary>Example Request Header</summary>
 <br>
   <pre>
-  XAPI_ASID:200000000220
-  Accept:application/json
-  Accept-Encoding:gzip,deflate
-  Content-Type:application/json
+    EXAMPLE COMING SOON
   </pre>
 </details>
 

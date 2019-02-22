@@ -83,8 +83,8 @@ entries:
     output: web
     folderitems:
 
-    - title: API Suites
-      url:
+    - title: Endpoint Catalogue
+      url: /explore_endpoint_catalogue.html
       output: web
 
       subfolders:
@@ -149,12 +149,12 @@ entries:
           url: /explore_endpoint_a014.html
           output: web
 
-    - title: Support
-      url: /develop_support.html
-      output: web
-
     - title: Error Messages
       url: /explore_error_messages.html
+      output: web
+
+    - title: Support
+      url: /develop_support.html
       output: web
 
   - title: Assure
