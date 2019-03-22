@@ -3,15 +3,15 @@ entries:
   levels: one
   folders:
 
-  - title: Explore
-    output: web
-    folderitems:
-    - title: Environments
-      url: explore_api_environments.html
-      output: web
-    - title: Endpoint Catalogue
-      url: explore_endpoint_catalogue.html
-      output: web
-    - title: Resources
-      url: explore_resources.html
-      output: web
+- title: Introductions
+  url: mim_resources.html
+  output: web
+- title: Foundations
+  url: mim_resources.html
+  output: web
+- title: MiM for Providers
+  url: mim_providers.html
+  output: web
+- title: MiM for Referrers
+  url: mim_referrers.html
+  output: web

@@ -1,10 +1,10 @@
 ---
-title: MiM Page 1
+title: MiM Foundations
 keywords: MiM, XML
 sidebar: mim_sidebar
 toc: false
-permalink: /mim_page1.html
-summary: "MiM Page 1"
+permalink: mim_foundations.html
+summary: "MiM Foundations"
 ---
 
 ## Add content here ##
