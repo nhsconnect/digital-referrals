@@ -29,7 +29,7 @@ This endpoint is to be used as part of the [Create Referral](develop_business_fl
 ### Prerequisite Operations
 The shortlisted services must be the result of a previously run [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
 Some of the parameters provided in input to the Create Referral endpoint are dependent on the services selected:
-- If any of the shortlisted services have the _referral letter required_ flag set to true then, when calling the Create Referral endpoint, the _intention to add a referral letter_ must be set to _NEED_TO_ADD_LATER_ (and the referrer will later need to attach some files with a separte call to the  [Maintain Referral Letter (A012)](explore_endpoint_a012.html))
+- If any of the shortlisted services have the _referral letter required_ flag set to true then, when calling the Create Referral endpoint, the _intention to add a referral letter_ must be set to _NEED_TO_ADD_LATER_ (and the referrer will later need to attach some files with a separate call to the  [Maintain Referral Letter (A012)](explore_endpoint_a012.html))
 - If any of the shortlisted services are marked as 'unaccredited' for the referrer (and only in this case) then, when calling the Create Referral endpoint, the referrer will need to provide a meaningful comment as to why they decided to override the accreditation
 
 These two service attributes are available from the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
@@ -47,14 +47,14 @@ These two service attributes are available from the [Patient Specific Service Se
 
 
 #### Request Body
-The Operation Definition for this endpoint is available on the FHIR server:  [FHIR3 v1 eRS-PatientServiceSearch-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0)
+The Operation Definition for this endpoint is available on the FHIR server:  [eRS-CreateReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1)
 
 | Parameter Name             | Cardinality | Type            | Notes |
 |  ------------------------- | --------- | --------------- | ----- |
 | patient                   | 1..1        | Identifier |The master NHS Number for the patient  |
 | referringClinician        | 0..1        | Identifier      |    |
 | contentSensitive            | 1..1        | Boolean | |
-| shortlist                   | 1..1        | Resource      |The structure defintion of this resource is:  [eRS-Shortlist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1). Please note that in turn this Resource needs to have a contained reference to an [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
+| shortlist                   | 1..1        | Resource      |The structure definition of this resource is:  [eRS-Shortlist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1). Please note that in turn this Resource needs to have a contained reference to an [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
 | unaccreditedComment | 0..1| String | If shortlisting a service flagged as 'unaccredited' by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then a comment must be provided |
 | firstReminderLetterFollowUpDays | 1..1 | UnsignedInt | |
 | intentionToAddReferralLetter | 1..1| Coding | If shortlisting a service flagged as requiring a referral letter by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then the value of this field must be NEED_TO_ADD_LATER |
