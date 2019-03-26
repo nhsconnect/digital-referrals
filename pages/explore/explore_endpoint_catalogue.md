@@ -29,3 +29,5 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A018|[Re-book Appointment](explore_endpoint_a018.html)|POST|/ReferralRequest/{UBRN}/$ers.deferBooking|![Alpha](images/icons/api_alpha.png)| TBC |
 |A019|[Generate Patient Letter](explore_endpoint_a019.html)|POST|/ReferralRequest/{UBRN}/$ers.generatePatientLetter|![Beta](images/icons/api_beta.png)|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/genpatientletter_resources_stu3.html)|
 |A020|[Upload File To Document Store](explore_endpoint_a020.html)|POST|/Binary|![Alpha](images/icons/api_alpha.png)| N/A |
+
+If you feel functionality you require is missing from this list please log a request using the [User Need Request Form](downloads/NHS_e-Referral_Service_User_Need_Request_Form.docx).

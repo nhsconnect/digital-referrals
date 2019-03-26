@@ -46,7 +46,10 @@ entries:
     - title: Frequently Asked Questions
       url: /getstarted_faq.html
       output: web
-
+    - title: Forum and Chat
+      url: https://www.openhealthhub.org/c/ers
+      output: web
+      
   - title: Explore
     output: web
     folderitems:
@@ -194,7 +197,7 @@ entries:
       url: /deploy_release_methodology.html
       output: web
 
-  - title:  
+  - title:
     output: web
     folderitems:
 
