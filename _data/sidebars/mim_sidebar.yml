@@ -10,7 +10,6 @@ entries:
     - title: Introductions
       url: /mim_resources.html
       output: web
-      type: homepage
 
     - title: Foundations
       url: /mim_resources.html
