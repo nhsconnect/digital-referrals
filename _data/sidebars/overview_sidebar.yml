@@ -197,10 +197,6 @@ entries:
       url: /deploy_release_methodology.html
       output: web
 
-  - title: ----------------
-    output: web
-    folderitems:
-
   - title: MiM Integration
     output: web
     folderitems:
