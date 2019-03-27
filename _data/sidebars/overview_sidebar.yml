@@ -209,6 +209,7 @@ entries:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   # - title: MiM Integration
   #   output: web
   #   folderitems:
@@ -256,3 +257,20 @@ entries:
       url: /mim_referrers.html
       output: web
 >>>>>>> parent of f790247... Additions
+=======
+  - title: MiM Integration
+    output: web
+    folderitems:
+    - title: Introductions
+      url: /mim_resources.html
+      output: web
+    - title: Foundations
+      url: /mim_resources.html
+      output: web
+    - title: MiM for Providers
+      url: /mim_providers.html
+      output: web
+    - title: MiM for Referrers
+      url: /mim_referrers.html
+      output: web
+>>>>>>> parent of 1336753... Update overview_sidebar.yml
