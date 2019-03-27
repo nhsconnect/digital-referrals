@@ -46,9 +46,9 @@ entries:
     - title: Frequently Asked Questions
       url: /getstarted_faq.html
       output: web
-    - title: Forum and Chat
-      url: https://www.openhealthhub.org/c/ers
-      output: web
+    # - title: Forum and Chat
+    #   url: https://www.openhealthhub.org/c/ers
+    #   output: web
 
   - title: Explore
     output: web
