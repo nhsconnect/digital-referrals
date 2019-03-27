@@ -46,9 +46,12 @@ entries:
     - title: Frequently Asked Questions
       url: /getstarted_faq.html
       output: web
+<<<<<<< HEAD
     # - title: Forum and Chat
     #   url: https://www.openhealthhub.org/c/ers
     #   output: web
+=======
+>>>>>>> parent of f790247... Additions
 
   - title: Explore
     output: web
@@ -197,6 +200,7 @@ entries:
       url: /deploy_release_methodology.html
       output: web
 
+<<<<<<< HEAD
   # - title: MiM Integration
   #   output: web
   #   folderitems:
@@ -212,3 +216,29 @@ entries:
   #   - title: MiM for Referrers
   #     url: /mim_referrers.html
   #     output: web
+=======
+  - title:  
+    output: web
+    folderitems:
+
+  - title: MiM Integration
+    output: web
+    folderitems:
+
+    - title: Introductions
+      url: /mim_resources.html
+      output: web
+      type: homepage
+
+    - title: Foundations
+      url: /mim_resources.html
+      output: web
+
+    - title: MiM for Providers
+      url: /mim_providers.html
+      output: web
+
+    - title: MiM for Referrers
+      url: /mim_referrers.html
+      output: web
+>>>>>>> parent of f790247... Additions
