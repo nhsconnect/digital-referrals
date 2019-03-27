@@ -47,12 +47,19 @@ entries:
       url: /getstarted_faq.html
       output: web
 <<<<<<< HEAD
+<<<<<<< HEAD
     # - title: Forum and Chat
     #   url: https://www.openhealthhub.org/c/ers
     #   output: web
 =======
 >>>>>>> parent of f790247... Additions
 
+=======
+    - title: Forum and Chat
+      url: https://www.openhealthhub.org/c/ers
+      output: web
+      
+>>>>>>> parent of 292c347... Update overview_sidebar.yml
   - title: Explore
     output: web
     folderitems:
@@ -201,6 +208,7 @@ entries:
       output: web
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   # - title: MiM Integration
   #   output: web
   #   folderitems:
@@ -218,6 +226,9 @@ entries:
   #     output: web
 =======
   - title:  
+=======
+  - title:
+>>>>>>> parent of 292c347... Update overview_sidebar.yml
     output: web
     folderitems:
 
