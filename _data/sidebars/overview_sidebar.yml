@@ -48,11 +48,17 @@ entries:
       output: web
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     # - title: Forum and Chat
     #   url: https://www.openhealthhub.org/c/ers
     #   output: web
 =======
 >>>>>>> parent of f790247... Additions
+=======
+    - title: Forum and Chat
+      url: https://www.openhealthhub.org/c/ers
+      output: web
+>>>>>>> parent of 1a542cd... Update overview_sidebar.yml
 
 =======
     - title: Forum and Chat
