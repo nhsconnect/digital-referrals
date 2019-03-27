@@ -67,13 +67,11 @@ defaults:
       comments: true
       search: true
       sidebar: overview_sidebar
-
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
 - overview_sidebar
 - getstarted_sidebar
-- mim_sidebar
 
 description: ""
 # the description is used in the feed.xml file
