@@ -67,7 +67,6 @@ defaults:
       comments: true
       search: true
       sidebar: overview_sidebar
-
 # these are defaults used for the frontmatter for these file types
 
 sidebars:
