@@ -176,7 +176,7 @@ entries:
         - title: "BF002: Clinical Referral Information"
           url: /develop_business_flow_bf002.html
           output: web
-        - title: "BF003: Clinical Triage"
+        - title: "BF003: Clinical Review"
           url: /develop_business_flow_bf003.html
           output: web
         - title: "BF004: Service Search"

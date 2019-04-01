@@ -72,7 +72,6 @@ defaults:
 
 sidebars:
 - overview_sidebar
-- getstarted_sidebar
 
 description: ""
 # the description is used in the feed.xml file
