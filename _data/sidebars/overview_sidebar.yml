@@ -194,18 +194,18 @@ entries:
       url: /deploy_release_methodology.html
       output: web
 
-  - title: MiM Integration
-    output: web
-    folderitems:
-    - title: Introductions
-      url: /mim_resources.html
-      output: web
-    - title: Foundations
-      url: /mim_foundations.html
-      output: web
-    - title: MiM for Providers
-      url: /mim_providers.html
-      output: web
-    - title: MiM for Referrers
-      url: /mim_referrers.html
-      output: web
+  # - title: MiM Integration
+  #   output: web
+  #   folderitems:
+  #   - title: Introductions
+  #     url: /mim_resources.html
+  #     output: web
+  #   - title: Foundations
+  #     url: /mim_foundations.html
+  #     output: web
+  #   - title: MiM for Providers
+  #     url: /mim_providers.html
+  #     output: web
+  #   - title: MiM for Referrers
+  #     url: /mim_referrers.html
+  #     output: web
