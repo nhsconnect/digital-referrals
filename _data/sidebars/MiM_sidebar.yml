@@ -1,20 +1,24 @@
 entries:
 
-- title: XML MiM Integration
+- title: MiM
   folders:
 
-  - title: Introduction
-    url: /mim_intro.html
+  - title: XML MiM Integration
     output: web
+    folderitems:
 
-  - title: Foundations
-    url: /mim_foundations.html
-    output: web
+    - title: Introduction
+      url: /mim_intro.html
+      output: web
 
-  - title: MiM for Referrers
-    url: /mim_referrers.html
-    output: web
+    - title: Foundations
+      url: /mim_foundations.html
+      output: web
 
-  - title: MiM for Providers
-    url: /mim_providers.html
-    output: web
+    - title: MiM for Referrers
+      url: /mim_referrers.html
+      output: web
+
+    - title: MiM for Providers
+      url: /mim_providers.html
+      output: web
