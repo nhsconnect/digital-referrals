@@ -7,4 +7,4 @@ permalink: mim_providers.html
 summary: "MiM integration for provider organisations"
 ---
 
-## Add content here ##
+## Coming Soon ##

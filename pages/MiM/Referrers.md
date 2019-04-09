@@ -7,4 +7,4 @@ permalink: mim_referrers.html
 summary: "MiM integration for referring organisations"
 ---
 
-## Add content here ##
+## Coming Soon ##

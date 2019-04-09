@@ -7,4 +7,4 @@ permalink: mim_foundations.html
 summary: "MiM Foundations"
 ---
 
-## Add content here ##
+## Coming Soon ##
