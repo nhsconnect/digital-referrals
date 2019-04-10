@@ -4,6 +4,7 @@ entries:
   folders:
 
   - title: XML Integration
+    url: /mim_intro.html
     output: web
     folderitems:
 
