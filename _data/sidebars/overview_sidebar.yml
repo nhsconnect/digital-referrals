@@ -244,18 +244,21 @@ entries:
       output: web
 
   - title: XML Integration
+    url: /mim_intro.html
     output: web
-    folderitems:
-
-    - title: Introduction
-      url: /mim_intro.html
-      output: web
-    - title: Foundations
-      url: /mim_foundations.html
-      output: web
-    - title: Referrers
-      url: /mim_referrers.html
-      output: web
-    - title: Providers
-      url: /mim_providers.html
-      output: web
+    #
+    # output: web
+    # folderitems:
+    #
+    # - title: Introduction
+    #   url: /mim_intro.html
+    #   output: web
+    # - title: Foundations
+    #   url: /mim_foundations.html
+    #   output: web
+    # - title: Referrers
+    #   url: /mim_referrers.html
+    #   output: web
+    # - title: Providers
+    #   url: /mim_providers.html
+    #   output: web
