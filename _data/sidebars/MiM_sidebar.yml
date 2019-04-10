@@ -1,9 +1,9 @@
 entries:
 
-- title: MiM
+- title: XML
   folders:
 
-  - title: XML MiM Integration
+  - title: XML Integration
     output: web
     folderitems:
 
@@ -15,10 +15,10 @@ entries:
       url: /mim_foundations.html
       output: web
 
-    - title: MiM for Referrers
+    - title: Referrers
       url: /mim_referrers.html
       output: web
 
-    - title: MiM for Providers
+    - title: Providers
       url: /mim_providers.html
       output: web
