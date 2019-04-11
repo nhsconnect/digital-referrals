@@ -59,7 +59,7 @@ entries:
       output: web
 
       subfolders:
-      - title: Business Flows
+      - title: API Suites
         output: web
         subfolderitems:
 
