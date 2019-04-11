@@ -69,7 +69,7 @@ entries:
         - title: "Clinical Referral Information"
           url: /develop_business_flow_bf002.html
           output: web
-        - title: "Create Referral (Alpha)"
+        - title: "Create Referral (Beta)"
           url: /develop_business_flow_bf004.html
           output: web
         - title: "Clinical Review (Alpha)"
