@@ -3,7 +3,7 @@ entries:
 - title: XML
   folders:
 
-  - title: XML Integration
+  - title: XML MiM Integration
     url: /mim_intro.html
     output: web
     folderitems:

@@ -46,9 +46,6 @@ entries:
     - title: Frequently Asked Questions
       url: /getstarted_faq.html
       output: web
-    - title: Forum and chat
-      external_url: https://www.openhealthhub.org/c/ers
-      output: web
 
   - title: Explore
     output: web
@@ -56,6 +53,9 @@ entries:
 
     - title: API Environments
       url: /explore_api_environments.html
+      output: web
+    - title: Endpoint Catalogue
+      url: /explore_endpoint_catalogue.html
       output: web
 
       subfolders:
@@ -78,14 +78,6 @@ entries:
         - title: "Referral Management (Alpha)"
           url: /develop_business_flow_bf005.html
           output: web
-
-    - title: Implementation Guidelines
-      url: /explore_implementation_guidelines.html
-      output: web
-
-    # - title: Standard Models
-    #   url: /explore_models.html
-    #   output: web
 
   - title: Develop
     output: web
@@ -168,7 +160,6 @@ entries:
   - title: Assure
     output: web
     folderitems:
-
     - title: Assurance Approach
       url: /assure_assurance_approach.html
       output: web
@@ -196,31 +187,25 @@ entries:
           url: /clinical_safety_faqs.html
           output: web
 
-#    - title: Path-To-Live
-#      url: /assure_path_to_live.html
-#      output: web
-
   - title: Deploy
     output: web
     folderitems:
-
     - title: Release Methodology
       url: /deploy_release_methodology.html
       output: web
 
-  - title: XML MiM Integration
+  - title: MiM Integration
     output: web
     folderitems:
-
-    - title: Introduction
-      url: /mim_intro.html
+    - title: Introductions
+      url: /mim_resources.html
       output: web
     - title: Foundations
       url: /mim_foundations.html
       output: web
-    - title: Referrers
-      url: /mim_referrers.html
-      output: web
-    - title: Providers
+    - title: MiM for Providers
       url: /mim_providers.html
+      output: web
+    - title: MiM for Referrers
+      url: /mim_referrers.html
       output: web

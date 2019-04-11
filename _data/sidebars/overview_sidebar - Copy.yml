@@ -16,10 +16,22 @@ entries:
       url: /news_and_events.html
       output: web
 
+#    - title: Strategic Approach
+#      url: /strategic_approach.html
+#      output: web
+
+#      subfolders:
+#      - title: Newsletters
+#        output: web
+#        subfolderitems:
+
+#        - title: "Summer 2018 Newsletter"
+#          url: "/201807_newsletter.html"
+#          output: web
+
     - title: Deployment History
       url: /deployment_history.html
       output: web
-
     - title: Forward Notices
       url: /forward_notices.html
       output: web
@@ -31,13 +43,19 @@ entries:
     - title: Development Journey
       url: /getstarted_development_journey.html
       output: web
+#    - title: Implementation Steps
+#      url: /getstarted_implementation_steps.html
+#      output: web
     - title: Get Connected
       url: /getstarted_get_connected.html
       output: web
     - title: Business Partners
       url: /getstarted_business_partners.html
       output: web
-    - title: API Partner Registration
+#    - title: Capabilities
+#      url: /getstarted_capabilities.html
+#      output: web
+    - title: Partner Registration
       url: /getstarted_partner_registration.html
       output: web
     - title: Glossary of Terms
@@ -57,61 +75,24 @@ entries:
     - title: API Environments
       url: /explore_api_environments.html
       output: web
-
-      subfolders:
-      - title: Business Flows
-        output: web
-        subfolderitems:
-
-        - title: "Authentication and Authorisation"
-          url: /develop_business_flow_bf001.html
-          output: web
-        - title: "Clinical Referral Information"
-          url: /develop_business_flow_bf002.html
-          output: web
-        - title: "Create Referral (Alpha)"
-          url: /develop_business_flow_bf004.html
-          output: web
-        - title: "Clinical Review (Alpha)"
-          url: /develop_business_flow_bf003.html
-          output: web
-        - title: "Referral Management (Alpha)"
-          url: /develop_business_flow_bf005.html
-          output: web
-
-    - title: Implementation Guidelines
-      url: /explore_implementation_guidelines.html
-      output: web
-
-    # - title: Standard Models
-    #   url: /explore_models.html
-    #   output: web
-
-  - title: Develop
-    output: web
-    folderitems:
-
     - title: Endpoint Catalogue
       url: /explore_endpoint_catalogue.html
       output: web
 
       subfolders:
-      - title: Authentication and Authorisation
+      - title: Live Endpoints
         output: web
         subfolderitems:
+
         - title: "A001: Create Professional Session"
           url: /explore_endpoint_a001.html
           output: web
-        - title: "A002: Prof. Session Select Role"
+        - title: "A002: Professional Session Select Role"
           url: /explore_endpoint_a002.html
           output: web
         - title: "A003: Delete Professional Session"
           url: /explore_endpoint_a003.html
           output: web
-
-      - title: Clincial Referral Information
-        output: web
-        subfolderitems:
         - title: "A004: Retrieve Reference Data"
           url: /explore_endpoint_a004.html
           output: web
@@ -128,39 +109,89 @@ entries:
           url: /explore_endpoint_a008.html
           output: web
 
-      - title: Create Referral (Beta)
+      - title: Alpha Endpoints
         output: web
         subfolderitems:
-        - title: "A010: Patient Specific Service Search"
+
+        - title: "A009: Retrieve Generic Service Search"
+          url: /explore_endpoint_a009.html
+          output: web
+        - title: "A010: Retrieve Patient Specific Search"
           url: /explore_endpoint_a010.html
           output: web
         - title: "A011: Create Referral Shortlist"
           url: /explore_endpoint_a011.html
           output: web
-        - title: "A020: Upload File"
-          url: /explore_endpoint_a020.html
-          output: web
-        - title: "A012: Maintain Referral Letter"
+        - title: "A012: Upload Attachments"
           url: /explore_endpoint_a012.html
           output: web
-        - title: "A019: Generate Patient Letter"
-          url: /explore_endpoint_a019.html
-          output: web
-
-      - title: Referral Review (Alpha)
-        output: web
-        subfolderitems:
         - title: "A013: Accept Referral"
           url: /explore_endpoint_a013.html
           output: web
         - title: "A014: Reject Referral"
           url: /explore_endpoint_a014.html
           output: web
+        - title: "A015: Retrieve Appointment Slots"
+          url: /explore_endpoint_a015.html
+          output: web
+        - title: "A016: Book Appointment"
+          url: /explore_endpoint_a016.html
+          output: web
+        - title: "A017: Defer Booking to Provider"
+          url: /explore_endpoint_a017.html
+          output: web
+        - title: "A018: Re-book Appointment"
+          url: /explore_endpoint_a018.html
+          output: web
+        - title: "A019: Generate Patient Letter"
+          url: /explore_endpoint_a019.html
+          output: web
+#        - title: "TEST Page Template"
+#          url: /explore_endpoint_template.html
+#          output: web
 
+    - title: Implementation Guidelines
+      url: /explore_implementation_guidelines.html
+      output: web
+    - title: Standard Models
+      url: /explore_models.html
+      output: web
     - title: Error Messages
       url: /explore_error_messages.html
       output: web
 
+  - title: Develop
+    output: web
+    folderitems:
+
+    - title: Test Data
+      url: /develop_test_data.html
+      output: web
+
+      subfolders:
+      - title: Business Flows
+        output: web
+        subfolderitems:
+
+        - title: "BF001: Authentication and Authorisation"
+          url: /develop_business_flow_bf001.html
+          output: web
+        - title: "BF002: Clinical Referral Information"
+          url: /develop_business_flow_bf002.html
+          output: web
+        - title: "BF003: Clinical Review"
+          url: /develop_business_flow_bf003.html
+          output: web
+        - title: "BF004: Service Search"
+          url: /develop_business_flow_bf004.html
+          output: web
+        - title: "BF005: Referral Management"
+          url: /develop_business_flow_bf005.html
+          output: web
+
+#    - title: Code Samples
+#      url: /develop_code_samples.html
+#      output: web
     - title: Support
       url: /develop_support.html
       output: web
@@ -178,11 +209,15 @@ entries:
     - title: Target Operating Model
       url: /assure_tom.html
       output: web
+    - title: Supporting Requirements
+      url: /assure_supporting_requirements.html
+      output: web
 
       subfolders:
       - title: Clinical Safety
         output: web
         subfolderitems:
+
         - title: Introduction
           url: /clinical_safety_intro.html
           output: web
@@ -192,7 +227,7 @@ entries:
         - title: Clinical Safety Resources
           url: /clinical_safety_resources.html
           output: web
-        - title: Advice and Guidance
+        - title: FAQs & Implementation Guidance
           url: /clinical_safety_faqs.html
           output: web
 
@@ -208,10 +243,10 @@ entries:
       url: /deploy_release_methodology.html
       output: web
 
-  - title: XML MiM Integration
+  - title: XML Integration
     output: web
     folderitems:
-
+    
     - title: Introduction
       url: /mim_intro.html
       output: web
