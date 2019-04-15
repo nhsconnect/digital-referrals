@@ -9,10 +9,11 @@ summary: "XML Integration Foundations"
 
 ### Information Flow between NHS e-RS, Spine and External Systems ###
 
-![Information Flow between NHS e-RS, Spine and External Systems](images/MiM.jpeg)
+![Information Flow between NHS e-RS, Spine and External Systems](images/MiM.jpg)
 
 ### Glossary of Terms ###
 | Term / Abbreviation	| What it stands for |
+| ------------------- | ------------------ |
 | API | Application Programming Interface|
 | CAP | Common Assurance Process.  A single end to end process for assuring development and delivery of high quality and clinically safe IT. It provides assurance to the NHS, patients and other key stakeholders that a Service meets a given set of requirements.|
 | CaB | Choose and Book|
