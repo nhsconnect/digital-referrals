@@ -47,7 +47,10 @@ The operation definition for this endpoint is available on the FHIR server: [eRS
 <details><summary>Request Header</summary>
 <br>
   <pre>
-    EXAMPLE COMING SOON
+  XAPI_ASID:200000000220
+  HTTP_X_SESSION_KEY:pro-api-session:9f0ee57a-41a6-4a6b-b50c-d50e61859c81
+  Accept:*/*
+  Content-Type:application/fhir+json
   </pre>
 </details>
 
@@ -56,15 +59,6 @@ The operation definition for this endpoint is available on the FHIR server: [eRS
 #### Success
 HTTP Status code `200 (OK)` is returned.
 The response body contains the binary stream of the just generated patient letter.
-
-#### Example:
-<details><summary>Response Body</summary>
-<br>
-  <pre>
-    EXAMPLE BINARY STREAM
-  </pre>
-</details>
-<br>
 
 #### Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
