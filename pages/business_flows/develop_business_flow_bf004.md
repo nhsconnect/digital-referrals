@@ -28,7 +28,7 @@ This business flow describes the process of an authenticated user searching for 
 * [A011 - Create Referral](explore_endpoint_a011.html) ![Beta](images/icons/api_beta.png)
 * [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Beta](images/icons/api_beta.png)
 * [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Beta](images/icons/api_beta.png)
-* [A019 - Retrieve Patient Letter](explore_endpoint_a019.html) ![Beta](images/icons/api_beta.png)
+* [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Beta](images/icons/api_beta.png)
 
 
 <!-- #### Review the diagram below to learn more -->

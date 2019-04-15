@@ -131,10 +131,10 @@ entries:
       - title: Create Referral (Beta)
         output: web
         subfolderitems:
-        - title: "A010: Patient Specific Service Search"
+        - title: "A010: Patient Service Search"
           url: /explore_endpoint_a010.html
           output: web
-        - title: "A011: Create Referral Shortlist"
+        - title: "A011: Create Referral"
           url: /explore_endpoint_a011.html
           output: web
         - title: "A020: Upload File"

@@ -7,11 +7,11 @@ permalink: mim_foundations.html
 summary: "XML Integration Foundations"
 ---
 
-### Information Flow between NHS e-RS, Spine and External Systems ###
+### Information Flow between NHS e-RS, Spine and External Systems
 
 ![Information Flow between NHS e-RS, Spine and External Systems](images/MiM.jpg)
 
-### Glossary of Terms ###
+### Glossary of Terms
 
 | Term / Abbreviation	| What it stands for |
 | ------------------- | ------------------ |

@@ -7,14 +7,14 @@ permalink: mim_referrers.html
 summary: "XML Integration for Referring Organisations"
 ---
 
-## Messaging ##
+### Messaging
 
 NHS e-Referral Service exchanges messages with Referrer systems via the messaging standards documented in the Message Implementation Manual (MiM) and External Interface Specification (EIS) as specified in the document references section.  It is assumed that the reader fully understands the content of the EIS and MiM.
 
 Although NHS e-Referral Service currently supports two message interaction patterns, new suppliers/upgrading suppliers MUST implement MiM3.01.09.  Each MiM version contains specific versions of the NHS e-Referral Service message interactions and the NHS e-Referral Service application only supports those interaction versions with the correct version of the MiM/EIS. NHS e-Referral Service DOES NOT support any other versions of the MiM.
 
 
-## Home Page Seamless Transition ##
+### Home Page Seamless Transition
 
 Compliant systems Must support a mechanism for a logged on user to invoke the NHS e-Referral Service home page in the context of their (single) Role Profile in use in the compliant system.  NHS e-Referral Service is invoked by a URL address and passed the user’s current role profile code in the query string; NHS e-Referral Service will respond by displaying the user’s home page.  
 
