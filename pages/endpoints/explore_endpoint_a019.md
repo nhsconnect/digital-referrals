@@ -39,7 +39,7 @@ A referral must exist and the user must legitimately have access to it. A letter
 | Content-Type |	`application/fhir+json` |
 
 #### Request Body
-This operation does not require a body.
+This operation does not require a body. 
 The operation definition for this endpoint is available on the FHIR server: [eRS-GeneratePatientLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-GeneratePatientLetter-Operation-1)
 
 #### Example:
