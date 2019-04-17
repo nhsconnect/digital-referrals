@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| POST | /ers-api/v1/ProfessionalSession
+| POST | v1/ProfessionalSession
 
 ## Description
 Creates a Professional Session in the Spine using smartcard roles. This gives a secure login.

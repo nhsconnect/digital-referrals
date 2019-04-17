@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| GET | /ers-api/v1/Binary/{AttachmentLogicalID}
+| GET | v1/Binary/{AttachmentLogicalID}
 
 ## Description
 This API lets users retrieve and download linked files for a referral, also known as attachments.

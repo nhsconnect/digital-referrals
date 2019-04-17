@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| DELETE | /ers-api/v1/ProfessionalSession/{sessionKey}
+| DELETE | v1/ProfessionalSession/{sessionKey}
 
 ## Description
 Logs out of the Professional Session and closes the dialogue.

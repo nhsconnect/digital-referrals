@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| PUT | /ers-api/v1/ProfessionalSession/{sessionKey}
+| PUT | v1/ProfessionalSession/{sessionKey}
 
 ## Description
 Updates a Professional Session with the appropriate NHS organisation and role. This ensures the correct access rights for the user.

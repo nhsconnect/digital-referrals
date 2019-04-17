@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| POST | /ers-api/v1/ReferralRequest/{UBRN}/$ers.bookdirect
+| POST | v1/ReferralRequest/{UBRN}/$ers.bookdirect
 
 ## Description
 This API lets the professional user book appointment for the slots returned in previous step A015.

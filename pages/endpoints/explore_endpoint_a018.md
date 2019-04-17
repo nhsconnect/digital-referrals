@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| POST | /ers-api/v1/ReferralRequest/{UBRN}/$ers.deferBooking |
+| POST | v1/ReferralRequest/{UBRN}/$ers.deferBooking |
 
 ## Description
 This API lets the professional user to re-book an already booked appointment.

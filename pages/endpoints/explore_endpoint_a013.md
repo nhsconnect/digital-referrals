@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| POST | /ers-api/v1/ReferralRequest/{UBRN}/$ers.accept
+| POST | v1/ReferralRequest/{UBRN}/$ers.accept
 
 ## Description
 This API lets the professional user accept the Referral that has already been created and not reviewed.

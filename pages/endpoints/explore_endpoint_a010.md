@@ -11,11 +11,11 @@ summary: false
 
 ### API URL
 
-Base URL (Dev3): 'https://api.dev3.ers.ncrs.nhs.uk/ers-api'
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Referring Clinician (/Administrator) needing to refer a patient  
@@ -41,12 +41,13 @@ If using the filter on specialty, the value provided must be a valid code obtain
 The Operation Definition for this endpoint is available on the FHIR server: [ers.patientServiceSearch](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0)
 
 | Parameter Name             | Cardinality | Type            | Notes |
-|  ------------------------- | --------- | --------------- | ----- |
-| patient                   | 1..1        | Identifier |The master NHS Number for the patient  |
-| referringClinician        | 0..1        | If the logged in user is an RCA (and only in this case) they need to specify the referring clinician on whose behalf they are operating, in the context of the current referral |
-| requestType               | 1..1        | Code      |    |
-| SearchCriteria            | 1..1        | Resource | The StructureDefintion of this Resource is:  [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
-| sortBy                   | 1..1        | Code      | |
+|  ------------------------- | ----------- | --------------- | ----- |
+| patient                    | 1..1        | Identifier      | The master NHS Number for the patient  |
+| requestType                | 1..1        | Code            |       |
+| referringClinician         | 0..1        | Identifier      | If the logged in user is an RCA (and only in this case) they need to specify the referring clinician on whose behalf they are operating, in the context of the current referral |
+| SearchCriteria             | 1..1        | Resource        | The StructureDefintion of this Resource is:  [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
+| restrictedService          | 0..1	       | Reference       |       |
+| sortBy                     | 1..1        | Code            |       |
 
 #### Examples:
 
@@ -322,7 +323,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 
 | issue.details.code | Description |
 | ------------------ | ------ |
-| FIELD_NOT_PERMITTED | A _referring clinician_ *is* provided when the logged in user is *not* an RCA |
+| FIELD_NOT_PERMITTED | A referring clinician is provided when the logged in user is not an RCA; or: one of the following occurs: the distance limit is specified when the postcode is not provided, the IWT limit is specified when the priority is TWO_WEEK_WAIT or the clinic type is specified when the specialty is not provided |
 | INAPPROPRIATE_VALUE | The value of _commissioning provisioning_ is ALL_SERVICES (this value is not supported) |
 | NO_REG_GP_PRACTICE | The patient provided was found *not* to have a registered GP practice. The patient is not eligible to be referred via e-RS while this problem persists |
 | ORGANISATION_IS_CLOSED | The organisation identifier supplied corresponds to an organisation that is closed |
@@ -333,5 +334,6 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | REFERENCED_USER_IS_NOT_RC | The SDS user provided as the _referring clinician_ does not actually have the Referring Clinician business function in e-RS |
 | REFERENCED_USER_IS_NOT_SPC | The SDS user provided as the _named clinician_ does not actually have the Service Provider Clinician business function in e-RS |
 | REFERENCED_USER_NOT_IN_ORG | The  _referring clinician_ provided does not belong to the same organisation as the logged in user |
-| UNEXPECTED_FIELD | One of the following occurs: the _distance limit_ is specified when the _postcode_ is not provided, the _IWT limit_ is specified when the _priority_ is TWO_WEEK_WAIT or the _clinic type_ is specified when the _specialty_ is not provided |
-| VALUE_IS_REQUIRED | A _referring clinician_ is *not* provided when the logged in user *is* an RCA
+| SERVICE_IS_NOT_RESTRICTED	| The service provided is not restricted for the user |
+| SERVICE_NOT_IN_RESULTS | The restricted service provided is not compatible with the search criteria |
+| VALUE_IS_REQUIRED | A referring clinician is not provided when the logged in user is an RCA; or: one of the following three is not provided: the pair specialty + clinic type, the clinical term¬ or the named clinician |

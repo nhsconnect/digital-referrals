@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| POST | /ers-api/v1/Slot/$ers.searchAppointmentSlots
+| POST | v1/Slot/$ers.searchAppointmentSlots
 
 ## Description
 This API lets the professional user retrieve appointment slots to book a slot for the UBRN created in A011.

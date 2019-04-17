@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| POST | /ers-api/v1/HealthcareService/$dos.serviceSearch
+| POST | v1/HealthcareService/$dos.serviceSearch
 
 ## Description
 This API lets the professional user retrieve directory of services that are available in e-RS.

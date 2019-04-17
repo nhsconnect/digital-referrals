@@ -11,18 +11,19 @@ summary: false
 
 ### API URL
 
-Base URL (Dev3): 'https://api.dev3.ers.ncrs.nhs.uk/ers-api'
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 
 | Method | URL | Authentication |
-| -------------| --- | ---------------- |
-| POST | /STU3/v1/Binary | Session Token [(Details)](develop_business_flow_bf001.html) |
+| -------| --- | ---------------- |
+| POST | STU3/v1/Binary | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Referring Clinician (/Administrator)  
 I want to upload a file to the e-RS document store  
 so that I can then link it to a referral as part of its referral letter  
 
-**Please note** each file needs to be individually uploaded via this endpoint then an additional call made to endpoint [A012: Maintain Referral Letter](explore_endpoint_a012.html) to link the file(s) to the referral *once all files have been uploaded*. Any files not linked to a referral are periodically deleted from the e-RS document store.
+##### Important note:
+Each file needs to be individually uploaded via this endpoint then an additional call made to endpoint [A012: Maintain Referral Letter](explore_endpoint_a012.html) to link the file(s) to the referral once all files have been uploaded. **Any files not linked to a referral are periodically deleted from the e-RS document store.**
 
 ### Prerequisite Operations
 This endpoint has no pre-requisites
@@ -56,7 +57,7 @@ The binary stream of the file being uploaded
 ### Response
 
 #### Success
-HTTP Status code `200 (OK)` is returned. The header will also contain the e-RS file ID of the just uploaded file.
+HTTP Status code `201 (Created)` is returned. The header will also contain the e-RS file ID of the just uploaded file.
 No response body is returned.
 
 #### Example:

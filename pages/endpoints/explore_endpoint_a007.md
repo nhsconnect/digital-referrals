@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| GET | /ers-api/v1/Binary/$ers.generateCRI?UBRN={UBRN}
+| GET | v1/Binary/$ers.generateCRI?UBRN={UBRN}
 
 ## Related FHIR model
 

@@ -11,9 +11,11 @@ summary: false
 
 ## API
 
+Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+
 | Method | URL |
 | -------------| --- |
-| GET | /ers-api/v1/ReferralRequest/{id}
+| GET | v1/ReferralRequest/{id}
 
 ## Related FHIR model
 
