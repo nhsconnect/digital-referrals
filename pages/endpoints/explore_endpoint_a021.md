@@ -1,9 +1,9 @@
 ---
-title: "A011: Create Referral"
-keywords: endpoint, catalogue, create referral, shortlist
+title: "A021: Create Referral And Send For Triage"
+keywords: endpoint, catalogue, create referral, send for triage, RAS, shortlist
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a011.html
+permalink: explore_endpoint_a021.html
 summary: false
 ---
 
@@ -15,19 +15,19 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | STU3/v1/ReferralRequest/$ers.createReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ### Description
 As a Referring Clinician (/Administrator)  
-I want to create a referral for my patient with a shortlist of services  
-So that I can progress the care of my patient while leaving them the freedom to choose the service that best suits them.  
+I want to create a Referral in e-RS to a RAS Service and initiate the Triage process
+So that I can progress my patients' care without logging into multiple applications
 
 ### Prerequisite Operations
 The shortlisted services must be the result of a previously run [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
 Some of the parameters provided in input to the Create Referral endpoint are dependent on the services selected:
 - If any of the shortlisted services have the _referral letter required_ flag set to true then, when calling the Create Referral endpoint, the _intention to add a referral letter_ must be set to _NEED_TO_ADD_LATER_ (and the referrer will later need to attach some files with a separate call to the  [Maintain Referral Letter (A012)](explore_endpoint_a012.html))
 - If any of the shortlisted services are marked as 'unaccredited' for the referrer (and only in this case) then, when calling the Create Referral endpoint, the referrer will need to provide a meaningful comment as to why they decided to override the accreditation
-- When selecting a shortlist it must not contain any services using the Triage Request flow (also known as a Referral Assessment Service or "RAS"), this must be requested using [A021: Create Referral And Send For Triage](explore_endpoint_a021.html).
+- When using the Triage Request flow (also known as a “RAS service”), this must be the only shortlisted service.
 
 The service attributes are available from the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
 
@@ -42,17 +42,17 @@ The service attributes are available from the [Patient Specific Service Search (
 | Accept | `*/*`, `application/fhir+json` |
 
 #### Request Body
-The Operation Definition for this endpoint is available on the FHIR server:  [eRS-CreateReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1)
+The Operation Definition for this endpoint is available on the FHIR server:  [eRS-CreateReferralAndSendForTriage-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferralAndSendForTriage-Operation-1)
 
 | Parameter Name             | Cardinality | Type            | Notes |
-|  ------------------------- | --------- | --------------- | ----- |
-| patient                   | 1..1        | Identifier |The master NHS Number for the patient  |
-| referringClinician        | 0..1        | Identifier      |    |
-| contentSensitive            | 1..1        | Boolean | |
-| shortlist                   | 1..1        | Resource      |The structure definition of this resource is:  [eRS-Shortlist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1). Please note that in turn this Resource needs to have a contained reference to an [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
-| unaccreditedComment | 0..1| String | If shortlisting a service flagged as 'unaccredited' by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then a comment must be provided |
-| firstReminderLetterFollowUpDays | 1..1 | UnsignedInt | |
-| intentionToAddReferralLetter | 1..1| Coding | If shortlisting a service flagged as requiring a referral letter by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then the value of this field must be NEED_TO_ADD_LATER |
+| -------------------------- | ----------- | --------------- | ----- |
+| patient                    | 1..1        | Identifier      | The NHS Number of the patient who the referral being created is for. Format: ^[0-9]{10}$  |
+| referringClinician         | 0..1        | Identifier      | Required if and only if the logged in user has a role of Referring Clinician Admin. Format: ^[0-9]{12}$    |
+| contentSensitive           | 1..1        | Boolean         | An indication of whether the referral is to be marked as 'Sensitive'. If True, then users with non-clinical roles (e.g. Referring Admins and Service Provider Admin) will not be able to view the referral details.    |
+| shortlist                  | 1..1        | Resource        | When sending for triage, the shortlist must contain exactly one service, and this must support the ‘triage request flow’. <br>Profile: [https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1)  |
+| unaccreditedComment | 0..1| String | An explanation of the reason why the user decided to shortlist an 'unaccredited' service, thus overriding the referrer rights rules that had been set for that service. Required if and only if the shortlist contains one or more 'unaccredited' services. |
+| firstReminderLetterFollowUpDays | 1..1 | UnsignedInt | This parameter triggers a reminder letter to the patient to prompt them to book an appointment if they haven’t done so after x days. When sending for triage, the only acceptable value is 0, which means no follow up letter will be sent, as the patient does not need to book an appointment. |
+| intentionToAddReferralLetter | 1..1| Coding | When sending for triage, a referral letter is always required; therefore the only acceptable value is NEED_TO_ADD_LATER. <br>Binding (required): [https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralLetterIntention-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralLetterIntention-1)|
 
 #### Examples:
 
@@ -74,7 +74,11 @@ The Operation Definition for this endpoint is available on the FHIR server:  [eR
 ### Response
 
 #### Success
-HTTP Status code `201 (Created)` is returned. The response body contains the just created [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1).
+HTTP Status code `201 (Created)` is returned. The response body contains the just created [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1), the API will also create a triage request to that service.
+
+| Parameter Name             | Cardinality | Type            | Notes |
+| -------------------------- | ----------- | --------------- | ----- |
+| referral	                 | 1..1        | ReferralRequest | The referral request that will be created.<br>Profile: [https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)  |
 
 #### Example:
 
@@ -93,7 +97,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | issue.details.code  | Description |
 | ------------------- | ----------- |
 | FIELD_NOT_PERMITTED | A referring clinician is provided when the logged in user is not an RCA; or: one of the following occurs: the distance limit is specified when the postcode is not provided, the IWT limit is specified when the priority is TWO_WEEK_WAIT or the clinic type is specified when the specialty is not provided; or: a referrer right override comment is provided when none of the shortlisted services is marked as unaccredited|
-| INAPPROPRIATE_VALUE | The value of _commissioning provisioning_ is ALL_SERVICES (this value is not supported), or: the _intention to add a referral letter_ is set to NOT_INTENDING_TO_ADD when one or more of the shortlisted services has the _referral letter required_ set to true|
+| INAPPROPRIATE_VALUE | The value of commissioning provisioning is ALL_SERVICES (this value is not supported), or: the intention to add a referral letter is set to NOT_INTENDING_TO_ADD, or: the proposed shortlist contains one or more services that do not support the ‘triage request flow’, or the first reminder letter follow up days is other than 0. |
 | INVALID VALUE | The input provided does not conform with the expected data types and format specifically documented on the FHIR OperationDefinition or on the related FHIR profiles |
 | MISSING_VALUE | One of the parameters described as mandatory on the FHIR OperationDefinition or on the related FHIR profiles has not been supplied
 | NO_REG_GP_PRACTICE | The patient provided was found *not* to have a registered GP practice. The patient is not eligible to be referred via e-RS while this problem persists |
@@ -108,4 +112,5 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | SHORTLISTED_SERVICE_IS_RESTRICTED | A service in the shortlist submitted is marked as restricted. Although it may satisfy the search criteria provided, the user can't refer into it directly but needs to first refer into one of its authorised pathway services. This also applies to pathway services|
 | SHORTLISTED_SERVICE_NOT_AUTH_PATHWAY | Service "A" is shortlisted as an authorised pathway for service "B", but e-RS finds that actually "A" is *not* an authorised pathway for "B"|
 | SHORTLISTED_SERVICE_NOT_IN_RESULTS | A service in the shortlist submitted does not satisfy the search criteria provided. This also applies to the scenario of services shortlisted as authorised pathways of a restricted service, in the case where the restricted service specified in the _pathway for_ field does not satisfy the search criteria|
+| TOO_MANY_ITEMS | The proposed shortlist contains more than one service |
 | VALUE_IS_REQUIRED | A referring clinician is not provided when the logged in user is an RCA; or: one of the following three is not provided: the pair specialty + clinic type, the clinical term¬ or the named clinician; or: a referrer right override comment is not provided when one or more of the shortlisted services is marked as unaccredited |
