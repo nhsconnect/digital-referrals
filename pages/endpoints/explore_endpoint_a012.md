@@ -23,7 +23,7 @@ I want to associate files I have uploaded to a referral
 So that I can create the referral letter  
 
 ### Prerequisite Operations
-Each file to be attached to a referral needs to have been individually uploaded first by calling [A020: Upload file to document store](explore_endpoint_a020.html). A020 will have returned to the caller the e-RS attachment ID of each uploaded file; these are the IDs that need to be passed to the Maintain Referral Letter API so that they can be associated to the referral and thus form the referral letter (which is to be considered as a "collection of files")
+Each file to be attached to a referral needs to have been individually uploaded first by calling [A020: Upload file to document store](explore_endpoint_a020.html). A020 will have returned the e-RS file location of each uploaded file; these are the URLs that need to be passed to the Maintain Referral Letter API so that they can be associated to the referral and thus form the referral letter (which is to be considered as a "collection of files")
 
 ### Request Operation
 

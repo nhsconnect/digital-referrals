@@ -48,8 +48,9 @@ The binary stream of the file being uploaded
 ### Response
 
 #### Success
-HTTP Status code `201 (Created)` is returned. The header will also contain the e-RS file ID of the just uploaded file.
-No response body is returned.
+HTTP Status code `201 (Created)` is returned.  
+The header will also return the e-RS file location of the just uploaded file, as a URL, which can be used to link the file to a UBRN using [A012: Maintain Referral Letter](explore_endpoint_a012.html)  
+No response body is returned.  
 
 #### Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
@@ -67,7 +68,7 @@ If an error occurs, the relating [HTTP status code](explore_error_messages.html)
 <details><summary>Request Header</summary>
 <br>
   <pre>
-  Content-Type:application/vnd.openxmlformats-officedocument.wordprocessingml.document  
+  Content-Type:text/plain
   HTTP_X_SESSION_KEY:AuthHelper_professional_e8625b8d-5261-463b-b51e-65168acf933c  
   X-ERS-XAPI-META-FILE_NAME:test.docx  
   X-ERS-XAPI-META-INTENDED_UBRN:000000070000  
@@ -78,7 +79,12 @@ If an error occurs, the relating [HTTP status code](explore_error_messages.html)
 <details><summary>Response Header</summary>
 <br>
   <pre>
-  [File Data]
+  Connection:close
+  Content-Length:0
+  Content-Type:application/x-httpd-php
+  Date:Wed, 17 Jul 2019 17:34:18 GMT
+  Location:Binary/att-70000-70000
+  X_ERS_TRANSACTION_ID:5495d5e9-3f55-4411-9ce7-b27b2d7cdac0-1
   </pre>
 </details>
 <br>
