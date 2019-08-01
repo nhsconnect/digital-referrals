@@ -49,17 +49,33 @@ The Operation Definition for this endpoint is available on the FHIR server: [ers
 | restrictedService          | 0..1	       | Reference       |       |
 | sortBy                     | 1..1        | Code            |       |
 
-#### Examples:
+### Response
 
-<details><summary>Request Header</summary>
-<br>
-  <pre>
-  XAPI_ASID:200000000347
-  HTTP_X_SESSION_KEY:pro-api-session:9f0ee57a-41a6-4a6b-b50c-d50e61859c81
-  Accept:application/fhir+json
-  Content-Type:application/fhir+json
-  </pre>
-</details>
+#### Success
+HTTP Status code `200 (OK)` is returned. The response body contains the list of services (if any) that match the search criteria provided in the format of an [eRS-FetchServices-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1/_history/1.0)
+
+#### Failure
+If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
+Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+
+| issue.details.code | Description |
+| ------------------ | ------ |
+| FIELD_NOT_PERMITTED | A referring clinician is provided when the logged in user is not an RCA; or: one of the following occurs: the distance limit is specified when the postcode is not provided, the IWT limit is specified when the priority is TWO_WEEK_WAIT or the clinic type is specified when the specialty is not provided |
+| INAPPROPRIATE_VALUE | The value of _commissioning provisioning_ is ALL_SERVICES (this value is not supported) |
+| NO_REG_GP_PRACTICE | The patient provided was found *not* to have a registered GP practice. The patient is not eligible to be referred via e-RS while this problem persists |
+| ORGANISATION_IS_CLOSED | The organisation identifier supplied corresponds to an organisation that is closed |
+| ORGANISATION_NOT_APPROPRIATE | The organisation identifier supplied corresponds to an organisation of a type other than 'Service location' and 'Service providing organisation' |
+| PATIENT_ERROR | There was a problem with the patient's record in SDS. The patient is not eligible to be referred via e-RS while this problem persists|
+| REFERENCE_NOT_FOUND | An entity referenced (e.g. the patient, the postcode, the organisation or a clinician) is not found |
+| REFERENCED_USER_IS_NOT_ACTIVE | The SDS user provided as the _referring clinician_ or the _named clinician_ is found to be *not* active in SDS |
+| REFERENCED_USER_IS_NOT_RC | The SDS user provided as the _referring clinician_ does not actually have the Referring Clinician business function in e-RS |
+| REFERENCED_USER_IS_NOT_SPC | The SDS user provided as the _named clinician_ does not actually have the Service Provider Clinician business function in e-RS |
+| REFERENCED_USER_NOT_IN_ORG | The  _referring clinician_ provided does not belong to the same organisation as the logged in user |
+| SERVICE_IS_NOT_RESTRICTED	| The service provided is not restricted for the user |
+| SERVICE_NOT_IN_RESULTS | The restricted service provided is not compatible with the search criteria |
+| VALUE_IS_REQUIRED | A referring clinician is not provided when the logged in user is an RCA; or: one of the following three is not provided: the pair specialty + clinic type, the clinical term¬ or the named clinician |
+
+#### Examples:
 
 <details><summary>Request Body</summary>
 <br>
@@ -156,12 +172,6 @@ The Operation Definition for this endpoint is available on the FHIR server: [ers
 </details>
 <br>
 
-### Response
-
-#### Success
-HTTP Status code `200 (OK)` is returned. The response body contains the list of services (if any) that match the search criteria provided in the format of an [eRS-FetchServices-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1/_history/1.0)
-
-#### Example:
 <details><summary>Response Body</summary>
 <br>
   <pre>
@@ -316,24 +326,3 @@ HTTP Status code `200 (OK)` is returned. The response body contains the list of 
   </pre>
 </details>
 <br>
-
-#### Failure
-If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
-Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
-
-| issue.details.code | Description |
-| ------------------ | ------ |
-| FIELD_NOT_PERMITTED | A referring clinician is provided when the logged in user is not an RCA; or: one of the following occurs: the distance limit is specified when the postcode is not provided, the IWT limit is specified when the priority is TWO_WEEK_WAIT or the clinic type is specified when the specialty is not provided |
-| INAPPROPRIATE_VALUE | The value of _commissioning provisioning_ is ALL_SERVICES (this value is not supported) |
-| NO_REG_GP_PRACTICE | The patient provided was found *not* to have a registered GP practice. The patient is not eligible to be referred via e-RS while this problem persists |
-| ORGANISATION_IS_CLOSED | The organisation identifier supplied corresponds to an organisation that is closed |
-| ORGANISATION_NOT_APPROPRIATE | The organisation identifier supplied corresponds to an organisation of a type other than 'Service location' and 'Service providing organisation' |
-| PATIENT_ERROR | There was a problem with the patient's record in SDS. The patient is not eligible to be referred via e-RS while this problem persists|
-| REFERENCE_NOT_FOUND | An entity referenced (e.g. the patient, the postcode, the organisation or a clinician) is not found |
-| REFERENCED_USER_IS_NOT_ACTIVE | The SDS user provided as the _referring clinician_ or the _named clinician_ is found to be *not* active in SDS |
-| REFERENCED_USER_IS_NOT_RC | The SDS user provided as the _referring clinician_ does not actually have the Referring Clinician business function in e-RS |
-| REFERENCED_USER_IS_NOT_SPC | The SDS user provided as the _named clinician_ does not actually have the Service Provider Clinician business function in e-RS |
-| REFERENCED_USER_NOT_IN_ORG | The  _referring clinician_ provided does not belong to the same organisation as the logged in user |
-| SERVICE_IS_NOT_RESTRICTED	| The service provided is not restricted for the user |
-| SERVICE_NOT_IN_RESULTS | The restricted service provided is not compatible with the search criteria |
-| VALUE_IS_REQUIRED | A referring clinician is not provided when the logged in user is an RCA; or: one of the following three is not provided: the pair specialty + clinic type, the clinical term¬ or the named clinician |

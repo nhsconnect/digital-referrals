@@ -43,37 +43,10 @@ The Operation Definition for this endpoint is available on the FHIR server: [eRS
 |  ------------------------- | --------- | --------------- | ----- |
 | referralLetterFile         | 1..*        | Resource |The structure definition of this resource is:  [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1)  |
 
-#### Examples:
-
-<details><summary>Request Header</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-
-<details><summary>Request Body</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-<br>
-
 ### Response
 
 #### Success
 HTTP Status code `200 (OK)` is returned. The response body contains the just updated [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
-
-#### Example:
-
-<details><summary>Response Body</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-<br>
 
 #### Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
@@ -92,3 +65,21 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | NO_RELATIONSHIP | The user does not have a suitable legitimate relationship with the referral |
 | PATIENT_ERROR | There was an error retrieving the patient's record from SDS - this patient cannot be referred via e-RS |
 | REFERENCE_NOT_FOUND | The file identified by the attachment ID does not exist in the e-RS document store |
+
+#### Examples:
+
+<details><summary>Request Body</summary>
+<br>
+  <pre>
+    EXAMPLE COMING SOON
+  </pre>
+</details>
+<br>
+
+<details><summary>Response Body</summary>
+<br>
+  <pre>
+    EXAMPLE COMING SOON
+  </pre>
+</details>
+<br>

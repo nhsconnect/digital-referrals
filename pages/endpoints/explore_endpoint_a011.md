@@ -23,13 +23,7 @@ I want to create a referral for my patient with a shortlist of services
 So that I can progress the care of my patient while leaving them the freedom to choose the service that best suits them.  
 
 ### Prerequisite Operations
-The shortlisted services must be the result of a previously run [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
-Some of the parameters provided in input to the Create Referral endpoint are dependent on the services selected:
-- If any of the shortlisted services have the _referral letter required_ flag set to true then, when calling the Create Referral endpoint, the _intention to add a referral letter_ must be set to _NEED_TO_ADD_LATER_ (and the referrer will later need to attach some files with a separate call to the  [Maintain Referral Letter (A012)](explore_endpoint_a012.html))
-- If any of the shortlisted services are marked as 'unaccredited' for the referrer (and only in this case) then, when calling the Create Referral endpoint, the referrer will need to provide a meaningful comment as to why they decided to override the accreditation
-- When selecting a shortlist it must not contain any services using the Triage Request flow (also known as a Referral Assessment Service or "RAS"), this must be requested using [A021: Create Referral And Send For Triage](explore_endpoint_a021.html).
-
-The service attributes are available from the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint.
+The shortlist must not contain any Referral Assessment Services (RAS), these services be referred to using endpoint [A021: Create Referral And Send For Triage](explore_endpoint_a021.html) instead.
 
 ### Request Operation
 
@@ -54,37 +48,11 @@ The Operation Definition for this endpoint is available on the FHIR server:  [eR
 | firstReminderLetterFollowUpDays | 1..1 | UnsignedInt | |
 | intentionToAddReferralLetter | 1..1| Coding | If shortlisting a service flagged as requiring a referral letter by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then the value of this field must be NEED_TO_ADD_LATER |
 
-#### Examples:
-
-<details><summary>Request Header</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-
-<details><summary>Request Body</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-<br>
 
 ### Response
 
 #### Success
 HTTP Status code `201 (Created)` is returned. The response body contains the just created [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1).
-
-#### Example:
-
-<details><summary>Response Body</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-<br>
 
 #### Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
@@ -93,7 +61,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | issue.details.code  | Description |
 | ------------------- | ----------- |
 | FIELD_NOT_PERMITTED | A referring clinician is provided when the logged in user is not an RCA; or: one of the following occurs: the distance limit is specified when the postcode is not provided, the IWT limit is specified when the priority is TWO_WEEK_WAIT or the clinic type is specified when the specialty is not provided; or: a referrer right override comment is provided when none of the shortlisted services is marked as unaccredited|
-| INAPPROPRIATE_VALUE | The value of _commissioning provisioning_ is ALL_SERVICES (this value is not supported), or: the _intention to add a referral letter_ is set to NOT_INTENDING_TO_ADD when one or more of the shortlisted services has the _referral letter required_ set to true|
+| INAPPROPRIATE_VALUE | The value of _commissioning provisioning_ is ALL_SERVICES (this value is not supported), or: the _intention to add a referral letter_ is set to NOT_INTENDING_TO_ADD when one or more of the shortlisted services has the _referral letter required_ set to true, or the proposed shortlist contains one or more services that do not support the ‘appointment request flow’ |
 | INVALID VALUE | The input provided does not conform with the expected data types and format specifically documented on the FHIR OperationDefinition or on the related FHIR profiles |
 | MISSING_VALUE | One of the parameters described as mandatory on the FHIR OperationDefinition or on the related FHIR profiles has not been supplied
 | NO_REG_GP_PRACTICE | The patient provided was found *not* to have a registered GP practice. The patient is not eligible to be referred via e-RS while this problem persists |
@@ -107,5 +75,213 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | REFERENCED_USER_NOT_IN_ORG | The  _referring clinician_ provided does not belong to the same organisation as the logged in user |
 | SHORTLISTED_SERVICE_IS_RESTRICTED | A service in the shortlist submitted is marked as restricted. Although it may satisfy the search criteria provided, the user can't refer into it directly but needs to first refer into one of its authorised pathway services. This also applies to pathway services|
 | SHORTLISTED_SERVICE_NOT_AUTH_PATHWAY | Service "A" is shortlisted as an authorised pathway for service "B", but e-RS finds that actually "A" is *not* an authorised pathway for "B"|
-| SHORTLISTED_SERVICE_NOT_IN_RESULTS | A service in the shortlist submitted does not satisfy the search criteria provided. This also applies to the scenario of services shortlisted as authorised pathways of a restricted service, in the case where the restricted service specified in the _pathway for_ field does not satisfy the search criteria|
+| SHORTLISTED_SERVICE_NOT_IN_RESULTS | The service selected for the shortlist submitted does not satisfy the search criteria provided. This also applies to the scenario of services shortlisted as authorised pathways of a restricted service, in the case where the restricted service specified in the _pathway for_ field does not satisfy the search criteria|
 | VALUE_IS_REQUIRED | A referring clinician is not provided when the logged in user is an RCA; or: one of the following three is not provided: the pair specialty + clinic type, the clinical term¬ or the named clinician; or: a referrer right override comment is not provided when one or more of the shortlisted services is marked as unaccredited |
+
+#### Examples:
+
+<details><summary>Request Body</summary>
+<br>
+  <pre>
+  {
+"resourceType": "Parameters",
+"meta": {
+  "profile": [
+    "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1"
+  ]
+},
+"parameter": [
+  {
+    "name": "patient",
+    "valueIdentifier": {
+      "system": "http://fhir.nhs.net/Id/nhs-number",
+      "value": "1000000001"
+    }
+  },
+  {
+    "name": "referringClinician",
+    "valueIdentifier": {
+      "system": "http://fhir.nhs.net/Id/sds-user-id",
+      "value": "021600556514"
+    }
+  },
+  {
+    "name": "contentSensitive",
+    "valueBoolean": true
+  },
+  {
+    "name": "intentionToAddReferralLetter",
+    "valueCoding": {
+      "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+      "code": "NEED_TO_ADD_LATER"
+    }
+  },
+  {
+    "name": "firstReminderLetterFollowUpDays",
+    "valueUnsignedInt": 0
+  },
+  {
+    "name": "shortlist",
+    "resource": {
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1"
+        ]
+      },
+      "resourceType": "List",
+      "status": "current",
+      "mode": "snapshot",
+      "contained": [
+        {
+          "resourceType": "Parameters",
+          "meta": {
+            "profile": [
+              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+            ]
+          },
+          "id": "ServiceSearchCriteria-1",
+          "parameter": [
+            {
+              "name": "priority",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "URGENT"
+              }
+            },
+            {
+              "name": "specialty",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
+                "code": "ALLERGY"
+              }
+            },
+            {
+              "name": "clinicType",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                "code": "ALLERGY_1"
+              }
+            },
+            {
+              "name": "postcode",
+              "valueString": "LS1 2UT"
+            },
+            {
+              "name": "distanceLimit",
+              "valueUnsignedInt": 500
+            },
+            {
+              "name": "commissioningProvisioning",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                "code": "ALL_AVAILABLE_FOR_BOOKING"
+              }
+            },
+            {
+              "name": "ageAndGenderAppropriate",
+              "valueBoolean": false
+            }
+          ]
+        }
+      ],
+      "entry": [
+        {
+          "item": {
+            "reference": "HealthcareService/70021"
+          }
+        },
+        {
+          "item": {
+            "reference": "HealthcareService/70022"
+          }
+        },
+        {
+          "item": {
+            "reference": "HealthcareService/70023"
+          }
+        },
+        {
+          "item": {
+            "reference": "HealthcareService/70024"
+          }
+        },
+        {
+          "item": {
+            "reference": "HealthcareService/70025"
+          }
+        },
+        {
+          "item": {
+            "reference": "HealthcareService/70026"
+          }
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Shortlist-SearchCriteria-1",
+          "valueReference": {
+            "reference": "#ServiceSearchCriteria-1"
+          }
+        }
+      ]
+    }
+  }
+]
+}
+  </pre>
+</details>
+<br>
+
+<details><summary>Response Body</summary>
+<br>
+  <pre>
+  {
+    "id": "000000070000",
+    "meta": {
+      "versionId": "3",
+      "profile": [
+        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"
+      ]
+    },
+    "resourceType": "ReferralRequest",
+    "extension": [
+      {
+        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+              "code": "URGENT",
+              "display": "Urgent"
+            }
+          ]
+        }
+      }
+    ],
+    "contained": [
+      {
+        "id": "Patient-1000000001",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1"
+          ]
+        },
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://fhir.nhs.net/Id/nhs-number",
+            "value": "1000000001"
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "subject": {
+      "reference": "#Patient-1000000001"
+    },
+    "supportingInfo": [],
+    "intent": "plan"
+  }
+  </pre>
+</details>
+<br>

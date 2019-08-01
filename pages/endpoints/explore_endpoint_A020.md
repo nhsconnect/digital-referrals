@@ -45,30 +45,11 @@ This endpoint has no pre-requisites
 #### Request Body
 The binary stream of the file being uploaded
 
-#### Example:
-
-<details><summary>Request Header</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-
 ### Response
 
 #### Success
 HTTP Status code `201 (Created)` is returned. The header will also contain the e-RS file ID of the just uploaded file.
 No response body is returned.
-
-#### Example:
-
-<details><summary>Response Header</summary>
-<br>
-  <pre>
-    EXAMPLE COMING SOON
-  </pre>
-</details>
-<br>
 
 #### Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
@@ -80,3 +61,24 @@ If an error occurs, the relating [HTTP status code](explore_error_messages.html)
 | INAPPROPRIATE_VALUE | The mime type is not supported |
 | INVALID_VALUE | If the total length of the File Name including extension is greater than 255 characters |
 | MISSING_VALUE | File name,  file mime type or the file data are not supplied |
+
+#### Examples:
+
+<details><summary>Request Header</summary>
+<br>
+  <pre>
+  Content-Type:application/vnd.openxmlformats-officedocument.wordprocessingml.document  
+  HTTP_X_SESSION_KEY:AuthHelper_professional_e8625b8d-5261-463b-b51e-65168acf933c  
+  X-ERS-XAPI-META-FILE_NAME:test.docx  
+  X-ERS-XAPI-META-INTENDED_UBRN:000000070000  
+  xapi_asid:999000000045  
+  </pre>
+</details>
+
+<details><summary>Response Header</summary>
+<br>
+  <pre>
+    [File Data]
+  </pre>
+</details>
+<br>
