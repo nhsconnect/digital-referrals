@@ -23,10 +23,9 @@ I want to create a referral for my patient with a shortlist of services
 So that I can progress the care of my patient while leaving them the freedom to choose the service that best suits them.  
 
 ### Prerequisite Operations
-The shortlist must not contain any Referral Assessment Services (RAS), these services be referred to using endpoint [A021: Create Referral And Send For Triage](explore_endpoint_a021.html) instead.
+The shortlist must not contain any Referral Assessment Services (RAS), referrals to these services should be created using endpoint [A021: Create Referral And Send For Triage](explore_endpoint_a021.html).
 
 ### Request Operation
-
 #### Request Header
 
 | Field Name | Value |
@@ -46,7 +45,7 @@ The Operation Definition for this endpoint is available on the FHIR server:  [eR
 | shortlist                   | 1..1        | Resource      |The structure definition of this resource is:  [eRS-Shortlist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1). Please note that in turn this Resource needs to have a contained reference to an [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
 | unaccreditedComment | 0..1| String | If shortlisting a service flagged as 'unaccredited' by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then a comment must be provided |
 | firstReminderLetterFollowUpDays | 1..1 | UnsignedInt | |
-| intentionToAddReferralLetter | 1..1| Coding | If shortlisting a service flagged as requiring a referral letter by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then the value of this field must be NEED_TO_ADD_LATER |
+| intentionToAddReferralLetter | 1..1| Coding | If shortlisting a service flagged as requiring a referral letter by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then the value of this field must be NEED_TO_ADD_LATER |  
 
 
 ### Response
@@ -83,7 +82,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 <details><summary>Request Body</summary>
 <br>
   <pre>
-  {
+{
 "resourceType": "Parameters",
 "meta": {
   "profile": [
@@ -230,12 +229,11 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 }
   </pre>
 </details>
-<br>
 
 <details><summary>Response Body</summary>
 <br>
   <pre>
-  {
+{
     "id": "000000070000",
     "meta": {
       "versionId": "3",
@@ -284,4 +282,3 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
   }
   </pre>
 </details>
-<br>

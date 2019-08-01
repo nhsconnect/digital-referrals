@@ -41,18 +41,6 @@ A referral must exist and the user must legitimately have access to it. A letter
 This operation does not require a body.
 The operation definition for this endpoint is available on the FHIR server: [eRS-GeneratePatientLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-GeneratePatientLetter-Operation-1)
 
-#### Example:
-
-<details><summary>Request Header</summary>
-<br>
-  <pre>
-  XAPI_ASID:200000000220
-  HTTP_X_SESSION_KEY:pro-api-session:9f0ee57a-41a6-4a6b-b50c-d50e61859c81
-  Accept:*/*
-  Content-Type:application/fhir+json
-  </pre>
-</details>
-
 ### Response
 
 #### Success
@@ -68,3 +56,34 @@ If an error occurs, the relating [HTTP status code](explore_error_messages.html)
 | INVALID_REQUEST_STATE | The referral is in a state that is not suitable to print the appointment request summary or the triage summary letters, for example it is either incomplete or cancelled; or the referral has a booked appointment; or the referral has been superseded by an onward referral; or: the referral has a booking deferral |  
 | NO_ACCESS_CODE | The patient doesn't have an access code/password to log onto the patient portal |
 | NO_RELATIONSHIP | The user does not have a suitable legitimate relationship with the referral |
+
+#### Example:
+
+<details><summary>Request Header</summary>
+<br>
+  <pre>
+  XAPI_ASID:200000000220
+  HTTP_X_SESSION_KEY:pro-api-session:9f0ee57a-41a6-4a6b-b50c-d50e61859c81
+  Accept:*/*
+  Content-Type:application/fhir+json
+  </pre>
+</details>
+
+<details><summary>Response Header</summary>
+<br>
+  <pre>
+  Connection:close
+  Content-Disposition:attachment; filename="70000_Appointment_Request_Summary_20190717184948.pdf"
+  Content-Length:30723
+  Content-Type:application/pdf
+  Date:Wed, 17 Jul 2019 17:49:48 GMT
+  X_ERS_TRANSACTION_ID:00d51a3e-d462-4d48-a121-1576d9c8dab9-1
+  </pre>
+</details>
+
+<details><summary>Response Body</summary>
+<br>
+  <pre>
+ [File Data]
+  </pre>
+</details>

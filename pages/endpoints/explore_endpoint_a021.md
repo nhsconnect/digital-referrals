@@ -95,7 +95,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 <details><summary>Request Body</summary>
 <br>
   <pre>
-  {
+{
     "resourceType": "Parameters",
     "meta": {
       "profile": [
@@ -232,15 +232,14 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
         }
       }
     ]
-  }
+}
   </pre>
 </details>
-<br>
 
 <details><summary>Response Body</summary>
 <br>
   <pre>
-  {
+{
     "id": "000000070000",
     "meta": {
       "versionId": "3",
@@ -286,7 +285,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
     },
     "supportingInfo": [],
     "intent": "plan"
-  }
+}
   </pre>
 </details>
 <br>

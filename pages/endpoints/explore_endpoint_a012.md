@@ -71,15 +71,162 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 <details><summary>Request Body</summary>
 <br>
   <pre>
-    EXAMPLE COMING SOON
+{
+    "meta": {
+      "profile": [
+        "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-MaintainReferralLetter-Operation-1"
+      ]
+    },
+    "resourceType": "Parameters",
+    "parameter": [
+      {
+        "name": "referralLetterFile",
+        "resource": {
+          "meta": {
+            "profile": [
+              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+            ]
+          },
+          "resourceType": "DocumentReference",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                "code": "REFERRER"
+              }
+            ]
+          },
+          "status": "current",
+          "indexed": 1563384454833,
+          "description": "Blood test results showing an anomaly in the values of xxxx",
+          "content": [
+            {
+              "attachment": {
+                "url": "Binary/att-70000-70000"
+              }
+            }
+          ]
+        }
+      }
+    ]
+}
   </pre>
 </details>
-<br>
 
 <details><summary>Response Body</summary>
 <br>
   <pre>
-    EXAMPLE COMING SOON
+{
+    "id": "000000070000",
+    "meta": {
+      "versionId": "6",
+      "profile": [
+        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"
+      ]
+    },
+    "resourceType": "ReferralRequest",
+    "extension": [
+      {
+        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1",
+        "valueDateTime": "2019-07-17T17:27:37.799Z"
+      },
+      {
+        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+              "code": "ROUTINE",
+              "display": "Routine"
+            }
+          ]
+        }
+      }
+    ],
+    "contained": [
+      {
+        "id": "Practitioner-021600556514",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1"
+          ]
+        },
+        "resourceType": "Practitioner",
+        "identifier": [
+          {
+            "system": "http://fhir.nhs.net/Id/sds-user-id",
+            "value": "021600556514"
+          }
+        ]
+      },
+      {
+        "id": "Patient-1000000001",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1"
+          ]
+        },
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "http://fhir.nhs.net/Id/nhs-number",
+            "value": "1000000001"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference-70000",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+          ]
+        },
+        "resourceType": "DocumentReference",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+              "code": "REFERRER",
+              "display": "Referrer"
+            }
+          ]
+        },
+        "status": "current",
+        "indexed": "2019-07-17T17:27:37.881Z",
+        "description": "Blood test results showing an anomaly in the values of xxxx",
+        "content": [
+          {
+            "attachment": {
+              "id": "70000",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                  "valueReference": {
+                    "reference": "#Practitioner-021600556514"
+                  }
+                }
+              ],
+              "contentType": "application/pdf",
+              "url": "Binary/att-70000-70000",
+              "size": 17,
+              "title": "test1.pdf",
+              "creation": "2019-07-17"
+            }
+          }
+        ]
+      }
+    ],
+    "status": "active",
+    "subject": {
+      "reference": "#Patient-1000000001"
+    },
+    "supportingInfo": [
+      {
+        "reference": "#DocumentReference-70000"
+      }
+    ],
+    "intent": "plan"
+}
   </pre>
 </details>
 <br>

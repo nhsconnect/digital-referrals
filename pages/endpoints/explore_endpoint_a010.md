@@ -80,7 +80,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 <details><summary>Request Body</summary>
 <br>
   <pre>
-  {
+{
   "resourceType": "Parameters",
   "meta": {
     "profile": [
@@ -167,15 +167,14 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
       "code": "DISTANCE"
     }
   }]
-  }
+}
   </pre>
 </details>
-<br>
 
 <details><summary>Response Body</summary>
 <br>
   <pre>
-  {
+{
     "meta": {
         "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1"
@@ -322,7 +321,6 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
             }
         }
     ]
-  }
+}
   </pre>
 </details>
-<br>

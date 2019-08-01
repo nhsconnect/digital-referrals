@@ -78,7 +78,7 @@ If an error occurs, the relating [HTTP status code](explore_error_messages.html)
 <details><summary>Response Header</summary>
 <br>
   <pre>
-    [File Data]
+  [File Data]
   </pre>
 </details>
 <br>
