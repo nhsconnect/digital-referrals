@@ -29,4 +29,4 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A018|[Re-book Appointment](explore_endpoint_a018.html)|POST|/ReferralRequest/{UBRN}/$ers.deferBooking|![Alpha](images/icons/api_alpha.png)| TBC |
 |A019|[Generate Patient Letter](explore_endpoint_a019.html)|POST|/ReferralRequest/{UBRN}/$ers.generatePatientLetter|![Beta](images/icons/api_beta.png)|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/genpatientletter_resources_stu3.html)|
 |A020|[Upload File To Document Store](explore_endpoint_a020.html)|POST|/Binary|![Beta](images/icons/api_beta.png)| N/A |
-|A021|[Create Referral And Send For Triage](explore_endpoint_a021.html)|POST|/CreateReferralAndSendForTriage|![Beta](images/icons/api_beta.png)|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/createreferral_resources_stu3.html)|
+|A021<br>![NEW](images/icons/new.png)|[Create Referral And Send For Triage](explore_endpoint_a021.html)|POST|/CreateReferralAndSendForTriage|![Beta](images/icons/api_beta.png)|[Model](https://nhsconnect.github.io/NHS-FHIR-eRS/createreferral_resources_stu3.html)|

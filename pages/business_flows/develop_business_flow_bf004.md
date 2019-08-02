@@ -13,6 +13,9 @@ summary: "Business flows and their related endpoints"
 
 This business flow describes the process of an authenticated user searching for services relevant for the selected patient. The search limits results to services which the user is able to refer the current patient into, based on the commissioning rules that apply to the user or the patient.
 
+![NEW](images/icons/new.png)  
+The creation of a referral to a Referral Assessment Service (RAS) has now been moved to a new endpoint for greater clarity. Therefore a referral request with a shortlist of non-RAS services should be created using [A011: Create Referral](explore_endpoint_a011.html), whereas as RAS referral should be created using the new endpoint [A021: Create Referral And Send For Triage](explore_endpoint_a021.html)
+
 #### This business flow involves the following APIs
 
 ##### Authentication and Authorisation
@@ -26,7 +29,7 @@ This business flow describes the process of an authenticated user searching for 
 ##### Create Referral
 * [A010 - Patient Service Search](explore_endpoint_a010.html) ![Beta](images/icons/api_beta.png)
 * [A011 - Create Referral](explore_endpoint_a011.html) ![Beta](images/icons/api_beta.png)
-* [A021 - Create Referral and Send for Triage](explore_endpoint_a021.html) ![Beta](images/icons/api_beta.png)
+* [A021 - Create Referral and Send for Triage](explore_endpoint_a021.html) ![Beta](images/icons/api_beta.png) ![NEW](images/icons/new.png)
 * [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Beta](images/icons/api_beta.png)
 * [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Beta](images/icons/api_beta.png)
 * [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Beta](images/icons/api_beta.png)
