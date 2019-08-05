@@ -176,150 +176,163 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
   <pre>
 {
     "meta": {
-        "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1"
-        ]
+      "profile": [
+        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1"
+      ]
     },
     "resourceType": "List",
     "status": "current",
     "mode": "snapshot",
     "entry": [
-        {
+      {
+        "extension": [
+          {
             "extension": [
-                {
-                    "extension": [
-                        {
-                            "url": "restricted",
-                            "valueBoolean": false
-                        },
-                        {
-                            "url": "unaccredited",
-                            "valueBoolean": false
-                        },
-                        {
-                            "url": "displayProminently",
-                            "valueBoolean": false
-                        },
-                        {
-                            "url": "distance",
-                            "valueUnsignedInt": 51
-                        },
-                        {
-                            "url": "indicativeAppointmentWaitTime",
-                            "valueUnsignedInt": 1
-                        }
-                    ],
-                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSearch-ListItem-1"
-                }
-            ],
-            "item": {
-                "extension": [
+              {
+                "url": "restricted",
+                "valueBoolean": false
+              },
+              {
+                "url": "unaccredited",
+                "valueBoolean": true
+              },
+              {
+                "url": "displayProminently",
+                "valueBoolean": false
+              },
+              {
+                "url": "indicativeAppointmentWaitTime",
+                "valueCodeableConcept": {
+                  "coding": [
                     {
-                        "extension": [
-                            {
-                                "url": "serviceName",
-                                "valueString": "SA-DEV3 ENT Service 001 - DBS - RL and CAS"
-                            },
-                            {
-                                "url": "specialty",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1",
-                                            "code": "EAR_NOSE_THROAT"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "url": "genderTreated",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-GenderTreated-1",
-                                            "code": "MALE_AND_FEMALE"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "url": "bookableType",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1",
-                                            "code": "DIRECTLY_BOOKABLE"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "url": "supportedAppointmentType",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1",
-                                            "code": "FIRST_OUTPATIENT"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "url": "referralLetterRequired",
-                                "valueBoolean": true
-                            },
-                            {
-                                "url": "location",
-                                "valueReference": {
-                                    "reference": "https://ers/Location/7128805",
-                                    "display": "R01 TRUST SITE 01"
-                                }
-                            },
-                            {
-                                "url": "linkToNHSWebsite",
-                                "valueString": "https://www.nhs.uk/service-search/chooseandbook?serviceId=6473511"
-                            },
-                            {
-                                "url": "supportedRequestFlowType",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
-                                            "code": "ADVICE_AND_GUIDANCE_REQUEST"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "url": "supportedRequestFlowType",
-                                "valueCodeableConcept": {
-                                    "coding": [
-                                        {
-                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
-                                            "code": "APPOINTMENT_REQUEST"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "url": "exclusions",
-                                "valueString": "Exclusions - Tongue"
-                            },
-                            {
-                                "url": "conditionsTreated",
-                                "valueString": "Conditions - Ear / Nose / Throat"
-                            },
-                            {
-                                "url": "suggestedInvestigations",
-                                "valueString": "Suggested - Ear Tests"
-                            }
-                        ],
-                        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSummaryView-1"
+                      "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-IWT-1",
+                      "code": "LIMITED_AVAILABILITY"
                     }
-                ],
-                "reference": "HealthcareService/6473511"
+                  ]
+                }
+              }
+            ],
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSearch-ListItem-1"
+          }
+        ],
+        "item": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "serviceName",
+                  "valueString": "Dietetics Service 1"
+                },
+                {
+                  "url": "specialty",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
+                        "code": "DIETETICS"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "genderTreated",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-GenderTreated-1",
+                        "code": "MALE_AND_FEMALE"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "bookableType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1",
+                        "code": "DIRECTLY_BOOKABLE"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "supportedAppointmentType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1",
+                        "code": "AHP_CLINIC"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "referralLetterRequired",
+                  "valueBoolean": true
+                },
+                {
+                  "url": "location",
+                  "valueReference": {
+                    "display": "ASSOCIATED CHEMISTS (BIR) LTD",
+                    "identifier": {
+                      "system": "https://directory.spineservices.nhs.uk/STU3/Organization",
+                      "value": "62"
+                    }
+                  }
+                },
+                {
+                  "url": "linkToNHSWebsite",
+                  "valueString": "https://www.nhs.uk/service-search/chooseandbook?serviceId=70000"
+                },
+                {
+                  "url": "supportedRequestFlowType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
+                        "code": "ADVICE_AND_GUIDANCE_REQUEST"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "supportedRequestFlowType",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
+                        "code": "APPOINTMENT_REQUEST"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "url": "exclusions",
+                  "valueString": "Test Exclusions"
+                },
+                {
+                  "url": "conditionsTreated",
+                  "valueString": "Test Conditions Treated"
+                },
+                {
+                  "url": "suggestedInvestigations",
+                  "valueString": "Test Suggested Investigations"
+                },
+                {
+                  "url": "referrerAlert",
+                  "valueString": "Is unaccredited. Has 'exclusions', 'suggested investigations' and 'conditions treated'."
+                }
+              ],
+              "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSummaryView-1"
             }
+          ],
+          "identifier": {
+            "system": "http://fhir.nhs.net/Id/ers-service",
+            "value": "70000"
+          }
         }
+      }
     ]
 }
   </pre>

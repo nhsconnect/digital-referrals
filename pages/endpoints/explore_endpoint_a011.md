@@ -66,7 +66,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | NO_REG_GP_PRACTICE | The patient provided was found *not* to have a registered GP practice. The patient is not eligible to be referred via e-RS while this problem persists |
 | ORGANISATION_IS_CLOSED | The organisation identifier supplied corresponds to an organisation that is closed |
 | ORGANISATION_NOT_APPROPRIATE | The organisation identifier supplied corresponds to an organisation of a type other than 'Service location' and 'Service providing organisation' |
-| PATIENT_ERROR | There was a problem with the patient's record in SDS. The patient is not eligible to be referred via e-RS while this problem persists|
+| PATIENT_ERROR | There was a problem with the patient's record in PDS. The patient is not eligible to be referred via e-RS while this problem persists|
 | REFERENCE_NOT_FOUND | An entity referenced (e.g. the patient, the postcode, the organisation or a clinician) is not found |
 | REFERENCED_USER_IS_NOT_ACTIVE | The SDS user provided as the _referring clinician_ or the _named clinician_ is found to be *not* active in SDS |
 | REFERENCED_USER_IS_NOT_RC | The SDS user provided as the _referring clinician_ does not actually have the Referring Clinician business function in e-RS |
@@ -83,202 +83,112 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 <br>
   <pre>
 {
-"resourceType": "Parameters",
-"meta": {
-  "profile": [
-    "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1"
-  ]
-},
-"parameter": [
-  {
-    "name": "patient",
-    "valueIdentifier": {
-      "system": "http://fhir.nhs.net/Id/nhs-number",
-      "value": "1000000001"
-    }
-  },
-  {
-    "name": "referringClinician",
-    "valueIdentifier": {
-      "system": "http://fhir.nhs.net/Id/sds-user-id",
-      "value": "021600556514"
-    }
-  },
-  {
-    "name": "contentSensitive",
-    "valueBoolean": true
-  },
-  {
-    "name": "intentionToAddReferralLetter",
-    "valueCoding": {
-      "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
-      "code": "NEED_TO_ADD_LATER"
-    }
-  },
-  {
-    "name": "firstReminderLetterFollowUpDays",
-    "valueUnsignedInt": 0
-  },
-  {
-    "name": "shortlist",
-    "resource": {
-      "meta": {
-        "profile": [
-          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1"
-        ]
+    "resourceType": "Parameters",
+    "meta": {
+      "profile": [
+        "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1"
+      ]
+    },
+    "parameter": [
+      {
+        "name": "patient",
+        "valueIdentifier": {
+          "system": "http://fhir.nhs.net/Id/nhs-number",
+          "value": "1470000008"
+        }
       },
-      "resourceType": "List",
-      "status": "current",
-      "mode": "snapshot",
-      "contained": [
-        {
-          "resourceType": "Parameters",
+      {
+        "name": "contentSensitive",
+        "valueBoolean": false
+      },
+      {
+        "name": "intentionToAddReferralLetter",
+        "valueCoding": {
+          "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+          "code": "NEED_TO_ADD_LATER"
+        }
+      },
+      {
+        "name": "firstReminderLetterFollowUpDays",
+        "valueUnsignedInt": 0
+      },
+      {
+        "name": "shortlist",
+        "resource": {
           "meta": {
             "profile": [
-              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1"
             ]
           },
-          "id": "ServiceSearchCriteria-1",
-          "parameter": [
+          "resourceType": "List",
+          "status": "current",
+          "mode": "snapshot",
+          "contained": [
             {
-              "name": "priority",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
-                "code": "URGENT"
+              "resourceType": "Parameters",
+              "meta": {
+                "profile": [
+                  "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+                ]
+              },
+              "id": "ServiceSearchCriteria-1",
+              "parameter": [
+                {
+                  "name": "priority",
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                    "code": "ROUTINE"
+                  }
+                },
+                {
+                  "name": "specialty",
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
+                    "code": "2WW"
+                  }
+                },
+                {
+                  "name": "clinicType",
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                    "code": "2WW_BONE"
+                  }
+                },
+                {
+                  "name": "commissioningProvisioning",
+                  "valueCoding": {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                    "code": "ALL_AVAILABLE_FOR_BOOKING"
+                  }
+                },
+                {
+                  "name": "ageAndGenderAppropriate",
+                  "valueBoolean": true
+                }
+              ]
+            }
+          ],
+          "entry": [
+            {
+              "item": {
+                "identifier": {
+                  "system": "http://fhir.nhs.net/Id/ers-service",
+                  "value": "50"
+                }
               }
-            },
+            }
+          ],
+          "extension": [
             {
-              "name": "specialty",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
-                "code": "ALLERGY"
+              "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Shortlist-SearchCriteria-1",
+              "valueReference": {
+                "reference": "#ServiceSearchCriteria-1"
               }
-            },
-            {
-              "name": "clinicType",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
-                "code": "ALLERGY_1"
-              }
-            },
-            {
-              "name": "postcode",
-              "valueString": "LS1 2UT"
-            },
-            {
-              "name": "distanceLimit",
-              "valueUnsignedInt": 500
-            },
-            {
-              "name": "commissioningProvisioning",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
-                "code": "ALL_AVAILABLE_FOR_BOOKING"
-              }
-            },
-            {
-              "name": "ageAndGenderAppropriate",
-              "valueBoolean": false
             }
           ]
         }
-      ],
-      "entry": [
-        {
-          "item": {
-            "reference": "HealthcareService/70021"
-          }
-        },
-        {
-          "item": {
-            "reference": "HealthcareService/70022"
-          }
-        },
-        {
-          "item": {
-            "reference": "HealthcareService/70023"
-          }
-        },
-        {
-          "item": {
-            "reference": "HealthcareService/70024"
-          }
-        },
-        {
-          "item": {
-            "reference": "HealthcareService/70025"
-          }
-        },
-        {
-          "item": {
-            "reference": "HealthcareService/70026"
-          }
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Shortlist-SearchCriteria-1",
-          "valueReference": {
-            "reference": "#ServiceSearchCriteria-1"
-          }
-        }
-      ]
-    }
-  }
-]
+      }
+    ]
 }
-  </pre>
-</details>
-
-<details><summary>Response Body</summary>
-<br>
-  <pre>
-{
-    "id": "000000070000",
-    "meta": {
-      "versionId": "3",
-      "profile": [
-        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"
-      ]
-    },
-    "resourceType": "ReferralRequest",
-    "extension": [
-      {
-        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
-        "valueCodeableConcept": {
-          "coding": [
-            {
-              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
-              "code": "URGENT",
-              "display": "Urgent"
-            }
-          ]
-        }
-      }
-    ],
-    "contained": [
-      {
-        "id": "Patient-1000000001",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1"
-          ]
-        },
-        "resourceType": "Patient",
-        "identifier": [
-          {
-            "system": "http://fhir.nhs.net/Id/nhs-number",
-            "value": "1000000001"
-          }
-        ]
-      }
-    ],
-    "status": "active",
-    "subject": {
-      "reference": "#Patient-1000000001"
-    },
-    "supportingInfo": [],
-    "intent": "plan"
-  }
   </pre>
 </details>
