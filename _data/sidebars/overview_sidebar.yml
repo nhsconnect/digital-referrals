@@ -31,21 +31,21 @@ entries:
     - title: Development Journey
       url: /getstarted_development_journey.html
       output: web
-    - title: Get Connected
-      url: /getstarted_get_connected.html
-      output: web
-    - title: Business Partners
-      url: /getstarted_business_partners.html
-      output: web
     - title: API Partner Registration
       url: /getstarted_partner_registration.html
       output: web
+    - title: Get Connected
+      url: /getstarted_get_connected.html
+      output: web
+    # - title: Business Partners
+    #   url: /getstarted_business_partners.html
+    #   output: web
     - title: Glossary of Terms
       url: /getstarted_glossary_of_terms.html
       output: web
-    - title: Frequently Asked Questions
-      url: /getstarted_faq.html
-      output: web
+    # - title: Frequently Asked Questions
+    #   url: /getstarted_faq.html
+    #   output: web
     - title: Forum and chat
       external_url: https://www.openhealthhub.org/c/ers
       output: web
@@ -200,27 +200,27 @@ entries:
 #      url: /assure_path_to_live.html
 #      output: web
 
-  - title: Deploy
-    output: web
-    folderitems:
+  # - title: Deploy
+  #   output: web
+  #   folderitems:
+  #
+  #   - title: Release Methodology
+  #     url: /deploy_release_methodology.html
+  #     output: web
 
-    - title: Release Methodology
-      url: /deploy_release_methodology.html
-      output: web
-
-  - title: XML MiM Integration
-    output: web
-    folderitems:
-
-    - title: Introduction
-      url: /mim_intro.html
-      output: web
-    - title: Foundations
-      url: /mim_foundations.html
-      output: web
-    - title: Referrers
-      url: /mim_referrers.html
-      output: web
-    - title: Providers
-      url: /mim_providers.html
-      output: web
+  # - title: XML MiM Integration
+  #   output: web
+  #   folderitems:
+  #
+  #   - title: Introduction
+  #     url: /mim_intro.html
+  #     output: web
+  #   - title: Foundations
+  #     url: /mim_foundations.html
+  #     output: web
+  #   - title: Referrers
+  #     url: /mim_referrers.html
+  #     output: web
+  #   - title: Providers
+  #     url: /mim_providers.html
+  #     output: web

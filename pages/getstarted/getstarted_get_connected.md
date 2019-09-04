@@ -26,16 +26,14 @@ If you require a smartcard, please go to the following site to find out more:
 * [Registration Authorities and Smartcards](https://digital.nhs.uk/Registration-Authorities-and-Smartcards)
 
 ## Access to the Development Environment ##
-Once you have a smartcard and a HSCN connection, you are now ready to request access to our Development Environment in order to integrate with the e-Referral Service APIs. The first thing to do is request a new End Point, unique to your organisation. You can do so by filling in the following form:
+If you have a HSCN/N3 connection you can request access to our Development Environment in order to integrate with the e-Referral Service APIs.
 
-* [End Point Registration Form](https://developer.nhs.uk/wp-content/uploads/2018/01/e-RS-API-EPR-Form-v1-4.docx)
+To request access to our development environment please contact platforms.supportdesk@nhs.net and request the following:
 
-Once you have downloaded the form, please enter the following information and return to (platforms.supportdesk@nhs.net)
+1. Allocation of an e-RS Integration API Test Pack
+2. Issue of Smartcard(s) for e-RS development
+3. Access to the e-RS DEV3 development environment
 
-1. Enter your name and contact details.
-2. In section 1, enter the FQDN (Fully Qualified Domain Name, must not be the same as an existing FQDN on the organisation code) and IP.
-3. In section 2, enter the ODS (Organisation Data Service) code and name of your allocated testing organisation (i.e. the pack allocated by the test data team).
-4. Enter the Source IP.
 
 ## Generating a Certificate Signing Request ##
 
