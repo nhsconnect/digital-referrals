@@ -28,7 +28,7 @@ If you require a smartcard, please go to the following site to find out more:
 ## Access to the Development Environment ##
 If you have a HSCN/N3 connection you can request access to our Development Environment in order to integrate with the e-Referral Service APIs.
 
-To request access to our development environment please contact platforms.supportdesk@nhs.net and request the following:
+To request access to our development environment please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net) and request the following:
 
 1. Allocation of an e-RS Integration API Test Pack
 2. Issue of Smartcard(s) for e-RS development
