@@ -17,7 +17,7 @@ Getting Connected is simple, but there are 3 important things to know:
 
 ## Connections and smartcards ##
 
-If you do not have a HSCN Connection, please go to the following site to request one:
+If you do not have a HSCN or N3 Connection, please go to the following site to request one:
 
 * [Connecting to HSCN](https://digital.nhs.uk/health-social-care-network/new-to-hscn/connecting-to-HSCN)
 
