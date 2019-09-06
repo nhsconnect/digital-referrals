@@ -157,7 +157,7 @@ entries:
           url: /explore_endpoint_a014.html
           output: web
 
-    - title: Error Messages
+    - title: General Error Messages
       url: /explore_error_messages.html
       output: web
 
@@ -165,19 +165,19 @@ entries:
       url: /develop_support.html
       output: web
 
-  - title: Assure
+  - title: Compliance & Assurance
     output: web
     folderitems:
 
     - title: Assurance Approach
       url: /assure_assurance_approach.html
       output: web
-    - title: Agreements
+    - title: Guidance & Support
       url: /assure_agreements.html
       output: web
-    - title: Target Operating Model
-      url: /assure_tom.html
-      output: web
+    # - title: Target Operating Model
+    #   url: /assure_tom.html
+    #   output: web
 
       subfolders:
       - title: Clinical Safety
