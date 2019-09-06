@@ -7,27 +7,27 @@ permalink: /develop_support.html
 summary: "Support for the e-Referral APIs"
 ---
 
-The role of NHS e-Referral Service Integration Portfolio is to ensure that integration solutions designed, developed and delivered by NHS Digital and wider healthcare organisations are secure, work as they are expected to, and are clinically safe for patients.  
 
-To support this the Integration Portfolio delivers application, compliance and infrastructure implementation through different methodologies, whether this is general advice and guidance, general interoperability questions or test environment support. Our specialist team members provide and co-ordinate:
+During development there are a number of support channels available, depending on the type of support required.
 
-  -	Agile product delivery and implementation of NHS Digital commissioned IT solutions  
-(By solution we mean the overall end-product or service, which can involve looking at software, hardware or a number of additional factors including how humans interact with the solutions.)
-  -	Delivery of technical and support services, including tooling, environments, test data and monitoring.
-  -	Compliance project support to health and social care customers outside of NHS Digital who are wanting to connect to NHS national services.
-  -	These systems are vital for all areas of health and social care. They are critical for health treatment. We make sure that they are available when clinicians, patients and social care users need them.
+### General NHS Digital Enquiries
+Online information about NHS Digital services can be found at [https://digital.nhs.uk/services](https://digital.nhs.uk/services).
+For general queries please email [enquiries@nhsdigital.nhs.uk](mailto:enquiries@nhsdigital.nhs.uk).
 
-### Support Contacts
-To facilitate Integration and API adoption, Business Partners can receive the following support provision:
-##### Platforms Support Desk
-For support with the Alpha e-RS/DEV3 and other Path-To-Live (PTL) test environments or technical enquiries please email the [Platforms Support Desk](mailto:platforms.supportdesk@nhs.net) team who will log the details and either resolve the incident or ensure it is passed on to the appropriate NHS Digital or provider resource for resolution. Alternatively you can also call 0300 303 4555.
-##### Solution Assurance
-Solution Assurance make sure that systems delivered by NHS Digital and wider healthcare organisations are secure, work as they are expected to, and are clinically safe for patients. The Team also provide tools to healthcare system providers allowing them to carry out their own testing and assurance. For more information visit [digital.nhs.uk/services/solution-assurance](https://digital.nhs.uk/services/solution-assurance), email [assurance@nhs.net](mailto:assurance@nhs.net) or call 0300 303 5678.
-##### Service Management
-For Live Service queries, Spine, Secondary Uses Service (SUS) and National Back Office incidents, please contact the [Service Management Team](https://digital.nhs.uk/services/service-management)
-##### NHS Digital Contact Centre
-For general NHS e-Referral Service enquiries, or Integration Team engagement, please submit an [enquiry](https://digital.nhs.uk/forms/contact-centre-feedback-form) to the NHS Digital Contact Centre or call 0300 303 5678.
-##### NHS National Service Desk
+### NHS e-RS Partners Team
+For non-technical queries and support with getting started with the e-RS integration APIs please contact [NHS e-RS Partners](mailto:nhserspartners@nhs.net).
+
+### Platforms Support Desk
+For support and enquiries regarding the e-RS development environments, including e-RS DEV3 and other Path-To-Live (PTL) environments, please email [Platforms Support Desk](mailto:platforms.supportdesk@nhs.net) who will log the details and either resolve the incident or ensure it is passed on to the appropriate NHS Digital or provider resource for resolution.
+
+### Solution Assurance
+Solution Assurance support healthcare system providers to carry out their own testing and assurance. For more information visit [digital.nhs.uk/services/solution-assurance](https://digital.nhs.uk/services/solution-assurance).
+
+### NHS National Service Desk
 For live issues please email the [NHS National Service Desk](mailto:ssd.nationalservicedesk@nhs.net) who will log the details and either resolve the incident or ensure it is passed on to the appropriate NHS Digital or provider resource for resolution. Alternatively, you can call the NHS National Service Desk on 0300 303 5035.
-##### Information Standards Service Desk
+
+### Information Standards Service Desk
 For assistance or queries relating to coding products, including SNOMED-CT and ICD, email [information.standards@nhs.net](mailto:information.standards@nhs.net)	or call 0300 303 4777.
+
+### Feedback and Complaints
+For information about providing feedback or registering a complaint please visit [https://digital.nhs.uk/about-nhs-digital/contact-us/feedback-and-complaints](https://digital.nhs.uk/about-nhs-digital/contact-us/feedback-and-complaints).

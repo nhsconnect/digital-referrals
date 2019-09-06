@@ -59,26 +59,15 @@ entries:
         - title: "Create Referral (Beta)"
           url: /develop_business_flow_bf004.html
           output: web
-        - title: "Clinical Review (Alpha)"
+        - title: "Clinical Review (Beta)"
           url: /develop_business_flow_bf003.html
           output: web
-        - title: "Referral Management (Alpha)"
-          url: /develop_business_flow_bf005.html
-          output: web
-
-    - title: Implementation Guidelines
-      url: /explore_implementation_guidelines.html
-      output: web
-
-    # - title: Standard Models
-    #   url: /explore_models.html
-    #   output: web
 
   - title: Develop
     output: web
     folderitems:
 
-    - title: Endpoint Catalogue
+    - title: Full Endpoint Catalogue
       url: /explore_endpoint_catalogue.html
       output: web
 
@@ -134,7 +123,7 @@ entries:
           url: /explore_endpoint_a019.html
           output: web
 
-      - title: Referral Review (Alpha)
+      - title: Clinical Review (Beta)
         output: web
         subfolderitems:
         - title: "A013: Accept Referral"
@@ -185,9 +174,9 @@ entries:
     output: web
     folderitems:
 
-    - title: Go Live
-      url: /deploy_release_methodology.html
-      output: web
+    # - title: Go Live
+    #   url: /deploy_release_methodology.html
+    #   output: web
 
     - title: Live Service Support
       url: /deploy_release_methodology.html
