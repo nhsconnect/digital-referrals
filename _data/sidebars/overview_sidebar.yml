@@ -3,22 +3,20 @@ entries:
 - title: e-RS APIs
   folders:
 
-  - title: Overview
+  - title: Last updated: 06/09/2019
     output: web
-    folderitems:
 
-    - title: Introduction
-      url: /index.html
-      output: web, pdf
-      type: homepage
+  - title: introduction
+    url: /index.html
+    output: web
 
-    - title: News and Events
-      url: /ers_api_news_and_events.html
-      output: web
+  - title: News and Events
+    url: /ers_api_news_and_events.html
+    output: web
 
-    - title: Release Notices
-      url: /forward_notices.html
-      output: web
+  - title: Release Notices
+    url: /forward_notices.html
+    output: web
 
   - title: Get Started
     output: web

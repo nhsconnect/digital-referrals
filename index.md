@@ -7,15 +7,17 @@ toc: false
 summary: "A brief introduction to getting started with the e-Referral APIs"
 ---
 
+# Introduction
+
 ## Application Programming Interface (API) ##
 
-A key aspect of the NHS e-RS vision is to enable local innovation and adoption of paperless referrals. You can do this in a secure and controlled manner using our API. The APIs are a well-defined interface aiding new software solutions in a simple way.
+A key aspect of the NHS e-RS vision is to enable local innovation and adoption of paperless referrals. To support this vision NHS Digital have created a set of APIs which provide a well-defined, simple to use data interface to the NHS e-Referral Service (e-RS).
 
-We want to stimulate and assist your development of applications linked to the NHS e-RS via its API. We describe and provide the usual tasks and support documents you will need here.
+We want to stimulate and assist your development of applications linked to the NHS e-RS using these APIs, so within these pages you will find information about the functionality of these APIs as well as guidance on how we can support you throughout development and implementation.
 
-## Ecosystem ##
+## The e-Referrals API Hub ##
 
-The site has five main parts. Each aligns to a phase of development and partner engagement with NHS Digital, as shown below. The Communication Channels let you engage with each phase of the Ecosystem. They are enabling components.
+The site has five main parts. Each aligns to a phase of development and partner engagement with NHS Digital, as shown below.  
 
 <img src="./images/ecosystem/eRS-ecosystem.gif" alt="NHS e-RS API Development Journey"/>
 
@@ -23,18 +25,20 @@ A summary of the activities and the support material in each of the phases are a
 
 |Phase&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Description|
 |---|---|
-|1.&nbsp;Get&nbsp;Started|Non-technical and high-level technical documentation to get started with the development, including registration for new partners, a glossary and an FAQ|
-|2.&nbsp;Explore|A full API reference (live and alpha) and (ReST) resource definitions, standard models and error messages|
-|3.&nbsp;Develop|Business flows related to each main user journey, access to synthetic e-Referral test data|
-|4.&nbsp;Assure|NHS Digital validation, integration testing, technical accreditation, and guidance to clinical safety and information governance|
-|5.&nbsp;Deploy|Registration, deployment certificates and monitoring|
+|1.&nbsp;Get&nbsp;Started | How to get started with development, including registration for new partners and connection to development environments|
+|2.&nbsp;Explore | Overview of the functionality available through the APIs with business flow examples and links to technical documentation |
+|3.&nbsp;Develop | Complete list of available APIs and their status with technical documentation and information about support during the development phase |
+|4.&nbsp;Assure | Information on the compliance process, technical accreditation and advice on clinical safety reviews |
+|5.&nbsp;Deploy | Guidance on the process for going live and live service support |
 
-<p>&nbsp;</p>
+## NHS e-RS API Development Journey ##
+The diagram below provides a more detailed view of a typical Development Journey as a sequence of phases together with the key activities, support materials and/or services provided by the API Hub.  
 
-To begin head to the [Development Journey](getstarted_development_journey.html) page.
+![NHS e-RS API Development Journey](images/getstarted/NHS_eRS_API_Development_Journey-1024x835.jpg)
 
-## The wider perspective ##
 
-With new models of care emerging and evolving, there is a clear need for more effective information sharing between care settings, organisations and geographies, as well as between professionals and citizens, to optimise patient outcomes and quality of care. This is reliant on the ability of IT systems across health and care to be interoperable with one another, and is key to the delivery of the future vision of care in England. To learn more about the Interoperability efforts at the NHS Digital, visit the [NHS Digital Interoperability](https://www.england.nhs.uk/digitaltechnology/info-revolution/health-and-care-data/interoperability/) pages.
+## Further Resources ##
 
 A key consideration for any remote access service is the requirement that patient data is safe and protected. There are many rules that govern controls and protection when accessing systems and application remotely. To learn more about the Government Digital Service standards visit the [NHS Digital Industry Standards](https://digital.nhs.uk/services/health-and-social-care-network/hscn-technical-guidance/business-applications-guidance/industry-standards) pages.
+
+The e-RS integration APIs have been developed to be compliant with HL7 Fast Healthcare Interoperability Resources (FHIR) standards. More information about FHIR APIs is available at [https://digital.nhs.uk/services/fhir-apis](https://digital.nhs.uk/services/fhir-apis).
