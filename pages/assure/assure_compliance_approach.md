@@ -19,26 +19,17 @@ The Supplier Conformance Assessment List (SCAL) is a technical document which de
 
 You can download an example of the SCAL [here](downloads/agreements/SCAL_vsn2.0.xlsx) but the latest version should be obtained from [functional.assurance@nhs.net](mailto:functional.assurance@nhs.net) prior to completion.
 
-Further details on the tabs that need to be completed in the SCAL are listed below.
+If a supplier has not worked with NHS Digital before, there is also a requirement for them to register to use the NHS Digital national service desk to log incidents.
 
-#### Supplier and product information tab
-In this section, the supplier completes the information regarding their organisation and product, along with questions pertaining to information security and clinical safety.
-
-If the supplier has not worked with NHS Digital before, there is also a requirement for them to register to use the NHS Digital national service desk to log incidents.
-
-<!-- ### e-Referrals Overarching tab
-
-### e-Referrals Referrer Requirements tab
-
-### e-Referrals Provider Requirements tab -->
-
-### Submitting the SCAL
+## Submitting the SCAL
 Once the document has been completed, it should be submitted by email to [functional.assurance@nhs.net](mailto:functional.assurance@nhs.net) who will review it and issue a Technical Conformance Certificate.
 
-Once a technical conformance certificate has been issued, it should be embedded into the SCAL document and submitted by email to [interop.mgmt@nhs.net](mailto:interop.mgmt@nhs.net). *The SCAL File must be named as follows: SUPPLIER NAME_NHSD SERVICE/S_SCAL_Vsn(X)_Final.*
+Once a technical conformance certificate has been issued, it should be embedded into the SCAL document and submitted by email to [interop.mgmt@nhs.net](mailto:interop.mgmt@nhs.net).  
 
 ## Connection Agreement
 In order to connect to the live service APIs a connection agreement must be signed by the owner of the connecting system. This should be obtained from [interop.mgmt@nhs.net](mailto:interop.mgmt@nhs.net), signed and returned by email.  
 
 ## End User Online Declaration (EUOD)
-The EUOD is an online form for completion by the end user organisation before access to the live service APIs can be provided.
+The End User Online Declaration (EUOD) comprises questions about the organisation that is completing the Declaration and also statements around conformance to NHS Digital requirements.
+
+Further guidance on completing the EUOD can be found [here](https://nhs-digital.citizenspace.com/onboarding/d72f6cc8/).

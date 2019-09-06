@@ -165,19 +165,13 @@ entries:
       url: /develop_support.html
       output: web
 
-  - title: Compliance & Assurance
+  - title: Compliance
     output: web
     folderitems:
 
     - title: Assurance Approach
-      url: /assure_assurance_approach.html
+      url: /assure_compliance_approach.html
       output: web
-    - title: Guidance & Support
-      url: /assure_agreements.html
-      output: web
-    # - title: Target Operating Model
-    #   url: /assure_tom.html
-    #   output: web
 
       subfolders:
       - title: Clinical Safety
