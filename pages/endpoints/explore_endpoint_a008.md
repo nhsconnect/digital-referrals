@@ -122,6 +122,22 @@ Provide ‘Referrals for Review’ worklist parameter.
 ## Output
 If successful referrals under ‘Referrals for Review’ worklist are returned. The response code `200 (OK)` is returned.
 
+IN the response body each entry returned will include:
+
+- UBRN
+- Referral Id (internal to e-RS, not the UBRN)
+- e-Referral Pathway Start Date
+- Request Priority
+- Appointment Date Time (if there is a Booked Appointment Booking only)
+- NHS Number
+- Clinical Information First Submitted Date (This is the First Submission from the Referrer Clinical Information related to the Appointment Request)
+- Clinical Information Last Updated Date (If recorded for the Appointment Request, this is the Last Alteration Date Time from the Referrer Clinical information for the Appointment Request)
+- Printing Complete Flag of the Referrer Clinical Information associated with the Appointment Request (a boolean to show the state of this flag)
+- Clinician
+- Specialty of the Service associated with the Booked Appointment Booking or Triage Deferral
+- Status
+- Referral Type: APPOINTMENT / TRIAGE_DEFERRAL
+
 #### Example
 ```javascript
 {

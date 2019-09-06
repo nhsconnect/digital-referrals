@@ -20,6 +20,9 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 ## Description
 This API lets the professional user accept the Referral that has already been created and not reviewed.
 
+## Related FHIR model
+- [eRS-AcceptReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-AcceptReferral-Operation-1)
+
 ### Request Operation
 #### Request Header
 Provide ASID for the end-point system, the Session Key and the VersionId of the Referral.

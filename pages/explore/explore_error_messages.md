@@ -7,8 +7,8 @@ permalink: /explore_error_messages.html
 summary: "A summary of error message handling for the e-Referral APIs"
 ---
 
-| Error&nbsp;code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description | Guidance |
-| ---------- | ----------- | -------- |
+| HTTP Error Code | Description | Guidance |
+| --------------- | ----------- | -------- |
 | 400 (Bad&nbsp;Request) | The data received was malformed (e.g. missing/incorrect fields)	| Report the error to local service desk |
 | 403 (Forbidden)| The logged in user is not authorised to perform the requested action (e.g. due to their business function not being authorised, organisation not having the appropriate organisation role, legitimate relationship, referrer rights etc) | Report the error to local service desk |
 | 404 (Resource&nbsp;not&nbsp;found) | The requested resource (e.g. A UBRN, NHSNumber, Attachment, Lock etc does not exist and cannot be returned) | Check the search term entered was correct |

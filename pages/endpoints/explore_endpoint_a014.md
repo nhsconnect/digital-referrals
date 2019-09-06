@@ -18,7 +18,10 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 | POST | v1/ReferralRequest/{UBRN}/$ers.rejectReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ## Description
-This API lets the professional user reject the Referral with reject reason and comment.
+This API lets the professional user reject the Referral with reject reason and comment.  
+
+## Related FHIR model
+- [eRS-RejectReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-RejectReferral-Operation-1)  
 
 ### Request Operation
 #### Request Header

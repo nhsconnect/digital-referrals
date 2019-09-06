@@ -13,14 +13,10 @@ entries:
       type: homepage
 
     - title: News and Events
-      url: /news_and_events.html
+      url: /ers_api_news_and_events.html
       output: web
 
-    - title: Deployment History
-      url: /deployment_history.html
-      output: web
-
-    - title: Forward Notices
+    - title: Release Notices
       url: /forward_notices.html
       output: web
 
@@ -37,15 +33,6 @@ entries:
     - title: Get Connected
       url: /getstarted_get_connected.html
       output: web
-    # - title: Business Partners
-    #   url: /getstarted_business_partners.html
-    #   output: web
-    - title: Glossary of Terms
-      url: /getstarted_glossary_of_terms.html
-      output: web
-    # - title: Frequently Asked Questions
-    #   url: /getstarted_faq.html
-    #   output: web
     - title: Forum and chat
       external_url: https://www.openhealthhub.org/c/ers
       output: web
@@ -157,15 +144,15 @@ entries:
           url: /explore_endpoint_a014.html
           output: web
 
-    - title: General Error Messages
+    - title: Generic Error Codes
       url: /explore_error_messages.html
       output: web
 
-    - title: Support
+    - title: Development Support
       url: /develop_support.html
       output: web
 
-  - title: Compliance
+  - title: Assure
     output: web
     folderitems:
 
@@ -194,13 +181,17 @@ entries:
 #      url: /assure_path_to_live.html
 #      output: web
 
-  # - title: Deploy
-  #   output: web
-  #   folderitems:
-  #
-  #   - title: Release Methodology
-  #     url: /deploy_release_methodology.html
-  #     output: web
+  - title: Deploy
+    output: web
+    folderitems:
+
+    - title: Go Live
+      url: /deploy_release_methodology.html
+      output: web
+
+    - title: Live Service Support
+      url: /deploy_release_methodology.html
+      output: web
 
   # - title: XML MiM Integration
   #   output: web

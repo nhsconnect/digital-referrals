@@ -3,7 +3,7 @@ title: News and Events
 keywords: news, events
 sidebar: overview_sidebar
 toc: false
-permalink: /news_and_events.html
+permalink: /ers_api_news_and_events.html
 summary: "News and events related to the e-Referral APIs"
 ---
 

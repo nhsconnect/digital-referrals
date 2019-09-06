@@ -22,7 +22,7 @@ As a Referring Clinician (/Administrator)
 I want to create a referral for my patient with a shortlist of services  
 So that I can progress the care of my patient while leaving them the freedom to choose the service that best suits them.  
 
-### Prerequisite Operations
+### Prerequisite Conditions
 The shortlist must not contain any Referral Assessment Services (RAS), referrals to these services should be created using endpoint [A021: Create Referral And Send For Triage](explore_endpoint_a021.html).
 
 ### Request Operation
