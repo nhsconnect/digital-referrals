@@ -18,7 +18,7 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 | POST | v1/ReferralRequest/{UBRN}/$ers.rejectReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 ## Description
-This API lets the professional user reject the Referral with reject reason and comment.  
+This API will reject a referral request in e-RS based on the included UBRN, rejection reason and optional comments.  
 
 ## Related FHIR model
 - [eRS-RejectReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-RejectReferral-Operation-1)  
@@ -35,14 +35,6 @@ Provide ASID for the end-point system, the Session Key and the VersionId of the 
 | If-Match | W/"`n`" |
 
 Note: `n` is the VersionId of the Referral and this can be retrieved by fetching the Referral details. It must be the ID of the latest version of the referral in e-RS.
-
-<!-- #### Example
-```http
-XAPI_ASID:200000000220
-HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
-Accept:application/json+fhir
-If-Match: W/"8"
-``` -->
 
 #### Request Body
 Provide reject details such as reject reason and reject comment.
@@ -93,4 +85,16 @@ Provide reject details such as reject reason and reject comment.
 ### Response
 
 #### Success
-If successful the referral is rejected. The response code `200 (OK)` is returned. This response has no body.
+If successful the referral is rejected. The response code `200 (OK)` is returned. This response has no body.  
+
+#### Failure
+If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
+Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+
+| issue.details.code | Description |
+| ------------------ | ------ |
+|FIELD_NOT_PERMITTED |the referral is booked at a directly bookable service, and the appointmentCancelledInPas flag is provided|
+| INVALID_REQUEST_STATE | The referral is not in a 'Pending Review' state; or: the appointment has been cancelled or marked as DNA; or: the appointment is now in the past; or: the referrer indicated that they intend to add a referral letter and they haven't done so yet |
+| NO_RELATIONSHIP | The user is not authorised to view the referral, possibly because it is not yet/no longer booked into the service |
+|PATIENT_ERROR | There was a problem with the patient’s record in PDS. The patient is not eligible to be referred via e-RS while this problem persists |
+| VALUE_IS_REQUIRED | The rejection reason selected requires rejection comments, but these were not provided; or: the referral is booked at an indirectly bookable service, and the appointmentCancelledInPas flag is not provided |  

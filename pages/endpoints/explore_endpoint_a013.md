@@ -43,3 +43,13 @@ There is no request body required.
 
 #### Success
 If successful the referral is accepted. The response code `200 (OK)` is returned. This response has no body.
+
+#### Failure
+If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
+Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+
+| issue.details.code | Description |
+| ------------------ | ------ |
+| INVALID_REQUEST_STATE | The referral is not in a 'Pending Review' state; or: the appointment has been cancelled or marked as DNA; or: the appointment is now in the past |  
+| NO_RELATIONSHIP |The user is not authorised to view the referral, possibly because it is not yet/no longer booked into the service |  
+| PATIENT_ERROR | There was a problem with the patient’s record in PDS. The patient is not eligible to be referred via e-RS while this problem persists |  
