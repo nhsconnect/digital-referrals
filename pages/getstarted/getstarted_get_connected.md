@@ -7,35 +7,40 @@ permalink: getstarted_get_connected.html
 summary: "How to get connected to the e-Referral APIs in a few simple steps"
 ---
 
-## Three important things to know ##
+## Prerequisites for connection
 
-Getting Connected is simple, but there are 3 important things to know:
+To use the e-RS Integration APIs you must:
 
-1. Your organisation needs to be using a secure Health and Social Care Network (HSCN) Connection (previously N3)
-2. APIs can only be accessed using a smartcard
-3. You will need to apply for a unique End Point and test data
+1. Use a secure Health and Social Care Network (HSCN) Connection (previously known as N3)
+2. Have an NHS smartcard with valid e-RS role for the data you are requesting or submitting
+3. Be issued with a unique Endpoint (and specific test data for use in development environments)
 
-## Connections and smartcards ##
+#### HSCN connections ##
 
 If you do not have a HSCN or N3 Connection, please go to the following site to request one:
 
 * [Connecting to HSCN](https://digital.nhs.uk/health-social-care-network/new-to-hscn/connecting-to-HSCN)
 
+#### NHS Smartcards
+
 If you require a smartcard, please go to the following site to find out more:
 
-* [Registration Authorities and Smartcards](https://digital.nhs.uk/Registration-Authorities-and-Smartcards)
+* [Registration Authorities and Smartcards](https://digital.nhs.uk/Registration-Authorities-and-Smartcards)  
 
-## Access to the Development Environment ##
-If you have a HSCN/N3 connection you can request access to our Development Environment in order to integrate with the e-Referral Service APIs.
 
-To request access to our development environment please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net) and request the following:
+## Access to development environments ##
+To request access to a test environment to connect to for development and testing purposes, please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net) and request the following:
 
 1. Allocation of an e-RS Integration API Test Pack
 2. Issue of Smartcard(s) for e-RS development
 3. Access to the e-RS DEV3 development environment
 
+#### Using existing smartcards
+Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) if this is required.
 
-## Generating a Certificate Signing Request ##
+<!-- ## Further details on connecting
+
+#### Generating a Certificate Signing Request
 
 You will also need to generate and submit a Certificate Signing Request (CSR) and a Private Key to obtain an endpoint certificate for the requested FQDN.
 
@@ -60,42 +65,22 @@ The CSR along with the private key will be generated and available in `C:\OpenSS
 
 Please specify alongside the request to the Platforms Support Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
 
-## Registry Settings ##
+#### Registry Settings ##
 
-Please install “IAConfig2.msi” by downloading the IAConfig.zip archive from here:
-
-* [Downloads](http://nww.hscic.gov.uk/dir/downloads/index.html#ia_config) (Can only be accessed via N3)
+Please install “IAConfig2.msi” by downloading the IAConfig.zip archive from [http://nww.hscic.gov.uk/dir/downloads/index.html#ia_config](http://nww.hscic.gov.uk/dir/downloads/index.html#ia_config) (Can only be accessed via N3)
 
 Once installed you should be able to apply the DEV Registry settings to access the e-RS/DEV1 environment.
 
-## Identity Agent ##
+#### Identity Agent ##
 
-Please install the Identity Agent and Middleware from here:
+Please install the Identity Agent and Middleware from [http://nww.hscic.gov.uk/dir/downloads/index.html](http://nww.hscic.gov.uk/dir/downloads/index.html) (Can only be accessed via HSCN/N3)
 
-* [Downloads](http://nww.hscic.gov.uk/dir/downloads/index.html) (Can only be accessed via N3)
+#### Unblocking IP addresses ##
 
-## Unblocking IP addresses ##
+If you want to unblock certain IP addresses as part of this process, please email the [Platforms Support Desk](platforms.supportdesk@nhs.net).
 
-If you want to unblock certain IP addresses as part of this process, please reach out to the Platforms Support Desk (platforms.supportdesk@nhs.net).
-
-## Using existing smartcards ##
-
-Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) if this is required.
-
-Those suppliers without existing smartcards in Spine Development can be posted an RA Card for the required organisation(s) so that they can issue their allocated UUIDs locally . Please specify the requirement in your initial request to the Platforms Support Desk and include your Name and Postal Address.
-
-If you have any queries about connecting to Spine Development (smartcards, endpoints, certificates, connectivity, CSRs), please contact the Platforms Support Desk.
-
-## Final steps ##
+#### Installing ROOT and SUBCA Certificates
 
 Once you have received a certificate from our Platforms Support Desk you will need to follow a few simple steps that will allow you to begin your e-Referral Service Integration journey.
 
-You need to install ROOT and SUBCA certificates. Here’s a handy guide to get you started:
-
-* [Certificate Installation Guide.pdf](https://developer.nhs.uk/wp-content/uploads/2018/01/Install-ROOTCA-and-SUBCA-certificates-v1.0.pdf)
-
-## Tools for exploration ##
-
-After this is all set up, you can use either the API Client Demonstrator Tool (also known as Quick Connect) or [Postman](https://www.getpostman.com). In the latter case we recommend you install the full version of Postman tool and not just the Chrome add-in for Postman.
-
-If you go down the API Client Demonstrator Tool route you will need to install [Keystore Explorer](http://keystore-explorer.org) in order to convert the CSR and private key into a JKS file. Please contact the NHS e-Referrals Integration team and they will be happy to provide more information about how to access this tool.
+You need to install ROOT and SUBCA certificates, download the [Certificate Installation Guide](https://developer.nhs.uk/wp-content/uploads/2018/01/Install-ROOTCA-and-SUBCA-certificates-v1.0.pdf) for more details. -->

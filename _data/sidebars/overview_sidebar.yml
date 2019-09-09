@@ -24,9 +24,6 @@ entries:
     output: web
     folderitems:
 
-    - title: Development Journey
-      url: /getstarted_development_journey.html
-      output: web
     - title: API Partner Registration
       url: /getstarted_partner_registration.html
       output: web
