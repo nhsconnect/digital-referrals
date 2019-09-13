@@ -11,7 +11,7 @@ summary: "How to get connected to the e-Referral APIs in a few simple steps"
 
 To use the e-RS Integration APIs you must:
 
-1. Use a secure Health and Social Care Network (HSCN) Connection (previously known as N3)
+1. Use a secure Health and Social Care Network (HSCN) Connection (or an N3 connection until migration to HSCN)
 2. Have an NHS smartcard with valid e-RS role for the data you are requesting or submitting
 3. Be issued with a unique Endpoint (and specific test data for use in development environments)
 

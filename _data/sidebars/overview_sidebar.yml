@@ -30,35 +30,26 @@ entries:
     - title: Get Connected
       url: /getstarted_get_connected.html
       output: web
-    - title: Forum and chat
-      external_url: https://www.openhealthhub.org/c/ers
-      output: web
+    # - title: Forum and chat
+    #   external_url: https://www.openhealthhub.org/c/ers
+    #   output: web
 
   - title: Explore
     output: web
     folderitems:
 
-    - title: API Environments
-      url: /explore_api_environments.html
+    - title: "Authentication and Authorisation"
+      url: /develop_business_flow_bf001.html
       output: web
-
-      subfolders:
-      - title: API Suites
-        output: web
-        subfolderitems:
-
-        - title: "Authentication and Authorisation"
-          url: /develop_business_flow_bf001.html
-          output: web
-        - title: "Clinical Referral Information"
-          url: /develop_business_flow_bf002.html
-          output: web
-        - title: "Create Referral (Beta)"
-          url: /develop_business_flow_bf004.html
-          output: web
-        - title: "Clinical Review (Beta)"
-          url: /develop_business_flow_bf003.html
-          output: web
+    - title: "Clinical Referral Information"
+      url: /develop_business_flow_bf002.html
+      output: web
+    - title: "Create Referral (Beta)"
+      url: /develop_business_flow_bf004.html
+      output: web
+    - title: "Clinical Review (Beta)"
+      url: /develop_business_flow_bf003.html
+      output: web
 
   - title: Develop
     output: web
@@ -142,41 +133,24 @@ entries:
     output: web
     folderitems:
 
-    - title: Assurance Approach
+    - title: Compliance Approach
       url: /assure_compliance_approach.html
       output: web
 
-      subfolders:
-      - title: Clinical Safety
-        output: web
-        subfolderitems:
-        - title: Introduction
-          url: /clinical_safety_intro.html
-          output: web
-        - title: API Clinical Safety Framework
-          url: /clinical_safety_framework.html
-          output: web
-        - title: Clinical Safety Resources
-          url: /clinical_safety_resources.html
-          output: web
-        - title: Advice and Guidance
-          url: /clinical_safety_faqs.html
-          output: web
-
-#    - title: Path-To-Live
-#      url: /assure_path_to_live.html
-#      output: web
+    - title: Clinical Safety
+      url: /clinical_safety.html
+      output: web
 
   - title: Deploy
     output: web
     folderitems:
 
-    # - title: Go Live
-    #   url: /deploy_release_methodology.html
-    #   output: web
+    - title: Going Live
+      url: /go_live.html
+      output: web
 
     - title: Live Service Support
-      url: /deploy_release_methodology.html
+      url: /live_support.html
       output: web
 
   # - title: XML MiM Integration
