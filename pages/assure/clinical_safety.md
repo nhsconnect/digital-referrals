@@ -8,13 +8,14 @@ summary: "Guidance on Clinical Safety requirements"
 ---
 
 ## Introduction
-Responsibility for clinical safety remains with the system supplier and end user organisation, as part of the NHS e-RS integration API [compliance approach](assure_compliance_approach.html).
+Clinical safety remains the responsibility of the system supplier and end user organisation, as laid out in the NHS e-RS Integration API [compliance approach](assure_compliance_approach.html).
 
+## Resources
 There are a number of resources available:
 
 ### Clinical Safety Standards
 
-##### [DCB0129](https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dcb0129-clinical-risk-management-its-application-in-the-manufacture-of-health-it-systems0)  - Clinical Risk Management: its Application in the Manufacture of Health IT Systems.  
+##### [DCB0129](https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dcb0129-clinical-risk-management-its-application-in-the-manufacture-of-health-it-systems)  - Clinical Risk Management: its Application in the Manufacture of Health IT Systems.  
 This standard sets clinical risk management requirements for Manufacturers of health IT systems.
 
 ##### [DCB0160](https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dcb0160-clinical-risk-management-its-application-in-the-deployment-and-use-of-health-it-systems) - Clinical Risk Management: its Application in the Deployment and Use of Health IT Systems.  

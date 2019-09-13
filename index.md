@@ -34,8 +34,7 @@ A summary of the activities and the support material in each of the phases are a
 ## NHS e-RS API Development Journey ##
 The diagram below provides a more detailed view of a typical Development Journey as a sequence of phases together with the key activities, support materials and/or services provided by the API Hub.  
 
-![NHS e-RS API Development Journey](images/getstarted/NHS_eRS_API_Development_Journey-1024x835.jpg)
-
+![NHS e-RS API Development Journey](digital-referrals/images/getstarted/NHS_eRS_API_Development_Journey-1024x835.jpg)
 
 ## Further Resources ##
 
