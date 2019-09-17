@@ -25,9 +25,9 @@ This business flow describes the process of a provider-side clinician fetching r
 * [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
 
 ##### Referral Review
-* [A013 – Accept Referral](explore_endpoint_a013.html) ![Alpha](images/icons/api_alpha.png)
-* [A014 – Reject Referral](explore_endpoint_a014.html) ![Alpha](images/icons/api_alpha.png)
-* A0xx - Consultant Action *COMING SOON*
+* [A013 – Accept Referral](explore_endpoint_a013.html) ![Beta](images/icons/api_beta.png)
+* [A014 – Reject Referral](explore_endpoint_a014.html) ![Beta](images/icons/api_beta.png)
+* A0xx - Admin Action *(Available 2020)*
 
 #### Review the diagram below to learn more
 
