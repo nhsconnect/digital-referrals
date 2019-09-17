@@ -136,6 +136,10 @@ entries:
     - title: Compliance Approach
       url: /assure_compliance_approach.html
       output: web
+      
+    - title: Special Terms
+      url: /assure_special_terms.html
+      output: web
 
     - title: Clinical Safety
       url: /clinical_safety.html

@@ -7,7 +7,7 @@ permalink: /develop_business_flow_bf003.html
 summary: "Business flows for accepting, rejecting or adding instructions for further action"
 ---
 
-###### Status: ![Alpha](images/icons/api_alpha.png)
+###### Status: ![Beta](images/icons/api_beta.png)
 
 #### Definition
 
