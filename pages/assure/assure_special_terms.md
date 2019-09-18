@@ -25,7 +25,7 @@ The Connecting Supplier Party will not be able to on-board its customers until t
 
 NHS Digital will announce if it intends to discontinue or make backwards incompatible changes to its Current Version.
 
-#### Depreciation Schedule
+#### Deprecation Schedule
 
 NHS Digital operates an agile development process with regular, dynamic and condensed release cycles.
 Deprecation should be interpreted as a fair warning that the either the Current or a Previous Version will soon be turned off.  End User Organisation and the Connecting Party will actively be encouraged to upgrade their implementations at that point. Sunset means that the version is no longer available.
