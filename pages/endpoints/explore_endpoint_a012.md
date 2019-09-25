@@ -71,45 +71,47 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 <details><summary>Request Body</summary>
 <br>
   <pre>
-{
+  {
+    "resourceType": "Parameters",
     "meta": {
       "profile": [
         "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-MaintainReferralLetter-Operation-1"
       ]
     },
-    "resourceType": "Parameters",
     "parameter": [
       {
         "name": "referralLetterFile",
         "resource": {
+          "resourceType": "DocumentReference",
           "meta": {
             "profile": [
               "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
             ]
           },
-          "resourceType": "DocumentReference",
+          "status": "current",
           "type": {
             "coding": [
               {
                 "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
-                "code": "REFERRER"
+                "code": "REFERRER",
+                "display": "Referrer"
               }
             ]
           },
-          "status": "current",
-          "indexed": 1563384454833,
-          "description": "Blood test results showing an anomaly in the values of xxxx",
-          "content": [
+          "indexed": "2019-05-13T12:26:53+00:00",
+          "description": "This is some attachment text",
+                          "content": [
             {
               "attachment": {
-                "url": "Binary/att-70000-70000"
+                "url": "{{LOCATION}}"
               }
             }
           ]
         }
       }
+
     ]
-}
+  }
   </pre>
 </details>
 

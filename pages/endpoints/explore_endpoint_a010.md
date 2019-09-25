@@ -79,95 +79,97 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 
 <details><summary>Request Body</summary>
 <br>
+Parameters values surrounded by {{ }} should be replaced with an appropriate value  
   <pre>
 {
-  "resourceType": "Parameters",
-  "meta": {
-    "profile": [
-    "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1"
-    ]
-  },
-  "parameter": [{
-    "name": "patient",
-    "valueIdentifier": {
-      "system": "http://fhir.nhs.net/Id/nhs-number",
-      "value": "1234567890"
-    }
-  },
-  {
-    "name": "requestType",
-    "valueCoding": {
-      "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-RequestType-1",
-      "code": "APPOINTMENT_REQUEST"
-    }
-  },  {
-    "name": "searchCriteria",
-    "resource": {
-      "resourceType": "Parameters",
-      "meta": {
-        "profile": [
-        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
-        ]
-      },
-      "parameter": [{
-        "name": "priority",
-        "valueCoding": {
-          "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Priority-1",
-          "code": "ROUTINE"
-        }
-      }, {
-        "name": "specialty",
-        "valueCoding": {
-          "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-Specialty-1",
-          "code": "EAR_NOSE_THROAT"
-        }
-      }, {
-        "name": "clinicType",
-        "valueCoding": {
-          "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-ClinicType-1",
-          "code": "EAR"
-        }
-      }, {
-        "name": "namedClinician",
-        "valueIdentifier": {
-          "system": "http://fhir.nhs.net/Id/sds-user-id",
-          "value": "555021146102"
-        }
-      },	{
-        "name": "organisation",
-        "valueIdentifier": {
-          "system": "https://directory.spineservices.nhs.uk/STU3/Organization/",
-          "value": "R01"
-        }
-      }, {
-        "name": "indicativeAppointmentWaitTimeLimit",
-        "valueUnsignedInt":"10"
-      }, {
-        "name": "postcode",
-        "valueString":"DN39 6SW"
-      }, {
-        "name": "distanceLimit",
-        "valueUnsignedInt":"100"
-      }, {
-        "name": "commissioningProvisioning",
-        "valueCoding": {
-          "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-CommissioningProvisioning-1",
-          "code": "ALL_AVAILABLE_FOR_BOOKING"
-        }
-      },
-      {
-        "name": "ageAndGenderAppropriate",
-        "valueBoolean":true
-      }]
-    }
-  }, {
-    "name": "sortBy",
-    "valueCoding": {
-      "system": "https://fhir.nhs.uk/STU3/ValueSet/eRS-SortBy-1",
-      "code": "DISTANCE"
-    }
-  }]
+            "resourceType": "Parameters",
+            "meta": {
+                        "profile": [
+                        "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1"
+                        ]
+            },
+            "parameter": [{
+                        "name": "patient",
+                        "valueIdentifier": {
+                                    "system": "http://fhir.nhs.net/Id/nhs-number",
+                                    "value": "{{NHS NUMBER}}"
+                        }
+            },
+            {
+                        "name": "requestType",
+                        "valueCoding": {
+                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1",
+                                    "code": "APPOINTMENT_REQUEST"
+                        }
+            },  {
+                        "name": "searchCriteria",
+                        "resource": {
+                                    "resourceType": "Parameters",
+                                    "meta": {
+                                                "profile": [
+                                                "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+                                                ]
+                                    },
+                                    "parameter": [{
+                                                "name": "priority",
+                                                "valueCoding": {
+                                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                                                            "code": "{{PRIORITY}}"
+                                                }
+                                    }, {
+                                                "name": "specialty",
+                                                "valueCoding": {
+                                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
+                                                            "code": "{{SPECIALTY}}"
+                                                }
+                                    }, {
+                                                "name": "clinicType",
+                                                "valueCoding": {
+                                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                                                            "code": "{{CLINIC TYPE}}"
+                                                }
+                                    }, {
+                                                "name": "namedClinician",
+                                                "valueIdentifier": {
+                                                            "system": "http://fhir.nhs.net/Id/sds-user-id",
+                                                            "value": "{{CLINICIAN ID}}"
+                                                }
+                                    },          {
+                                                "name": "organisation",
+                                                "valueIdentifier": {
+                                                            "system": "https://directory.spineservices.nhs.uk/STU3/Organization",
+                                                            "value": "{{ORGANISATION}}"
+                                                }
+                                    }, {
+                                                "name": "indicativeAppointmentWaitTimeLimit",
+                                                "valueUnsignedInt":"{{INDICATIVE WAIT TIME}}"
+                                    }, {
+                                                "name": "postcode",
+                                                "valueString":"{{POSTCODE}}"
+                                    }, {
+                                                "name": "distanceLimit",
+                                                "valueUnsignedInt":"{{DISTANCE}}"
+                                    }, {
+                                                "name": "commissioningProvisioning",
+                                                "valueCoding": {
+                                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                                                            "code": "{{COMMISSIONING PROVISIONING}}"
+                                                }
+                                    },
+                                    {
+                                                "name": "ageAndGenderAppropriate",
+                                                "valueBoolean":true
+                                    }]
+                        }
+            }, {
+                        "name": "sortBy",
+                        "valueCoding": {
+                                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1",
+                                    "code": "DISTANCE"
+                        }
+            }]
 }
+
   </pre>
 </details>
 

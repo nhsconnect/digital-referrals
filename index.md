@@ -15,6 +15,15 @@ A key aspect of the NHS e-RS vision is to enable local innovation and adoption o
 
 We want to stimulate and assist your development of applications linked to the NHS e-RS using these APIs, so within these pages you will find information about the functionality of these APIs as well as guidance on how we can support you throughout development and implementation.
 
+## Functionality and Future Roadmap
+Currently the e-RS Integration APIs provide the following functionality:
+- Smartcard Authentication and Authorisation https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf001.html
+- Clinical Referral Information https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf002.html
+
+Coming Soon:
+- [Create Referral](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
+- Clinical Review https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html
+
 ## The e-Referrals API Hub ##
 
 The site has five main parts. Each aligns to a phase of development and partner engagement with NHS Digital, as shown below.  
@@ -34,7 +43,7 @@ A summary of the activities and the support material in each of the phases are a
 ## NHS e-RS API Development Journey ##
 The diagram below provides a more detailed view of a typical Development Journey as a sequence of phases together with the key activities, support materials and/or services provided by the API Hub.  
 
-![NHS e-RS API Development Journey](digital-referrals/images/getstarted/NHS_eRS_API_Development_Journey-1024x835.jpg)
+![NHS e-RS API Development Journey](images/getstarted/devjourney.jpg)
 
 ## Further Resources ##
 

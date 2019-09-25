@@ -22,6 +22,7 @@ Logs out of the Professional Session and closes the dialogue.
 
 ## Input
 The Session ID / Key of the session to be deleted should be provided as the sessionKey path parameter. The Session ID is that returned in `ProfessionalSession.id`.
+**NOTE:** The connected system MUST NOT close any of its sessions until it has finished using them, i.e. it must not close a session until all previous calls authorised by that session have returned.
 
 ### Header
 Provide ASID of the end-point system and equivalent Session Key generated for the SSO Token-ID.

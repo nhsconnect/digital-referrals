@@ -81,114 +81,120 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 
 <details><summary>Request Body</summary>
 <br>
+Parameters values surrounded by {{ }} should be replaced with an appropriate value  
   <pre>
-{
-    "resourceType": "Parameters",
-    "meta": {
+  {
+      "resourceType": "Parameters",
+      "meta": {
       "profile": [
-        "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1"
-      ]
-    },
-    "parameter": [
-      {
-        "name": "patient",
-        "valueIdentifier": {
-          "system": "http://fhir.nhs.net/Id/nhs-number",
-          "value": "1470000008"
-        }
+          "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1"
+          ]
       },
-      {
-        "name": "contentSensitive",
-        "valueBoolean": false
-      },
-      {
-        "name": "intentionToAddReferralLetter",
-        "valueCoding": {
-          "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
-          "code": "NEED_TO_ADD_LATER"
-        }
-      },
-      {
-        "name": "firstReminderLetterFollowUpDays",
-        "valueUnsignedInt": 0
-      },
-      {
-        "name": "shortlist",
-        "resource": {
-          "meta": {
-            "profile": [
-              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1"
-            ]
+      "parameter": [
+          {
+              "name": "patient",
+              "valueIdentifier": {
+                  "system": "http://fhir.nhs.net/Id/nhs-number",
+                  "value": "{{NHS NUMBER}}"
+              }
           },
-          "resourceType": "List",
-          "status": "current",
-          "mode": "snapshot",
-          "contained": [
-            {
-              "resourceType": "Parameters",
-              "meta": {
-                "profile": [
-                  "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
-                ]
-              },
-              "id": "ServiceSearchCriteria-1",
-              "parameter": [
-                {
-                  "name": "priority",
-                  "valueCoding": {
-                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
-                    "code": "ROUTINE"
+          {
+              "name": "contentSensitive",
+              "valueBoolean": false
+          },
+          {
+              "name": "intentionToAddReferralLetter",
+              "valueCoding": {
+                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReferralLetterIntention-1",
+                  "code": "NEED_TO_ADD_LATER"
+              }
+          },
+          {
+              "name": "firstReminderLetterFollowUpDays",
+              "valueUnsignedInt": 14
+          },
+          {
+              "name": "unaccreditedComment",
+              "valueString": ""
+          },
+          {
+              "name": "shortlist",
+              "resource": {
+                  "meta": {
+                      "profile": [
+                          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1"
+                      ]
+                  },
+                  "resourceType": "List",
+                  "status": "current",
+                  "mode": "snapshot",
+                  "contained": [
+                      {
+                          "id": "ServiceSearchCriteria-1",
+                          "resourceType": "Parameters",
+                          "meta": {
+                              "profile": [
+                                  "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+                              ]
+                          },
+                      "parameter": [
+                          {
+                              "name": "priority",
+                              "valueCoding": {
+                                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                                  "code": "{{PRIORITY}}"
+                              }
+                          },
+                          {
+                              "name": "specialty",
+                              "valueCoding": {
+                                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
+                                  "code": "{{SPECIALTY}}"
+                              }
+                          },
+                          {
+                              "name": "clinicType",
+                              "valueCoding": {
+                                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                                  "code": "{{CLINIC TYPE}}"
+                              }
+                          },
+                          {
+                              "name": "commissioningProvisioning",
+                              "valueCoding": {
+                                  "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                                  "code": "{{COMMISSIONING PROVISIONING}}"
+                              }
+                          },
+                          {
+                              "name": "ageAndGenderAppropriate",
+                              "valueBoolean":true
+                          }
+                      ]
                   }
-                },
-                {
-                  "name": "specialty",
-                  "valueCoding": {
-                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
-                    "code": "2WW"
-                  }
-                },
-                {
-                  "name": "clinicType",
-                  "valueCoding": {
-                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
-                    "code": "2WW_BONE"
-                  }
-                },
-                {
-                  "name": "commissioningProvisioning",
-                  "valueCoding": {
-                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
-                    "code": "ALL_AVAILABLE_FOR_BOOKING"
-                  }
-                },
-                {
-                  "name": "ageAndGenderAppropriate",
-                  "valueBoolean": true
-                }
-              ]
-            }
-          ],
+              ],
           "entry": [
             {
               "item": {
                 "identifier": {
                   "system": "http://fhir.nhs.net/Id/ers-service",
-                  "value": "50"
+                  "value": "{{SERVICE ID}}"
                 }
               }
             }
           ],
-          "extension": [
-            {
-              "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Shortlist-SearchCriteria-1",
-              "valueReference": {
-                "reference": "#ServiceSearchCriteria-1"
+
+              "extension": [
+                  {
+                      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Shortlist-SearchCriteria-1",
+                      "valueReference": {
+                      "reference": "#ServiceSearchCriteria-1"
+                  }
               }
-            }
-          ]
-        }
+              ]
+          }
       }
-    ]
-}
+      ]
+  }
   </pre>
 </details>
