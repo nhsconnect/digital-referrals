@@ -7,8 +7,6 @@ toc: false
 summary: "A brief introduction to getting started with the e-Referral APIs"
 ---
 
-# Introduction
-
 ## Application Programming Interface (API) ##
 
 A key aspect of the NHS e-RS vision is to enable local innovation and adoption of paperless referrals. To support this vision NHS Digital have created a set of APIs which provide a well-defined, simple to use data interface to the NHS e-Referral Service (e-RS).
@@ -20,13 +18,11 @@ We want to stimulate and assist your development of applications linked to the N
 - [Smartcard Authentication and Authorisation](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf001.html)
 - [Clinical Referral Information](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf002.html)
 
-#### Coming in Q4 2019:
-- [Create Referral](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
+#### Coming Soon:
+- [Create Referral (Q4 2019)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
+- [Clinical Review (Q1 2020)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)
 
-#### Coming in Q1 2020:
-- [Clinical Review](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)
-
-[Future integration roadmap](https://digital.nhs.uk/services/e-referral-service/integration)
+The NHS e-Referral Service Future integration roadmap is available [here](https://digital.nhs.uk/services/e-referral-service/integration).
 
 ## The e-Referrals API Hub ##
 
