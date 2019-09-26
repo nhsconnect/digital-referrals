@@ -50,9 +50,11 @@ The Operation Definition for this endpoint is available on the FHIR server: [ers
 | SearchCriteria             | 1..1        | Resource        | The StructureDefintion of this Resource is:  [eRS-ServiceSearchCriteria-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1)  |
 | sortBy                     | 1..1        | Code            |       |
 
-##### Deprecated Parameters
-| Deprecated Parameter Name      | Notes |
-| restrictedService          | This parameter was removed in e-RS Release 9.1 |  
+#### Removed Parameters  
+
+| Removed Parameter Name      | Notes |
+| restrictedService           | This parameter was removed in e-RS Release 9.1 |  
+
 
 ### Response
 

@@ -48,9 +48,10 @@ The Operation Definition for this endpoint is available on the FHIR server:  [eR
 | firstReminderLetterFollowUpDays | 1..1 | UnsignedInt | |
 | intentionToAddReferralLetter | 1..1| Coding | If shortlisting a service flagged as requiring a referral letter by the [Patient Specific Service Search (A010)](explore_endpoint_a010.html) endpoint (and only in this case) then the value of this field must be NEED_TO_ADD_LATER |  
 
-##### Deprecated Parameters
-| Deprecated Parameters   | Notes |
-| unaccreditedComment     | This parameter was removed in e-RS Release 9.1 |
+#### Removed Parameters  
+
+| Removed Parameter Name   | Notes |
+| unaccreditedComment      | This parameter was removed in e-RS Release 9.1 |
 
 
 ### Response
