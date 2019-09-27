@@ -20,9 +20,9 @@ We want to stimulate and assist your development of applications linked to the N
 
 #### Coming Soon:
 - [Create Referral (Q4 2019)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
-- [Clinical Review (Q1 2020)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)
-
-The NHS e-Referral Service **Future integration roadmap** is published at [www.digital.nhs.uk/services/e-referral-service/integration](https://digital.nhs.uk/services/e-referral-service/integration).
+- [Clinical Review (Q1 2020)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)  
+<br>  
+The NHS e-Referral Service **Future integration roadmap** is published [here](https://digital.nhs.uk/services/e-referral-service/integration).
 
 ## The e-Referrals API Hub ##
 

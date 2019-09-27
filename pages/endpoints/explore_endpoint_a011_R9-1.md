@@ -39,8 +39,8 @@ The shortlist must not contain any Referral Assessment Services (RAS), referrals
 #### Request Body
 The Operation Definition for this endpoint is available on the FHIR server:  [eRS-CreateReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1)
 
-| Parameter Name             | Cardinality | Type            | Notes |
-|  ------------------------- | --------- | --------------- | ----- |
+| Parameter Name            | Cardinality | Type            | Notes |
+| ------------------------- | --------- | --------------- | ----- |
 | patient                   | 1..1        | Identifier |The master NHS Number for the patient  |
 | referringClinician        | 0..1        | Identifier      |    |
 | contentSensitive            | 1..1        | Boolean | |
@@ -51,6 +51,7 @@ The Operation Definition for this endpoint is available on the FHIR server:  [eR
 #### Removed Parameters  
 
 | Removed Parameter Name   | Notes |
+| ------------------------ | ----------- |
 | unaccreditedComment      | This parameter was removed in e-RS Release 9.1 |
 
 

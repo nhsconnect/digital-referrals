@@ -42,8 +42,8 @@ If using the filter on specialty, the value provided must be a valid code obtain
 #### Request Body
 The Operation Definition for this endpoint is available on the FHIR server: [ers.patientServiceSearch](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1/_history/1.0)
 
-
-|  ------------------------- | ----------- | --------------- | ----- |
+| Parameter Name             | Cardinality | Type            | Notes |
+| -------------------------- | ----------- | --------------- | ----- |
 | patient                    | 1..1        | Identifier      | The master NHS Number for the patient  |
 | requestType                | 1..1        | Code            |       |
 | referringClinician         | 0..1        | Identifier      | If the logged in user is an RCA (and only in this case) they need to specify the referring clinician on whose behalf they are operating, in the context of the current referral |
@@ -52,7 +52,8 @@ The Operation Definition for this endpoint is available on the FHIR server: [ers
 
 #### Removed Parameters  
 
-| Removed Parameter Name      | Notes |
+| Removed Parameter           | Notes |
+| --------------------------- | ----------- |
 | restrictedService           | This parameter was removed in e-RS Release 9.1 |  
 
 
