@@ -67,6 +67,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | REFERENCE_NOT_FOUND | The file identified by the attachment ID does not exist in the e-RS document store |
 
 #### Examples:
+##### Note: These examples contain test data, these should be replaced with appropriate values for your implementation.  
 
 <details><summary>Request Body</summary>
 <br>
@@ -75,7 +76,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
     "resourceType": "Parameters",
     "meta": {
       "profile": [
-        "https://fhir.nhs.uk/STU3/OperationDefinition/eRS-MaintainReferralLetter-Operation-1"
+        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-MaintainReferralLetter-Parameters-1"
       ]
     },
     "parameter": [
@@ -98,28 +99,58 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
               }
             ]
           },
-          "indexed": "2019-05-13T12:26:53+00:00",
-          "description": "This is some attachment text",
-                          "content": [
+          "indexed": "2019-12-15T13:24:53+00:00",
+          "description": "",
+          "content": [
             {
               "attachment": {
-                "url": "{{LOCATION}}"
+                "url": "Binary/att-70045-70025"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "referralLetterFile",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "meta": {
+            "profile": [
+              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+            ]
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                "code": "REFERRER",
+                "display": "Referrer"
+              }
+            ]
+          },
+          "indexed": "2019-12-15T13:24:53+00:00",
+          "description": "This is a file description",
+          "content": [
+            {
+              "attachment": {
+                "url": "Binary/att-70045-70026"
               }
             }
           ]
         }
       }
-
     ]
   }
   </pre>
 </details>
+Download json for [Request](downloads/json/A012 Request Sample 1.json)  
 
 <details><summary>Response Body</summary>
 <br>
   <pre>
-{
-    "id": "000000070000",
+  {
+    "id": "000000070045",
     "meta": {
       "versionId": "6",
       "profile": [
@@ -130,7 +161,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
     "extension": [
       {
         "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1",
-        "valueDateTime": "2019-07-17T17:27:37.799Z"
+        "valueDateTime": "2019-11-25T11:06:47.785Z"
       },
       {
         "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
@@ -147,37 +178,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
     ],
     "contained": [
       {
-        "id": "Practitioner-021600556514",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Practitioner-1"
-          ]
-        },
-        "resourceType": "Practitioner",
-        "identifier": [
-          {
-            "system": "http://fhir.nhs.net/Id/sds-user-id",
-            "value": "021600556514"
-          }
-        ]
-      },
-      {
-        "id": "Patient-1000000001",
-        "meta": {
-          "profile": [
-            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Patient-1"
-          ]
-        },
-        "resourceType": "Patient",
-        "identifier": [
-          {
-            "system": "http://fhir.nhs.net/Id/nhs-number",
-            "value": "1000000001"
-          }
-        ]
-      },
-      {
-        "id": "DocumentReference-70000",
+        "id": "DocumentReference-70025",
         "meta": {
           "profile": [
             "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
@@ -194,25 +195,72 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
           ]
         },
         "status": "current",
-        "indexed": "2019-07-17T17:27:37.881Z",
-        "description": "Blood test results showing an anomaly in the values of xxxx",
+        "indexed": "2019-11-25T11:06:47.949Z",
+        "description": "",
         "content": [
           {
             "attachment": {
-              "id": "70000",
+              "id": "70025",
               "extension": [
                 {
                   "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
                   "valueReference": {
-                    "reference": "#Practitioner-021600556514"
+                    "identifier": {
+                      "system": "http://fhir.nhs.net/Id/sds-user-id",
+                      "value": "021600556514"
+                    }
                   }
                 }
               ],
-              "contentType": "application/pdf",
-              "url": "Binary/att-70000-70000",
-              "size": 17,
-              "title": "test1.pdf",
-              "creation": "2019-07-17"
+              "contentType": "text/plain",
+              "url": "Binary/att-70045-70025",
+              "size": 23,
+              "title": "test.txt",
+              "creation": "2019-11-25"
+            }
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference-70026",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+          ]
+        },
+        "resourceType": "DocumentReference",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+              "code": "REFERRER",
+              "display": "Referrer"
+            }
+          ]
+        },
+        "status": "current",
+        "indexed": "2019-11-25T11:06:47.950Z",
+        "description": "This is a file description",
+        "content": [
+          {
+            "attachment": {
+              "id": "70026",
+              "extension": [
+                {
+                  "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                  "valueReference": {
+                    "identifier": {
+                      "system": "http://fhir.nhs.net/Id/sds-user-id",
+                      "value": "021600556514"
+                    }
+                  }
+                }
+              ],
+              "contentType": "text/plain",
+              "url": "Binary/att-70045-70026",
+              "size": 23,
+              "title": "test2.txt",
+              "creation": "2019-11-25"
             }
           }
         ]
@@ -220,15 +268,21 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
     ],
     "status": "active",
     "subject": {
-      "reference": "#Patient-1000000001"
+      "identifier": {
+        "system": "http://fhir.nhs.net/Id/nhs-number",
+        "value": "1470000008"
+      }
     },
     "supportingInfo": [
       {
-        "reference": "#DocumentReference-70000"
+        "reference": "#DocumentReference-70025"
+      },
+      {
+        "reference": "#DocumentReference-70026"
       }
     ],
     "intent": "plan"
-}
+  }
   </pre>
 </details>
-<br>
+Download json for [Response](downloads/json/A012 Response Sample 1.json)  

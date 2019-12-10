@@ -1,0 +1,77 @@
+{
+  "resourceType": "Parameters",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-PatientServiceSearch-Parameters-1"
+    ]
+  },
+  "parameter": [
+    {
+      "name": "requestType",
+      "valueCoding": {
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1",
+        "code": "APPOINTMENT_REQUEST"
+      }
+    },
+    {
+      "name": "sortBy",
+      "valueCoding": {
+        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1",
+        "code": "IWT"
+      }
+    },
+    {
+      "name": "patient",
+      "valueIdentifier": {
+        "system": "http://fhir.nhs.net/Id/nhs-number",
+        "value": "1000000001"
+      }
+    },
+    {
+      "name": "searchCriteria",
+      "resource": {
+        "resourceType": "Parameters",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+          ]
+        },
+        "id": "ServiceSearchCriteria-1",
+        "parameter": [
+          {
+            "name": "priority",
+            "valueCoding": {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+              "code": "ROUTINE"
+            }
+          },
+          {
+            "name": "specialty",
+            "valueCoding": {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
+              "code": "GENETICS"
+            }
+          },
+          {
+            "name": "clinicType",
+            "valueCoding": {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+              "code": "GENETICS_2"
+            }
+          },
+          {
+            "name": "commissioningProvisioning",
+            "valueCoding": {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+              "code": "ALL_AVAILABLE_FOR_BOOKING"
+            }
+          },
+          {
+            "name": "ageAndGenderAppropriate",
+            "valueBoolean": true
+          }
+        ]
+      }
+    }
+  ]
+}

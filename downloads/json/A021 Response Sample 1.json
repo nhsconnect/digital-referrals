@@ -1,0 +1,33 @@
+{
+  "id": "000000070000",
+  "meta": {
+    "versionId": "3",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"
+    ]
+  },
+  "resourceType": "ReferralRequest",
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+            "code": "ROUTINE",
+            "display": "Routine"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "active",
+  "subject": {
+    "identifier": {
+      "system": "http://fhir.nhs.net/Id/nhs-number",
+      "value": "1000000001"
+    }
+  },
+  "supportingInfo": [],
+  "intent": "plan"
+}

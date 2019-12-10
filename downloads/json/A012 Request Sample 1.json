@@ -1,0 +1,70 @@
+{
+  "resourceType": "Parameters",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-MaintainReferralLetter-Parameters-1"
+    ]
+  },
+  "parameter": [
+    {
+      "name": "referralLetterFile",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+          ]
+        },
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+              "code": "REFERRER",
+              "display": "Referrer"
+            }
+          ]
+        },
+        "indexed": "2019-12-15T13:24:53+00:00",
+        "description": "",
+        "content": [
+          {
+            "attachment": {
+              "url": "Binary/att-70045-70025"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "referralLetterFile",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "meta": {
+          "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+          ]
+        },
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+              "code": "REFERRER",
+              "display": "Referrer"
+            }
+          ]
+        },
+        "indexed": "2019-12-15T13:24:53+00:00",
+        "description": "This is a file description",
+        "content": [
+          {
+            "attachment": {
+              "url": "Binary/att-70045-70026"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "000000070045",
+  "meta": {
+    "versionId": "6",
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"
+    ]
+  },
+  "resourceType": "ReferralRequest",
+  "extension": [
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1",
+      "valueDateTime": "2019-11-25T11:06:47.785Z"
+    },
+    {
+      "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+            "code": "ROUTINE",
+            "display": "Routine"
+          }
+        ]
+      }
+    }
+  ],
+  "contained": [
+    {
+      "id": "DocumentReference-70025",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+        ]
+      },
+      "resourceType": "DocumentReference",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+            "code": "REFERRER",
+            "display": "Referrer"
+          }
+        ]
+      },
+      "status": "current",
+      "indexed": "2019-11-25T11:06:47.949Z",
+      "description": "",
+      "content": [
+        {
+          "attachment": {
+            "id": "70025",
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                "valueReference": {
+                  "identifier": {
+                    "system": "http://fhir.nhs.net/Id/sds-user-id",
+                    "value": "021600556514"
+                  }
+                }
+              }
+            ],
+            "contentType": "text/plain",
+            "url": "Binary/att-70045-70025",
+            "size": 23,
+            "title": "test.txt",
+            "creation": "2019-11-25"
+          }
+        }
+      ]
+    },
+    {
+      "id": "DocumentReference-70026",
+      "meta": {
+        "profile": [
+          "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+        ]
+      },
+      "resourceType": "DocumentReference",
+      "type": {
+        "coding": [
+          {
+            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+            "code": "REFERRER",
+            "display": "Referrer"
+          }
+        ]
+      },
+      "status": "current",
+      "indexed": "2019-11-25T11:06:47.950Z",
+      "description": "This is a file description",
+      "content": [
+        {
+          "attachment": {
+            "id": "70026",
+            "extension": [
+              {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                "valueReference": {
+                  "identifier": {
+                    "system": "http://fhir.nhs.net/Id/sds-user-id",
+                    "value": "021600556514"
+                  }
+                }
+              }
+            ],
+            "contentType": "text/plain",
+            "url": "Binary/att-70045-70026",
+            "size": 23,
+            "title": "test2.txt",
+            "creation": "2019-11-25"
+          }
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "subject": {
+    "identifier": {
+      "system": "http://fhir.nhs.net/Id/nhs-number",
+      "value": "1470000008"
+    }
+  },
+  "supportingInfo": [
+    {
+      "reference": "#DocumentReference-70025"
+    },
+    {
+      "reference": "#DocumentReference-70026"
+    }
+  ],
+  "intent": "plan"
+}
