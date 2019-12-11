@@ -204,7 +204,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
   }
   </pre>
 </details>
-Download json for [Request](downloads/json/A021 Request Sample 1.json)  
+Download [Request](downloads/json/A021 Request Sample 1.json)  
 
 <details><summary>Response Body</summary>
 <br>
@@ -244,4 +244,6 @@ Download json for [Request](downloads/json/A021 Request Sample 1.json)
   }
   </pre>
 </details>
-Download json for [Response](downloads/json/A021 Response Sample 1.json)  
+Download [Response Example](downloads/json/A021 Response Sample 1.json)  
+
+Download [JSON Samples](downloads/json/e-rs_json_samples.zip)  

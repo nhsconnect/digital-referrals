@@ -69,7 +69,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 #### Examples:
 ##### Note: These examples contain test data, these should be replaced with appropriate values for your implementation.  
 
-<details><summary>Request Body</summary>
+<details><summary>View request example</summary>
 <br>
   <pre>
   {
@@ -144,9 +144,9 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
   }
   </pre>
 </details>
-Download json for [Request](downloads/json/A012 Request Sample 1.json)  
+Download [request example](downloads/json/A012 Request Sample 1.json)  
 
-<details><summary>Response Body</summary>
+<details><summary>View response example</summary>
 <br>
   <pre>
   {
@@ -285,4 +285,4 @@ Download json for [Request](downloads/json/A012 Request Sample 1.json)
   }
   </pre>
 </details>
-Download json for [Response](downloads/json/A012 Response Sample 1.json)  
+Download [response example](downloads/json/A012 Response Sample 1.json)  

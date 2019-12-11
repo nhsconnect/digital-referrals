@@ -81,7 +81,9 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 #### Examples:
 ##### Note: These examples contain test data, these should be replaced with appropriate values for your implementation.  
 
-<details><summary>Request Body (Example 1)</summary>
+##### Example 1:  
+
+<details><summary>View request example 1</summary>
 <br>
   <pre>
   {
@@ -163,93 +165,9 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
   }
   </pre>
 </details>  
-Download json for [Request Example 1](downloads/json/A010 Request Sample 1.json)  
+Download [request example 1](downloads/json/A010 Request Sample 1.json)  
 
-<details><summary>Request Body (Example 2)</summary>
-<br>
-  <pre>
-  {
-    "resourceType": "Parameters",
-    "meta": {
-      "profile": [
-        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-PatientServiceSearch-Parameters-1"
-      ]
-    },
-    "parameter": [
-      {
-        "name": "requestType",
-        "valueCoding": {
-          "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1",
-          "code": "APPOINTMENT_REQUEST"
-        }
-      },
-      {
-        "name": "sortBy",
-        "valueCoding": {
-          "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1",
-          "code": "DISTANCE"
-        }
-      },
-      {
-        "name": "patient",
-        "valueIdentifier": {
-          "system": "http://fhir.nhs.net/Id/nhs-number",
-          "value": "1000000001"
-        }
-      },
-      {
-        "name": "searchCriteria",
-        "resource": {
-          "resourceType": "Parameters",
-          "meta": {
-            "profile": [
-              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
-            ]
-          },
-          "id": "ServiceSearchCriteria-1",
-          "parameter": [
-            {
-              "name": "priority",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
-                "code": "ROUTINE"
-              }
-            },
-            {
-              "name": "specialty",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
-                "code": "PODIATRY"
-              }
-            },
-            {
-              "name": "clinicType",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
-                "code": "NAIL_SURGERY"
-              }
-            },
-            {
-              "name": "commissioningProvisioning",
-              "valueCoding": {
-                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
-                "code": "ALL_AVAILABLE_FOR_BOOKING"
-              }
-            },
-            {
-              "name": "ageAndGenderAppropriate",
-              "valueBoolean": true
-            }
-          ]
-        }
-      }
-    ]
-  }
-  </pre>
-</details>
-Download json for [Request Example 2](downloads/json/A010 Request Sample 2.json)  
-
-<details><summary>Response Body (Example 1)</summary>
+<details><summary>View response example 1</summary>
 <br>
   <pre>
   {
@@ -391,9 +309,93 @@ Download json for [Request Example 2](downloads/json/A010 Request Sample 2.json)
   }
   </pre>
 </details>
-Download json for [Response Example 1](downloads/json/A010 Response Sample 1.json)  
+Download [response example 1](downloads/json/A010 Response Sample 1.json)  
 
-<details><summary>Response Body (Example 2)</summary>
+<details><summary>View request example 2</summary>
+<br>
+  <pre>
+  {
+    "resourceType": "Parameters",
+    "meta": {
+      "profile": [
+        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-PatientServiceSearch-Parameters-1"
+      ]
+    },
+    "parameter": [
+      {
+        "name": "requestType",
+        "valueCoding": {
+          "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestType-1",
+          "code": "APPOINTMENT_REQUEST"
+        }
+      },
+      {
+        "name": "sortBy",
+        "valueCoding": {
+          "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1",
+          "code": "DISTANCE"
+        }
+      },
+      {
+        "name": "patient",
+        "valueIdentifier": {
+          "system": "http://fhir.nhs.net/Id/nhs-number",
+          "value": "1000000001"
+        }
+      },
+      {
+        "name": "searchCriteria",
+        "resource": {
+          "resourceType": "Parameters",
+          "meta": {
+            "profile": [
+              "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+            ]
+          },
+          "id": "ServiceSearchCriteria-1",
+          "parameter": [
+            {
+              "name": "priority",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "ROUTINE"
+              }
+            },
+            {
+              "name": "specialty",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1",
+                "code": "PODIATRY"
+              }
+            },
+            {
+              "name": "clinicType",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                "code": "NAIL_SURGERY"
+              }
+            },
+            {
+              "name": "commissioningProvisioning",
+              "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                "code": "ALL_AVAILABLE_FOR_BOOKING"
+              }
+            },
+            {
+              "name": "ageAndGenderAppropriate",
+              "valueBoolean": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </pre>
+</details>
+Download [request example 2](downloads/json/A010 Request Sample 2.json)  
+
+<details><summary>View response example 2</summary>
 <br>
   <pre>
   {
@@ -418,4 +420,4 @@ Download json for [Response Example 1](downloads/json/A010 Response Sample 1.jso
   }
   </pre>
 </details>
-Download json for [Response Example 2](downloads/json/A010 Response Sample 2.json)  
+Download [response example 2](downloads/json/A010 Response Sample 2.json)  
