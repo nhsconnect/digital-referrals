@@ -1,12 +1,22 @@
 ---
-title: Live Support
+title: Live Systems Support
 keywords: live, Support
 sidebar: overview_sidebar
 toc: false
 permalink: /live_support.html
 summary: "Information on support for live services"
 ---
-## Live systems support
 
-### NHS National Service Desk
-For support with a live system please email the [NHS National Service Desk](mailto:ssd.nationalservicedesk@nhs.net) who will log the details and either resolve the incident or ensure it is passed on to the appropriate NHS Digital or provider resource for resolution. Alternatively, you can call the NHS National Service Desk on 0300 303 5035.
+### NHS Digital National Service Desk (NSD)
+
+As part of the NHS Digital service management processes, system suppliers have access to the NHS Digital National Service Desk (NSD), through which issues with any NHS Digital live services can be raised and resolved. To access the NSD you must register your organisation. Further information and instructions on how to initiate the registration process for your organisation can be found [here](https://digital.nhs.uk/services/spine/spine-mini-service-provider-for-personal-demographics-service/service-management-live-service).
+
+### Contact details
+
+#### Telephone: 0300 303 5035  
+
+#### Email: [ssd.nationalservicedesk@nhs.net](mailto:ssd.nationalservicedesk@nhs.net)
+
+<br>  
+
+ __Note:__  For any issues in non-live environments (e.g. ALPHA / DEV / INT / DEP) please see the [Development Support](develop_support.html) page.  

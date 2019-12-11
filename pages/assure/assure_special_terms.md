@@ -7,7 +7,6 @@ permalink: /assure_special_terms.html
 summary: "NHS e-Referral API Special Terms"
 ---
 
-## Special Terms
 
 <div style="border: 2px solid #888888; padding: 10px; background: #eeeeee;">
 Version 1.0 of NHS e-Referral API Special Terms. Effective date 1 June 2018. Applicable to all supplier and provider partners and should be read in conjunction with the End User Policy and Connection Agreement.

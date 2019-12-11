@@ -136,7 +136,7 @@ entries:
     - title: Compliance Approach
       url: /assure_compliance_approach.html
       output: web
-      
+
     - title: Special Terms
       url: /assure_special_terms.html
       output: web
@@ -151,6 +151,18 @@ entries:
 
     - title: Going Live
       url: /go_live.html
+      output: web
+
+    - title: Live Service Support
+      url: /live_support.html
+      output: web
+
+  - title: Support
+    output: web
+    folderitems:
+
+    - title: Development Support
+      url: /develop_support.html
       output: web
 
     - title: Live Service Support
