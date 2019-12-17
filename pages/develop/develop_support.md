@@ -18,6 +18,9 @@ For non-technical queries and support with getting started with the e-RS integra
 #### Email: [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net)  
 For support and enquiries regarding the e-RS development environments, including e-RS DEV3 and other Path-To-Live (PTL) environments, please email [Platforms Support Desk](mailto:platforms.supportdesk@nhs.net) who will log the details and either resolve the incident or ensure it is passed on to the appropriate NHS Digital or provider resource for resolution.
 
+##### Authenticating with NHS Smartcards
+Guidance on using the identity agent and authenticating with NHS Smartcards can be found at [developer.nhs.uk/apis/spine-core/smartcards.html](https://developer.nhs.uk/apis/spine-core/smartcards.html)  
+
 ### Solution Assurance
 #### Email: [functional.assurance@nhs.net](mailto:functional.assurance@nhs.net)  
 Solution Assurance support healthcare system providers to carry out their own testing and assurance. For more information visit [digital.nhs.uk/services/solution-assurance](https://digital.nhs.uk/services/solution-assurance).

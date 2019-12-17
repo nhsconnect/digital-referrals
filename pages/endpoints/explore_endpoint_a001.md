@@ -18,7 +18,10 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 | POST | v1/ProfessionalSession
 
 ## Description
-Creates a Professional Session in the Spine using smartcard roles. This gives a secure login.
+Creates a Professional Session in the Spine using smartcard roles. This gives a secure login.  
+
+##### Using the identity agent
+Guidance on using the identity agent and authenticating with NHS Smartcards can be found at [developer.nhs.uk/apis/spine-core/smartcards.html](https://developer.nhs.uk/apis/spine-core/smartcards.html)
 
 ## Input
 

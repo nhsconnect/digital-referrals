@@ -25,12 +25,31 @@ so that I can then link it to a referral as part of its referral letter
 ##### Important note:
 Each file needs to be individually uploaded via this endpoint then an additional call made to endpoint [A012: Maintain Referral Letter](explore_endpoint_a012.html) to link the file(s) to the referral once all files have been uploaded. **Any files not linked to a referral are periodically deleted from the e-RS document store.**
 
-### Prerequisite Operations
+### Prerequisite operations
 This endpoint has no pre-requisites
 
-### Request Operation
+### Supported file types
+| ID   | mime type         | file extension |
+| ---- | ----------------- | -------------- |
+| 768  | text/plain        | txt            |
+| 769  | text/html         | html, htm      |
+| 770  | application/pdf   | pdf            |
+| 771  | text/xml	         | xml            |
+| 772  | text/rtf	         | rtf, rtx       |
+| 773  | audio/basic       | au             |
+| 774  | audio/mpeg	       | mp3            |
+| 775  | image/png	       | png            |
+| 776  | image/gif	       | gif            |
+| 777  | image/jpeg	       | jpg, jpe, jpeg |
+| 778  | image/tiff	       | tif, tiff      |
+| 779  | video/mpeg	       | mpg, mpeg, mpe |
+| 780  | application/msword| doc            |
+| 781  | application/vnd.openxmlformats-officedocument.wordprocessingml.document | docx |
+| 1406 | application/xml	 | xml            |
 
-#### Request Header
+### Request operation
+
+#### Request header
 
 | Field Name | Value |
 | ---- | ---- |
@@ -42,7 +61,7 @@ This endpoint has no pre-requisites
 | Content-Type |	The mime type of the file being uploaded |
 
 
-#### Request Body
+#### Request body
 The binary stream of the file being uploaded
 
 ### Response
