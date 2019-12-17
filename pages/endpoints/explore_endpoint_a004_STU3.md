@@ -15,7 +15,7 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 
 | Method | URL |
 | -------------| --- |
-| GET | v1/CodeSystem/{CodeSystemID}
+| GET | STU3/v1/CodeSystem/{CodeSystemID}
 
 ## Related FHIR model
 
