@@ -3,7 +3,7 @@ title: "A004: Retrieve Reference Data"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a004.html
+permalink: explore_endpoint_a004_DSTU2.html
 summary: false
 ---
 
