@@ -24,7 +24,7 @@ The creation of a referral to a Referral Assessment Service (RAS) has now been m
 * [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
 
 ##### Reference Data
-* [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
+* [A004 - Retrieve Reference Data](explore_endpoint_a004_STU3.html) ![Live](images/icons/api_live.png)
 
 ##### Create Referral
 * [A010 - Patient Service Search](explore_endpoint_a010.html) ![Beta](images/icons/api_beta.png)

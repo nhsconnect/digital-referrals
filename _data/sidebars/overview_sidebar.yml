@@ -77,7 +77,7 @@ entries:
         output: web
         subfolderitems:
         - title: "A004: Retrieve Reference Data"
-          url: /explore_endpoint_a004.html
+          url: /explore_endpoint_a004_DSTU2.html
           output: web
         - title: "A005: Retrieve Referral Request"
           url: /explore_endpoint_a005.html
@@ -95,6 +95,9 @@ entries:
       - title: Create Referral (Beta)
         output: web
         subfolderitems:
+        - title: "A004: Retrieve Reference Data"
+          url: /explore_endpoint_a004_STU3.html
+          output: web
         - title: "A010: Patient Service Search"
           url: /explore_endpoint_a010.html
           output: web

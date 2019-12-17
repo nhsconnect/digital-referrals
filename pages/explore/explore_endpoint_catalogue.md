@@ -19,7 +19,7 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name | Status | FHIR |
 |----|------|--------|:----:|
-|A004|[Retrieve Reference Data](explore_endpoint_a004.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
+|A004|[Retrieve Reference Data](explore_endpoint_a004_DSTU2.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
 |A005|[Retrieve Referral](explore_endpoint_a005.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/referralrequest_resources_dstu2.html)|
 |A006|[Retrieve Attachment](explore_endpoint_a006.html)|![Live](images/icons/api_live.png)| N/A |
 |A007|[Retrieve Clinical Information](explore_endpoint_a007.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/retrieveci_resources_dstu2.html)|
@@ -29,7 +29,7 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name | Status | FHIR |
 |----|------|--------|:----:|
-|A004|[Retrieve Reference Data](explore_endpoint_a004.html)|![Beta](images/icons/api_beta.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
+|A004|[Retrieve Reference Data](explore_endpoint_a004_STU3.html)|![Beta](images/icons/api_beta.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
 |A010|[Patient Service Search](explore_endpoint_a010.html)|![Beta](images/icons/api_beta.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/servicesearch_resources_stu3.html)|
 |A011|[Create Referral](explore_endpoint_a011.html)|![Beta](images/icons/api_beta.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/createreferral_resources_stu3.html)|
 |A012|[Maintain Referral Letter](explore_endpoint_a012.html)|![Beta](images/icons/api_beta.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/maintainreferral_resources_stu3.html)|
