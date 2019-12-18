@@ -10,17 +10,15 @@ summary: false
 ##### Status: ![Beta](images/icons/api_beta.png)  
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
-
-This endpoint must be used with all FHIR3 (STU3) endpoints:  
-
-- A010	Patient Service Search	(Beta)
-- A011	Create Referral	(Beta)  
-- A012	Maintain Referral Letter	(Beta)
-- A013	Accept Referral	(Beta)
-- A014	Reject Referral	(Beta)
-- A019	Generate Patient Letter	(Beta)
-- A021	Create Referral And Send For Triage	(Beta)  
-
+This endpoint must be used with all FHIR3 (STU3) endpoints:<br>
+<br>
+- A010	Patient Service Search	(Beta)<br>
+- A011	Create Referral	(Beta)<br>
+- A012	Maintain Referral Letter	(Beta)<br>
+- A013	Accept Referral	(Beta)<br>
+- A014	Reject Referral	(Beta)<br>
+- A019	Generate Patient Letter	(Beta)<br>
+- A021	Create Referral And Send For Triage	(Beta)<br>
 </div>
 
 ## API
