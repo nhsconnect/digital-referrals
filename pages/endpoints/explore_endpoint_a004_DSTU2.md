@@ -12,9 +12,9 @@ summary: false
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
 This endpoint must be used with all FHIR2 (DSTU2) endpoints: <br>
 <br>
-- A005 – Retrieve Referral Request (Live)<br>
-- A007 – Retrieve Clinical Information (Live)<br>
-- A008 – Retrieve Worklist (Live)<br>
+- A005 Retrieve Referral Request (Live)<br>
+- A007 Retrieve Clinical Information (Live)<br>
+- A008 Retrieve Worklist (Live)<br>
 </div>
 
 ## API
