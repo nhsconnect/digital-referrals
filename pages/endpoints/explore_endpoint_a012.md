@@ -67,10 +67,8 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | REFERENCE_NOT_FOUND | The file identified by the attachment ID does not exist in the e-RS document store |
 
 #### Examples:
-##### Note: These examples contain test data, these should be replaced with appropriate values for your implementation.  
+##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-[Request](downloads/json/A012 Request Sample 1.json)  
+[Request](https://nhsconnect.github.io/digital-referrals/downloads/json/A012%20Request%20Sample%201.json)  
 
-[Response](downloads/json/A012 Response Sample 1.json)  
-
-[Download examples (.zip file)](downloads/json/A012_json_samples.zip)
+[Response](https://nhsconnect.github.io/digital-referrals/downloads/json/A012%20Response%20Sample%201.json)  

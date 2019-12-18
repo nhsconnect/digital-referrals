@@ -60,6 +60,8 @@ HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 A [Resource](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1) profiled specifically for the given CodeSystemID. This will include the requested coding system with its available codes. The response code `200 (OK)` is returned.
 
 #### Example (DEV3)
+##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
 ```javascript
 {
   "resourceType": "CodeSystem",

@@ -79,7 +79,7 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | VALUE_IS_REQUIRED | A referring clinician is not provided when the logged in user is an RCA; or: one of the following three is not provided: the pair specialty + clinic type, the clinical term¬ or the named clinician |
 
 #### Examples:
-##### Note: These examples contain test data, these should be replaced with appropriate values for your implementation.  
+##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
 [Request 1](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Request%20Sample%201.json)  
 [Response 1](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Response%20Sample%201.json)  
