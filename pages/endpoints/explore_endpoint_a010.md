@@ -23,7 +23,7 @@ I want to search for services that are appropriate for my patient
 So that I can create a shortlist of services where my patient can be referred to
 
 ### Prerequisite Operations
-If using the filter on specialty, the value provided must be a valid code obtained via the [Get Reference Data (A004)](explore_endpoint_a004.html) endpoint.
+If using the filter on specialty, the value provided must be a valid code obtained via the FHIR 3 version of the [Get Reference Data (A004)](explore_endpoint_a004_STU3.html) endpoint.
 
 ### Request Operation
 
