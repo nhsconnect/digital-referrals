@@ -81,10 +81,8 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 #### Examples:
 ##### Note: These examples contain test data, these should be replaced with appropriate values for your implementation.  
 
-[Request 1](downloads/json/A010 Request Sample 1.json)  
-[Response 1](downloads/json/A010 Response Sample 1.json)  
+[Request 1](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Request%20Sample%201.json)
+[Response 1](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Response%20Sample%201.json)  
 
-[Request 2](downloads/json/A010 Request Sample 2.json)  
-[Response 2](downloads/json/A010 Response Sample 2.json)  
-
-[Download examples (.zip file)](downloads/json/A010_json_samples.zip)
+[Request 2](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Request%20Sample%202.json)  
+[Response 2](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Response%20Sample%202.json)  
