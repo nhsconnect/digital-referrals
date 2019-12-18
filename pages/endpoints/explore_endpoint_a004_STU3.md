@@ -15,12 +15,11 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 
 | Method | URL |
 | -------------| --- |
-| GET | STU3/v1/CodeSystem/{CodeSystemID}
+| GET | STU3/v1/CodeSystem/{CodeSystemID} |
 
 ## Related FHIR model
 
-TBC
-<!-- * [eRS-Specialty-ValueSet-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.Valueset/ers-specialty-valueset-1.html) -->
+[eRS-Specialty-CodeSystem-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1)
 
 ## Description
 This read-only API lets a user access a pre-populated list of reference data. The NHS e-Referral Service uses these lists throughout. For example, a list of specialities. They support data accuracy and effective re-use. It retrieves a specific Reference Dataset by ID.
@@ -46,7 +45,7 @@ Currently applicable values for the {CodeSystemID}:
 
 | CodeSystemID | Description |
 | ------------ | ----------- |
-| SPECIALTY | Specialties defined in e-RS|
+| SPECIALTY | Specialties defined in e-RS |
 
 ### Header
 Provide ASID of the end-point system and equivalent Session Key generated for the SSO Token-ID.
@@ -57,7 +56,7 @@ Content-Type:application/json+fhir
 HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 ```
 
-## Output
+## Output  
 A [Resource](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Specialty-CodeSystem-1) profiled specifically for the given CodeSystemID. This will include the requested coding system with its available codes. The response code `200 (OK)` is returned.
 
 #### Example
