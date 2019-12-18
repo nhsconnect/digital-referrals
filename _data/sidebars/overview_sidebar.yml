@@ -104,6 +104,9 @@ entries:
         - title: "A011: Create Referral"
           url: /explore_endpoint_a011.html
           output: web
+        - title: "A021: Create Referral (Triage)"
+          url: /explore_endpoint_a021.html
+          output: web
         - title: "A020: Upload File"
           url: /explore_endpoint_a020.html
           output: web
