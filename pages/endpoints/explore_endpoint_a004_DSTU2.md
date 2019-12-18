@@ -1,5 +1,5 @@
 ---
-title: "A004: Retrieve Reference Data"
+title: "A004: Retrieve Reference Data (FHIR2)"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,17 @@ permalink: explore_endpoint_a004_DSTU2.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+##### Status: ![Live](images/icons/api_live.png)  
+
+<div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
+
+This endpoint must be used with all FHIR2 (DSTU2) endpoints:  
+
+- A005 – Retrieve Referral Request (Live)
+- A007 – Retrieve Clinical Information (Live)
+- A008 – Retrieve Worklist (Live)  
+
+</div>
 
 ## API
 

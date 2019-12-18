@@ -1,5 +1,5 @@
 ---
-title: "A004: Retrieve Reference Data"
+title: "A004: Retrieve Reference Data (FHIR3)"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,21 @@ permalink: explore_endpoint_a004_STU3.html
 summary: false
 ---
 
-##### Status: ![Beta](images/icons/api_beta.png)
+##### Status: ![Beta](images/icons/api_beta.png)  
+
+<div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
+
+This endpoint must be used with all FHIR3 (STU3) endpoints:  
+
+- A010	Patient Service Search	(Beta)
+- A011	Create Referral	(Beta)  
+- A012	Maintain Referral Letter	(Beta)
+- A013	Accept Referral	(Beta)
+- A014	Reject Referral	(Beta)
+- A019	Generate Patient Letter	(Beta)
+- A021	Create Referral And Send For Triage	(Beta)  
+
+</div>
 
 ## API
 

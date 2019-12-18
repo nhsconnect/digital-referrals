@@ -95,7 +95,7 @@ entries:
       - title: Create Referral (Beta)
         output: web
         subfolderitems:
-        - title: "A004: Retrieve Reference Data"
+        - title: "A004: Retrieve Reference Data (STU3)"
           url: /explore_endpoint_a004_STU3.html
           output: web
         - title: "A010: Patient Service Search"
