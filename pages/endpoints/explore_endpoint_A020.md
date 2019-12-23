@@ -28,9 +28,10 @@ Each file needs to be individually uploaded via this endpoint then an additional
 ### Prerequisite operations
 This endpoint has no pre-requisites
 
-### Supported file types
-| ID   | mime type         | file extension |
-| ---- | ----------------- | -------------- |
+### Supported file types  
+
+| ID   | mime type | file extension |
+| ---- | ---------- | -------------- |
 | 768  | text/plain        | txt            |
 | 769  | text/html         | html, htm      |
 | 770  | application/pdf   | pdf            |
@@ -43,9 +44,10 @@ This endpoint has no pre-requisites
 | 777  | image/jpeg	       | jpg, jpe, jpeg |
 | 778  | image/tiff	       | tif, tiff      |
 | 779  | video/mpeg	       | mpg, mpeg, mpe |
-| 780  | application/msword| doc            |
+| 780  | application/msword | doc            |
 | 781  | application/vnd.openxmlformats-officedocument.wordprocessingml.document | docx |
-| 1406 | application/xml	 | xml            |
+| 1406 | application/xml	 | xml            |  
+
 
 ### Request operation
 
