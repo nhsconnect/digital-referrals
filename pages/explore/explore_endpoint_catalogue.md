@@ -19,12 +19,12 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name | Status | FHIR |
 |----|------|--------|:----:|
-|A004|[Retrieve Reference Data](explore_endpoint_a004_DSTU2.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
+|A004|[Retrieve Reference Data (FHIR2)](explore_endpoint_a004_DSTU2.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
 |A005|[Retrieve Referral](explore_endpoint_a005.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/referralrequest_resources_dstu2.html)|
 |A006|[Retrieve Attachment](explore_endpoint_a006.html)|![Live](images/icons/api_live.png)| N/A |
 |A007|[Retrieve Clinical Information](explore_endpoint_a007.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/retrieveci_resources_dstu2.html)|
 |A008|[Retrieve Worklist](explore_endpoint_a008.html)|![Live](images/icons/api_live.png)|[DSTU2](https://nhsconnect.github.io/NHS-FHIR-eRS/fetch_worklist_resources_dstu2.html)|
-|A004|[Retrieve Reference Data](explore_endpoint_a004_STU3.html)|![Beta](images/icons/api_beta.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
+|A004|[Retrieve Reference Data (FHIR3)](explore_endpoint_a004_STU3.html)|![Beta](images/icons/api_beta.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
 |A013|[Accept Referral](explore_endpoint_a013.html)|![Beta](images/icons/api_beta.png)| [STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/acceptrejectreferral_resources_stu3.html) |
 |A014|[Reject Referral](explore_endpoint_a014.html)|![Beta](images/icons/api_beta.png)| [STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/acceptrejectreferral_resources_stu3.html) |
 
