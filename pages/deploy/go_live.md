@@ -7,9 +7,11 @@ permalink: /go_live.html
 summary: "Process for going live with an e-RS API integration"
 ---
 
-Once all the steps laid out in the [compliance approach](assure_compliance_approach.html) have been completed a set of live endpoint credentials will be issued.  
+Once a solution has been developed (See [Getting Connected](getstarted_get_connected.html)) and all the steps detailed in the [compliance approach](assure_compliance_approach.html) have been completed a set of live endpoint credentials will be issued.  
 
-For enquiries relating to this process please contact the Interoperability Management Team by email at [interop.mgmt@nhs.net](mailto:interop.mgmt@nhs.net)  
+For enquiries regarding getting started with the e-RS Integration APIs please email the NHS e-RS Partners Team at [nhserspartners@nhs.net](mailto:nhserspartners@nhs.net)
+
+For enquiries relating to the go-live process please email the Interoperability Management Team at [interop.mgmt@nhs.net](mailto:interop.mgmt@nhs.net)  
 
 _**Note:** Once the live service API endpoints are issued the go-live process can be managed between the supplier and end-user organisation, without further requirement for approval from NHS Digital._
 
