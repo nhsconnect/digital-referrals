@@ -7,7 +7,7 @@ permalink: /develop_business_flow_bf004.html
 summary: "Business flows and their related endpoints"
 ---
 
-###### Status: ![Beta](images/icons/api_beta.png)
+###### Status: ![Live](images/icons/api_live.png)
 
 #### Definition
 
@@ -23,15 +23,15 @@ This business flow describes the process of an authenticated user searching for 
 * [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
 
 ##### Reference Data
-* [A004 - Retrieve Reference Data (STU3)](explore_endpoint_a004_STU3.html) ![Beta](images/icons/api_beta.png)
+* [A004 - Retrieve Reference Data (STU3)](explore_endpoint_a004_STU3.html) ![Live](images/icons/api_live.png)
 
 ##### Create Referral
-* [A010 - Patient Service Search](explore_endpoint_a010.html) ![Beta](images/icons/api_beta.png)
-* [A011 - Create Referral](explore_endpoint_a011.html) ![Beta](images/icons/api_beta.png)
-* [A021 - Create Referral and Send for Triage](explore_endpoint_a021.html) ![Beta](images/icons/api_beta.png)
-* [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Beta](images/icons/api_beta.png)
-* [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Beta](images/icons/api_beta.png)
-* [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Beta](images/icons/api_beta.png)
+* [A010 - Patient Service Search](explore_endpoint_a010.html) ![Live](images/icons/api_live.png)
+* [A011 - Create Referral](explore_endpoint_a011.html) ![Live](images/icons/api_live.png)
+* [A021 - Create Referral and Send for Triage](explore_endpoint_a021.html) ![Live](images/icons/api_live.png)
+* [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Live](images/icons/api_live.png)
+* [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Live](images/icons/api_live.png)
+* [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Live](images/icons/api_live.png)
 
 
 <!-- #### Review the diagram below to learn more -->

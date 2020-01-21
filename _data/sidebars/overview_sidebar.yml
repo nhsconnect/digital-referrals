@@ -44,7 +44,7 @@ entries:
     - title: "Clinical Referral Information"
       url: /develop_business_flow_bf002.html
       output: web
-    - title: "Create Referral (Beta)"
+    - title: "Create Referral"
       url: /develop_business_flow_bf004.html
       output: web
     - title: "Clinical Review (Beta)"
@@ -76,7 +76,7 @@ entries:
       - title: Clincial Referral Information
         output: web
         subfolderitems:
-        - title: "A004: Retrieve Reference Data"
+        - title: "A004: Reference Data (DSTU2)"
           url: /explore_endpoint_a004_DSTU2.html
           output: web
         - title: "A005: Retrieve Referral Request"
@@ -92,10 +92,10 @@ entries:
           url: /explore_endpoint_a008.html
           output: web
 
-      - title: Create Referral (Beta)
+      - title: Create Referral
         output: web
         subfolderitems:
-        - title: "A004: Retrieve Reference Data (STU3)"
+        - title: "A004: Reference Data (STU3)"
           url: /explore_endpoint_a004_STU3.html
           output: web
         - title: "A010: Patient Service Search"
@@ -104,7 +104,7 @@ entries:
         - title: "A011: Create Referral"
           url: /explore_endpoint_a011.html
           output: web
-        - title: "A021: Create Referral (Triage)"
+        - title: "A021: Create Referral for Triage"
           url: /explore_endpoint_a021.html
           output: web
         - title: "A020: Upload File"

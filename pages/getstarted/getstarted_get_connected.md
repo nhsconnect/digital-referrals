@@ -31,9 +31,10 @@ If you require a smartcard, please go to the following site to find out more:
 ## Access to development environments ##
 To request access to a test environment to connect to for development and testing purposes, please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net) and request the following:
 
-1. Allocation of an e-RS Integration API Test Pack
-2. Issue of Smartcard(s) for e-RS development
-3. Access to the e-RS DEV3 development environment
+1. Access to the e-RS Integration APIs in the ALPHA development environment (Formerly known as DEV3)
+2. Allocation of an e-RS Integration API Test Pack for ALPHA
+3. Issue of Smartcard(s) for e-RS development  
+  (If you already have smartcard please include the UUIDs so they can be re-used if possible)
 
 #### Using existing smartcards
 Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) if this is required.

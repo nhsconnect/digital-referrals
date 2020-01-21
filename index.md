@@ -17,10 +17,12 @@ We want to stimulate and assist your development of applications linked to the N
 #### Currently the e-RS Integration APIs provide the following functionality:
 - [Smartcard Authentication and Authorisation](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf001.html)
 - [Clinical Referral Information](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf002.html)
+- [Create Referral](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
 
 #### Coming Soon:
-- [Create Referral (Q4 2019)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
-- [Clinical Review (Q1 2020)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)  
+- [Clinical Review (Q2 2020)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)  
+- Book Appointment (Q3 2020)
+- Manage Referrals (Q4 2020)
 <br>  
 The NHS e-Referral Service **Future integration roadmap** is published [here](https://digital.nhs.uk/services/e-referral-service/integration).
 
