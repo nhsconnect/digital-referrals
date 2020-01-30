@@ -15,9 +15,9 @@ The overall NHS Digital approach to compliance is based on the Supplier Conforma
 
 The Supplier Conformance Assessment List (SCAL) is a technical document which details the supplier approach to information governance, clinical safety, functional testing and e-Referrals requirements. This document will be provided to you by NHS Digital and guidance on how to complete the SCAL is detailed in the document itself.
 
-You can download an example of the SCAL [here](downloads/agreements/SCAL_vsn2.0.xlsx) but the latest version should be obtained from [functional.assurance@nhs.net](mailto:functional.assurance@nhs.net) prior to completion.
+The latest version of the SCAL should be obtained from [functional.assurance@nhs.net](mailto:functional.assurance@nhs.net).
 
-If a supplier has not worked with NHS Digital before, there is also a requirement for them to register to use the NHS Digital national service desk to log incidents.
+If a supplier has not worked with NHS Digital before, there is also a requirement for them to register to use the NHS Digital National Service Desk [(ssd.nationalservicedesk@nhs.net)](mailto:ssd.nationalservicedesk@nhs.net) to log incidents.
 
 #### Submitting the SCAL
 Once the document has been completed, it should be submitted by email to [functional.assurance@nhs.net](mailto:functional.assurance@nhs.net) who will review it and issue a Technical Conformance Certificate.

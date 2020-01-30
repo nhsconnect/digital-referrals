@@ -7,7 +7,7 @@ permalink: explore_endpoint_a004_STU3.html
 summary: false
 ---
 
-##### Status: ![Beta](images/icons/api_beta.png)  
+##### Status: ![Live](images/icons/api_live.png)
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
 This endpoint must be used with all FHIR3 (STU3) endpoints:<br>
