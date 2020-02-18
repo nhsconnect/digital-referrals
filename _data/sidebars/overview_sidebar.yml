@@ -2,20 +2,16 @@ entries:
 
 - title: e-RS APIs
   folders:
-
   - title: Overview
     output: web
     folderitems:
-
     - title: Introduction
       url: /index.html
       output: web, pdf
       type: homepage
-
-    - title: News and Events
-      url: /ers_api_news_and_events.html
-      output: web
-
+    # - title: News and Events
+    #   url: /ers_api_news_and_events.html
+    #   output: web
     - title: Release Notices
       url: /forward_notices.html
       output: web
@@ -23,7 +19,6 @@ entries:
   - title: Get Started
     output: web
     folderitems:
-
     - title: API Partner Registration
       url: /getstarted_partner_registration.html
       output: web
@@ -37,100 +32,79 @@ entries:
   - title: Explore
     output: web
     folderitems:
-
     - title: "Authentication and Authorisation"
       url: /develop_business_flow_bf001.html
       output: web
-    - title: "Clinical Referral Information"
-      url: /develop_business_flow_bf002.html
+    - title: "Receiving Referrals"
+      url: /receiving_referrals.html
       output: web
-    - title: "Create Referral"
-      url: /develop_business_flow_bf004.html
+    - title: "Creating Referrals"
+      url: /creating_referrals.html
       output: web
-    - title: "Clinical Review (Beta)"
-      url: /develop_business_flow_bf003.html
+    - title: "Full Endpoint Catalogue"
+      url: /explore_endpoint_catalogue.html
       output: web
 
   - title: Develop
     output: web
     folderitems:
-
-    - title: Full Endpoint Catalogue
-      url: /explore_endpoint_catalogue.html
+    - title: Endpoints
       output: web
-
-      subfolders:
-      - title: Authentication and Authorisation
+      subfolderitems:
+      - title: "A001: Create Professional Session"
+        url: /explore_endpoint_a001.html
         output: web
-        subfolderitems:
-        - title: "A001: Create Professional Session"
-          url: /explore_endpoint_a001.html
-          output: web
-        - title: "A002: Prof. Session Select Role"
-          url: /explore_endpoint_a002.html
-          output: web
-        - title: "A003: Delete Professional Session"
-          url: /explore_endpoint_a003.html
-          output: web
-
-      - title: Clincial Referral Information
+      - title: "A002: Prof. Session Select Role"
+        url: /explore_endpoint_a002.html
         output: web
-        subfolderitems:
-        - title: "A004: Reference Data (DSTU2)"
-          url: /explore_endpoint_a004_DSTU2.html
-          output: web
-        - title: "A005: Retrieve Referral Request"
-          url: /explore_endpoint_a005.html
-          output: web
-        - title: "A006: Retrieve Attachment"
-          url: /explore_endpoint_a006.html
-          output: web
-        - title: "A007: Retrieve Clinical Information"
-          url: /explore_endpoint_a007.html
-          output: web
-        - title: "A008: Retrieve Worklist"
-          url: /explore_endpoint_a008.html
-          output: web
-
-      - title: Create Referral
+      - title: "A003: Delete Professional Session"
+        url: /explore_endpoint_a003.html
         output: web
-        subfolderitems:
-        - title: "A004: Reference Data (STU3)"
-          url: /explore_endpoint_a004_STU3.html
-          output: web
-        - title: "A010: Patient Service Search"
-          url: /explore_endpoint_a010.html
-          output: web
-        - title: "A011: Create Referral"
-          url: /explore_endpoint_a011.html
-          output: web
-        - title: "A021: Create Referral for Triage"
-          url: /explore_endpoint_a021.html
-          output: web
-        - title: "A020: Upload File"
-          url: /explore_endpoint_a020.html
-          output: web
-        - title: "A012: Maintain Referral Letter"
-          url: /explore_endpoint_a012.html
-          output: web
-        - title: "A019: Generate Patient Letter"
-          url: /explore_endpoint_a019.html
-          output: web
-
-      - title: Clinical Review (Beta)
+      - title: "A004: Reference Data (DSTU2)"
+        url: /explore_endpoint_a004_DSTU2.html
         output: web
-        subfolderitems:
-        - title: "A013: Accept Referral"
-          url: /explore_endpoint_a013.html
-          output: web
-        - title: "A014: Reject Referral"
-          url: /explore_endpoint_a014.html
-          output: web
-
+      - title: "A004: Reference Data (STU3)"
+        url: /explore_endpoint_a004_STU3.html
+        output: web
+      - title: "A005: Retrieve Referral Request"
+        url: /explore_endpoint_a005.html
+        output: web
+      - title: "A006: Retrieve Attachment"
+        url: /explore_endpoint_a006.html
+        output: web
+      - title: "A007: Retrieve Clinical Information"
+        url: /explore_endpoint_a007.html
+        output: web
+      - title: "A008: Retrieve Worklist"
+        url: /explore_endpoint_a008.html
+        output: web
+      - title: "A010: Patient Service Search"
+        url: /explore_endpoint_a010.html
+        output: web
+      - title: "A011: Create Referral"
+        url: /explore_endpoint_a011.html
+        output: web
+      - title: "A012: Maintain Referral Letter"
+        url: /explore_endpoint_a012.html
+        output: web
+      - title: "A013: Accept Referral"
+        url: /explore_endpoint_a013.html
+        output: web
+      - title: "A014: Reject Referral"
+        url: /explore_endpoint_a014.html
+        output: web
+      - title: "A019: Generate Patient Letter"
+        url: /explore_endpoint_a019.html
+        output: web
+      - title: "A020: Upload File"
+        url: /explore_endpoint_a020.html
+        output: web
+      - title: "A021: Create Referral for Triage"
+        url: /explore_endpoint_a021.html
+        output: web
     - title: Generic Error Codes
       url: /explore_error_messages.html
       output: web
-
     - title: Development Support
       url: /develop_support.html
       output: web
@@ -138,15 +112,12 @@ entries:
   - title: Assure
     output: web
     folderitems:
-
     - title: Compliance Approach
       url: /assure_compliance_approach.html
       output: web
-
     - title: Special Terms
       url: /assure_special_terms.html
       output: web
-
     - title: Clinical Safety
       url: /clinical_safety.html
       output: web
@@ -154,11 +125,9 @@ entries:
   - title: Deploy
     output: web
     folderitems:
-
     - title: Going Live
       url: /go_live.html
       output: web
-
     - title: Live Service Support
       url: /live_support.html
       output: web
@@ -166,28 +135,9 @@ entries:
   - title: Support
     output: web
     folderitems:
-
     - title: Development Support
       url: /develop_support.html
       output: web
-
     - title: Live Service Support
       url: /live_support.html
       output: web
-
-  # - title: XML MiM Integration
-  #   output: web
-  #   folderitems:
-  #
-  #   - title: Introduction
-  #     url: /mim_intro.html
-  #     output: web
-  #   - title: Foundations
-  #     url: /mim_foundations.html
-  #     output: web
-  #   - title: Referrers
-  #     url: /mim_referrers.html
-  #     output: web
-  #   - title: Providers
-  #     url: /mim_providers.html
-  #     output: web
