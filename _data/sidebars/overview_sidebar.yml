@@ -48,11 +48,13 @@ entries:
   - title: Develop
     output: web
     folderitems:
-
+    - title: Development Support
+      url: /develop_support.html
+      output: web
+      subfolders:
     - title: Endpoints
       output: web
       subfolderitems:
-
       - title: "A001: Create Professional Session"
         url: /explore_endpoint_a001.html
         output: web
@@ -106,9 +108,6 @@ entries:
         output: web
     - title: Generic Error Codes
       url: /explore_error_messages.html
-      output: web
-    - title: Development Support
-      url: /develop_support.html
       output: web
 
   - title: Assure
