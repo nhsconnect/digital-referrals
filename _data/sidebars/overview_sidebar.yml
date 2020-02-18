@@ -35,13 +35,13 @@ entries:
     - title: "Authentication and Authorisation"
       url: /develop_business_flow_bf001.html
       output: web
-    - title: "Receiving Referrals"
+    - title: "How to Receive e-Referrals"
       url: /receiving_referrals.html
       output: web
-    - title: "Creating Referrals"
+    - title: "How to Create e-Referrals"
       url: /creating_referrals.html
       output: web
-    - title: "Full Endpoint Catalogue"
+    - title: "Endpoint Catalogue"
       url: /explore_endpoint_catalogue.html
       output: web
 

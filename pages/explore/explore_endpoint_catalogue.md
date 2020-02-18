@@ -34,8 +34,8 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name | Status | Switch-off Date |
 |----|------|--------| :----: |
-|A004|[Retrieve Reference Data (FHIR2)](explore_endpoint_a004_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
-|A005|[Retrieve Referral](explore_endpoint_a005_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
-|A006|[Retrieve Attachment](explore_endpoint_a006_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
-|A007|[Retrieve Clinical Information](explore_endpoint_a007_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
-|A008|[Retrieve Worklist](explore_endpoint_a008_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
+|A004|[Retrieve Reference Data (DSTU2)](explore_endpoint_a004_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
+|A005|[Retrieve Referral (DSTU2)](explore_endpoint_a005_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
+|A006|[Retrieve Attachment (DSTU2)](explore_endpoint_a006_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
+|A007|[Retrieve Clinical Information (DSTU2)](explore_endpoint_a007_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
+|A008|[Retrieve Worklist (DSTU2)](explore_endpoint_a008_DSTU2.html)|![Live](images/icons/api_live.png)| TBC |
