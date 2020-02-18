@@ -18,7 +18,7 @@ This endpoint must be used with all FHIR3 (STU3) endpoints:<br>
 - A013 Accept Referral<br>
 - A014 Reject Referral<br>
 - A019 Generate Patient Letter<br>
-- A021 Create Referral And Send For Triag<br>
+- A021 Create Referral And Send For Triage<br>
 </div>
 
 ## API
