@@ -15,7 +15,8 @@ This page describes the APIs required to conduct a search for services relevant 
 
 <div style="border: 2px solid #888888; padding: 10px; background: #fff1b5;">
 <b>Notes:</b><br>
-The creation of an e-referral to a service set up as a RAS is different to other referrals. Therefore, a referral request for a RAS should be created using the endpoint <a href="/explore_endpoint_a021.html">A021: Create Referral And Send For Triage<a/> with a shortlist containing ONLY the intended service. However, a referral containing a shortlist of non-RAS services (I.e. Directly bookable services (DBS) or in-directly bookable services (IBS)) should be created using <a href="/explore_endpoint_a011.html">A011: Create Referral<a/>.<br>
+The creation of an e-referral to a service set up as a RAS is different to other referrals. Therefore, a referral request for a RAS should be created using the endpoint <a href="/explore_endpoint_a021.html">A021: Create Referral And Send For Triage</a> with a shortlist containing ONLY the intended service. However, a referral containing a shortlist of non-RAS services (I.e. Directly bookable services (DBS) or in-directly bookable services (IBS)) should be created using <a href="/explore_endpoint_a011.html">A011: Create Referral</a>.
+<br>
 <br>
 Clinical information should be collated into an attachment and added to the referral, it cannot currently be uploaded as separate structured data.   
 </div>   
