@@ -11,7 +11,7 @@ summary: "Forward notices for the e-Referral APIs"
 
 | Issue Date | Category | Item | Effective Date |
 | ---------- | -------- | ---- | -------------- |
-| 10/01/2020<br>![NEW](images/icons/new.png) | Release  | e-RS Release 9.1 includes the Create Referral API Suite <br>[(View documentation)](develop_business_flow_bf004.html)| 10/01/2020 |
+| 18/02/2020<br>![NEW](images/icons/new.png) | Release | e-RS Release 9.3 will contain functionality to Accept or Reject referrals via API <br>[(View documentation)](develop_business_flow_bf003.html)| March 2020 |
 
 
 ## API Release History
