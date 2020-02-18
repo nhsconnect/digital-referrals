@@ -7,7 +7,7 @@ permalink: explore_endpoint_a009.html
 summary: false
 ---
 
-##### Status: NO LONGER AVAILABLE
+<div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">Status: NO LONGER AVAILABLE</div>
 
 ## API
 
