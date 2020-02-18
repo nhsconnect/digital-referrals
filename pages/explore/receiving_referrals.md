@@ -9,7 +9,7 @@ summary: "How to receive e-referrals into other systems using the e-RS integrati
 
 #### Definition
 
-This page describes the functionality available for receiving e-referrals into external software systems including how to retrieve the "Referrals for Review" worklist, the Clinical Referral Information (CRI) and any referral attachments (Sometimes known as "The referral letter") from the NHS e-Referral Service (e-RS). This will require a pre-authenticated professional API session to have been established. These APIs have been developed in accordance with the [FHIR STU3](http://hl7.org/fhir/STU3/) specification, guidance for developers is available online [here](http://hl7.org/fhir/STU3/overview-dev.html).
+This page describes the functionality available for receiving e-referrals into external software systems including how to retrieve the "Referrals for Review" worklist, the Clinical Referral Information (CRI) and any referral attachments (Sometimes known as "The referral letter") from the NHS e-Referral Service (e-RS). Further APIs also allow sending the result of a clinical review back to e-RS (i.e. Accept or Reject). These APIs have been developed in accordance with the [FHIR STU3](http://hl7.org/fhir/STU3/) specification, guidance for developers is available online [here](http://hl7.org/fhir/STU3/overview-dev.html).
 
 #### The following APIs are used to receive e-referrals from e-RS
 
@@ -26,6 +26,11 @@ This page describes the functionality available for receiving e-referrals into e
 * [A006 – Retrieve Attachment](explore_endpoint_a006.html) ![Live](images/icons/api_live.png)
 * [A007 – Retrieve Clinical Information](explore_endpoint_a007.html) ![Live](images/icons/api_live.png)
 * [A008 – Retrieve Worklist](explore_endpoint_a008.html) ![Live](images/icons/api_live.png)
+
+##### Clinical Review
+* [A013 – Accept Referral](explore_endpoint_a013.html) ![Beta](images/icons/api_beta.png)
+* [A014 – Reject Referral](explore_endpoint_a014.html) ![Beta](images/icons/api_beta.png)
+* A0xx - Admin Action *(Coming in 2020)*
 
 #### Logical Process Diagram
 
