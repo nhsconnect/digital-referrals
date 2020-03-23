@@ -10,8 +10,9 @@ summary: false
 ##### Status: ![Live](images/icons/api_live.png)
 
 ## Description
-Once a referring organisation has booked an appointment and appropriate clinical referral information has been added, the referral is available for the service provider to review (via the Referrals for Review worklist).
-As part of this review process, a provider can either accept the referral into their service, i.e. it meets all the criteria for treatment at the service.  Providers can also choose to reject the referral if they feel it’s inappropriate for their service or they require additional referral information to make a decision. Users will be able to carry out this review in their preferred system using this API.
+Once a referring organisation has booked an appointment and appropriate clinical referral information has been added, the referral is available for the service provider to review (via the Referrals for Review worklist). As part of this review process, a provider can accept the referral into their service, i.e. it meets all the criteria for treatment at the service. Users will be able to carry out this action in their preferred system using this API.  
+
+Providers can also choose to reject the referral, using [A014: Reject Referral](explore_endpoint_a014.html), if they feel it’s inappropriate for their service or they require additional referral information to make a decision.
 
 
 ## Resource URL
