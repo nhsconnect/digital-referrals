@@ -9,7 +9,12 @@ summary: false
 
 ##### Status: ![Beta](images/icons/api_beta.png)
 
-## API
+## Description
+Once a referring organisation has booked an appointment and appropriate clinical referral information has been added, the referral is available for the service provider to review (via the Referrals for Review worklist).
+As part of this review process, a provider can either accept the referral into their service, i.e. it meets all the criteria for treatment at the service.  Providers can also choose to reject the referral if they feel it’s inappropriate for their service or they require additional referral information to make a decision. Users will be able to carry out this review in their preferred system using this API.
+
+
+## Resource URL
 
 Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 
@@ -17,16 +22,21 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 | -------------| -----------------------------------------     | ---------------- |
 | POST         | v1/ReferralRequest/{UBRN}/$ers.acceptReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-## Description
-This API lets the professional user accept the Referral that has already been created and not reviewed.
 
-## Related FHIR model
-- [eRS-AcceptReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-AcceptReferral-Operation-1)
+## Operation Definition
+- [eRS-AcceptReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-AcceptReferral-Operation-1/_history/1.0)
 
-### Request Operation
-#### Request Header
-Provide ASID for the end-point system, the Session Key and the VersionId of the Referral.
+## Prerequisite Conditions
+- The user is a workgroup member (or in the case of an SPCA, is logged in on behalf of a workgroup member) for the service associated to the current appointment booking;  
 
+- There is a currently booked appointment (future dated) and there is referrer clinical information associated with the referral  
+
+- The referral exists on the Referrals for Review worklist and can be determined by using A008: Retrieve Worklist  
+
+- Detailed referral information, including clinical referral information and attachments can be obtained via A005: Retrieve Referral Request  
+
+# INPUT
+## Request Operation: Header
 | Field Name | Value |
 | ---------- | ----- |
 | XAPI_ASID | The "Accredited System ID" issued to the third party |
@@ -34,22 +44,35 @@ Provide ASID for the end-point system, the Session Key and the VersionId of the 
 | Accept | `*/*`, `application/fhir+json` |
 | If-Match | W/"`n`" |
 
-Note: `n` is the VersionId of the Referral and this can be retrieved by fetching the Referral details. It must be the ID of the latest version of the referral in e-RS.
+Note: `n` is the VersionId of the Referral and this can be retrieved by fetching the Referral details.  
+It must be the ID of the latest version of the referral in e-RS.
 
-#### Request Body
-There is no request body required.
+## Request Operation: Body
+There is no request body required for this API.
 
-### Response
+### Request Example (JSON)
+[A013_Example_Request.json](filepath)
 
-#### Success
-If successful the referral is accepted. The response code `200 (OK)` is returned. This response has no body.
+# OUTPUT
+## Response: Success
+If successful, the referral is accepted and an indication of success returned with:
+-	A HTTP status code 200 (OK);
+-	Referral request (https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)  
+(With an eRSAppointment (appointment.status) code and display of "booked")
+-	UBRN version number
 
-#### Failure
-If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
-Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+### Response Example (JSON)
+[A013_Example_Response.json](filepath)
 
-| issue.details.code | Description |
-| ------------------ | ------ |
-| INVALID_REQUEST_STATE | The referral is not in a 'Pending Review' state; or: the appointment has been cancelled or marked as DNA; or: the appointment is now in the past |  
-| NO_RELATIONSHIP |The user is not authorised to view the referral, possibly because it is not yet/no longer booked into the service |  
-| PATIENT_ERROR | There was a problem with the patient’s record in PDS. The patient is not eligible to be referred via e-RS while this problem persists |  
+## Response: Failure
+If an error occurs, the relating HTTP status code will be returned in the header. Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
+
+| OperationOutcome | Description | Suggested Diagnostic |
+| ---------------- | ----------- | -------------------- |
+| NO_RELATIONSHIP  | The SPC user (or if SPCA, SPC user they are "on behalf of") is not a Service Provider workgroup member for the current booked-to Service at the logged-in Organisation | No legitimate relationship exists with this referral, check workgroup permissions |
+| PATIENT_ERROR | The Patient associated with the Request is marked as 'Sensitive' | The user does not have the necessary clinical credentials to view this patient |
+| INVALID_REQUEST_STATE	The Appointment Request has a status other than 'Booked' or 'Requires Rebook'	The referral must be 'Booked' or 'Requires Rebook' | INVALID_REQUEST_STATE	The Appointment Request has a status other than 'Booked' or 'Requires Rebook'	The referral must be 'Booked' or 'Requires Rebook' | INVALID_REQUEST_STATE	The Appointment Request has a status other than 'Booked' or 'Requires Rebook'	The referral must be 'Booked' or 'Requires Rebook' |
+| INVALID_REQUEST_STATE 	The Appointment Request has an Appointment Booking with a state other than 'Booked'	The referral must have a booked appointment | INVALID_REQUEST_STATE 	The Appointment Request has an Appointment Booking with a state other than 'Booked'	The referral must have a booked appointment | INVALID_REQUEST_STATE 	The Appointment Request has an Appointment Booking with a state other than 'Booked'	The referral must have a booked appointment |
+| INVALID_REQUEST_STATE 	The Appointment Request has an Appointment Booking with a Date in the past	The appointment must be on or after today | INVALID_REQUEST_STATE 	The Appointment Request has an Appointment Booking with a Date in the past	The appointment must be on or after today | INVALID_REQUEST_STATE 	The Appointment Request has an Appointment Booking with a Date in the past	The appointment must be on or after today |
+| INVALID_REQUEST_STATE 	The Shortlisted Service Status of the Service associated with the Appointment Booking is not 'Pending Review'	The referral request must not be marked for review | INVALID_REQUEST_STATE 	The Shortlisted Service Status of the Service associated with the Appointment Booking is not 'Pending Review'	The referral request must not be marked for review | INVALID_REQUEST_STATE 	The Shortlisted Service Status of the Service associated with the Appointment Booking is not 'Pending Review'	The referral request must not be marked for review |
+| INVALID_REQUEST_STATE 	The Clinical Information Intent indicator is not 'Not Intending to Add'	The intention to add the referral letter must be 'Not Intending to Add' | INVALID_REQUEST_STATE 	The Clinical Information Intent indicator is not 'Not Intending to Add'	The intention to add the referral letter must be 'Not Intending to Add' | INVALID_REQUEST_STATE 	The Clinical Information Intent indicator is not 'Not Intending to Add'	The intention to add the referral letter must be 'Not Intending to Add' |
