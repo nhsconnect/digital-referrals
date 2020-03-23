@@ -7,32 +7,35 @@ permalink: /explore_endpoint_catalogue.html
 summary: "Catalogue of all currently available external e-Referral API endpoints"
 ---
 
-## Current APIs  
+## Live APIs  
 
 | ID | Name | Status | FHIR |
 |----|------|--------|:----:|
 |A001|[Create Professional Session](explore_endpoint_a001.html)|![Live](images/icons/api_live.png)| N/A |
 |A002|[Professional Session Select Role](explore_endpoint_a002.html)|![Live](images/icons/api_live.png)| N/A |
 |A003|[Delete Professional Session](explore_endpoint_a003.html)|![Live](images/icons/api_live.png)| N/A |
-|A004|[Retrieve Reference Data](explore_endpoint_a004_STU3.html)|![Live](images/icons/api_live.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/referencedata_resources_dstu2.html)|
+|A004|[Retrieve Reference Data](explore_endpoint_a004_STU3.html)|![Live](images/icons/api_live.png)| STU3 |
 |A005|[Retrieve Referral](explore_endpoint_a005.html)|![Live](images/icons/api_live.png)|[STU3]()|
 |A006|[Retrieve Attachment](explore_endpoint_a006.html)|![Live](images/icons/api_live.png)|[STU3]()|
 |A007|[Retrieve Clinical Information](explore_endpoint_a007.html)|![Live](images/icons/api_live.png)|[STU3]()|
 |A008|[Retrieve Worklist](explore_endpoint_a008.html)|![Live](images/icons/api_live.png)|[STU3]()|
-|A009|[Retrieve Generic Service Search](explore_endpoint_a009.html)| DISCONTINUED | N/A |
-|A010|[Patient Service Search](explore_endpoint_a010.html)|![Live](images/icons/api_live.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/servicesearch_resources_stu3.html)|
-|A011|[Create Referral](explore_endpoint_a011.html)|![Live](images/icons/api_live.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/createreferral_resources_stu3.html)|
-|A012|[Maintain Referral Letter](explore_endpoint_a012.html)|![Live](images/icons/api_live.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/maintainreferral_resources_stu3.html)|
-|A013|[Accept Referral](explore_endpoint_a013.html)|![Beta](images/icons/api_beta.png)| [STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/acceptrejectreferral_resources_stu3.html) |
-|A014|[Reject Referral](explore_endpoint_a014.html)|![Beta](images/icons/api_beta.png)| [STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/acceptrejectreferral_resources_stu3.html) |
-|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)|![Alpha](images/icons/api_alpha.png)| TBC |
-|A016|[Book Appointment](explore_endpoint_a016.html)|![Alpha](images/icons/api_alpha.png)| TBC |
-|A017|[Defer Booking to Provider](explore_endpoint_a017.html)|![Alpha](images/icons/api_alpha.png)| TBC |
-|A018|[Re-book Appointment](explore_endpoint_a018.html)|![Alpha](images/icons/api_alpha.png)| TBC |
-|A019|[Generate Patient Letter](explore_endpoint_a019.html)|![Live](images/icons/api_live.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/genpatientletter_resources_stu3.html)|
+|A010|[Patient Service Search](explore_endpoint_a010.html)|![Live](images/icons/api_live.png)| STU3 |
+|A011|[Create Referral](explore_endpoint_a011.html)|![Live](images/icons/api_live.png)| STU3 |
+|A012|[Maintain Referral Letter](explore_endpoint_a012.html)|![Live](images/icons/api_live.png)| STU3 |
+|A013|[Accept Referral](explore_endpoint_a013.html)|![Live](images/icons/api_live.png)|  STU3  |
+|A014|[Reject Referral](explore_endpoint_a014.html)|![Live](images/icons/api_live.png)|  STU3  |
+|A019|[Generate Patient Letter](explore_endpoint_a019.html)|![Live](images/icons/api_live.png)| STU3 |
 |A020|[Upload File To Document Store](explore_endpoint_a020.html)|![Live](images/icons/api_live.png)| N/A |
-|A021|[Create Referral And Send For Triage](explore_endpoint_a021.html)|![Live](images/icons/api_live.png)|[STU3](https://nhsconnect.github.io/NHS-FHIR-eRS/createreferral_resources_stu3.html)|
+|A021|[Create Referral And Send For Triage](explore_endpoint_a021.html)|![Live](images/icons/api_live.png)| STU3 |
 
+## APIs In Development
+
+| ID | Name | Expected release | FHIR |
+|----|------|--------|:----:|
+|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)| Q3 2020 | TBC |
+|A016|[Book Appointment](explore_endpoint_a016.html)| Q3 2020 | TBC |
+|A017|[Defer Booking to Provider](explore_endpoint_a017.html)| Q3 2020 | TBC |
+|A018|[Re-book Appointment](explore_endpoint_a018.html)| Q3 2020 | TBC |
 
 ## Legacy (Deprecated) APIs   
 

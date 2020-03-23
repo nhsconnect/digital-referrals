@@ -7,7 +7,7 @@ permalink: explore_endpoint_a013.html
 summary: false
 ---
 
-##### Status: ![Beta](images/icons/api_beta.png)
+##### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 Once a referring organisation has booked an appointment and appropriate clinical referral information has been added, the referral is available for the service provider to review (via the Referrals for Review worklist).

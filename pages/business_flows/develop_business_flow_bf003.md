@@ -7,7 +7,7 @@ permalink: /develop_business_flow_bf003.html
 summary: "Business flows for accepting, rejecting or adding instructions for further action"
 ---
 
-###### Status: ![Beta](images/icons/api_beta.png)
+###### Status: ![Live](images/icons/api_live.png)
 
 #### Definition
 
@@ -25,9 +25,9 @@ This business flow describes the process of a provider-side clinician fetching r
 * [A004 - Retrieve Reference Data](explore_endpoint_a004_STU3.html) ![Live](images/icons/api_live.png)
 
 ##### Referral Review
-* [A013 – Accept Referral](explore_endpoint_a013.html) ![Beta](images/icons/api_beta.png)
-* [A014 – Reject Referral](explore_endpoint_a014.html) ![Beta](images/icons/api_beta.png)
-* A0xx - Admin Action *(Available 2020)*
+* [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
+* [A014 – Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
+* A0xx - Admin Action *(Available Q2 2020)*
 
 #### Review the diagram below to learn more
 
