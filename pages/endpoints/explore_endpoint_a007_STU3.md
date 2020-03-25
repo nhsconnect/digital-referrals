@@ -10,7 +10,7 @@ summary: false
 ##### Status: ![Live](images/icons/api_live.png)
 
 ## Description
-This API returns a real-time PDF of the referral for a given UBRN.
+This API returns a real-time PDF of the clinical referral information for a given UBRN.
 
 ## Resource URL
 
