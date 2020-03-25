@@ -9,6 +9,9 @@ summary: false
 
 ##### Status: ![Live](images/icons/api_live.png)
 
+## Description
+This API lets users create a real-time Portable Document Format (PDF) of the referral. This is suitable for integration into a 3rd party system. You can find the Clinical Information for a referral request using a UBRN.
+
 ## API
 
 Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
@@ -21,8 +24,7 @@ Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
 
 * [eRS-ClinicalReferralInformation-Operation-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.ClinicalReferralInformationQuery/ers-clinicalreferralinformation-operation-1.html)
 
-## Description
-This API lets users create a real-time Portable Document Format (PDF) of the referral. This is suitable for integration into a 3rd party system. You can find the Clinical Information for a referral request using a UBRN.
+
 
 ## Input
 

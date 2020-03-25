@@ -1,0 +1,25 @@
+{
+   "resourceType": "Parameters",
+   "meta": {
+      "profile": [
+         "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-RejectReferral-Parameters-1"
+      ]
+   },
+   "parameter": [
+      {
+         "name": "rejectionReason",
+         "valueCoding": {
+            "system": "https://api.dev3.ers.ncrs.nhs.uk/ers-api/STU3/v1/CodeSystem/APPOINTMENT-CANCELLATION-REASON",
+            "code": "SERVICE_PREREQUISITES_NOT_COMPLETE"
+         }
+      },
+      {
+         "name": "rejectionComments",
+         "valueString": "comments"
+      },
+      {
+         "name": "appointmentCancelledInPAS",
+         "valueBoolean": false
+      }
+   ]
+}

@@ -1,0 +1,147 @@
+{
+    "id": "000000098879",
+    "meta": {
+        "versionId": "11",
+        "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"
+        ]
+    },
+    "resourceType": "ReferralRequest",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1",
+            "valueReference": {
+                "reference": "#appointment"
+            }
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1",
+            "valueDateTime": "2020-03-25T11:49:09.073Z"
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoLastUpdated-1",
+            "valueDateTime": "2020-03-25T11:49:26.764Z"
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                        "code": "ROUTINE",
+                        "display": "Routine"
+                    }
+                ]
+            }
+        }
+    ],
+    "contained": [
+        {
+            "id": "appointment",
+            "meta": {
+                "profile": [
+                    "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"
+                ]
+            },
+            "resourceType": "Appointment",
+            "status": "booked",
+            "start": "2020-04-04T09:00:00.000Z",
+            "end": "2020-04-04T09:00:00.000Z",
+            "participant": [
+                {
+                    "actor": {
+                        "display": "R68_Sleep_IBS_RL_Assessment",
+                        "identifier": {
+                            "system": "http://fhir.nhs.net/Id/ers-service",
+                            "value": "90282"
+                        }
+                    },
+                    "status": "accepted"
+                },
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+                                "code": "CON"
+                            }
+                        ]
+                    },
+                    "actor": {
+                        "identifier": {
+                            "system": "http://fhir.nhs.net/Id/sds-user-id",
+                            "value": "021600556515"
+                        }
+                    },
+                    "status": "accepted"
+                }
+            ]
+        },
+        {
+            "id": "DocumentReference-99115",
+            "meta": {
+                "profile": [
+                    "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                ]
+            },
+            "resourceType": "DocumentReference",
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                        "code": "REFERRER",
+                        "display": "Referrer"
+                    }
+                ]
+            },
+            "status": "current",
+            "indexed": "2020-03-25T11:54:39.701Z",
+            "description": "",
+            "content": [
+                {
+                    "attachment": {
+                        "id": "99115",
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                                "valueReference": {
+                                    "identifier": {
+                                        "system": "http://fhir.nhs.net/Id/sds-user-id",
+                                        "value": "021600556514"
+                                    }
+                                }
+                            }
+                        ],
+                        "contentType": "text/plain",
+                        "url": "Binary/att-98879-99115",
+                        "size": 46,
+                        "title": "AAA_Referral_Letter.txt",
+                        "creation": "2020-03-25"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": "active",
+    "specialty": {
+        "coding": [
+            {
+                "system": "http://localhost:83/STU3/v1/CodeSystem/SPECIALTY",
+                "code": "SLEEP_MEDICINE",
+                "display": "Sleep Medicine"
+            }
+        ]
+    },
+    "subject": {
+        "identifier": {
+            "system": "http://fhir.nhs.net/Id/nhs-number",
+            "value": "9190000000"
+        }
+    },
+    "supportingInfo": [
+        {
+            "reference": "#DocumentReference-99115"
+        }
+    ],
+    "intent": "plan"
+}
