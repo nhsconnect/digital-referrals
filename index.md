@@ -18,9 +18,9 @@ We want to stimulate and assist your development of applications linked to the N
 - [Smartcard Authentication and Authorisation](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf001.html)
 - [Clinical Referral Information](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf002.html)
 - [Create Referral](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
+- [Clinical Review (Accept/Reject)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)  
 
 #### Coming Soon:
-- [Clinical Review (Q2 2020)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)  
 - Book Appointment (Q3 2020)
 - Manage Referrals (Q4 2020)
 <br>  

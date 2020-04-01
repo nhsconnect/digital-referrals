@@ -28,9 +28,9 @@ This page describes the functionality available for receiving e-referrals into e
 * [A008 – Retrieve Worklist](explore_endpoint_a008.html) ![Live](images/icons/api_live.png)
 
 ##### Clinical Review
-* [A013 – Accept Referral](explore_endpoint_a013.html) ![Beta](images/icons/api_beta.png)
-* [A014 – Reject Referral](explore_endpoint_a014.html) ![Beta](images/icons/api_beta.png)
-* A0xx - Admin Action *(Coming in 2020)*
+* [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
+* [A014 – Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
+* A0xx - Admin Action *(Coming in Q2 2020)*
 
 #### Logical Process Diagram
 

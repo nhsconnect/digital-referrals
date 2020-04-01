@@ -11,7 +11,7 @@ summary: false
 
 ### API URL
 
-Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
 | Method | URL | Authentication |
 | -------| --- | ---------------- |

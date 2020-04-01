@@ -7,7 +7,7 @@ permalink: explore_endpoint_a004_DSTU2.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)  
+##### Status: ![Deprecated](images/icons/api_deprecated.png)  
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
 This endpoint must be used with all FHIR2 (DSTU2) endpoints: <br>
@@ -19,7 +19,7 @@ This endpoint must be used with all FHIR2 (DSTU2) endpoints: <br>
 
 ## API
 
-Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
 | Method | URL |
 | -------------| --- |

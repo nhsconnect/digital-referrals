@@ -31,8 +31,8 @@ If you require a smartcard, please go to the following site to find out more:
 ## Access to development environments ##
 To request access to a test environment to connect to for development and testing purposes, please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net) and request the following:
 
-1. Access to the e-RS Integration APIs in the ALPHA development environment (Formerly known as DEV3)
-2. Allocation of an e-RS Integration API Test Pack for ALPHA
+1. Access to the e-RS Integration APIs in the e-RS DEV1 development environment
+2. Allocation of an e-RS Integration API Test Pack for e-RS DEV1
 3. Issue of Smartcard(s) for e-RS development  
   (If you already have smartcard please include the UUIDs so they can be re-used if possible)
 

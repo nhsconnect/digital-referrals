@@ -23,7 +23,7 @@ This endpoint must be used with all FHIR3 (STU3) endpoints:<br>
 
 ## API
 
-Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
 | Method | URL |
 | -------------| --- |

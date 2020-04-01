@@ -13,6 +13,9 @@ summary: "Business flows and their related endpoints"
 
 This business flow describes the process of creating an authorised professional API session based upon an authenticated Care identify Service (CIS) smartcard. It makes use of the following NHS e-RS API Endpoints in order, with persisted rights to undertake further business workflows until the session is terminated.
 
+### Using the identity agent
+Guidance on using the identity agent and authenticating with NHS Smartcards can be found at [developer.nhs.uk/apis/spine-core/smartcards.html](https://developer.nhs.uk/apis/spine-core/smartcards.html)
+
 #### This business flow involves the following APIs
 
 * [A001 – Create Professional Session](explore_endpoint_a001.html) ![Live](images/icons/api_live.png)

@@ -16,7 +16,7 @@ Providers can also choose to accept the referral into their service, i.e. it mee
 
 ## Resource URL
 
-Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
@@ -60,7 +60,7 @@ It must be the ID of the latest version of the referral in e-RS.
 
 ### Example URI
 ```http
-/STU3/v1/ReferralRequest/000000098880/$ers.rejectReferral
+https://api.dev1.ers.ncrs.nhs.uk/ers-api//STU3/v1/ReferralRequest/000000098880/$ers.rejectReferral
 ```
 
 ### Example Request Header

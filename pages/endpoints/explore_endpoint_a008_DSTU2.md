@@ -7,11 +7,11 @@ permalink: explore_endpoint_a008.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+##### Status: ![Deprecated](images/icons/api_deprecated.png)  
 
 ## API
 
-Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
 | Request Type | URL |
 | -------------| --- |

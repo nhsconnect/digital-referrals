@@ -7,15 +7,15 @@ permalink: explore_endpoint_a006.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+##### Status: ![Deprecated](images/icons/api_deprecated.png)  
 
 ## API
 
-Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
 | Method | URL |
 | -------------| --- |
-| GET | v1/Binary/{AttachmentLogicalID}
+| GET | v1/Binary/{AttachmentLogicalID} |
 
 ## Description
 This API lets users retrieve and download linked files for a referral, also known as attachments.

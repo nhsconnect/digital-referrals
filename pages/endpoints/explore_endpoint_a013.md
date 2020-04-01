@@ -17,7 +17,7 @@ Providers can also choose to reject the referral, using [A014: Reject Referral](
 
 ## Resource URL
 
-Base URL (Dev3): https://api.dev3.ers.ncrs.nhs.uk/ers-api/
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
 | Method       | URL                                           | Authentication   |
 | -------------| -----------------------------------------     | ---------------- |
@@ -54,7 +54,7 @@ There is no request body required for this API.
 
 ### Example URI
 ```http
-/STU3/v1/ReferralRequest/000000098878/$ers.acceptReferral
+https://api.dev1.ers.ncrs.nhs.uk/ers-api//STU3/v1/ReferralRequest/000000098878/$ers.acceptReferral
 ```
 
 ### Example Request Header
