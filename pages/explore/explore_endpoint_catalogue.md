@@ -51,4 +51,4 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name | Status | Retirement Date |
 |----|------|--------| :-------------: |
-|A009|[Generic Service Search](explore_endpoint_a009.html)| ![Retired](images/icons/api_retired.png) | OCT 2019 |
+|A009|[Generic Service Search (Alpha)](explore_endpoint_a009.html)| ![Retired](images/icons/api_retired.png) | OCT 2019 |
