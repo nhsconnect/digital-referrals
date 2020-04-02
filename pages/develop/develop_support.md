@@ -7,8 +7,9 @@ permalink: /develop_support.html
 summary: "Support for the e-Referral APIs"
 ---
 
-<div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">All issues with live systems must be reported using the <a href="https://developer.nhs.uk/apis/e-Referrals/live_support.html">Live Service Support</a> process.</div>
+<div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">All issues with live systems must be reported using the <a href="https://developer.nhs.uk/apis/e-Referrals/live_support.html">Live Service Support</a> process.</div>  
 
+<br>
 During development there are a number of support channels available, depending on the type of support required.
 
 ### NHS e-RS Partners Team
