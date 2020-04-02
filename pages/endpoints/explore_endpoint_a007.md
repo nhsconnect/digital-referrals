@@ -7,6 +7,8 @@ permalink: explore_endpoint_a007.html
 summary: false
 ---
 
+<div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a007_DSTU2.html">here</a>.</div>
+
 ##### Status: ![Live](images/icons/api_live.png)
 
 ## Description

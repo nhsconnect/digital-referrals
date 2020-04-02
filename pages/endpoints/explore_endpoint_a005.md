@@ -8,6 +8,7 @@ summary: false
 ---
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">Notice: This page is under review, some details may be inaccurate</div>
+<div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a005_DSTU2.html">here</a>.</div>
 
 ##### Status: ![Live](images/icons/api_live.png)
 
