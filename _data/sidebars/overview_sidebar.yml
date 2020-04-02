@@ -48,6 +48,11 @@ entries:
   - title: Develop
     output: web
     folderitems:
+
+    - title: Development Support
+      url: /develop_support.html
+      output: web
+
       subfolders:
       - title: FHIR v3 APIs
         output: web
@@ -100,6 +105,7 @@ entries:
         - title: "A021: Create Referral for Triage"
           url: /explore_endpoint_a021.html
           output: web
+
       - title: FHIR v2 APIs (Deprecated)
         output: web
         subfolderitems:
@@ -118,11 +124,9 @@ entries:
         - title: "A008: Retrieve Worklist (DSTU2)"
           url: /explore_endpoint_a008_DSTU2.html
           output: web
+
     - title: Generic Error Codes
         url: /explore_error_messages.html
-        output: web
-    - title: Development Support
-        url: /develop_support.html
         output: web
 
   - title: Assure
@@ -143,16 +147,6 @@ entries:
     folderitems:
     - title: Going Live
       url: /go_live.html
-      output: web
-    - title: Live Service Support
-      url: /live_support.html
-      output: web
-
-  - title: Support
-    output: web
-    folderitems:
-    - title: Development Support
-      url: /develop_support.html
       output: web
     - title: Live Service Support
       url: /live_support.html
