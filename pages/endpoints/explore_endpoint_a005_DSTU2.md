@@ -3,7 +3,7 @@ title: "A005: Retrieve Referral Request"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a005.html
+permalink: explore_endpoint_a005_DSTU2.html
 summary: false
 ---
 

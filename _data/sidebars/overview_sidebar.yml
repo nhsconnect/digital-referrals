@@ -57,11 +57,8 @@ entries:
     - title: "A003: Delete Professional Session"
       url: /explore_endpoint_a003.html
       output: web
-    - title: "A004: Reference Data (DSTU2)"
-      url: /explore_endpoint_a004_DSTU2.html
-      output: web
-    - title: "A004: Reference Data (STU3)"
-      url: /explore_endpoint_a004_STU3.html
+    - title: "A004: Reference Data"
+      url: /explore_endpoint_a004.html
       output: web
     - title: "A005: Retrieve Referral Request"
       url: /explore_endpoint_a005.html
@@ -99,6 +96,25 @@ entries:
     - title: "A021: Create Referral for Triage"
       url: /explore_endpoint_a021.html
       output: web
+    - title: FHIR v2 APIs (Deprecated)
+      output: web
+      subfolderitems:
+      - title: "A004: Reference Data (DSTU2)"
+        url: /explore_endpoint_a004_DSTU2.html
+        output: web
+      - title: "A005: Retrieve Referral Request (DSTU2)"
+        url: /explore_endpoint_a005_DSTU2.html
+        output: web
+      - title: "A006: Retrieve Attachment (DSTU2)"
+        url: /explore_endpoint_a006_DSTU2.html
+        output: web
+      - title: "A007: Retrieve Clinical Information (DSTU2)"
+        url: /explore_endpoint_a007_DSTU2.html
+        output: web
+      - title: "A008: Retrieve Worklist (DSTU2)"
+        url: /explore_endpoint_a008_DSTU2.html
+        output: web
+
     - title: Generic Error Codes
       url: /explore_error_messages.html
       output: web

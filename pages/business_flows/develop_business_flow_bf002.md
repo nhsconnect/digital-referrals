@@ -21,7 +21,7 @@ This business flow describes the process of accessing Clinical Referral Informat
 * [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
 
 ##### Reference Data
-* [A004 - Retrieve Reference Data](explore_endpoint_a004_DSTU2.html) ![Live](images/icons/api_live.png)
+* [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
 
 ##### Clinical Referral Information
 * [A005 – Retrieve Referral Request](explore_endpoint_a005.html) ![Live](images/icons/api_live.png)

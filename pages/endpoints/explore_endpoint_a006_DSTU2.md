@@ -3,7 +3,7 @@ title: "A006: Retrieve Attachment"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a006.html
+permalink: explore_endpoint_a006_DSTU2.html
 summary: false
 ---
 

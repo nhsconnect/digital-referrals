@@ -23,7 +23,7 @@ This business flow describes the process of an authenticated user searching for 
 * [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
 
 ##### Reference Data
-* [A004 - Retrieve Reference Data (STU3)](explore_endpoint_a004_STU3.html) ![Live](images/icons/api_live.png)
+* [A004 - Retrieve Reference Data (STU3)](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
 
 ##### Create Referral
 * [A010 - Patient Service Search](explore_endpoint_a010.html) ![Live](images/icons/api_live.png)

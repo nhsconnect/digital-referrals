@@ -14,7 +14,7 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A001|[Create Professional Session](explore_endpoint_a001.html) | POST: /v1/ProfessionalSession | ![Live](images/icons/api_live.png) |
 |A002|[Professional Session Select Role](explore_endpoint_a002.html) | PUT: /v1/ProfessionalSession/{sessionKey} | ![Live](images/icons/api_live.png) |
 |A003|[Delete Professional Session](explore_endpoint_a003.html) | DELETE: /v1/ProfessionalSession/{sessionKey} | ![Live](images/icons/api_live.png) |
-|A004|[Retrieve Reference Data](explore_endpoint_a004_STU3.html) | GET: /STU3/v1/CodeSystem/{CodeSystemID} | ![Live](images/icons/api_live.png) |
+|A004|[Retrieve Reference Data](explore_endpoint_a004.html) | GET: /STU3/v1/CodeSystem/{CodeSystemID} | ![Live](images/icons/api_live.png) |
 |A005|[Retrieve Referral](explore_endpoint_a005.html) | GET: /STU3/v1/ReferralRequest/{id} | ![Live](images/icons/api_live.png) |
 |A006|[Retrieve Attachment](explore_endpoint_a006.html) | GET: /STU3v1/Binary/{AttachmentLogicalID} | ![Live](images/icons/api_live.png) |
 |A007|[Retrieve Clinical Information](explore_endpoint_a007.html) | GET: /STU3/v1/ReferralRequest/{ubrn}/$ers.generateCRI | ![Live](images/icons/api_live.png) |

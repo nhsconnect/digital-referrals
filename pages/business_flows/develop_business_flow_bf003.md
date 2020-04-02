@@ -22,7 +22,7 @@ This business flow describes the process of a provider-side clinician fetching r
 * [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
 
 ##### Reference Data
-* [A004 - Retrieve Reference Data](explore_endpoint_a004_STU3.html) ![Live](images/icons/api_live.png)
+* [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
 
 ##### Referral Review
 * [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)

@@ -3,7 +3,7 @@ title: "A007: Retrieve Clinical Information"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a007_STU3.html
+permalink: explore_endpoint_a007.html
 summary: false
 ---
 

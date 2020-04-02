@@ -7,6 +7,8 @@ permalink: explore_endpoint_a006.html
 summary: false
 ---
 
+<div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">Notice: This page is under review, some details may be inaccurate</div>
+
 ##### Status: ![Live](images/icons/api_live.png)
 
 ## API
