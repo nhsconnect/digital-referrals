@@ -32,23 +32,23 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name | Status | Retirement Date |
 |----|------|--------| :-------------: |
-|A004|[Retrieve Reference Data (DSTU2)](explore_endpoint_a004_DSTU2.html) | ![Live](images/icons/api_live.png) | TBC |
-|A005|[Retrieve Referral (DSTU2)](explore_endpoint_a005_DSTU2.html) | ![Live](images/icons/api_live.png) | TBC |
-|A006|[Retrieve Attachment (DSTU2)](explore_endpoint_a006_DSTU2.html) | ![Live](images/icons/api_live.png) | TBC |
-|A007|[Retrieve Clinical Information (DSTU2)](explore_endpoint_a007_DSTU2.html) | ![Live](images/icons/api_live.png) | TBC |
-|A008|[Retrieve Worklist (DSTU2)](explore_endpoint_a008_DSTU2.html) | ![Live](images/icons/api_live.png) | TBC |
+|A004|[Retrieve Reference Data (DSTU2)](explore_endpoint_a004_DSTU2.html) | ![Deprecated](images/icons/api_deprecated.png) | TBC |
+|A005|[Retrieve Referral (DSTU2)](explore_endpoint_a005_DSTU2.html) | ![Deprecated](images/icons/api_deprecated.png) | TBC |
+|A006|[Retrieve Attachment (DSTU2)](explore_endpoint_a006_DSTU2.html) | ![Deprecated](images/icons/api_deprecated.png) | TBC |
+|A007|[Retrieve Clinical Information (DSTU2)](explore_endpoint_a007_DSTU2.html) | ![Deprecated](images/icons/api_deprecated.png) | TBC |
+|A008|[Retrieve Worklist (DSTU2)](explore_endpoint_a008_DSTU2.html) | ![Deprecated](images/icons/api_deprecated.png) | TBC |
 
 ## APIs In Development
 
-| ID | Name | Expected release | FHIR |
-|----|--------------------------------------------------------|---------|:---:|
-|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)| Q3 2020 | TBC |
-|A016|[Book Appointment](explore_endpoint_a016.html)| Q3 2020 | TBC |
-|A017|[Defer Booking to Provider](explore_endpoint_a017.html)| Q3 2020 | TBC |
-|A018|[Re-book Appointment](explore_endpoint_a018.html)| Q4 2020 | TBC |
+| ID | Name                                                   | Expected release | FHIR Version|
+|----|--------------------------------------------------------|------------------|:-----------:|
+|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)| Q3 2020          |     TBC     |
+|A016|[Book Appointment](explore_endpoint_a016.html)          | Q3 2020          |     TBC     |
+|A017|[Defer Booking to Provider](explore_endpoint_a017.html) | Q3 2020          |     TBC     |
+|A018|[Re-book Appointment](explore_endpoint_a018.html)       | Q4 2020          |     TBC     |
 
 ## Retired APIs
 
 | ID | Name | Status | Retirement Date |
 |----|------|--------| :-------------: |
-|A009|[Generic Service Search](explore_endpoint_a009.html)| RETIRED | OCT 2019 |
+|A009|[Generic Service Search](explore_endpoint_a009.html)| ![Retired](images/icons/api_retired.png) | OCT 2019 |
