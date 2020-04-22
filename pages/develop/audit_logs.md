@@ -9,7 +9,7 @@ summary: "Summary of audit logging requirements"
 
 # Audit logging
 
-Ensure local audit logs are maintained for Subject Access Requests as pert the table below, it is recommended that audit logs are held for a minimum of 3 months to assist with incident triage.  
+Ensure local audit logs are maintained for Subject Access Requests as per the table below, it is recommended that audit logs are held for a minimum of 3 months to assist with incident triage.  
 
 All mandatory fields must be adhered.
 
