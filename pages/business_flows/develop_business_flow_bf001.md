@@ -1,5 +1,5 @@
 ---
-title: "BF001: Authentication and Authorisation"
+title: "Authentication and Authorisation"
 keywords: business, flow
 sidebar: overview_sidebar
 toc: false

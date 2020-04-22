@@ -1,5 +1,5 @@
 ---
-title: "BF002: Clinical Referral Information"
+title: "Clinical Referral Information"
 keywords: business, flow
 sidebar: overview_sidebar
 toc: false

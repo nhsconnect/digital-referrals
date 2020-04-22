@@ -93,6 +93,9 @@ entries:
     - title: Generic Error Codes
       url: /explore_error_messages.html
       output: web
+    - title: Audit logs
+      url: /audit_logs.html
+      output: web
     - title: Development Support
       url: /develop_support.html
       output: web
