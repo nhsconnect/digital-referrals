@@ -95,7 +95,9 @@ Content-Type:application/fhir+json
 [A014_Response.json](downloads/json/A014_Response.json)
 
 ## Response: Failure
-If an error occurs, the relating HTTP status code will be returned in the header. Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
+If an error occurs, the relating HTTP status code will be returned in the header.  
+
+Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
 
 | OutcomeKey | Description | Suggested Diagnostic |
 | ---------- | ----------- | -------------------- |
@@ -110,3 +112,9 @@ If an error occurs, the relating HTTP status code will be returned in the header
 | INAPPROPRIATE_VALUE | Appointment Cancellation Reason is either outside its effective date range or is not of type Reject Request Appointment Booking Cancellation Reason Type | Reason is not an effective booking cancellation reason for a provider reject |
 | VALUE_IS_REQUIRED | Appt. Cancelled in PAS Indicator missing for IBS appointment | Appointment Cancelled in PAS Indicator is required for indirectly bookable appointments |
 | FIELD_NOT_PERMITTED | Appt. Cancelled in PAS Indicator supplied for DBS appointment | Appointment Cancelled in PAS Indicator is not relevant for directly bookable appointments |
+
+In case of errors related to PAS interaction, the following codes could be returned:
+| HTTP Status Code | OutcomeKey | Suggested Diagnostic |
+| 504	PAS_NOT_RESPONDING | The request to cancel the appointment on the provider clinical system has timed out. |
+| 422	UNABLE_TO_CANCEL_APPOINTMENT | The appointment could not be cancelled because it was rejected by the clinical provider system. This is most likely due to the appointment being amended outside of eRS. |
+| 502	PAS_RESPONDED_WITH_ERROR | There was an error in communication with the provider clinical system. |
