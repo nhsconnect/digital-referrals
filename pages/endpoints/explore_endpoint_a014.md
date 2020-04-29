@@ -115,8 +115,8 @@ Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOu
 
 In case of errors related to PAS interaction, the following codes could be returned:
 
-| HTTP Status Code | OutcomeKey | Suggested Diagnostic |
-| ---------------- | ---------- | -------------------- |
+| HTTP Status Code | Suggested Diagnostic |
+| ---------------- | -------------------- |
 | 504	PAS_NOT_RESPONDING | The request to cancel the appointment on the provider clinical system has timed out. |
 | 422	UNABLE_TO_CANCEL_APPOINTMENT | The appointment could not be cancelled because it was rejected by the clinical provider system. This is most likely due to the appointment being amended outside of eRS. |
 | 502	PAS_RESPONDED_WITH_ERROR | There was an error in communication with the provider clinical system. |
