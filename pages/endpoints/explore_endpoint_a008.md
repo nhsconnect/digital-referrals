@@ -85,5 +85,7 @@ If an error occurs, the relating HTTP status code will be returned in the header
 
 Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
 
+
 | OutcomeKey | Description | Suggested Diagnostic |
 | ---------- | ----------- | -------------------- |
+| | | |

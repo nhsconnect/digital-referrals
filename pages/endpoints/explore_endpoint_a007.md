@@ -43,6 +43,7 @@ Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/
 
 | Name | Cardinality | Type | Description |
 | ---- | ----------- | ---- | ----------- |
+| UBRN | 1..1 | Identifier | The identifier for the Clinical Referral Information for a Referral Request<br>(Provided in the URL string) |
 
 ### Example URI
 ```http
@@ -81,3 +82,4 @@ Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOu
 
 | OutcomeKey | Description | Suggested Diagnostic |
 | ---------- | ----------- | -------------------- |
+| | | |
