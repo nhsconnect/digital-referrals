@@ -60,7 +60,7 @@ There is no body required for this request, the UBRN must be provided in the URL
 # OUTPUT
 
 ## Response: Success
-If successful, a real-time PDF of the clinical referral information is returned for the given UBRN with the response code `200 (OK)`. 
+If successful, a real-time PDF of the clinical referral information is returned for the given UBRN with the response code `200 (OK)`.
 
 ### Example Response Header
 ```http
@@ -77,6 +77,7 @@ The binary of the file is returned: [Example Clinical Information Summary.pdf](d
 If an error occurs, the relating HTTP status code will be returned in the header.  
 
 Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
+
 
 | OutcomeKey | Description | Suggested Diagnostic |
 | ---------- | ----------- | -------------------- |
