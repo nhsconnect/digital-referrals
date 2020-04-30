@@ -54,7 +54,7 @@ There is no request body required for this API.
 
 ### Example URI
 ```http
-https://api.dev1.ers.ncrs.nhs.uk/ers-api//STU3/v1/ReferralRequest/000000098878/$ers.acceptReferral
+https://api.dev1.ers.ncrs.nhs.uk/ers-api/STU3/v1/ReferralRequest/000000098878/$ers.acceptReferral
 ```
 
 ### Example Request Header

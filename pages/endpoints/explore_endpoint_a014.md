@@ -60,7 +60,7 @@ It must be the ID of the latest version of the referral in e-RS.
 
 ### Example URI
 ```http
-https://api.dev1.ers.ncrs.nhs.uk/ers-api//STU3/v1/ReferralRequest/000000098880/$ers.rejectReferral
+https://api.dev1.ers.ncrs.nhs.uk/ers-api/STU3/v1/ReferralRequest/000000098880/$ers.rejectReferral
 ```
 
 ### Example Request Header
