@@ -77,7 +77,9 @@ If an error occurs, the relating HTTP status code will be returned in the header
 
 Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
 
-
 | OutcomeKey | Description | Suggested Diagnostic |
 | ---------- | ----------- | -------------------- |
-| | | |
+| NO_RELATIONSHIP | The SPC user (or if SPCA, SPC user they are “on behalf of”) is not a workgroup member for the current booked-to service at the logged-in organisation | No legitimate relationship exists with this referral, check workgroup permissions. |
+| NO_SUCH_REQUEST | A referral with the specified UBRN does not exist. | The referral may have been archived or soft-deleted, check your records. |
+| INVALID_REQUEST_TYPE | The UBRN is not associated with an appointment request.  | The referral may be another type of request, e.g. advice and guidance or a draft request which cannot be retrieved. |
+| INVALID_REQUEST_STATE | The referral request is not in the correct state. | The referral must have a booked appointment and referral clinical information attached. |

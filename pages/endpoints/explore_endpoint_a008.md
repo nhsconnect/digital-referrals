@@ -85,7 +85,19 @@ If an error occurs, the relating HTTP status code will be returned in the header
 
 Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
 
-
 | OutcomeKey | Description | Suggested Diagnostic |
-| ---------- | ----------- | -------------------- |
-| | | |
+| ------- | ------- | ------- |
+| NO_RELATIONSHIP | The SPC user (or if SPCA, SPC user they are “on behalf of”) is not a workgroup member for the worklist. | The professional user must be associated to the following by current workgroup membership at the same e-RS organisation that the ""owner"" professional user is logged-in under: <br>
+Service<br>
+Location (if provided)<br>
+Specialty (if provided) |
+| MISSING_VALUE | Either one or both of the following fields have not been provided:<br>
+Specialty<br>
+Clinician<br>
+The field is reported as the location of the error. |
+| UNEXPECTED_FIELD | A value for specialty and/or clinician has been provided when not required.  The field is reported as the location of the error. |
+| NO_SUCH_SERVICE | The service provided does not exist in e-RS. |
+| NO_SUCH_LOCATION | The location does not match a service location in e-RS. |
+| NO_SUCH_SPECIALTY | The specialty provided is not part of e-RS reference data. |
+| NO_SUCH_CLINICIAN | The clinician provided is not a recognised professional user in e-RS. | When attempting to filter the worklist by clinician, the provided clinician is not recognised.  Check against existing reference data. |
+| INVALID_VALUE | The specialty assigned value is 'Not Assigned'. | This value may be allowed in future worklists. |
