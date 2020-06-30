@@ -24,7 +24,7 @@ We want to stimulate and assist your development of applications linked to the N
 - Book Appointment (Q3 2020)
 - Manage Referrals (Q4 2020)
 <br>  
-The NHS e-Referral Service **Future integration roadmap** is published [here](https://digital.nhs.uk/services/e-referral-service/integration).
+The NHS e-Referral Service **Future integration roadmap** is published [here](https://digital.nhs.uk/services/e-referral-service/the-future-of-the-nhs-e-referral-service#future-service-roadmap).
 
 ## The e-Referrals API Hub ##
 
