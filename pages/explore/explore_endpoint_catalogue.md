@@ -27,6 +27,7 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 |A019|[Generate Patient Letter](explore_endpoint_a019.html) | POST: /STU3/v1/ReferralRequest/[UBRN]/$ers.generatePatientLetter | ![Live](images/icons/api_live.png) |
 |A020|[Upload File To Document Store](explore_endpoint_a020.html) | POST: /STU3/v1/Binary | ![Live](images/icons/api_live.png) |
 |A021|[Create Referral And Send For Triage](explore_endpoint_a021.html) | POST: /STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | ![Live](images/icons/api_live.png) |
+|A022|[Cancel Appointment, Action Later](explore_endpoint_a022.html) | POST: v1/ReferralRequest/{UBRN}/$ers.CancelAppointmentActionLater | Available Q3 2020 |
 
 ## FHIR v2 APIs (Deprecated)   
 
