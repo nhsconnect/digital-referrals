@@ -80,11 +80,11 @@ It must be the ID of the latest version of the referral in e-RS.
 
 # OUTPUT
 ## Response: Success
-If successful, the referral is accepted, and an indication of success returned with:
-•	A HTTP status code 200 (OK)
-•	Referral request (https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
-o	With an eRSAppointment (appointment.status) code and display of "cancelled"
-•	UBRN version number
+If successful, the referral is accepted, and an indication of success returned with:  
+- A HTTP status code 200 (OK)
+- Referral request (https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
+- With an eRSAppointment (appointment.status) code and display of "cancelled"
+- UBRN version number
 
 ### Example Response Header
 ```
