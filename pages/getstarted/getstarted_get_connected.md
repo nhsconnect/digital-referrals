@@ -15,20 +15,11 @@ To use the e-RS Integration APIs you must:
 2. Have an NHS smartcard with valid e-RS role for the data you are requesting or submitting
 3. Be issued with a unique Endpoint (and specific test data for use in development environments)
 
-#### HSCN connections ##
-
-If you do not have a HSCN or N3 Connection, please go to the following site to request one:
-
-* [Connecting to HSCN](https://digital.nhs.uk/health-social-care-network/new-to-hscn/connecting-to-HSCN)
-
-#### NHS Smartcards
-
-If you require a smartcard, please go to the following site to find out more:
-
-* [Registration Authorities and Smartcards](https://digital.nhs.uk/Registration-Authorities-and-Smartcards)  
+## How to get connected
+Follow the instructions listed [here](https://digital.nhs.uk/services/path-to-live-environments/development-environment) to connect to the NHS Digital Development Environment and request and endpoint, then you can access the following [NHS e-Referral Service (e-RS) URLs](https://digital.nhs.uk/services/path-to-live-environments/development-environment#development-nhs-e-referral-service-e-rs-urls) for development and testing.
 
 
-## Access to development environments ##
+<!--
 To request access to a test environment to connect to for development and testing purposes, please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net) and request the following:
 
 1. Access to the e-RS Integration APIs in the e-RS DEV1 development environment
@@ -39,7 +30,7 @@ To request access to a test environment to connect to for development and testin
 #### Using existing smartcards
 Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) if this is required.
 
-<!-- ## Further details on connecting
+## Further details on connecting
 
 #### Generating a Certificate Signing Request
 

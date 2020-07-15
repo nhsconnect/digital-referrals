@@ -1,0 +1,5 @@
+{
+  "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
+  "token": "AQIC5wM2LY4Sfcyw62EbAOsRpdfbGYUOyvkfZ4M6U7W52lM=@AAJTSQACMDE=#"
+"permission":{"businessFunction":"SERVICE_PROVIDER_CLINICIAN", "orgIdentifier":"R01"}
+}

@@ -1,0 +1,43 @@
+{
+    "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
+    "id": "pro-xapi-session_94414701-70d0-4570-a674-f6f2125ab571",
+    "token": "AQIC5wM2LY4Sfcy/V7hKhbk2t0fqyvCmHCBhnjZq0TjqBYw=@AAJTSQACMDE=#",
+    "user": {
+        "identifier": "555020964101",
+        "firstName": "SA Assurance",
+        "lastName": "GP-Card",
+        "middleName": null,
+        "permissions": [
+            {
+                "businessFunction": "REFERRING_CLINICIAN",
+                "orgIdentifier": "R01",
+                "orgName": " NHST_X3"
+            },
+            {
+                "businessFunction": "REFERRING_CLINICIAN_ADMIN",
+                "orgIdentifier": "R01",
+                "orgName": " NHST_X3"
+            },
+            {
+                "businessFunction": "SERVICE_DEFINER",
+                "orgIdentifier": "R01",
+                "orgName": " NHST_X3"
+            },
+            {
+                "businessFunction": "SERVICE_PROVIDER_CLINICIAN",
+                "orgIdentifier": "R01",
+                "orgName": " NHST_X3"
+            },
+            {
+                "businessFunction": "SERVICE_PROVIDER_CLINICIAN_ADMIN",
+                "orgIdentifier": "R01",
+                "orgName": " NHST_X3"
+            }
+        ]
+    },
+    "permission": {
+        "businessFunction": "SERVICE_PROVIDER_CLINICIAN",
+        "orgIdentifier": "R01",
+        "orgName": " NHST_X3"
+    }
+}

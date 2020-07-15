@@ -17,17 +17,17 @@ This business flow describes the process of a provider-side clinician fetching r
 #### This business flow involves the following APIs
 
 ##### Authentication and Authorisation
-* [A001 – Create Professional Session](explore_endpoint_a001.html) ![Live](images/icons/api_live.png)
-* [A002 – Professional Session Select Role](explore_endpoint_a002.html) ![Live](images/icons/api_live.png)
-* [A003 – Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
+* [A001: Create Professional Session](explore_endpoint_a001.html) ![Live](images/icons/api_live.png)
+* [A002: Professional Session Select Role](explore_endpoint_a002.html) ![Live](images/icons/api_live.png)
+* [A003: Delete Professional Session](explore_endpoint_a003.html) ![Live](images/icons/api_live.png)
 
 ##### Reference Data
-* [A004 - Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
+* [A004: Retrieve Reference Data](explore_endpoint_a004.html) ![Live](images/icons/api_live.png)
 
 ##### Referral Review
-* [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
-* [A014 – Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
-* A0xx - Admin Action *(Available Q2 2020)*
+* [A013: Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
+* [A014: Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
+* [A022: Cancel Appointment, Action Later](explore_endpoint_a022.html) *(Available Q3 2020)*
 
 #### Review the diagram below to learn more
 

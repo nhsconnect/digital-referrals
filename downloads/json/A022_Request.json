@@ -1,0 +1,83 @@
+{
+    "resourceType": "Parameters",
+    "meta": {
+        "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-cancelAppointmentActionLater-Operation-1"
+        ]
+    },
+    "parameter": [
+        {
+            "name": "priority",
+            "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "TWO_WEEK_WAIT"
+            }
+        },
+        {
+            "name": "comments",
+            "valueString": "Send to another service"
+        },
+        {
+            "name": "appointmentCancelledInPAS",
+            "valueBoolean": false
+        },
+        {
+            "name": "providerAttachmentFile",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "meta": {
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                    ]
+                },
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                            "code": "PROVIDER"
+                        }
+                    ]
+                },
+                "indexed": "2019-12-15T13:24:53+00:00",
+                "description": "",
+                "content": [
+                    {
+                        "attachment": {
+                            "url": "Binary/att-70001-70001"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "providerAttachmentFile",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "meta": {
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                    ]
+                },
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                            "code": "PROVIDER"
+                        }
+                    ]
+                },
+                "indexed": "2019-12-15T13:24:53+00:00",
+               "description": "This is a file description",
+                "content": [
+                    {
+                        "attachment": {
+                            "url": "Binary/att-70001-70002"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

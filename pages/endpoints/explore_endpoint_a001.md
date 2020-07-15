@@ -9,7 +9,12 @@ summary: false
 
 ##### Status: ![Live](images/icons/api_live.png)
 
-## API
+## Description
+As an e-RS user working in an integrated system  
+I want to create a Professional Session in the Spine using my smartcard roles
+So that I can securely access e-RS functions through my integrated system
+
+## Resource URL
 
 Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
 
@@ -17,18 +22,30 @@ Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/
 | -------------| --- |
 | POST | v1/ProfessionalSession
 
-## Description
-Creates a Professional Session in the Spine using smartcard roles. This gives a secure login.  
+
+### Prerequisite Conditions
+- HSCN / N3 Connection
+- NHS Smartcard with e-RS role(s)
 
 ### Using the identity agent
 Guidance on using the identity agent and authenticating with NHS Smartcards can be found at [developer.nhs.uk/apis/spine-core/smartcards.html](https://developer.nhs.uk/apis/spine-core/smartcards.html)
 
-## Input
+# INPUT
 
-### Header
-Provide ASID for the end-point system.
+## Request Operation: Header
 
-#### Example
+| Field Name | Value |
+| ---------- | ----- |
+| XAPI_ASID  | The "Accredited System ID" issued to the third party |
+
+
+## Request Operation: Parameters
+
+| Name | Description |
+| ---- | ----------- |
+| token | Token from the Smartcard |
+
+### Example Request Header
 ```http
 XAPI_ASID:200000000220
 Accept:application/json
@@ -36,102 +53,27 @@ Accept-Encoding:gzip,deflate
 Content-Type:application/json
 ```
 
-### Body
-Provide only a token when first creating a session.
+### Example Request Body
 
-#### Example
-```javascript
-{
- "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
- "token": " AQIC5wM2LY4Sfcyw62EbAOsRpdfbGYUOyvkfZ4M6U7W52lM=@AAJTSQACMDE=#"
-}
-```
+[Request Body](https://nhsconnect.github.io/digital-referrals/downloads/json/A001_Request.json)  
 
-## Output
-The created [Professional Session Resource](explore_models.html) is returned with available user permissions populated.
+# OUTPUT
+## Response: Success
 
-The response code `201 (Created)` is returned.
+The response code `201 (Created)` is returned. The created [Professional Session Resource](explore_models.html) is returned with available user permissions populated.
 
-#### Example
-```javascript
-{
-    "typeInfo": "uk.nhs.ers.xapi.dto.v1.session.ProfessionalSession",
-    "id": "pro-xapi-session_222c42c7-820f-4f9b-92fb-3add4b1db9f7",
-    "token": "AQIC5wM2LY4Sfcyw62EbAOsRpdfbGYUOyvkfZ4M6U7W52lM=@AAJTSQACMDE=#",
-    "user": {
-        "identifier": "555020964101",
-        "firstName": "SA Assurance",
-        "lastName": "GP-Card",
-        "middleName": null,
-        "permissions": [
-            {
-                "businessFunction": "REFERRING_CLINICIAN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "REFERRING_CLINICIAN_ADMIN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "SERVICE_DEFINER",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "SERVICE_PROVIDER_CLINICIAN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            },
-            {
-                "businessFunction": "SERVICE_PROVIDER_CLINICIAN_ADMIN",
-                "orgIdentifier": "R01",
-                "orgName": "NHST_X3"
-            }
-        ]
-    },
-    "permission": null
-}
-```
-
-<!-- ## Code Sample
-Code snippets taken from the consumer example. See [Code Samples](develop_code_samples.html) for further details.
-
-```javascript
-function createSession(tokenCode, entryUrl) {
-     scope.entryUrl = entryUrl;
-     var json = {
-         token: tokenCode
-     };
-     var deferred = $q.defer();
- 
-     var headersJson = {};
-     headersJson[config.asidHeader] = config.asid;
- 
-     var rest = $resource(
-             config.baseUrl + '/v1/ProfessionalSession',
-             null,
-             {'save': {method: 'POST', headers: headersJson}}
-     );
-     rest.save(json, function (data) {
-         scope.sessionData = data;
-         scope.currentSessionId = data.id;
-         deferred.resolve(data);
-     });
-     return deferred.promise;
- }
-```-->
-
-## Notes
-Once the session has been created a list of applicable permissions for the user will be returned. The session will not be usable until a permission/role has been selected using the Select Role endpoint.
+Once the session has been created a list of applicable permissions for the user will be returned. The session will not be usable until a permission/role has been selected using the [A002 Select Role](explore_endpoint_a002.html) endpoint.
 
 The `ProfessionalSession.id` returned should be included as a header `(HTTP_X_SESSION_KEY)` for all subsequent requests.
 
-### Response Messages
+### Example Response Body
+[Response](https://nhsconnect.github.io/digital-referrals/downloads/json/A001_Response.json)
 
-| HTTP Status Code | Reason | Response Model | Headers |
-| ---------------- | ------ | -------------- | ------- |
-| 201 | Created |
-| 403 | Forbidden |
-| 422 | Unprocessable Entity – Provided data could not be processed due to a validation error |
+
+## Response: Failure
+If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
+
+Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+
+| OutcomeKey | Description | Suggested Diagnostic |
+| ---------- | ----------- | -------------------- |
