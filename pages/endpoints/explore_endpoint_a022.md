@@ -11,8 +11,10 @@ summary: false
 <!-- ##### Status: ![Live](images/icons/api_live.png) -->
 
 ## Description
-Once a referring organisation has booked an appointment and appropriate clinical referral information attached, the referral is available for the service provider to review via the Referrals for Review worklist (A008: Retrieve Worklist).
-As part of this review process, a provider can either accept (A013: Accept Referral) or reject (A014: Reject Referral) a referral.  Another scenario commonly encountered is being able to rebook the appointment or redirect the referral to another, perhaps more appropriate, service.  These actions can be achieved via the ‘Cancel Appointment, Action Later’ API.
+Once a referring organisation has booked an appointment and appropriate clinical referral information attached, the referral is available for the service provider to review via the Referrals for Review worklist (A008: Retrieve Worklist).  
+
+As part of this review process, a provider can either accept (A013: Accept Referral) or reject (A014: Reject Referral) a referral.  Another scenario commonly encountered is being able to rebook the appointment or redirect the referral to another, perhaps more appropriate, service.  These actions can be achieved via the ‘Cancel Appointment, Action Later’ API.  
+
 The API allows clinical users to take responsibility for the referral while informing administrators of the changes required.  Users can amend the priority of the booking, as well as adding review comments and clinical attachments, if required.  The booked appointment will be cancelled because of this action.  Referrals actioned in this manner can then be progressed within the e-RS professional application via the Appointments for Booking worklist.
 
 
