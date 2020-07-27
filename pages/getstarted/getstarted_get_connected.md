@@ -16,63 +16,20 @@ To use the e-RS Integration APIs you must:
 3. Be issued with a unique Endpoint (and specific test data for use in development environments)
 
 ## How to get connected
-Follow the instructions listed [here](https://digital.nhs.uk/services/path-to-live-environments/development-environment) to connect to the NHS Digital Development Environment and request and endpoint, then you can access the following [NHS e-Referral Service (e-RS) URLs](https://digital.nhs.uk/services/path-to-live-environments/development-environment#development-nhs-e-referral-service-e-rs-urls) for development and testing.
+To get connected to the e-RS API Development environment you will need the following:
 
+- A connection to the Health and Social Care Network (HSCN) - the secure NHS network (if you do not have a connection or are experiencing problems connecting, contact your network provider)
+- Access to test data (email: testdata@nhs.net)
+- NHS Smartcards - if you do not have a valid smartcard for development please email: platforms.supportdesk@nhs.net
+- To register the messaging product using a Manufacturer, product and version (MPV) form if required
+- To register your message handling service with the Spine by requesting an endpoint (an authorised connection to Spine) to be created unless you have an endpoint administrator in your organisation who can do this for you - please complete the endpoint admin access request form (epr) to manage your own endpoints
+- To register your Fully Qualified Domain Name (FQDN) with the NHS DNS team
+- The Identity Agent Client software  
 
-<!--
-To request access to a test environment to connect to for development and testing purposes, please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net) and request the following:
+More detailed guidance of the connection process can be found [here](https://digital.nhs.uk/services/path-to-live-environments/development-environment). In all correspondence with NHS Digital please make it clear you are trying to connect to the **e-RS APIs in the development environment (DEV1)**.
 
-1. Access to the e-RS Integration APIs in the e-RS DEV1 development environment
-2. Allocation of an e-RS Integration API Test Pack for e-RS DEV1
-3. Issue of Smartcard(s) for e-RS development  
-  (If you already have smartcard please include the UUIDs so they can be re-used if possible)
+## Development URLs
+Once connected you can access the following [NHS e-Referral Service (e-RS) URLs](https://digital.nhs.uk/services/path-to-live-environments/development-environment#development-nhs-e-referral-service-e-rs-urls) for development and testing.
 
-#### Using existing smartcards
-Suppliers with existing smartcards in Spine Development can have these remotely updated with the relevant Registration Authority (RA), enabling the allocated UUIDs to be issued locally, please include your Spine Development UUID in your initial request to the Platforms Support Desk (platforms.supportdesk@nhs.net) if this is required.
-
-## Further details on connecting
-
-#### Generating a Certificate Signing Request
-
-You will also need to generate and submit a Certificate Signing Request (CSR) and a Private Key to obtain an endpoint certificate for the requested FQDN.
-
-1. The CSR must have a key length of 2048.
-2. The common name must be set to the FQDN value.
-
-We recommend using [OpenSSL](http://slproweb.com/products/Win32OpenSSL.html) for this.
-
-Once installed, Open Command Prompt and run the below command to configure the `openssl.cfg` file:
-
-```shell
-C:\OpenSSL-Win32\bin>set OPENSSL_CONF=C:\OpenSSL-Win32\bin\openssl.cfg
-```
-
-Change the directory to `C:\OpenSSL-Win32\bin` and run the below command to generate the CSR by replacing _"Test-FQDN"_ and the org code, e.g. _"O=ROB"_, with yours:
-
-```shell
-openssl req -new -newkey rsa:2048 -nodes -out Test-FQDN.cfh.nhs.uk.csr -keyout Test-FQDN.cfh.nhs.uk.key -subj "/C=GB/ST=/L=na/O=ROB/OU=na/CN=Test-FQDN.cfh.nhs.uk"
-```
-
-The CSR along with the private key will be generated and available in `C:\OpenSSL-Win32\bin` folder as per the above FQDN details.
-
-Please specify alongside the request to the Platforms Support Desk the need to be allocated a ‘NHS e-RS-API Testing Pack’.
-
-#### Registry Settings ##
-
-Please install “IAConfig2.msi” by downloading the IAConfig.zip archive from [http://nww.hscic.gov.uk/dir/downloads/index.html#ia_config](http://nww.hscic.gov.uk/dir/downloads/index.html#ia_config) (Can only be accessed via N3)
-
-Once installed you should be able to apply the DEV Registry settings to access the e-RS/DEV1 environment.
-
-#### Identity Agent ##
-
-Please install the Identity Agent and Middleware from [http://nww.hscic.gov.uk/dir/downloads/index.html](http://nww.hscic.gov.uk/dir/downloads/index.html) (Can only be accessed via HSCN/N3)
-
-#### Unblocking IP addresses ##
-
-If you want to unblock certain IP addresses as part of this process, please email the [Platforms Support Desk](platforms.supportdesk@nhs.net).
-
-#### Installing ROOT and SUBCA Certificates
-
-Once you have received a certificate from our Platforms Support Desk you will need to follow a few simple steps that will allow you to begin your e-Referral Service Integration journey.
-
-You need to install ROOT and SUBCA certificates, download the [Certificate Installation Guide](https://developer.nhs.uk/wp-content/uploads/2018/01/Install-ROOTCA-and-SUBCA-certificates-v1.0.pdf) for more details. -->
+## Further assistance
+For further assistance with the connection process please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net). Alternatively, for assistance relating specifically to the e-RS APIs and their functionality please contact [nhserspartners@nhs.net](mailto:nhserspartners@nhs.net).  

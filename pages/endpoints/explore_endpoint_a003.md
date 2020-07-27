@@ -7,7 +7,7 @@ permalink: explore_endpoint_a003.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 Closes the Professional Session. Used to delete a Professional Session after it has been created using A001 & A002. Once deleted the associate Session ID will become invalid.
@@ -42,7 +42,7 @@ HTTP_X_SESSION_KEY:pro-xapi-session_5a399946-23c5-4543-8c4f-7eca38732a58
 If successful the response code 204 (No Content) is returned. This response has no body.
 
 
-## Notes
+### Note:
 Consuming application must have a valid session in order to access this endpoint.
 
 

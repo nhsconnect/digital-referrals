@@ -4,7 +4,7 @@ keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
 permalink: /explore_endpoint_catalogue.html
-summary: "Catalogue of all currently available external e-Referral API endpoints"
+summary: "Catalogue of all currently available external NHS e-Referral Service (e-RS) API endpoints"
 ---
 
 ## Live FHIR v3 APIs  
@@ -43,13 +43,14 @@ summary: "Catalogue of all currently available external e-Referral API endpoints
 
 | ID | Name                                                   | Expected release | FHIR Version |
 |----|--------------------------------------------------------|:----------------:|:------------:|
-|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)|      Q3 2020     |     STU3     |
-|A016|[Book Appointment](explore_endpoint_a016.html)          |      Q3 2020     |     STU3     |
-|A017|[Defer Booking to Provider](explore_endpoint_a017.html) |      Q3 2020     |     STU3     |
-|A018|[Re-book Appointment](explore_endpoint_a018.html)       |      Q4 2020     |     STU3     |
+|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)|      Q4 2020     |     STU3     |
+|A016|[Book Appointment](explore_endpoint_a016.html)          |      Q4 2020     |     STU3     |
+|A017|[Defer Booking to Provider](explore_endpoint_a017.html) |      Q4 2020     |     STU3     |
+|A0XX|[UBRN List]()                                           |      Q4 2020     |     STU3     |
 
 ## Retired APIs
 
-| ID | Name | Status | Retirement Date |
-|----|------|--------| :-------------: |
-|A009|[Generic Service Search (Alpha)](explore_endpoint_a009.html)| ![Retired](images/icons/api_retired.png) | OCT 2019 |
+| ID | Name | Status | Retirement Date | Notes |
+|----|------|--------| :-------------: | ----- |
+|A009|[Generic Service Search (Alpha)](explore_endpoint_a009.html)| ![Retired](images/icons/api_retired.png) | OCT 2019 | Experimental API, not progressed to production |
+|A018|[Re-book Appointment (Alpha)](explore_endpoint_a018.html) | ![Retired](images/icons/api_retired.png) | JUN 2020 | Prototype API shelved for future development as required |
