@@ -2,7 +2,7 @@
   "resourceType": "Parameters",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateReferral-Parameters-1"
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateReferralAndSendForTriage-Parameters-1"
     ]
   },
   "parameter": [
@@ -10,7 +10,7 @@
       "name": "patient",
       "valueIdentifier": {
         "system": "http://fhir.nhs.net/Id/nhs-number",
-        "value": "1000000001"
+        "value": "9190000000"
       }
     },
     {
@@ -56,27 +56,60 @@
                 "name": "specialty",
                 "valueCoding": {
                   "system": "https://api.dev3.ers.ncrs.nhs.uk/ers-api/STU3/v1/CodeSystem/SPECIALTY",
-                  "code": "2WW"
+                  "code": "SLEEP_MEDICINE"
                 }
               },
               {
                 "name": "clinicType",
                 "valueCoding": {
                   "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
-                  "code": "2WW_BONE"
+                  "code": "INSOMNIA"
                 }
               },
+              {
+	            "name": "namedClinician",
+	            "valueIdentifier": {
+	              "system": "http://fhir.nhs.net/Id/sds-user-id",
+	              "value": "021600556514"
+	            }
+	          },
+	          {
+	            "name": "clinicalTerm",
+	            "valueCoding": {
+	              "system": "http://snomed.info/sct",
+	              "code": "78275009"
+	            }
+	          },
               {
                 "name": "commissioningProvisioning",
                 "valueCoding": {
                   "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
-                  "code": "ALL_AVAILABLE_FOR_BOOKING"
+                  "code": "NATIONALLY_AVAILABLE"
+                }
+              },
+              {
+                "name": "organisation",
+                "valueIdentifier": {
+                  "system": "https://directory.spineservices.nhs.uk/STU3/Organization",
+                  "value": "R68"
                 }
               },
               {
                 "name": "ageAndGenderAppropriate",
-                "valueBoolean": false
-              }
+                "valueBoolean": true
+              },
+              {
+	            "name": "distanceLimit",
+	            "valueUnsignedInt": 500
+	          },
+              {
+	            "name": "postcode",
+	            "valueString": "LS1 2UT"
+	          },
+	          {
+	            "name": "indicativeAppointmentWaitTimeLimit",
+	            "valueUnsignedInt": 21
+        	  }
             ]
           }
         ],
@@ -85,15 +118,7 @@
             "item": {
               "identifier": {
                 "system": "http://fhir.nhs.net/Id/ers-service",
-                "value": "50"
-              }
-            }
-          },
-          {
-            "item": {
-              "identifier": {
-                "system": "http://fhir.nhs.net/Id/ers-service",
-                "value": "57"
+                "value": "90596"
               }
             }
           }

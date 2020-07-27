@@ -9,7 +9,7 @@ summary: false
 
 <div style="border: 2px solid #888888; padding: 10px; background: #c3e3c3;">For the new FHIR v3 endpoint, please click <a href="explore_endpoint_a004.html">here</a>.</div>
 
-##### Status: ![Deprecated](images/icons/api_deprecated.png)  
+#### Status: ![Deprecated](images/icons/api_deprecated.png)  
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
 This endpoint must be used with all FHIR2 (DSTU2) endpoints: <br>

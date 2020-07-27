@@ -7,27 +7,33 @@ permalink: explore_endpoint_a012.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
-### API URL
-
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
-
-| Method | URL | Authentication |
-| -------------| --- | ---------------- |
-| POST | STU3/v1/ReferralRequest/{UBRN}/$ers.maintainReferralLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
-
-### Description
+## Description
 As a Referring Clinician (/Administrator)  
 I want to associate files I have uploaded to a referral  
 So that I can create the referral letter  
 
+## Resource URL
+
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+
+| Method | URL | Authentication |
+| -------------| --- | ---------------- |
+| POST | /STU3/v1/ReferralRequest/{ubrn}/$ers.maintainReferralLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+## Operation Definition
+The Operation Definition for this endpoint is available on the FHIR server: [eRS-maintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-maintainReferralLetter-Operation-1/_history/1.0)
+
 ### Prerequisite Operations
-Each file to be attached to a referral needs to have been individually uploaded first by calling [A020: Upload file to document store](explore_endpoint_a020.html). A020 will have returned the e-RS file location of each uploaded file; these are the URLs that need to be passed to the Maintain Referral Letter API so that they can be associated to the referral and thus form the referral letter (which is to be considered as a "collection of files")
+Each file to be attached to a referral needs to have been individually uploaded using [A020: Upload file to document store](explore_endpoint_a020.html). A020 will return the e-RS file location of each uploaded file; these are the URLs that need to be passed to the Maintain Referral Letter API so that they can be associated to the referral.
 
-### Request Operation
+##### Important Information:
+This linking action can only be performed on a newly created referral that contains no existing attachments. This prevents the unintended overwriting of data. If multiple files are to be attached as part of the [referral creation workflow](creating_referrals.html) then all files should be uploaded first using [A020: Upload file to document store](explore_endpoint_a020.html) and then linked to the referral using this endpoint in a single request. *If attachments subsequently need to be added or amended then the e-RS Professional Application should be used*.
 
-#### Request Header
+# INPUT
+
+## Request Operation: Header
 
 | Field Name | Value |
 | ---- | ---- |
@@ -36,21 +42,49 @@ Each file to be attached to a referral needs to have been individually uploaded 
 | Accept | `application/fhir+json` |
 | Content-Type |	`application/fhir+json` |
 
-#### Request Body
-The Operation Definition for this endpoint is available on the FHIR server: [eRS-maintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-maintainReferralLetter-Operation-1/_history/1.0)
+## Request Operation: Parameters
 
- | Parameter Name             | Cardinality | Type            | Notes |
-|  ------------------------- | --------- | --------------- | ----- |
-| referralLetterFile         | 1..*        | Resource |The structure definition of this resource is:  [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1)  |
+| Parameter Name             | Cardinality | Type            | Notes |
+|  ------------------------- | ----------- | --------------- | ----- |
+| referralLetterFile         | 1..*        | Resource        |The structure definition of this resource is:  [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1)  |
 
-### Response
+### Example URI
+```http
+/STU3/v1/ReferralRequest/000000097366/$ers.maintainReferralLetter
+```
 
-#### Success
-HTTP Status code `200 (OK)` is returned. The response body contains the just updated [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
+### Example Request Header
+```http
+"XAPI_ASID" : "999000000045",
+"HTTP_X_SESSION_KEY" : "pro-api-session:e96357b1-298d-4159-ac58-a8953c3262c6",
+"Content-Type" : "application/fhir+json",
+"If-Match" : "W/\"3\""
+```
 
-#### Failure
-If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
-Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+### Example Request Body
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
+- [A012 Request.json](downloads/json/A012 Request.json)  
+
+# OUTPUT
+## Response: Success
+If successful, the status code `200 (OK)` is returned. The response body contains the just updated [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
+
+### Example Response Header
+```http
+"X_ERS_TRANSACTION_ID" : "237129a8-af7c-451b-982e-052bf06c223e-1",
+"ETag" : "W/\"6\"",
+"Content-Disposition" : "inline;filename=f.txt",
+"Content-Type" : "application/fhir+json"
+```
+
+### Example Response Body
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
+- [A012 Response.json](downloads/json/A012 Response.json)  
+
+## Response: Failure
+If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
 
 | issue.details.code | Description |
 | ------------------ | ------ |
@@ -65,10 +99,3 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | NO_RELATIONSHIP | The user does not have a suitable legitimate relationship with the referral |
 | PATIENT_ERROR | There was an error retrieving the patient's record from SDS - this patient cannot be referred via e-RS |
 | REFERENCE_NOT_FOUND | The file identified by the attachment ID does not exist in the e-RS document store |
-
-#### Examples:
-##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
-
-[Request](https://nhsconnect.github.io/digital-referrals/downloads/json/A012%20Request%20Sample%201.json)  
-
-[Response](https://nhsconnect.github.io/digital-referrals/downloads/json/A012%20Response%20Sample%201.json)  

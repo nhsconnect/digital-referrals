@@ -7,7 +7,7 @@ permalink: explore_endpoint_a014.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 Once a referring organisation has booked an appointment and appropriate referral information has been added, the referral is available for the service provider to review (via the Referrals for Review worklist). As part of this review process, a provider can choose to reject the referral if they feel it’s inappropriate for their service or they require additional referral information to make a decision. Users will be able to carry out this action in their preferred system using this API.
@@ -16,7 +16,7 @@ Providers can also choose to accept the referral into their service, i.e. it mee
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
@@ -72,9 +72,11 @@ If-Match:W/\"9\"
 ```
 
 ### Example Request Body
-[A014_Request_DBS.json](downloads/json/A014_Request_DBS.json)  
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-[A014_Request_IBS.json](downloads/json/A014_Request_IBS.json)
+- [Example request for a directly bookable service (DBS)](downloads/json/A014_Request_DBS.json)  
+
+- [Example request for an in-directly bookable service (IBS)](downloads/json/A014_Request_IBS.json)
 
 # OUTPUT
 ## Response: Success
@@ -92,7 +94,9 @@ Content-Type:application/fhir+json
 ```
 
 ### Example Response Body
-[A014_Response.json](downloads/json/A014_Response.json)
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
+- [Example response](downloads/json/A014_Response.json)
 
 ## Response: Failure
 If an error occurs, the relating HTTP status code will be returned in the header.  

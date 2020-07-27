@@ -1,0 +1,124 @@
+{
+    "id": "000000097366",
+    "meta": {
+        "versionId": "6",
+        "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1"
+        ]
+    },
+    "resourceType": "ReferralRequest",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Appointment-1",
+            "valueReference": {
+                "reference": "#appointment"
+            }
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ClinicalInfoFirstSubmitted-1",
+            "valueDateTime": "2020-05-18T14:46:05.566Z"
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                        "code": "ROUTINE",
+                        "display": "Routine"
+                    }
+                ]
+            }
+        }
+    ],
+    "contained": [
+        {
+            "id": "appointment",
+            "meta": {
+                "profile": [
+                    "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Appointment-1"
+                ]
+            },
+            "resourceType": "Appointment",
+            "status": "proposed",
+            "participant": [
+                {
+                    "actor": {
+                        "display": "R68_Sleep_TRIAGE+A&G",
+                        "identifier": {
+                            "system": "http://fhir.nhs.net/Id/ers-service",
+                            "value": "90596"
+                        }
+                    },
+                    "status": "accepted"
+                }
+            ]
+        },
+        {
+            "id": "DocumentReference-95217",
+            "meta": {
+                "profile": [
+                    "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                ]
+            },
+            "resourceType": "DocumentReference",
+            "type": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                        "code": "REFERRER",
+                        "display": "Referrer"
+                    }
+                ]
+            },
+            "status": "current",
+            "indexed": "2020-05-18T14:46:05.909Z",
+            "description": "Exampe Text",
+            "content": [
+                {
+                    "attachment": {
+                        "id": "95217",
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                                "valueReference": {
+                                    "identifier": {
+                                        "system": "http://fhir.nhs.net/Id/sds-user-id",
+                                        "value": "021600556514"
+                                    }
+                                }
+                            }
+                        ],
+                        "contentType": "text/plain",
+                        "url": "Binary/att-97366-95217",
+                        "size": 23,
+                        "title": "test.txt",
+                        "creation": "2020-05-18"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": "active",
+    "specialty": {
+        "coding": [
+            {
+                "system": "https://api.dev3.ers.ncrs.nhs.uk/ers-api/STU3/v1/CodeSystem/SPECIALTY",
+                "code": "SLEEP_MEDICINE",
+                "display": "Sleep Medicine"
+            }
+        ]
+    },
+    "subject": {
+        "identifier": {
+            "system": "http://fhir.nhs.net/Id/nhs-number",
+            "value": "9190000000"
+        }
+    },
+    "supportingInfo": [
+        {
+            "reference": "#DocumentReference-95217"
+        }
+    ],
+    "intent": "plan"
+}

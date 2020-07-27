@@ -9,7 +9,7 @@ summary: false
 
 <div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a008_DSTU2.html">here</a>.</div>
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 This API lets authorised users retrieve the ‘Referrals for Review’ work list. This work list gives details of new or outstanding referrals sent to the service by GPs and others. It includes their key attributes.
@@ -17,7 +17,7 @@ This API lets authorised users retrieve the ‘Referrals for Review’ work list
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
@@ -65,7 +65,9 @@ https://api.dev1.ers.ncrs.nhs.uk/ers-api/STU3/v1/ReferralRequest/$ers.fetchworkl
 ```
 
 ### Example Request Body
-[A008_Request.json](downloads/json/A008_Request.json)  
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
+- [A008_Request.json](downloads/json/A008_Request.json)  
 
 # OUTPUT
 ## Response: Success
@@ -78,7 +80,9 @@ If successful, all referrals from the ‘Referrals for Review’ worklist matchi
 ```
 
 ### Example Response Body
-[A008_Response.json](downloads/json/A008_Response.json)
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
+- [A008_Response.json](downloads/json/A008_Response.json)
 
 ## Response: Failure
 If an error occurs, the relating HTTP status code will be returned in the header.  

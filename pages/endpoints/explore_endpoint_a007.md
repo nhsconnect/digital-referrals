@@ -9,18 +9,18 @@ summary: false
 
 <div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a007_DSTU2.html">here</a>.</div>
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 This API returns a real-time PDF of the clinical referral information for a given UBRN.
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method | URL |
 | -------| --- |
-| POST | STU3/v1/ReferralRequest/{ubrn}/$ers.generateCRI |
+| POST | /STU3/v1/ReferralRequest/{ubrn}/$ers.generateCRI |
 
 
 ## Operation Definition

@@ -7,7 +7,7 @@ permalink: explore_endpoint_a013.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 Once a referring organisation has booked an appointment and appropriate clinical referral information has been added, the referral is available for the service provider to review (via the Referrals for Review worklist). As part of this review process, a provider can accept the referral into their service, i.e. it meets all the criteria for treatment at the service. Users will be able to carry out this action in their preferred system using this API.  
@@ -17,7 +17,7 @@ Providers can also choose to reject the referral, using [A014: Reject Referral](
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method       | URL                                           | Authentication   |
 | -------------| -----------------------------------------     | ---------------- |
@@ -81,8 +81,9 @@ Content-Disposition:inline;filename=f.txt
 Content-Type:application/fhir+json
 ```
 
-### Example Response Body  (JSON)
-[A013_Response.json](downloads/json/A013_Response.json)
+### Example Response Body
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.
+- [Response](downloads/json/A013_Response.json)
 
 ## Response: Failure
 If an error occurs, the relating HTTP status code will be returned in the header. Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:

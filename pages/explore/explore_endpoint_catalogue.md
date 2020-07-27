@@ -46,7 +46,7 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 |A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)|      Q4 2020     |     STU3     |
 |A016|[Book Appointment](explore_endpoint_a016.html)          |      Q4 2020     |     STU3     |
 |A017|[Defer Booking to Provider](explore_endpoint_a017.html) |      Q4 2020     |     STU3     |
-|A0XX|[UBRN List]()                                           |      Q4 2020     |     STU3     |
+|A0XX| UBRN List                                              |      Q4 2020     |     STU3     |
 
 ## Retired APIs
 

@@ -16,11 +16,11 @@ Closes the Professional Session. Used to delete a Professional Session after it 
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method | URL | Authentication |
 | -------| --- | -------------- |
-| DELETE | v1/ProfessionalSession/{sessionKey} | Session Token [(Details)](develop_business_flow_bf001.html) |
+| DELETE | /v1/ProfessionalSession/{sessionKey} | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 # INPUT
 
@@ -43,8 +43,4 @@ If successful the response code 204 (No Content) is returned. This response has 
 
 
 ### Note:
-Consuming application must have a valid session in order to access this endpoint.
-
-
-
-Session is initially created using the Create Session / Select Role endpoints.
+Consuming applications must have a valid session in order to access this endpoint. A session is initially created using the [A001 – Create Professional Session](explore_endpoint_a001.html) and [A002 – Professional Session Select Role](explore_endpoint_a002.html) endpoints.

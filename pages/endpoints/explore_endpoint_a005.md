@@ -9,14 +9,14 @@ summary: false
 
 <div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a005_DSTU2.html">here</a>.</div>
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 This API gets the referral request identified by the given ID and returns referral information in the format of [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1).
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
@@ -27,7 +27,8 @@ Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/
 [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
 
 ## Prerequisite Conditions
-
+-
+-
 
 # INPUT
 
@@ -49,7 +50,7 @@ https://api.dev1.ers.ncrs.nhs.uk/ers-api/STU3/v1/ReferralRequest/000000098888
 ```
 
 ### Example Request Header
-```http
+``` http
 "XAPI_ASID" : "999000000045",
 "HTTP_X_SESSION_KEY" : "pro-api-session:06bdd8aa-da2c-45dc-bc73-bee80b70fe2d",
 "Accept" : "application/fhir+json"
@@ -70,7 +71,9 @@ If successful referral information is returned. The response code `200 (OK)` is 
 ```
 
 ### Example Response Body
-[A005_Response.json](downloads/json/A005_Response.json)
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
+- [A005_Response.json](downloads/json/A005_Response.json)
 
 ## Response: Failure
 If an error occurs, the relating HTTP status code will be returned in the header.  

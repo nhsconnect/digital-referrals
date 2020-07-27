@@ -7,26 +7,25 @@ permalink: /explore_endpoint_a020.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
-### API URL
-
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
-
-| Method | URL | Authentication |
-| -------| --- | ---------------- |
-| POST | STU3/v1/Binary | Session Token [(Details)](develop_business_flow_bf001.html) |
-
-### Description
+## Description
 As a Referring Clinician (/Administrator)  
 I want to upload a file to the e-RS document store  
 so that I can then link it to a referral as part of its referral letter  
 
-##### Important note:
-Each file needs to be individually uploaded via this endpoint then an additional call made to endpoint [A012: Maintain Referral Letter](explore_endpoint_a012.html) to link the file(s) to the referral once all files have been uploaded. **Any files not linked to a referral are periodically deleted from the e-RS document store.**
+## Resource URL
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
-### Prerequisite operations
-This endpoint has no pre-requisites
+| Method | URL | Authentication |
+| -------| --- | ---------------- |
+| POST | /STU3/v1/Binary | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+
+### Important Information:
+Each file needs to be individually uploaded via this endpoint then an additional call made to endpoint [A012: Maintain Referral Letter](explore_endpoint_a012.html) to link the file(s) to the referral once all files have been uploaded. **Any files not successfully linked to a referral are periodically deleted from the e-RS document store.**   
+
+*If attachments subsequently need to be added or amended then the e-RS Professional Application should be used*.
 
 ### Supported file types  
 
@@ -49,9 +48,9 @@ This endpoint has no pre-requisites
 | 1406 | application/xml	 | xml            |  
 
 
-### Request operation
+# INPUT
 
-#### Request header
+## Request Operation: Header
 
 | Field Name | Value |
 | ---- | ---- |
@@ -62,18 +61,30 @@ This endpoint has no pre-requisites
 | Accept | `application/fhir+json` |
 | Content-Type |	The mime type of the file being uploaded |
 
-
-#### Request body
+## Request Operation: Body
 The binary stream of the file being uploaded
 
-### Response
+### Example Request Header
+```http
+"XAPI_ASID" : "999000000045",
+"HTTP_X_SESSION_KEY" : "pro-api-session:e96357b1-298d-4159-ac58-a8953c3262c6",
+"Content-Type" : "text/plain",
+"Accept" : "application/fhir+json",
+"X-ERS-XAPI-META-FILE_NAME" : "test.txt",
+"X-ERS-XAPI-META-INTENDED_UBRN": "000000097366"
+```
 
-#### Success
-HTTP Status code `201 (Created)` is returned.  
-The header will also return the e-RS file location of the just uploaded file, as a URL, which can be used to link the file to a UBRN using [A012: Maintain Referral Letter](explore_endpoint_a012.html)  
-No response body is returned.  
+# OUTPUT
+## Response: Success
+If successful, the Status code `201 (Created)` is returned and the response header will also contain the e-RS file location of the just uploaded file, as a URL, which *must be used to link the file to a UBRN using [A012: Maintain Referral Letter](explore_endpoint_a012.html)*.   
 
-#### Failure
+### Example Response Header
+```http
+"X_ERS_TRANSACTION_ID" : "b3bf226d-16f4-4a7a-867c-a21e1466a2f6-1",
+"Location" : "Binary/att-97366-95217"
+```
+
+## Response: Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
 
 | issue.details.code | Description |
@@ -83,29 +94,3 @@ If an error occurs, the relating [HTTP status code](explore_error_messages.html)
 | INAPPROPRIATE_VALUE | The mime type is not supported |
 | INVALID_VALUE | If the total length of the File Name including extension is greater than 255 characters |
 | MISSING_VALUE | File name,  file mime type or the file data are not supplied |
-
-#### Examples:
-
-<details><summary>Request Header</summary>
-<br>
-  <pre>
-  Content-Type:text/plain
-  HTTP_X_SESSION_KEY:AuthHelper_professional_e8625b8d-5261-463b-b51e-65168acf933c  
-  X-ERS-XAPI-META-FILE_NAME:test.docx  
-  X-ERS-XAPI-META-INTENDED_UBRN:000000070000  
-  xapi_asid:999000000045  
-  </pre>
-</details>
-
-<details><summary>Response Header</summary>
-<br>
-  <pre>
-  Connection:close
-  Content-Length:0
-  Content-Type:application/x-httpd-php
-  Date:Wed, 17 Jul 2019 17:34:18 GMT
-  Location:Binary/att-70000-70000
-  X_ERS_TRANSACTION_ID:5495d5e9-3f55-4411-9ce7-b27b2d7cdac0-1
-  </pre>
-</details>
-<br>

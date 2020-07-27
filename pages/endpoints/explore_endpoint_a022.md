@@ -7,7 +7,7 @@ permalink: explore_endpoint_a022.html
 summary: false
 ---
 
-##### Status: Available in Q3 2020
+#### Status: Available in Q3 2020
 <!-- ##### Status: ![Live](images/icons/api_live.png) -->
 
 ## Description
@@ -20,11 +20,11 @@ The API allows clinical users to take responsibility for the referral while info
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | v1/ReferralRequest/{UBRN}/$ers.CancelAppointmentActionLater | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | /v1/ReferralRequest/{UBRN}/$ers.CancelAppointmentActionLater | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 
 ## Operation Definition

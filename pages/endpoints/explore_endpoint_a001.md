@@ -7,7 +7,7 @@ permalink: explore_endpoint_a001.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 As an e-RS user working in an integrated system  
@@ -16,11 +16,11 @@ So that I can securely access e-RS functions through my integrated system
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method | URL |
 | -------------| --- |
-| POST | v1/ProfessionalSession
+| POST | /v1/ProfessionalSession
 
 
 ### Prerequisite Conditions
@@ -54,8 +54,9 @@ Content-Type:application/json
 ```
 
 ### Example Request Body
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-[Request Body](https://nhsconnect.github.io/digital-referrals/downloads/json/A001_Request.json)  
+- [Request Body](https://nhsconnect.github.io/digital-referrals/downloads/json/A001_Request.json)  
 
 # OUTPUT
 ## Response: Success
@@ -67,7 +68,9 @@ Once the session has been created a list of applicable permissions for the user 
 The `ProfessionalSession.id` returned should be included as a header `(HTTP_X_SESSION_KEY)` for all subsequent requests.
 
 ### Example Response Body
-[Response](https://nhsconnect.github.io/digital-referrals/downloads/json/A001_Response.json)
+##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+
+- [Response](https://nhsconnect.github.io/digital-referrals/downloads/json/A001_Response.json)
 
 
 ## Response: Failure

@@ -17,14 +17,14 @@
       "name": "sortBy",
       "valueCoding": {
         "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-SortBy-1",
-        "code": "IWT"
+        "code": "DISTANCE"
       }
     },
     {
       "name": "patient",
       "valueIdentifier": {
         "system": "http://fhir.nhs.net/Id/nhs-number",
-        "value": "1000000001"
+        "value": "9190000000"
       }
     },
     {
@@ -49,27 +49,60 @@
             "name": "specialty",
             "valueCoding": {
               "system": "https://api.dev3.ers.ncrs.nhs.uk/ers-api/STU3/v1/CodeSystem/SPECIALTY",
-              "code": "GENETICS"
+              "code": "SLEEP_MEDICINE"
             }
           },
           {
             "name": "clinicType",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
-              "code": "GENETICS_2"
+              "code": "INSOMNIA"
+            }
+          },
+          {
+            "name": "namedClinician",
+            "valueIdentifier": {
+              "system": "http://fhir.nhs.net/Id/sds-user-id",
+              "value": "021600556514"
+            }
+          },
+          {
+            "name": "clinicalTerm",
+            "valueCoding": {
+              "system": "http://snomed.info/sct",
+              "code": "78275009"
             }
           },
           {
             "name": "commissioningProvisioning",
             "valueCoding": {
               "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
-              "code": "ALL_AVAILABLE_FOR_BOOKING"
+              "code": "NATIONALLY_AVAILABLE"
+            }
+          },
+          {
+            "name": "organisation",
+            "valueIdentifier": {
+              "system": "https://directory.spineservices.nhs.uk/STU3/Organization",
+              "value": "R68"
             }
           },
           {
             "name": "ageAndGenderAppropriate",
             "valueBoolean": true
-          }
+          },
+          {
+            "name": "distanceLimit",
+            "valueUnsignedInt": 500
+          },
+          {
+            "name": "postcode",
+            "valueString": "LS1 2UT"
+          },
+          {
+            "name": "indicativeAppointmentWaitTimeLimit",
+            "valueUnsignedInt": 21
+          } 
         ]
       }
     }

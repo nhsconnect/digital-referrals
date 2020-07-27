@@ -7,27 +7,30 @@ permalink: explore_endpoint_a010.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png)
 
-### API URL
-
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
-
-| Method | URL | Authentication |
-| -------------| --- | ---------------- |
-| POST | STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | Session Token [(Details)](develop_business_flow_bf001.html) |
-
-### Description
+## Description
 As a Referring Clinician (/Administrator) needing to refer a patient
 I want to search for services that are appropriate for my patient
 So that I can create a shortlist of services where my patient can be referred to
 
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+
+## Resource URL
+
+| Method | URL | Authentication |
+| -------------| --- | ---------------- |
+| POST | /STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+## Operation Definition
+The Operation Definition for this endpoint is available on the FHIR server: [ers.patientServiceSearch](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1)
+
 ### Prerequisite Operations
-If using the filter on specialty, the value provided must be a valid code obtained via the FHIR 3 version of the [Get Reference Data (A004)](explore_endpoint_a004.html) endpoint.
+- If using the filter on specialty, the value provided must be a valid code obtained via the FHIR 3 version of the [Get Reference Data (A004)](explore_endpoint_a004.html) endpoint.
 
-### Request Operation
+# INPUT
 
-#### Request Header
+## Request Operation: Header
 
 | Field Name | Value |
 | ---- | ---- |
@@ -36,8 +39,7 @@ If using the filter on specialty, the value provided must be a valid code obtain
 | Content-Type |	`application/fhir+json` |
 
 
-#### Request Body
-The Operation Definition for this endpoint is available on the FHIR server: [ers.patientServiceSearch](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1)
+## Request Operation: Parameters
 
 | Parameter Name             | Cardinality | Type            | Notes |
 | -------------------------- | ----------- | --------------- | ----- |
@@ -54,14 +56,26 @@ The Operation Definition for this endpoint is available on the FHIR server: [ers
 | restrictedService           | This parameter was removed in e-RS Release 9.1 |  
 
 
-### Response
+### Example Request Header
+```
+```
 
-#### Success
-HTTP Status code `200 (OK)` is returned. The response body contains the list of services (if any) that match the search criteria provided in the format of an [eRS-FetchServices-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1)
+### Example Request Body
+##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+- [A010_Request.json](downloads/json/A010_Request.json)   
 
-#### Failure
-If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.
-Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
+
+# OUTPUT
+
+## Response: Success
+If successful, the status code `200 (OK)` is returned and the response body contains the list of services (if any) that match the search criteria provided in the format of an [eRS-FetchServices-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1)
+
+### Example Response Body
+##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+- [A010_Response.json](downloads/json/A010_Response.json)   
+
+## Response: Failure
+If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
 
 | issue.details.code | Description |
 | ------------------ | ------ |
@@ -77,12 +91,3 @@ Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationO
 | REFERENCED_USER_IS_NOT_SPC | The SDS user provided as the _named clinician_ does not actually have the Service Provider Clinician business function in e-RS |
 | REFERENCED_USER_NOT_IN_ORG | The  _referring clinician_ provided does not belong to the same organisation as the logged in user |
 | VALUE_IS_REQUIRED | A referring clinician is not provided when the logged in user is an RCA; or: one of the following three is not provided: the pair specialty + clinic type, the clinical term¬ or the named clinician |
-
-#### Examples:
-##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
-
-[Request 1](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Request%20Sample%201.json)  
-[Response 1](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Response%20Sample%201.json)  
-
-[Request 2](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Request%20Sample%202.json)  
-[Response 2](https://nhsconnect.github.io/digital-referrals/downloads/json/A010%20Response%20Sample%202.json)  

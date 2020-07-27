@@ -1,0 +1,264 @@
+{
+    "meta": {
+        "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchServices-List-1"
+        ]
+    },
+    "resourceType": "List",
+    "status": "current",
+    "mode": "snapshot",
+    "entry": [
+        {
+            "extension": [
+                {
+                    "extension": [
+                        {
+                            "url": "displayProminently",
+                            "valueBoolean": false
+                        },
+                        {
+                            "url": "distance",
+                            "valueUnsignedInt": 7
+                        },
+                        {
+                            "url": "indicativeAppointmentWaitTime",
+                            "valueUnsignedInt": 17
+                        }
+                    ],
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSearch-ListItem-1"
+                }
+            ],
+            "item": {
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "serviceName",
+                                "valueString": "R68_Sleep_DBS_RL_Assessment"
+                            },
+                            {
+                                "url": "specialty",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://api.dev3.ers.ncrs.nhs.uk/ers-api/STU3/v1/CodeSystem/SPECIALTY",
+                                            "code": "SLEEP_MEDICINE"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "genderTreated",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-GenderTreated-1",
+                                            "code": "MALE_AND_FEMALE"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "bookableType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1",
+                                            "code": "DIRECTLY_BOOKABLE"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "supportedAppointmentType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AppointmentType-1",
+                                            "code": "ASSESSMENT_SERVICE"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "referralLetterRequired",
+                                "valueBoolean": true
+                            },
+                            {
+                                "url": "location",
+                                "valueReference": {
+                                    "display": "Pinderfields Hospital",
+                                    "identifier": {
+                                        "system": "https://directory.spineservices.nhs.uk/STU3/Organization",
+                                        "value": "R6007"
+                                    }
+                                }
+                            },
+                            {
+                                "url": "linkToNHSWebsite",
+                                "valueString": "https://www.nhs.uk/service-search/other-services/chooseandbook?serviceId=90636"
+                            },
+                            {
+                                "url": "supportedRequestFlowType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
+                                            "code": "ADVICE_AND_GUIDANCE_REQUEST"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "supportedRequestFlowType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
+                                            "code": "APPOINTMENT_REQUEST"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSummaryView-1"
+                    }
+                ],
+                "identifier": {
+                    "system": "http://fhir.nhs.net/Id/ers-service",
+                    "value": "90636"
+                }
+            }
+        },
+        {
+            "extension": [
+                {
+                    "extension": [
+                        {
+                            "url": "displayProminently",
+                            "valueBoolean": false
+                        },
+                        {
+                            "url": "distance",
+                            "valueUnsignedInt": 7
+                        },
+                        {
+                            "url": "indicativeAppointmentWaitTime",
+                            "valueCodeableConcept": {
+                                "coding": [
+                                    {
+                                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-IWT-1",
+                                        "code": "NOT_APPLICABLE"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSearch-ListItem-1"
+                }
+            ],
+            "item": {
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "serviceName",
+                                "valueString": "R68_Sleep_TRIAGE+A&G"
+                            },
+                            {
+                                "url": "specialty",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://api.dev3.ers.ncrs.nhs.uk/ers-api/STU3/v1/CodeSystem/SPECIALTY",
+                                            "code": "SLEEP_MEDICINE"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "genderTreated",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-GenderTreated-1",
+                                            "code": "MALE_AND_FEMALE"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "bookableType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-BookableType-1",
+                                            "code": "UNSPECIFIED"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "referralLetterRequired",
+                                "valueBoolean": true
+                            },
+                            {
+                                "url": "location",
+                                "valueReference": {
+                                    "display": "Pinderfields Hospital",
+                                    "identifier": {
+                                        "system": "https://directory.spineservices.nhs.uk/STU3/Organization",
+                                        "value": "R6007"
+                                    }
+                                }
+                            },
+                            {
+                                "url": "linkToNHSWebsite",
+                                "valueString": "https://www.nhs.uk/service-search/other-services/chooseandbook?serviceId=90596"
+                            },
+                            {
+                                "url": "supportedRequestFlowType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
+                                            "code": "ADVICE_AND_GUIDANCE_REQUEST"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "supportedRequestFlowType",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-RequestFlowType-1",
+                                            "code": "TRIAGE_REQUEST"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "exclusions",
+                                "valueString": "Exclusions Text"
+                            },
+                            {
+                                "url": "conditionsTreated",
+                                "valueString": "Conditions Treated Text"
+                            },
+                            {
+                                "url": "suggestedInvestigations",
+                                "valueString": "Suggested Investigations Text"
+                            }
+                        ],
+                        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ServiceSummaryView-1"
+                    }
+                ],
+                "identifier": {
+                    "system": "http://fhir.nhs.net/Id/ers-service",
+                    "value": "90596"
+                }
+            }
+        }
+    ]
+}
