@@ -12,6 +12,11 @@ summary: false
 #### Status: ![Deprecated](images/icons/api_deprecated.png)  
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
+**Defect fix:**<br>
+Following e-RS release 9.6 this endpoint will return ***all specialities***, prior to this fix only active specialities were returned, inactive specialties were not returned. Please note that this is a non-breaking change and only affects this endpoint. Find out more about this endpoint and related FHIR models.
+</div>
+
+<div style="border: 2px solid #fcf2d4; padding: 10px; background: #ffcfcf;">
 This endpoint must be used with all FHIR2 (DSTU2) endpoints: <br>
 <br>
 - A005 Retrieve Referral Request (Live)<br>
