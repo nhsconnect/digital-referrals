@@ -13,7 +13,7 @@ summary: false
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">
 <strong>Defect fix:</strong><br>
-Following [e-RS release 9.6](forward_notices.html) this endpoint will return <em>all specialities</em>, prior to this fix only active specialities were returned, inactive specialties were not returned. Please note that this is a non-breaking change and only affects this endpoint. Find out more about this endpoint and related FHIR models.
+Following e-RS <a href='https://digital.nhs.uk/services/e-referral-service/live-service-information-and-alerts/releases#release-9-6-friday-21-august-2020-subject-to-final-testing-'>release 9.6</a> this endpoint will return <em>all specialities</em>, prior to this fix only active specialities were returned, inactive specialties were not returned. Please note that this is a non-breaking change and only affects this endpoint. Find out more about this endpoint and related FHIR models.
 </div>
 <br>
 <div style="border: 2px solid #888888; padding: 10px; background: #fcf2d4;">
