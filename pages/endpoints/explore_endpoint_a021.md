@@ -69,7 +69,7 @@ The Operation Definition for this endpoint is available on the FHIR server:  [eR
 ### Example Request Body
 ##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-- [A021 Request.json](downloads/json/A021 Request.json)  
+- [A021 Request.json](downloads/json/A021_Request.json)  
 
 # OUTPUT
 ## Response: Success
@@ -90,7 +90,7 @@ If successful, the status code `201 (Created)` is returned and the response body
 ### Example Response Body
 ##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-- [A021 Response.json](downloads/json/A021 Response.json)  
+- [A021 Response.json](downloads/json/A021_Response.json)  
 
 ## Response: Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header.

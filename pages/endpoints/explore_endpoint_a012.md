@@ -64,7 +64,7 @@ This linking action can only be performed on a newly created referral that conta
 ### Example Request Body
 ##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-- [A012 Request.json](downloads/json/A012 Request.json)  
+- [A012 Request.json](downloads/json/A012_Request.json)  
 
 # OUTPUT
 ## Response: Success
@@ -81,7 +81,7 @@ If successful, the status code `200 (OK)` is returned. The response body contain
 ### Example Response Body
 ##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-- [A012 Response.json](downloads/json/A012 Response.json)  
+- [A012 Response.json](downloads/json/A012_Response.json)  
 
 ## Response: Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  

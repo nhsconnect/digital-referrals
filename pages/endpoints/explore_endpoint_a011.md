@@ -64,7 +64,7 @@ The Operation Definition for this endpoint is available on the FHIR server:  [eR
 ### Example Request Body
 ##### Note: These examples contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-- [A011 Request.json](downloads/json/A011 Request.json)  
+- [A011 Request.json](downloads/json/A011_Request.json)  
 
 ### Response
 
@@ -83,7 +83,7 @@ If successful, the status code `201 (Created)` is returned and the response body
 ### Example Response Body
 ##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
-- [A011 Response.json](downloads/json/A011 Response.json)  
+- [A011 Response.json](downloads/json/A011_Response.json)  
 
 ## Response: Failure
 If an error occurs, the relating [HTTP status code](explore_error_messages.html) will be returned in the header. Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below.  
