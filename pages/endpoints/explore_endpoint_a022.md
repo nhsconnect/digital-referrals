@@ -7,8 +7,7 @@ permalink: explore_endpoint_a022.html
 summary: false
 ---
 
-#### Status: Available in Q3 2020
-<!-- ##### Status: ![Live](images/icons/api_live.png) -->
+##### Status: ![Live](images/icons/api_live.png)
 
 ## Description
 Once a referring organisation has booked an appointment and appropriate clinical referral information attached, the referral is available for the service provider to review via the Referrals for Review worklist (A008: Retrieve Worklist).  
