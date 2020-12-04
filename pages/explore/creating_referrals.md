@@ -13,13 +13,9 @@ summary: "How to create new e-referrals from within other systems using the e-RS
 
 This page describes the APIs required to conduct a search for services relevant for the selected patient, create an e-referral with a shortlist of directly and/or in-directly bookable services or create an e-referral for a Referral Assessment Service (RAS). The APIs also allow for the initial upload of attachments (Sometimes known as "The referral letter") and generate a confirmation letter for the patient. The search limits results to services which are appropriate for patient and the referring organisation based on the commissioning rules that apply to the authenticated user and/or the patient.
 
-<div style="border: 2px solid #888888; padding: 10px; background: #fff1b5;">
-<b>Notes:</b><br>
-The creation of an e-referral to a service set up as a RAS is different to other referrals. Therefore, a referral request for a RAS should be created using the endpoint <a href="/explore_endpoint_a021.html">A021: Create Referral And Send For Triage</a> with a shortlist containing ONLY the intended service. However, a referral containing a shortlist of non-RAS services (I.e. Directly bookable services (DBS) or in-directly bookable services (IBS)) should be created using <a href="/explore_endpoint_a011.html">A011: Create Referral</a>.
-<br>
-<br>
-Clinical information should be collated into an attachment and added to the referral, it cannot currently be uploaded as separate structured data.   
-</div>   
+## Process Diagram
+
+![Creating Referrals](images/explore/creating_referrals.png)
 
 ## The following APIs can be used to create an e-referral
 
@@ -45,6 +41,10 @@ Clinical information should be collated into an attachment and added to the refe
 * Defer booking to provider, if no slots are available (Coming in Q4 2020)
 * Generate patient letter with appointment confirmation details (Coming in Q4 2020)
 
-## Logical Process Diagram
-
-![Creating Referrals](images/explore/creating_referrals.png)
+<div style="border: 2px solid #888888; padding: 10px; background: #fff1b5;">
+<b>Notes:</b><br>
+The creation of an e-referral to a service set up as a RAS is different to other referrals. Therefore, a referral request for a RAS should be created using the endpoint <a href="/explore_endpoint_a021.html">A021: Create Referral And Send For Triage</a> with a shortlist containing ONLY the intended service. However, a referral containing a shortlist of non-RAS services (I.e. Directly bookable services (DBS) or in-directly bookable services (IBS)) should be created using <a href="/explore_endpoint_a011.html">A011: Create Referral</a>.
+<br>
+<br>
+Clinical information should be collated into an attachment and added to the referral, it cannot currently be uploaded as separate structured data.   
+</div> 
