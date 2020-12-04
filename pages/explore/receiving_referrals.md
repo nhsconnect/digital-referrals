@@ -30,8 +30,8 @@ This page describes the functionality available for receiving e-referrals into o
 ##### Clinical Review
 * [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
 * [A014 – Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
-* [A022: Cancel Appointment, Action Later](explore_endpoint_a022.html) *(Available Q3 2020)*
-* Record triage outcome (for RAS) *(Coming in Q1 2021)*
+* [A022: Cancel Appointment, Action Later](explore_endpoint_a022.html) ![Live](images/icons/api_live.png)
+* Record triage outcome (for RAS) *(Coming in 2021)*
 
 
 #### Logical Process Diagram
