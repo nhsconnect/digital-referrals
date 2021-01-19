@@ -1,18 +1,16 @@
 ---
-title: "A017: Defer Booking to Provider"
-keywords: endpoint, catalogue
+title: "xxx"
+keywords:  
 sidebar: overview_sidebar
 toc: false
-permalink: explore_endpoint_a017.html
+permalink: xxx.html
 summary: false
 ---
 
 #### Status: ![Live](images/icons/api_live.png)
 
 ## Description
-This API allows the responsibility for booking a patient's appointment to be "deferred to provider" because there are no slots available at their chosen service.
 
-##### Note: e-RS will validate that there are no slots available at a chosen service and only allow a "defer to provider" when that is the case. It is therefore highly recommended that this action is performed immediately following a request to [A015: Retrieve Appointment Slots](explore_endpoint_a015.html) which has returned no available slots.
 
 ## Resource URL
 
@@ -20,11 +18,11 @@ Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | STU3/v1/Appointment | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | /STU3/v1/ReferralRequest/{ubrn}/$ers.rejectReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 
 ## Operation Definition
-- []()  
+- [eRS-RejectReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-RejectReferral-Operation-1)  
 
 ## Prerequisite Conditions
 -
@@ -79,8 +77,7 @@ If successful, ...
 ## Response: Failure
 If an error occurs, the relating HTTP status code will be returned in the header.  
 
-Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below:
+Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOutcome-1 will be included in the body, as detailed below:
 
 | OutcomeKey | Description | Suggested Diagnostic |
 | ---------- | ----------- | -------------------- |
-| SLOTS_CURRENTLY_AVAILABLE | "There are currently future slots available, so you cannot defer to this Service to book" | This is returned when an attempt to defer to provider is performed when there are currently slots available for booking |

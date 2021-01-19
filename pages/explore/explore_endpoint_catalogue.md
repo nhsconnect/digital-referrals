@@ -24,10 +24,13 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 |A012|[Maintain Referral Letter](explore_endpoint_a012.html) | POST: STU3/v1/ReferralRequest/{UBRN}/$ers.maintainReferralLetter | ![Live](images/icons/api_live.png) |
 |A013|[Accept Referral](explore_endpoint_a013.html) | POST: /STU3/v1/ReferralRequest/{ubrn}/$ers.acceptReferral | ![Live](images/icons/api_live.png) |
 |A014|[Reject Referral](explore_endpoint_a014.html) | POST: /STU3/v1/ReferralRequest/{ubrn}/$ers.rejectReferral | ![Live](images/icons/api_live.png) |
+|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)| GET: /STU3/v1/Slot | ![Live](images/icons/api_live.png) |
+|A016|[Book Appointment](explore_endpoint_a016.html)          | POST:	/STU3/v1/Appointment | ![Live](images/icons/api_live.png) |
+|A017|[Defer Booking to Provider](explore_endpoint_a017.html) | POST: /STU3/v1/ | ![Live](images/icons/api_live.png) |
 |A019|[Generate Patient Letter](explore_endpoint_a019.html) | POST: /STU3/v1/ReferralRequest/[UBRN]/$ers.generatePatientLetter | ![Live](images/icons/api_live.png) |
 |A020|[Upload File To Document Store](explore_endpoint_a020.html) | POST: /STU3/v1/Binary | ![Live](images/icons/api_live.png) |
 |A021|[Create Referral And Send For Triage](explore_endpoint_a021.html) | POST: /STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | ![Live](images/icons/api_live.png) |
-|A022|[Cancel Appointment, Action Later](explore_endpoint_a022.html) | POST: v1/ReferralRequest/{UBRN}/$ers.CancelAppointmentActionLater | Available Q3 2020 |
+|A022|[Cancel Appointment, Action Later](explore_endpoint_a022.html) | POST: v1/ReferralRequest/{UBRN}/$ers.CancelAppointmentActionLater | ![Live](images/icons/api_live.png) |
 
 ## FHIR v2 APIs (Deprecated)   
 
@@ -41,12 +44,9 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 
 ## APIs In Development
 
-| ID | Name                                                   | Expected release | FHIR Version |
-|----|--------------------------------------------------------|:----------------:|:------------:|
-|A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)|      Q4 2020     |     STU3     |
-|A016|[Book Appointment](explore_endpoint_a016.html)          |      Q4 2020     |     STU3     |
-|A017|[Defer Booking to Provider](explore_endpoint_a017.html) |      Q4 2020     |     STU3     |
-|A0XX| UBRN List                                              |      Q4 2020     |     STU3     |
+| ID   | Name                                                    | Expected release | FHIR Version |
+|------|---------------------------------------------------------|:----------------:|:------------:|
+| A0xx | A&G Conversation                                        | Q2 2021          | STU3         | 
 
 ## Retired APIs
 
