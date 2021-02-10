@@ -39,7 +39,7 @@ Following creation of a referral to a directly bookable service in e-RS a search
 
 ### Book Appointment
 * [A015 - Retrieve Appointment Slots](explore_endpoint_a015.html) ![Live](images/icons/api_live.png)
-* [A016 - Retrieve Appointment Slots](explore_endpoint_a016.html) ![Live](images/icons/api_live.png)
+* [A016 - Book or Defer Appointment](explore_endpoint_a016.html) ![Live](images/icons/api_live.png)
 * [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Live](images/icons/api_live.png) with confirmation of appointment booking or deferral to Service Provider
 
 <div style="border: 2px solid #888888; padding: 10px; background: #fff1b5;">
