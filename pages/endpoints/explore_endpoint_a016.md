@@ -1,5 +1,5 @@
 ---
-title: "A016: Book Appointment"
+title: "A016: Book or Defer Appointment"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
@@ -10,28 +10,40 @@ summary: false
 #### Status: ![Live](images/icons/api_live.png)
 
 ## Description
-This API allows the requestor to associate a specific Appointment Slot with a specific Referral Appointment Request.
+#### Book an appointment
+Having searched for available appointment slots using A015: Retrieve Appointment Slots, this API allows the requestor to book a referral into an appointment slot. When a booking attempt is made, e-RS will communicate directly with the booking system which made the appointment slot available to e-RS. This interaction has 2 minutes to complete. As such a booking attempt may be successful or result in a failure.  
+
+#### Defer an appointment
+Where there are either no appointment slots available, or the booking failure cases specified, the requestor is allowed to defer to provider (i.e. defer the responsibility for providing a suitable appointment onto the affected service).  
+
+**Note:** The act of deferring to provider is sometimes referred by users as an ‘appointment slot issue’ (ASI).  
+
+For both the booking and deferring to provider actions, the same endpoint is used.
+
 
 ## Resource URL
+The act of Booking or Deferring to provider is made by POSTing a new FHIR Appointment resource to e-RS.  
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
+Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
-| Method       | URL | Authentication |
-| -------------| --- | ---------------- |
-| POST | STU3/v1/Appointment  | Session Token [(Details)](develop_business_flow_bf001.html) |
+| Method  | URL                              | Authentication |
+| --------| -------------------------------- | ---------------- |
+| POST    |  [base URL]/STU3/v1/Appointment  | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 
-## Operation Definition
+# BOOK APPOINTMENT INPUT
+
+## Book Operation Definition
 - [eRS-BookAppointment-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-BookAppointment-Operation-1)  
 
-## Prerequisite Conditions
-- The user is authenticated with an effective business function of Referring Clinician or Referring Clinician Admin;
-- An existing appointment request must exist
-- An appointment slot search, using endpoint A015, must have been performed to obtain the relevant appointment slot details.
+## Book Prerequisite Conditions
+-	The user is authenticated with an effective business function of Referring Clinician or Referring Clinician Admin
+-	An existing unbooked appointment request must exist
+-	An appointment slot search, using endpoint A015, must have been performed to obtain the relevant appointment slot details  
 
-# INPUT
+When a booking attempt is made, e-RS will communicate directly with the booking system which made the appointment slot available to e-RS. This interaction has 2 minutes to complete. As such a booking attempt may be successful or result in a failure.
 
-## Request Operation: Header
+## Book Request Operation: Header
 
 | Field Name | Value |
 | ---------- | ----- |
@@ -40,47 +52,219 @@ Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/
 | Content-Type | `*/*`, `application/fhir+json` |
 
 
-## Request Operation: Parameters
+## Book Request Operation: Parameters
+The body of the Request consists of a FHIR ‘Appointment’ resource which defines the Appointment to be booked.  
+
+The key fields are:
+-	The **slot.reference** field which contains a Reference to a Slot that was returned by the A015 endpoint
+-	The **incomingReferral[0].reference** field which contains a Reference to the ReferralRequest for which the Appointment is being booked. Note that this reference is to a specific version of the ReferralRequest and that the version must be the latest (i.e., current) version
+-	The **participant[0].actor.reference** field which references the Service that the booking is being made to
 
 | Name   | Cardinality | Type | Description |
 | ------ | ----------- | ---- | ----------- |
-| slotId | 1..1 | [Identifier](http://hl7.org/fhir/stu3/datatypes.html#identifier) | The identifier for this slot |
-| intentionToAddReferralLetter | 0..1 | [Coding](http://hl7.org/fhir/stu3/datatypes.html#coding) | Intention to add a referral letter, Binding (required): [eRS-ReferralLetterIntention-1](https://fhir.nhs.uk/STU3/ValueSet/eRS-ReferralLetterIntention-1) |
+| resouceType | 1..1 | Identifier | Fixed value of ‘Appointment’ |
+| status | 1..1 |  | Must be value “booked” |
+| description | 1..1 | String | Must be value “e-Referral Appointment” |
+| start | 1..1 | DateTime | DateTime of the start of the Slot |
+| end | 1..1 | DateTime | DateTime of the end of the Slot |
+| slot.reference | 1..1 | Reference | Reference to the slot to which the booking is to be made |
+| created | 1..1 | DateTime | Should be current DateTime |
+| incomingReferral[0].reference | 1..1 | Reference | Reference to the ReferralRequest to which the booking is being made.<br>(This must reference the latest specific version of the Referral Request) |
+| participant[0] | 1..1 |  | Participant for service |
+| participant[0].actor.identifier | 1..1 |  | Identifier of the Service using system "http//fhir.nhs.net/Id/ers-service" |
+| participant[1] | 0..1 |  | Participant for Allocated Clinician (optional) |
+| participant[1].actor.identifier | 1..1 |  | Identifier of the Practitioner who is the Allocated Clinician using system “http//fhir.nhs.net/Id/sds-user-id” |
+
+#### Additional Notes:
+1.	e-Referrals checks that the ReferralRequest identified by **incomingReferral[0]** is unbooked
+2.	e-Referrals checks that the DateTime values in the **start** and **end** fields match the start and end times of the slot identified by **slot.reference**
+3.	e-Referrals checks that the slot identified by **slot.reference** is associated with the service identified by **participant[0]**
+4.	e-Referrals checks that the service identified by **participant[0]** is a directly bookable service on the shortlist of the ReferralRequest identified by **incomingReferral[0]**
+5.	If **participant[1]** is present, e-Referrals checks that the slot identified by **slot.reference** is actually allocated to the clinician identified by **participant[1]**
 
 
-### Example URI
-```http
-```
 
-### Example Request Header
-```http
-```
+### Book Example Request
 
-### Example Request Body
-##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+- [Book Request Example](downloads/json/A016_Request_BOOK.json)
 
-- [Missing example file](downloads/json/[filename])  
+# BOOK APPOINTMENT OUTPUT
+## Book Response: Success
+On success a FHIR Appointment resource is returned containing the newly created appointment.  
 
-# OUTPUT
-## Response: Success
-If successful, the referral object is returned containing the newly associated appointment details.
+Further details of the FHIR representation can be found with the example response below.
 
-### Example Response Header
-```http
-```
+### Book Example Response
+- [Booking Response Example](downloads/json/A016_Response_BOOK.json)   
 
-### Example Response Body
-##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
+#### Additional Notes:
+1.	The **‘versionId’** of the created Appointment resource is returned
+2.	An additional profile is listed in the **meta.profiles**
+3.	The version of the **incomingReferral** reference has incremented from the version in the Request
+4.	The name of the service has been added to the **participant[0]** action as the **display** field
 
-- [Missing example file](downloads/json/[filename])  
 
-## Response: Failure
-If an error occurs, the relating HTTP status code will be returned in the header.  
+## Book Response: Failure
+If an error occurs, the relating [HTTP status](explore_error_messages.html) will be returned in the header.  
 
 Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below:
 
-| OutcomeKey         | Description                                                             | Suggested Diagnostic |
-| ------------------ | ----------------------------------------------------------------------- | -------------------- |
-| INAPPROPRIATE_SLOT | Failure due to mismatch between slot and Service or Appointment Request |  |
-| SERVICE_UNAVAILABLE | Indicates that a service is no longer available |  |
-| SLOT_NOT_AVAILABLE | Indicates that a slot is no longer available |  |
+| OutcomeKey         | Description                                                             |
+| ------------------ | ----------------------------------------------------------------------- |
+| FORBIDDEN | User associated with the API session is not logged in with a Business Function of Referring Clinician or Referring Clinician Admin |
+| INAPPROPRIATE_SLOT | Failure due to mismatch between slot and Service or Appointment Request |
+| INAPPROPRIATE_VALUE | A value is inappropriate in association with other values. See ‘diagnostic’ field for details. |
+| INVALID_REQUEST_STATE | The incomingReferral[0] is not an unbooked initial ReferralReqest. |
+| INVALID_CODE | A value for a Code field does not contain a valid value in the Coding system. |
+| INVALID_VALUE | A value is invalid. See ‘diagnostic’ field for details. |
+| MISSING_VALUE | A mandatory field is missing |
+| NO_RELATIONSHIP | User associated with the API session does not have a Legitimate Relationship with the ReferralRequest. |
+| PAS_NOT_RESPONDING | The attempt to book the appointment in the Service Provider’s Patient Administration System failed. |
+| PATIENT_ERROR | The Patient associated with the ReferralRequest cannot be booked via e-Referrals. |
+| REFERENCE_NOT_FOUND | The ReferralRequest referenced by incomingReferral[0] does not exist or is the wrong type or the slot referenced by slot.reference does not exist |
+| REFERRAL_LOCKED | The ReferralRequest is currently locked by another user. |
+| SERVICE_UNAVAILABLE | Indicates that a service is no longer available |
+| SLOT_NOT_AVAILABLE | Indicates that a slot is no longer available |
+| UNABLE_TO_CONFIRM_APPOINTMENT | The Service Provider’s Patient Administration System has indicated that the slot is no longer available |
+| VERSION_CONFLICT | The version of the ReferralRequest referenced by incomingReferral[0] is not the latest version. |
+
+In all the above cases, an accompanying “diagnostic” message in the FHIR OperationOutcome response provides more information.
+
+
+# DEFER APPOINTMENT INPUT
+
+## Defer Prerequisite Conditions
+-	The user is authenticated with an effective business function of Referring Clinician or Referring Clinician Admin
+-	The user has:
+  -	Created a referral and shortlisted one or more bookable services via A011: Create Referral
+  -	Very recently searched for available appointment slots using A015: Retrieve Appointment Slots
+      -	The Service Search Criteria and shortlisted services used to retrieve appointments should be the same as that saved against the referral. This is to ensure only appropriate appointments are offered to the user, and any booking and defer to provider rejections later are minimised.   
+      Note: A Supplier should be able to obtain the current service search criteria and shortlisted services via A005  Retrieve Referral API
+  -	A requestor may only defer to provider in the following cases:
+      -	One or more appointments are available at a service, but the booking attempt fails because the provider PAS says the slot is no longer available. It is therefore permissible to defer to this service
+      -	One ore more appointments are available at a service, but the booking attempt fails because e-RS knows the slot has been taken by another user. It is therefore permissible to defer to this service
+      -	One or more appointments are available at a service, but the booking attempt fails because e-RS does not receive a response within the 2 minute timeout period. It is therefore permissible to defer to this service
+      -	The service at which the patient would like an appointment at has no slots. It is therefore permissible to defer to this service
+
+**Note:** The requestor must not attempt to defer to provider in any other cases. This includes where one or more appointment slots are available and the patient does not ‘like’ the current options. The Authority will audit use of this functionality over time to ensure this is not being misused.
+
+#### See additional details below for more information  
+The table below details the permitted flows for Deferring to provider by detailing what indicators the requestor will have as a result of a Book or Slot Search attempt, mapped against the Defer to provider “reason” they would need to supply to the Defer to provider Endpoint in order to be successful
+
+| Scenario  | OutcomeKey Returned from attempt to “book” | Defer "reason" Input required to Defer (via Reason.Coding.System.Value) |
+| --------- |------------------------------------------- |------------------------------------------------------------------------ |
+| A) Successful Slot Search<br>B) Attempt to Book to slot<br>C) Response received from Book attempt shows that the identified Appointment Slot is no longer available | SLOT_NOT_AVAILABLE | SLOT_NOT_AVAILABLE |
+| A) Successful Slot Search<br>B) Attempt to Book slot<br>C) The slot has been “taken” and is no longer available in the Provider Clinical System  | PAS_RESPONDED_WITH_ERROR | SLOT_NOT_AVAILABLE |
+| A) Successful Slot Search<br>B) Attempt to Book slot<br>C) Booking failed because of a timeout or messaging error | PAS_NOT_RESPONDING | BOOKING_ATTEMPT_PROBLEM |
+| A) Slot Search returns empty  | N/A - empty bundle from Slot Search | NO_SLOTS_AT_SERVICE |
+
+
+## Defer Request Operation: Header
+
+| Field Name | Value |
+| ---------- | ----- |
+| XAPI_ASID | The "Accredited System ID" issued to the third party |
+| HTTP_X_SESSION_KEY | The session key generated by the [Authentication and Authorisation APIs](/develop_business_flow_bf001.html)  |
+| Content-Type | `*/*`, `application/fhir+json` |
+
+## Defer Request Operation: Parameters
+The body of the Request consists of a FHIR ‘Appointment’ resource which defines the reason for Deferring to provider and may include the slot to which a book attempt was made.  
+
+The key fields are:
+-	A **"status"** field with value "proposed"
+-	A **"reason"** field identifying a coding system
+  -	Containing a **"code"** value of either:
+      - "NO_SLOTS_AT_SERVICE"
+      - "SLOT_NOT_AVAILABLE"
+      - "BOOKING_ATTEMPT_PROBLEM"
+-	A **"description"** field with a value of "e-Referral Appointment"
+-	Optionally, a **"slot"** reference indicating the Slot Id (where a previous "attempt to book" was made)
+  -	This reference is by e-RS Slot Id
+-	Optionally, a **"comment"** field containing a string
+-	A **'incomingReferral'** field that is a reference to a FHIR ReferralRequest. This reference includes:
+  -	The UBRN of the ReferralRequest
+  -	The version number of the latest version of the ReferralRequest.
+  -	**"participant"** field identifying the Service Id of the Service being deferred-to
+
+  | Field  | Cardinality  | Permitted values and notes |
+  | ---------------------- | ----------- | ------------------------------------------------------------------ |
+  |  resourceType                                              |  1..1  |  Must be "Appointment"  |
+  |  meta.profile                                              |  1..1  |  "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1"  |
+  |  language                                                  |  1..1  | Must be "en"  |
+  |  status                                                    |  1..1  | Must be "Proposed"  |
+  |  reason                                                 | 1.1 |  The Deferral Reason  |
+  |  reason.coding                                      | 1.1 |  Coding for the reason |
+  |  reason.coding.system                         | 1.1 | https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReviewReason-1 |
+  |  reason.coding.system.value                | 1.1 | "e-Referral Appointment" |
+  |  slot.reference                                            |  0..1  |  Reference to a slot, e.g. "Slot/592200601" by e-RS Slot Id  |
+  |  Comment                                               |  0..1  |  String. Not mandatory, but restricted to 1000 char |
+  |  incomingReferral.reference                      |  1..1  |  Reference to the ReferralRequest to which the booking is being made.<br>This must reference the latest specific version of the Referral Request |
+  |  participant                                            |  1..1  |  Participant for service  |
+  |  participant.actor                                      |  1..1  |  Actor for service  |
+  |  participant.actor.identifier                           |  1..1  |  Identifier for service  |
+  |  participant.actor.identifier.system                    |  1..1  | https//fhir.nhs.uk/Id/ers-service |
+  |  participant.actor.identifier.value                     |  1..1  |  e-RS Service Id  |
+  |  participant.status                                     |  1..1  |  "accepted" |
+
+#### Additional Notes:
+
+e-RS will perform some validation to check that the defer to provider attempt is permissible. As such it is important that the requestor checks the current availability appointment slots to minimise any rejections. E.g. Ensure there are truly no slots available
+
+
+### Defer Request Example
+- [Defer Request Example](downloads/json/A016_Request_DEFER.json)
+
+
+# DEFER APPOINTMENT OUTPUT
+
+## Defer Response: Success
+On success a FHIR Appointment resource is returned containing the newly created appointment.  
+
+The fields are the same as the Appointment resource in the request with the following changes:
+
+-	The version number in the history of the ReferralRequest has incremented.
+- The HTTP Response Code is 201  
+- The HTTP Response includes a 'Location:' header field where the value of the field is
+  -	[base]/[type]/[id]/_history/[vid]
+  -	Where [type] is the resource type, [id] is its unique Id and [vid] is its version
+-	The version will always be the latest version
+-	if a "slot" reference indicating the Slot Id was submitted, this is **NOT** returned
+
+### Defer Response Example
+
+- [Defer Response Example](downloads/json/A016_Response_DEFER.json)
+
+## Defer Response: Failure
+If an error occurs, the relating [HTTP status](explore_error_messages.html) will be returned in the header.  
+
+Where status code 422 (Unprocessable Entity) is returned then an [eRS-OperationOutcome-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-OperationOutcome-1) will be included in the body, as detailed below:
+
+| OutcomeKey         | Description                                                             |
+| ------------------ | ----------------------------------------------------------------------- |
+| FORBIDDEN | User associated with the API session is not logged in with a Business Function of Referring Clinician or Referring Clinician Admin |
+| INVALID_VALUE | "Description must be "e-Referral Appointment"  |
+| INAPPROPRIATE_VALUE | "A reference to a slot should only be provided when the reason for the deferral is due to a specific slots being unavailable (SLOT_NOT_AVAILABLE)" |
+| MISSING_VALUE | slot' is mandatory, but was not supplied |
+| NO_SUCH_REQUEST | A Request does not exist for this UBRN. |
+| REFERRAL_LOCKED | The Request is already locked |
+| VERSION_CONFLICT | The UBRN version number is not current. |
+| NO_RELATIONSHIP | The user does not have a legitimate relationship with this referral. |
+| PATIENT_SENSITIVE | An error occurred while retrieving the requested patient. Do not attempt again. |
+| INAPPROPRIATE_VALUE | The selected service is not on the shortlist for the referral |
+| SERVICE_UNAVAILABLE | The selected service is not available. |
+| INVALID_STATE | Service (_id_) is not directly bookable |
+| INVALID_REQUEST_TYPE | ubrn is not for an Appointment request' |
+| INVALID_REQUEST_STATE | The referral is not in an 'Unbooked' state |
+| INVALID_REQUEST_STATE | The UBRN is not for an initial referral |
+| INVALID_REQUEST_STATE | Rejected or Cancelled Referrals cannot be deferred |
+| INVALID_REQUEST_STATE | Deferral already in progress |
+| INVALID_REQUEST_STATE | Deferral outcome in progress |
+| REFERENCE_NOT_FOUND | No slot is found for the Slot Id |
+| THIS_SLOT_IS_AVAILABLE | Slot is currently available |
+| INAPPROPRIATE_VALUE | The slot does not belong to a Service on the Shortlist |
+| INAPPROPRIATE_SLOT | The slot provided is not suitable. Perform a Slot Search with the current Search Criteria to progress |
+| SLOTS_CURRENTLY_AVAILABLE | There are currently future slots available, so you cannot defer to this Service to book |
+| INVALID_VALUE | The appointment.status.value is not valid. Only a booked or proposed appointment can be created. |
+| INAPPROPRIATE_VALUE | URBN does not relate to received Patient reference |
+
+In all the above cases, an accompanying “diagnostic” message in the FHIR OperationOutcome response provides more information.

@@ -1,0 +1,53 @@
+{
+    "resourceType": "Appointment",
+    "meta": {
+        "profile": [
+            "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Appointment-1"
+        ]
+    },
+    "language": "en",
+    "status": "booked",
+    "description": "e-Referral Appointment",
+      "start": "2021-02-09T09:00:00.000Z",
+                "end": "2021-02-09T09:30:00.000Z",
+                "slot": [
+        {
+            "reference": "Slot/228385"
+        }
+    ],
+    "incomingReferral": [{
+        "reference": "ReferralRequest/000000070002/_history/3"
+	}],
+    "participant": [
+        {
+            "actor": {
+                "identifier":
+                    {
+                        "system": "http://fhir.nhs.net/Id/ers-service",
+                        "value":   "70000"
+                    }
+            },
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "identifier": 
+                    {
+                        "system": "http://fhir.nhs.net/Id/nhs-number",
+                        "value":   "9401130264"
+                    }
+            },
+            "status": "accepted"
+        },
+        {
+            "actor": {
+                "identifier": 
+                    {
+                        "system": "http://fhir.nhs.net/Id/sds-user-id",
+                        "value":   null
+                    }
+            },
+            "status": "accepted"
+        }
+    ]
+}

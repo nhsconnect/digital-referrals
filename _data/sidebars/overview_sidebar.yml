@@ -29,11 +29,11 @@ entries:
     - title: "Authentication and Authorisation"
       url: /develop_business_flow_bf001.html
       output: web
-    - title: "How to Receive e-Referrals"
-      url: /receiving_referrals.html
-      output: web
     - title: "How to Create e-Referrals"
       url: /creating_referrals.html
+      output: web
+    - title: "How to Receive e-Referrals"
+      url: /receiving_referrals.html
       output: web
     - title: "Endpoint Catalogue"
       url: /explore_endpoint_catalogue.html
@@ -80,6 +80,12 @@ entries:
       output: web
     - title: "A014: Reject Referral"
       url: /explore_endpoint_a014.html
+      output: web
+    - title: "A015: Retrieve Appointment Slots"
+      url: /explore_endpoint_a015.html
+      output: web
+    - title: "A016: Book or Defer Appointment"
+      url: /explore_endpoint_a016.html
       output: web
     - title: "A019: Generate Patient Letter"
       url: /explore_endpoint_a019.html

@@ -13,6 +13,8 @@ summary: "How to create new e-referrals from within other systems using the e-RS
 
 This page describes the APIs required to conduct a search for services relevant for the selected patient, create an e-referral with a shortlist of directly and/or in-directly bookable services or create an e-referral for a Referral Assessment Service (RAS). The APIs also allow for the initial upload of attachments (Sometimes known as "The referral letter") and generate a confirmation letter for the patient. The search limits results to services which are appropriate for patient and the referring organisation based on the commissioning rules that apply to the authenticated user and/or the patient.
 
+Following creation of a referral to a directly bookable service in e-RS a search for available appointment slots can be performed and a slot booked for the patient against their referral. In the case where there are no available appointment slots for a directly bookable service then the responsibility for booking the patient's appointment can be deferred to the service provider. In both cases the relevant patient letter can be downloaded.
+
 ## Process Diagram
 
 ![Creating Referrals](images/explore/creating_referrals.png)
@@ -33,13 +35,12 @@ This page describes the APIs required to conduct a search for services relevant 
 * [A021 - Create Referral and Send for Triage](explore_endpoint_a021.html) ![Live](images/icons/api_live.png)
 * [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Live](images/icons/api_live.png)
 * [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Live](images/icons/api_live.png)
-* [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Live](images/icons/api_live.png) with shortlist and details of how to book an appointment.
+* [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Live](images/icons/api_live.png) with shortlist and details of how to book an appointment
 
 ### Book Appointment
-* Search for appointment slots (Coming in Q4 2020)
-* Book appointment slot (Coming in Q4 2020)
-* Defer booking to provider, if no slots are available (Coming in Q4 2020)
-* Generate patient letter with appointment confirmation details (Coming in Q4 2020)
+* [A015 - Retrieve Appointment Slots](explore_endpoint_a015.html) ![Live](images/icons/api_live.png)
+* [A016 - Retrieve Appointment Slots](explore_endpoint_a016.html) ![Live](images/icons/api_live.png)
+* [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Live](images/icons/api_live.png) with confirmation of appointment booking or deferral to Service Provider
 
 <div style="border: 2px solid #888888; padding: 10px; background: #fff1b5;">
 <b>Notes:</b><br>
@@ -47,4 +48,4 @@ The creation of an e-referral to a service set up as a RAS is different to other
 <br>
 <br>
 Clinical information should be collated into an attachment and added to the referral, it cannot currently be uploaded as separate structured data.   
-</div> 
+</div>

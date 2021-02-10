@@ -25,8 +25,7 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 |A013|[Accept Referral](explore_endpoint_a013.html) | POST: /STU3/v1/ReferralRequest/{ubrn}/$ers.acceptReferral | ![Live](images/icons/api_live.png) |
 |A014|[Reject Referral](explore_endpoint_a014.html) | POST: /STU3/v1/ReferralRequest/{ubrn}/$ers.rejectReferral | ![Live](images/icons/api_live.png) |
 |A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)| GET: /STU3/v1/Slot | ![Live](images/icons/api_live.png) |
-|A016|[Book Appointment](explore_endpoint_a016.html)          | POST:	/STU3/v1/Appointment | ![Live](images/icons/api_live.png) |
-|A017|[Defer Booking to Provider](explore_endpoint_a017.html) | POST: /STU3/v1/ | ![Live](images/icons/api_live.png) |
+|A016|[Book or Defer Appointment](explore_endpoint_a016.html) | POST:	/STU3/v1/Appointment | ![Live](images/icons/api_live.png) |
 |A019|[Generate Patient Letter](explore_endpoint_a019.html) | POST: /STU3/v1/ReferralRequest/[UBRN]/$ers.generatePatientLetter | ![Live](images/icons/api_live.png) |
 |A020|[Upload File To Document Store](explore_endpoint_a020.html) | POST: /STU3/v1/Binary | ![Live](images/icons/api_live.png) |
 |A021|[Create Referral And Send For Triage](explore_endpoint_a021.html) | POST: /STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | ![Live](images/icons/api_live.png) |
@@ -46,11 +45,12 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 
 | ID   | Name                                                    | Expected release | FHIR Version |
 |------|---------------------------------------------------------|:----------------:|:------------:|
-| A0xx | A&G Conversation                                        | Q2 2021          | STU3         | 
+| A0xx | A&G Conversation (For Service Providers)                                      | Q2 2021          | STU3         |
 
 ## Retired APIs
 
 | ID | Name | Status | Retirement Date | Notes |
 |----|------|--------| :-------------: | ----- |
 |A009|[Generic Service Search (Alpha)](explore_endpoint_a009.html)| ![Retired](images/icons/api_retired.png) | OCT 2019 | Experimental API, not progressed to production |
+|A017|[Defer Appointment (Alpha)](explore_endpoint_a017.html)| ![Retired](images/icons/api_retired.png) | DEC 2020 | This functionality has been incorporated into [A016: Book or Defer Appointment](explore_endpoint_a016.html)|
 |A018|[Re-book Appointment (Alpha)](explore_endpoint_a018.html) | ![Retired](images/icons/api_retired.png) | JUN 2020 | Prototype API shelved for future development as required |
