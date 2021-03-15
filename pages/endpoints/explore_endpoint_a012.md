@@ -11,7 +11,7 @@ summary: false
 
 ## Description
 As a Referring Clinician (/Administrator)  
-I want to associate files I have uploaded to a referral  
+I want to maintain and associate referral clinical information files (this endpoint could be used to delete files only)  
 So that I can create the referral letter  
 
 ## Resource URL
@@ -29,7 +29,7 @@ The Operation Definition for this endpoint is available on the FHIR server: [eRS
 Each file to be attached to a referral needs to have been individually uploaded using [A020: Upload file to document store](explore_endpoint_a020.html). A020 will return the e-RS file location of each uploaded file; these are the URLs that need to be passed to the Maintain Referral Letter API so that they can be associated to the referral.
 
 ##### Important Information:
-This linking action can only be performed on a newly created referral that contains no existing attachments. This prevents the unintended overwriting of data. If multiple files are to be attached as part of the [referral creation workflow](creating_referrals.html) then all files should be uploaded first using [A020: Upload file to document store](explore_endpoint_a020.html) and then linked to the referral using this endpoint in a single request. *If attachments subsequently need to be added or amended then the e-RS Professional Application should be used*.
+This linking action can be performed on newly created referrals that contain no existing attachments or an existing referral with associated attachments. Attachments can be subsequently added or deleted for existing referrals if at least one attachment remains associated with the referral after file maintenance. All new files to be associated with a referral should be uploaded first using [A020: Upload file to document store](explore_endpoint_a020.html) and then linked to the referral using this endpoint.
 
 # INPUT
 
@@ -88,14 +88,13 @@ If an error occurs, the relating [HTTP status code](explore_error_messages.html)
 
 | issue.details.code | Description |
 | ------------------ | ------ |
-| CONFLICTING_VALUES |Two or more of the attachment IDs provided are the same|
-|DUPLICATE_FILENAME | The names of the files that (having been previously uploaded) are being associated to the referral match the names of existing files associated with the referral, for example files uploaded during an advice and guidance conversation; or: two or more of the files uploaded via [A020: Upload file to document store](explore_endpoint_a020.html) have the same name  |
-| INAPPROPRIATE_VALUE | In the document reference, the _type_ has  value other than 'REFERRER', or the _status_ is other than 'current' |
-| INVALID_REQUEST_STATE | The UBRN relates to an onward referral; or: the referral state is either incomplete or cancelled or the referral has been superseded by an onward referral; or: the referral has an appointment booking with a date prior to today; or: the referral has an appointment booking that has been 'DNAd' ('Did Not Attend'); or: the referral already has referral letter files associated |  
+|DUPLICATE_FILENAME | The File Name of one of the files to be associated with the Appointment Request exactly matches (including extension) that of a Provider Clinical Attachment, Advice Request, Guidance Response or Triage Attachment OR The File Name of one of the files to be associated with the Appointment Request exactly matches another filename (including extension) in the list of attachments provided in the request |
+| INVALID_REQUEST_STATE | The UBRN relates to an onward referral; or: the referral state is either incomplete or cancelled or the referral has been superseded by an onward referral; or: the referral has an appointment booking with a date prior to today; or: the referral has an appointment booking that has been 'DNAd' ('Did Not Attend'); or: the referral already has referral letter files associated<br>Additional scenario:<br> There is at least one file linked with the Request AND the Appointment is within the Freeze Time period |
 | INVALID_REQUEST_TYPE | The UBRN provided exists in e-RS but does not correspond to a referral |
-| INVALID_STATE | One of the attachment IDs provided relates to a file that is already linked to a referral.|  
+| INVALID_STATE | One of the attachment IDs provided relates to a file that is already linked to a referral AND is not a Referrer attachment type; OR The file/s currently linked to the Request were added via a Referrer Clinical System |
 | INVALID_VALUE | The input provided does not conform with the expected data types and format specifically documented on the FHIR OperationDefinition [eRS-maintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-maintainReferralLetter-Operation-1/_history/1.0) or on the related FHIR profile [eRS-DocumentReference-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1)|
-| NO_ACCESS | One of the attachment IDs provided relates to a file that was not uploaded by the current user |
 | NO_RELATIONSHIP | The user does not have a suitable legitimate relationship with the referral |
 | PATIENT_ERROR | There was an error retrieving the patient's record from SDS - this patient cannot be referred via e-RS |
 | REFERENCE_NOT_FOUND | The file identified by the attachment ID does not exist in the e-RS document store |
+| MISSING_VALUE | There is at least one file linked to the request. The API consumer is trying to unlink all the currently linked attachments from the request, without adding at least one |
+| NO_CHANGES_DETECTED | There are no changes to the currently linked files or their file descriptions |
