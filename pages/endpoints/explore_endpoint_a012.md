@@ -25,11 +25,13 @@ Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api
 ## Operation Definition
 The Operation Definition for this endpoint is available on the FHIR server: [eRS-maintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-maintainReferralLetter-Operation-1/_history/1.0)
 
-### Prerequisite Operations
+## Prerequisite Operations
 Each file to be attached to a referral needs to have been individually uploaded using [A020: Upload file to document store](explore_endpoint_a020.html). A020 will return the e-RS file location of each uploaded file; these are the URLs that need to be passed to the Maintain Referral Letter API so that they can be associated to the referral.
 
-##### Important Information:
 This linking action can be performed on newly created referrals that contain no existing attachments or an existing referral with associated attachments. Attachments can be subsequently added or deleted for existing referrals if at least one attachment remains associated with the referral after file maintenance. All new files to be associated with a referral should be uploaded first using [A020: Upload file to document store](explore_endpoint_a020.html) and then linked to the referral using this endpoint.
+
+### Important Information:
+Each time you link a new file the request **MUST** include all attachments that should be retained. I.e. if an attachment is not listed then it will be deleted.
 
 # INPUT
 
