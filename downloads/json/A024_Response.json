@@ -1,0 +1,217 @@
+{
+    "id": "000000070001",
+    "meta": {
+        "versionId": "6",
+        "profile": [
+            "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CommunicationRequest-1"
+        ]
+    },
+    "resourceType": "CommunicationRequest",
+    "extension": [
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralPriority-1",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                        "code": "ROUTINE",
+                        "display": "Routine"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ProviderConversionAuthorisation-1",
+            "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ProviderConversionAuthorisation-1",
+                "code": "AUTHORISED_TO_CONVERT",
+                "display": "Referrer has allowed the Service Provider to convert the Advice and Guidance to a Referral"
+            }
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-ReferralShortlist-1",
+            "valueReference": {
+                "reference": "#shortlist"
+            }
+        },
+        {
+            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Specialty-1",
+            "valueCoding": {
+                "system": "https://ers-api:445/STU3/v1/CodeSystem/SPECIALTY",
+                "code": "DIETETICS",
+                "display": "Dietetics"
+            }
+        }
+    ],
+    "contained": [
+        {
+            "id": "serviceSearchCriteria",
+            "meta": {
+                "profile": [
+                    "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ServiceSearchCriteria-Parameters-1"
+                ]
+            },
+            "resourceType": "Parameters",
+            "parameter": [
+                {
+                    "name": "priority",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                        "code": "ROUTINE"
+                    }
+                },
+                {
+                    "name": "specialty",
+                    "valueCoding": {
+                        "system": "https://ers-api:445/STU3/v1/CodeSystem/SPECIALTY",
+                        "code": "DIETETICS"
+                    }
+                },
+                {
+                    "name": "clinicType",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicType-1",
+                        "code": "DIABETES_2"
+                    }
+                },
+                {
+                    "name": "organisation",
+                    "valueIdentifier": {
+                        "system": "https://directory.spineservices.nhs.uk/STU3/Organization",
+                        "value": ""
+                    }
+                },
+                {
+                    "name": "postcode",
+                    "valueString": "WV10 8EU"
+                },
+                {
+                    "name": "ageAndGenderAppropriate",
+                    "valueBoolean": true
+                },
+                {
+                    "name": "commissioningProvisioning",
+                    "valueCoding": {
+                        "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommissioningProvisioning-1",
+                        "code": "ALL_AVAILABLE_FOR_BOOKING"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "shortlist",
+            "meta": {
+                "profile": [
+                    "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Shortlist-List-1"
+                ]
+            },
+            "resourceType": "List",
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-Shortlist-SearchCriteria-1",
+                    "valueReference": {
+                        "reference": "#serviceSearchCriteria"
+                    }
+                }
+            ],
+            "status": "current",
+            "mode": "snapshot",
+            "entry": [
+                {
+                    "item": {
+                        "identifier": {
+                            "system": "http://fhir.nhs.net/Id/ers-service",
+                            "value": "70002"
+                        },
+                        "display": "R68-Advice"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "PractitionerRole.021600556514.R68.REFERRING-CLINICIAN",
+            "meta": {
+                "profile": [
+                    "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"
+                ]
+            },
+            "resourceType": "PractitionerRole",
+            "practitioner": {
+                "identifier": {
+                    "system": "http://fhir.nhs.net/Id/sds-user-id",
+                    "value": "021600556514"
+                }
+            },
+            "organization": {
+                "identifier": {
+                    "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                    "value": "R68"
+                }
+            },
+            "code": [
+                {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-BusinessFunction-1",
+                            "code": "REFERRING_CLINICIAN"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "status": "active",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AdviceAndGuidanceStatus-1",
+                    "code": "REFERRER_TO_REVIEW_RESPONSE"
+                }
+            ]
+        }
+    ],
+    "subject": {
+        "identifier": {
+            "system": "http://fhir.nhs.net/Id/nhs-number",
+            "value": "9401130264"
+        }
+    },
+    "recipient": [
+        {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-HealthcareService-Reference-1",
+                    "valueReference": {
+                        "identifier": {
+                            "system": "http://fhir.nhs.net/Id/ers-service",
+                            "value": "70002"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "sender": {
+        "extension": [
+            {
+                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-PractitionerRole-Reference-1",
+                "valueReference": {
+                    "reference": "#PractitionerRole.021600556514.R68.REFERRING-CLINICIAN"
+                }
+            }
+        ]
+    },
+    "requester": {
+        "agent": {
+            "extension": [
+                {
+                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-PractitionerRole-Reference-1",
+                    "valueReference": {
+                        "reference": "#PractitionerRole.021600556514.R68.REFERRING-CLINICIAN"
+                    }
+                }
+            ]
+        }
+    }
+}

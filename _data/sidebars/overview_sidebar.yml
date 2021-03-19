@@ -99,6 +99,21 @@ entries:
     - title: "A022: Cancel Appointment, Action Later"
       url: /explore_endpoint_a022.html
       output: web
+    - title: "A023: Retrieve A&G Worklist"
+      url: /explore_endpoint_a023.html
+      output: web
+    - title: "A024: Retrieve A&G Summary"
+      url: /explore_endpoint_a024.html
+      output: web
+    - title: "A025: Retrieve A&G Conversation"
+      url: /explore_endpoint_a025.html
+      output: web
+    - title: "A026: Send A&G Response"
+      url: /explore_endpoint_a026.html
+      output: web
+    - title: "A027: Convert Advice Request to Referral"
+      url: /explore_endpoint_a027.html
+      output: web
     - title: Generic Error Codes
       url: /explore_error_messages.html
       output: web

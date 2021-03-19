@@ -1,0 +1,89 @@
+{
+  "resourceType": "Parameters",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateFromCommuncationRequestActionLater-Request-Parameters-1"
+    ]
+  },
+  "parameter": [
+         {
+            "name": "createFrom",
+            "valueReference": {
+                "reference": "CommunicationRequest/000000102335/_history/4"
+          }
+        },
+        {
+            "name": "guidance",
+            "valueString": "Guidance response"
+        },
+        {
+            "name": "newReferralPriority",
+            "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "ROUTINE"
+            }
+        },
+        {
+            "name": "guidanceAttachmentFile",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "meta": {
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                    ]
+                },
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                            "code": "GUIDANCE_RESPONSE"
+                        }
+                    ]
+                },
+                "indexed": "2019-12-15T13:24:53+00:00",
+                "description": "This description goes with the guidance attachment file",
+                "content": [
+                    {
+                        "attachment": {
+                            "url": "Binary/att-102335-102817"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "reviewComments",
+            "valueString": "The deferral comments for the admin"
+        },
+        {
+            "name": "reviewAttachmentFile",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "meta": {
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                    ]
+                },
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                            "code": "PROVIDER"
+                        }
+                    ]
+                },
+                "indexed": "2019-12-15T13:24:53+00:00",
+                "description": "This description goes with the review attachment file",
+                "content": [
+                    {
+                        "attachment": {
+                            "url": "Binary/att-102335-102818"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

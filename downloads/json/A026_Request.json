@@ -1,0 +1,57 @@
+{
+  "resourceType": "Parameters",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-SendCommunicationToRequester-Request-Parameters-1"
+    ]
+  },
+  "parameter": [
+        {
+            "name": "guidance",
+            "valueString": "We need more information concerning previous ailments. Attached is what we have "
+        },
+        {
+            "name": "guidanceOutcome",
+            "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-GuidanceResponseOutcome-1",
+                "code": "REQUIRE_FURTHER_INFORMATION"
+            }
+        },
+        {
+            "name": "updatedPriority",
+            "valueCoding": {
+                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-Priority-1",
+                "code": "ROUTINE"
+            }
+        },
+        {
+            "name": "guidanceAttachmentFile",
+            "resource": {
+                "resourceType": "DocumentReference",
+                "meta": {
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                    ]
+                },
+                "status": "current",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                            "code": "GUIDANCE_RESPONSE"
+                        }
+                    ]
+                },
+                "indexed": "2021-01-29T15:18:00+00:00",
+                "description": "ATTACHMENT_DESCRIPTION",
+                "content": [
+                    {
+                        "attachment": {
+                            "url": "Binary/att-102287-102727"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,343 @@
+{
+    "id": "2e712fb3-27a6-43a7-9930-1ab35e889a01",
+    "meta": {
+        "lastUpdated": "2021-02-18T17:26:29.742Z",
+        "profile": [
+            "http://hl7.org/fhir/STU3/StructureDefinition/Bundle"
+        ]
+    },
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 2,
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://ers-api:445/STU3/v1/Communication?based-on=CommunicationRequest%2F000000070001%2F_history%2F6&_include=Communication%3Arequester-practitionerrole%3APractitionerRole&_include=Communication%3Asender-practitionerrole%3APractionerRole&_include=Communication%3Acontent-reference%3ADocumentReference"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "https://ers-api:445/STU3/v1/Communication/70000",
+            "resource": {
+                "id": "70000",
+                "meta": {
+                    "versionId": "0",
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Communication-1"
+                    ]
+                },
+                "resourceType": "Communication",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-Communication-Requester-1",
+                        "valueReference": {
+                            "reference": "PractitionerRole/021600556514.R68.REFERRING-CLINICIAN"
+                        }
+                    }
+                ],
+                "basedOn": [
+                    {
+                        "reference": "CommunicationRequest/000000070001/_history/6"
+                    }
+                ],
+                "status": "completed",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommunicationSentBy-1",
+                                "code": "REQUESTER"
+                            }
+                        ]
+                    }
+                ],
+                "recipient": [
+                    {
+                        "extension": [
+                            {
+                                "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-HealthcareService-Reference-1",
+                                "valueReference": {
+                                    "identifier": {
+                                        "system": "http://fhir.nhs.net/Id/ers-service",
+                                        "value": "70002"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "sent": "2021-02-18T17:25:24.257Z",
+                "sender": {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-PractitionerRole-Reference-1",
+                            "valueReference": {
+                                "reference": "PractitionerRole/021600556514.R68.REFERRING-CLINICIAN"
+                            }
+                        }
+                    ]
+                },
+                "payload": [
+                    {
+                        "contentReference": {
+                            "reference": "DocumentReference/70000"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Request"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://ers-api:445/STU3/v1/Communication/70001",
+            "resource": {
+                "id": "70001",
+                "meta": {
+                    "versionId": "0",
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-Communication-1"
+                    ]
+                },
+                "resourceType": "Communication",
+                "extension": [
+                    {
+                        "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-Communication-Requester-1",
+                        "valueReference": {
+                            "reference": "PractitionerRole/021600556514.R68.SERVICE-PROVIDER-CLINICIAN"
+                        }
+                    }
+                ],
+                "basedOn": [
+                    {
+                        "reference": "CommunicationRequest/000000070001/_history/6"
+                    }
+                ],
+                "status": "completed",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-CommunicationSentBy-1",
+                                "code": "RESPONDER"
+                            }
+                        ]
+                    }
+                ],
+                "recipient": [
+                    {
+                        "identifier": {
+                            "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                            "value": "R68"
+                        }
+                    }
+                ],
+                "sent": "2021-02-18T17:25:59.379Z",
+                "sender": {
+                    "extension": [
+                        {
+                            "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-PractitionerRole-Reference-1",
+                            "valueReference": {
+                                "reference": "PractitionerRole/021600556514.R68.SERVICE-PROVIDER-CLINICIAN"
+                            }
+                        }
+                    ]
+                },
+                "payload": [
+                    {
+                        "contentReference": {
+                            "reference": "DocumentReference/70001"
+                        }
+                    }
+                ],
+                "note": [
+                    {
+                        "text": "Response"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "https://ers-api:445/STU3/v1/PractitionerRole/021600556514.R68.REFERRING-CLINICIAN",
+            "resource": {
+                "id": "021600556514.R68.REFERRING-CLINICIAN",
+                "meta": {
+                    "profile": [
+                        "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"
+                    ]
+                },
+                "resourceType": "PractitionerRole",
+                "practitioner": {
+                    "identifier": {
+                        "system": "http://fhir.nhs.net/Id/sds-user-id",
+                        "value": "021600556514"
+                    }
+                },
+                "organization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "R68"
+                    }
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-BusinessFunction-1",
+                                "code": "REFERRING_CLINICIAN"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "https://ers-api:445/STU3/v1/PractitionerRole/021600556514.R68.SERVICE-PROVIDER-CLINICIAN",
+            "resource": {
+                "id": "021600556514.R68.SERVICE-PROVIDER-CLINICIAN",
+                "meta": {
+                    "profile": [
+                        "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"
+                    ]
+                },
+                "resourceType": "PractitionerRole",
+                "practitioner": {
+                    "identifier": {
+                        "system": "http://fhir.nhs.net/Id/sds-user-id",
+                        "value": "021600556514"
+                    }
+                },
+                "organization": {
+                    "identifier": {
+                        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+                        "value": "R68"
+                    }
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-BusinessFunction-1",
+                                "code": "SERVICE_PROVIDER_CLINICIAN"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "https://ers-api:445/STU3/v1/DocumentReference/70000",
+            "resource": {
+                "id": "70000",
+                "meta": {
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                    ]
+                },
+                "resourceType": "DocumentReference",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                            "code": "ADVICE_REQUEST",
+                            "display": "Advice Request"
+                        }
+                    ]
+                },
+                "status": "current",
+                "indexed": "2021-02-18T17:26:29.736Z",
+                "description": "",
+                "content": [
+                    {
+                        "attachment": {
+                            "id": "70000",
+                            "extension": [
+                                {
+                                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                                    "valueReference": {
+                                        "identifier": {
+                                            "system": "http://fhir.nhs.net/Id/sds-user-id",
+                                            "value": "021600556514"
+                                        }
+                                    }
+                                }
+                            ],
+                            "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                            "url": "Binary/att-70001-70000",
+                            "size": 11781,
+                            "title": "Test Word Document.docx",
+                            "creation": "2021-02-18"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "https://ers-api:445/STU3/v1/DocumentReference/70001",
+            "resource": {
+                "id": "70001",
+                "meta": {
+                    "profile": [
+                        "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-DocumentReference-1"
+                    ]
+                },
+                "resourceType": "DocumentReference",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AttachmentType-1",
+                            "code": "GUIDANCE_RESPONSE",
+                            "display": "Guidance Response"
+                        }
+                    ]
+                },
+                "status": "current",
+                "indexed": "2021-02-18T17:26:29.741Z",
+                "description": "Response Attachment",
+                "content": [
+                    {
+                        "attachment": {
+                            "id": "70001",
+                            "extension": [
+                                {
+                                    "url": "https://fhir.nhs.uk/STU3/StructureDefinition/Extension-eRS-AttachedBy-1",
+                                    "valueReference": {
+                                        "identifier": {
+                                            "system": "http://fhir.nhs.net/Id/sds-user-id",
+                                            "value": "021600556514"
+                                        }
+                                    }
+                                }
+                            ],
+                            "contentType": "text/plain",
+                            "url": "Binary/att-70001-70001",
+                            "size": 4,
+                            "title": "Test Text Document.txt",
+                            "creation": "2021-02-18"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}
