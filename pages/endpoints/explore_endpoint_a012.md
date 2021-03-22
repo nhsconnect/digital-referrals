@@ -33,7 +33,27 @@ Each file to be attached to a referral needs to have been individually uploaded 
 This linking action can be performed on newly created referrals that contain no existing attachments or an existing referral with associated attachments. Attachments can be subsequently added or deleted for existing referrals if at least one attachment remains associated with the referral after file maintenance. All new files to be associated with a referral should be uploaded first using [A020: Upload file to document store](explore_endpoint_a020.html) and then linked to the referral using this endpoint.
 
 ### Important Information:
-Each time you link a new file the request **MUST** include all attachments that should be retained. I.e. if an attachment is not listed then it will be deleted.
+The Maintain Referral Letter API can be used either to (1) associate attachments to a referral that has no existing referral letter attachments, OR (2) modify the set of referral letter attachments already associated with a referral.  
+
+For scenario 1 the conceptual process is very simple, i.e. upload attachment(s) via A020, and then associate these via A012.
+
+For scenario 2, the API consumer is required to post all the referral letter attachments they wish to be associated to the referral, including any that were already associated.  
+
+   a)	Where a referral already has two referral letter attachments associated, and the API user wishes to add some more files:
+      -	the API consumer must upload the additional attachment(s) using A020, and then associate these AND the already associated referral letter attachments via A012
+   b)	Where a referral already has three referral letter attachments associated, and the API user wishes to remove one of these,
+      -	the API consumer must re-associate, via A012, the two attachments that the user wishes to keep AND omit the file the user wishes to remove. By omitting the file, e-RS will dis-associate the referral attachment.
+   c)	Let’s say a referral already has four referral letter attachments associated, and the API user wishes to add some more files and remove some files,
+      -	the API consumer must upload the additional attachment(s) using A020, and then associate these AND only those referral letter attachments the user wishes to keep via A012.
+
+In effect A012 completely replaces the set of referral letter attachments previously associated. As such, **it is imperative that the new message must contains all the attachments the user wishes to keep associated.**  
+
+- API consumer must ensure the user is fully aware when referral letter attachments are already associated with a referral and the implications of what will happen as a result of their action. E.g when a referring user wants to update a referral they should be presented with the attachments that are currently associated so they can add and/or remove attachments as required.
+
+**Note:**   
+- It is possible to determine which files are already associated to a referral via A005: Retrieve Referral Request, and retrieve these clinical attachments via A006: Retrieve Attachment
+- It is not permissible to remove all referral letter attachments leaving zero attachments associated. There must be at least one referral letter attachment associated.
+
 
 # INPUT
 
