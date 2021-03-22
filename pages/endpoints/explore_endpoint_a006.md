@@ -18,11 +18,12 @@ This API lets users retrieve and download linked files for a referral, also know
 Note: The AttachmentLogicalID won’t be made available explicitly, but the full path required to retrieve the attachment is returned by [A005 Retrieve Referral Request](explore_endpoint_a005.html). The path to the attachment can be found in the “url” field of the DocumentReference.content.attachment in the contained section of the ReferralRequest resource.
 
 ## Resource URL
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method | URL |
 | -------| --- |
-| GET | /STU3v1/Binary/{AttachmentLogicalID} |
+| GET | {{Base URL}}/STU3v1/Binary/{AttachmentLogicalID} |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 ## Operation Definition
 

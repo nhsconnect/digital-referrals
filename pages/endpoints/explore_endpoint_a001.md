@@ -16,11 +16,11 @@ So that I can securely access e-RS functions through my integrated system
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method | URL |
 | -------------| --- |
-| POST | /v1/ProfessionalSession
+| POST | {{Base URL}}/v1/ProfessionalSession
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 
 ### Prerequisite Conditions

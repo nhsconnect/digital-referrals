@@ -1,5 +1,5 @@
 ---
-title: "A024: Get Advice and Guidance Summary"
+title: "A024: Retrieve Advice and Guidance Request Summary"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -21,14 +21,13 @@ These endpoints available for users with the role of Referring Clinician (RC), R
 
 ## Request Operation: URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| GET | <baseUrl>/STU3/v1/CommunicationRequest/<ubrn>/_history/<version_number><br>OR<br><baseUrl>/STU3/v1/CommunicationRequest/<ubrn> | Session Token [(Details)](develop_business_flow_bf001.html) |
+| GET | {{Base URL}}/STU3/v1/CommunicationRequest/{{ubrn}}/_history/{{version_number}}<br>OR<br>{{Base URL}}/STU3/v1/CommunicationRequest/{{ubrn}} | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- The <ubrn> represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
-- <version_number> is the version of the Advice and Guidance Request to be retrieved (only the most current version will be retrievable)
+- The {{ubrn}} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
+- {{version_number}} is the version of the Advice and Guidance Request to be retrieved (only the most current version will be retrievable)
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 ## Operation Definition
 - [eRS-CommunicationRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CommunicationRequest-1)  

@@ -16,11 +16,12 @@ Providers can also choose to accept the referral into their service, i.e. it mee
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /STU3/v1/ReferralRequest/{ubrn}/$ers.rejectReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {{Base URL}}/STU3/v1/ReferralRequest/{{ubrn}}/$ers.rejectReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- The {{ubrn}} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
 
 
 ## Operation Definition

@@ -1,5 +1,5 @@
 ---
-title: "A025: Get Advice and Guidance Conversation"
+title: "A025: Retrieve Advice and Guidance Conversation"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -19,14 +19,13 @@ These endpoints available for users with the role of Referring Clinician (RC), R
 
 ## Request Operation: URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| GET | <base_url>/STU3/v1/Communication?based-on=CommunicationRequest/<ubrn>/_history/<version>&_include=Communication:requester-practitionerrole:PractitionerRole&_include=Communication:sender-practitionerrole:PractionerRole&_include=Communication:content-reference:DocumentReference | Session Token [(Details)](develop_business_flow_bf001.html) |
+| GET | {{Base URL}}/STU3/v1/Communication?based-on=CommunicationRequest/{{ubrn}}/_history/{{version}}&_include=Communication:requester-practitionerrole:PractitionerRole&_include=Communication:sender-practitionerrole:PractionerRole&_include=Communication:content-reference:DocumentReference | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- The <ubrn> represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance Conversation”
-- <version> is the version of the A&G Request to be retrieved (only the most current version will be retrievable)
+- The {{ubrn}} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance Conversation”
+- {{version}} is the version of the A&G Request to be retrieved (only the most current version will be retrievable)
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 
 ## Operation Definition
@@ -65,8 +64,8 @@ To ensure the supplier is always referencing the latest version of the Communica
     - &_include=Communication:requester-practitionerrole:PractitionerRole
     - &_include=Communication:sender-practitionerrole:PractionerRole
     - &_include=Communication:content-reference:DocumentReference
-    - The " Communication.Note " field is a plain text field that additionally supports hyperlinks in the following format: "<a href="%web_address%" target="_blank">%link_text%</a>"."
-- It is the Suppliers responsibility to sanitize responses received from eRS. eRS allows for <a> tag HTML elements so that hyperlinks can be rendered. Suppliers MUST sanitize as they deem necessary, noting that eRS suggests all other HTML stored within eRS should be considered a text-only string.
+    - The Communication.Note field is a plain text field that additionally supports hyperlinks in the following format: ```<a href="%web_address%" target="_blank">%link_text%</a>```
+- It is the Suppliers responsibility to sanitize responses received from eRS. eRS allows for ```<a>``` tag HTML elements so that hyperlinks can be rendered. Suppliers MUST sanitize as they deem necessary, noting that eRS suggests all other HTML stored within eRS should be considered a text-only string.
 
 
 # INPUT
@@ -102,7 +101,7 @@ A Bundle contains:
 Multiple messages could have been sent, as indicated by the 'Bundle.Total', in which case the below structure will repeat for each message sent. **This includes multiple messages sent in the same direction without a reply**
 -	"resourceType" representing the FHIR resource that the conversation is formatted in, i.e. "Communication"
 -	"Communication.Id" integer representing a unique id for the specific request or response
--	"BasedOn.Reference/_history/<version>" field used to identify the Advice and Guidance Summary this 'Communication' belongs to
+-	"BasedOn.Reference/_history/{{version}}" field used to identify the Advice and Guidance Summary this 'Communication' belongs to
 -	"Status" This is a mandatory FHIR field and for e-RS purposes this will always be "completed"
 -	"Recipient" field representing the intended received of the message. This will either be:
   -	"Recipient.Identifier" when the message is being sent to the Referring Organisation OR

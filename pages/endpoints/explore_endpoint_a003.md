@@ -16,11 +16,11 @@ Closes the Professional Session. Used to delete a Professional Session after it 
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method | URL | Authentication |
 | -------| --- | -------------- |
-| DELETE | /v1/ProfessionalSession/{sessionKey} | Session Token [(Details)](develop_business_flow_bf001.html) |
+| DELETE | {{Base URL}}/v1/ProfessionalSession/{sessionKey} | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 # INPUT
 

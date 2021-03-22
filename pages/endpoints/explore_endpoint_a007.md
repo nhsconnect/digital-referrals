@@ -16,11 +16,11 @@ This API returns a real-time PDF of the clinical referral information for a give
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method | URL |
 | -------| --- |
-| POST | /STU3/v1/ReferralRequest/{ubrn}/$ers.generateCRI |
+| POST | {{Base URL}}/STU3/v1/ReferralRequest/{ubrn}/$ers.generateCRI |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 
 ## Operation Definition

@@ -19,11 +19,12 @@ The API allows clinical users to take responsibility for the referral while info
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /v1/ReferralRequest/{UBRN}/$ers.CancelAppointmentActionLater | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {{Base URL}}/v1/ReferralRequest/{{ubrn}}/$ers.CancelAppointmentActionLater | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- The {{ubrn}} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
 
 
 ## Operation Definition

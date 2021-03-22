@@ -15,11 +15,12 @@ I want to create a referral for my patient with a shortlist of services
 So that I can progress the care of my patient while leaving them the freedom to choose the service that best suits them.  
 
 ## Resource URL
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /STU3/v1/ReferralRequest/$ers.createReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {{Base URL}}/STU3/v1/ReferralRequest/$ers.createReferral | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 ## Operation Definition
 The Operation Definition for this endpoint is available on the FHIR server:  [eRS-CreateReferral-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferral-Operation-1)

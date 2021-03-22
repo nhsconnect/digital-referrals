@@ -15,11 +15,12 @@ I want to create a Referral in e-RS to a RAS Service and initiate the Triage pro
 So that I can progress my patients' care without logging into multiple applications  
 
 ## Resource URL
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {{Base URL}}/STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 ## Operation Definition
 The Operation Definition for this endpoint is available on the FHIR server:  [eRS-CreateReferralAndSendForTriage-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-CreateReferralAndSendForTriage-Operation-1)

@@ -14,11 +14,11 @@ Updates a Professional Session with the appropriate NHS organisation and role. T
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method | URL |
 | -------------| --- |
-| PUT | /v1/ProfessionalSession/{sessionKey}
+| PUT | {{Base URL}}/v1/ProfessionalSession/{sessionKey}
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 ## Prerequisite Conditions
 - The Create Session endpoint must be called in order to create the session. This endpoint can then be used to select one of the applicable roles/permissions returned. The _ProfessionalSession.id_ returned from the Create Session endpoint should be included as a header (HTTP_X_SESSION_KEY) for this and all subsequent API requests.

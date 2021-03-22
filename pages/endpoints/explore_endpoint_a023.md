@@ -15,11 +15,11 @@ The behaviour for this retrieval is very similar to retrieval of worklists for A
 
 ## Request Operation: URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+| Method | URL | Authentication |
+| -------| --- | ---------------- |
+| POST   | {{Base URL}}/STU3/v1/CommunicationRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-| Method       | URL | Authentication |
-| -------------| --- | ---------------- |
-| POST | /STU3/v1/CommunicationRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 
 ## Operation Definition

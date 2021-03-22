@@ -17,11 +17,11 @@ This API lets authorised users retrieve the ‘Referrals for Review’ work list
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /STU3/v1/ReferralRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {{Base URL}}/STU3/v1/ReferralRequest/$ers.fetchworklist | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 
 ## Operation Definition

@@ -26,15 +26,12 @@ This endpoint must be used with all FHIR2 (DSTU2) endpoints: <br>
 
 ## API
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  
-
 | Method | URL |
 | -------------| --- |
-| GET | v1/ValueSet/{valueSetId}
+| GET | v1/ValueSet/{{valueSetId}} |
 
-## Related FHIR model
-
-* [eRS-Specialty-ValueSet-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.Valueset/ers-specialty-valueset-1.html)
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- {{valueSetId}} = Desired Value Set from [eRS-Specialty-ValueSet-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.Valueset/ers-specialty-valueset-1.html)
 
 ## Description
 This read-only API lets a user access a pre-populated list of reference data. The NHS e-Referral Service uses these lists throughout. For example, a list of specialities. They support data accuracy and effective re-use. It retrieves a specific Value Set (Reference Dataset) by ID.

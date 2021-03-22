@@ -20,7 +20,9 @@ Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | /STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {{Base URL}}/STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 ## Operation Definition
 The Operation Definition for this endpoint is available on the FHIR server: [ers.patientServiceSearch](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-PatientServiceSearch-Operation-1)

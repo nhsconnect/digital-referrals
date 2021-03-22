@@ -24,11 +24,11 @@ For both the booking and deferring to provider actions, the same endpoint is use
 ## Resource URL
 The act of Booking or Deferring to provider is made by POSTing a new FHIR Appointment resource to e-RS.  
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method  | URL                              | Authentication |
-| --------| -------------------------------- | ---------------- |
-| POST    |  [base URL]/STU3/v1/Appointment  | Session Token [(Details)](develop_business_flow_bf001.html) |
+| --------| -------------------------------- | -------------- |
+| POST    | {{Base URL}}/STU3/v1/Appointment | Session Token [(Details)](develop_business_flow_bf001.html) |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 
 # BOOK APPOINTMENT INPUT

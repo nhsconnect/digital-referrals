@@ -15,13 +15,12 @@ This endpoint allows a Service Provider Clinician (SPC) or Service Provider Clin
 
 ## Request Operation: URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | <base_url>/STU3/v1/CommunicationRequest/<ubrn>/$ers.sendCommunicationToRequester | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {{Base URL}}/STU3/v1/CommunicationRequest/{{ubrn}}/$ers.sendCommunicationToRequester | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-Where <ubrn> is the unique booking reference number for the Advice and Guidance Request being responded to
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- The {{ubrn}} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
 
 
 ## Operation Definition

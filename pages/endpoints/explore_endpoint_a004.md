@@ -19,11 +19,11 @@ This read-only API provides a pre-populated list of the requested reference data
 
 ## Resource URL
 
-Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api  
-
 | Method | URL |
 | -------------| --- |
-| GET | /STU3/v1/CodeSystem/{codeSystemType} |
+| GET | {{Base URL}}/STU3/v1/CodeSystem/{codeSystemType} |
+
+- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 ## Structure Definition
 
