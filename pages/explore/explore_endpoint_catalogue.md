@@ -21,20 +21,20 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 |A008|[Retrieve Worklist](explore_endpoint_a008.html) | POST: /STU3/v1/ReferralRequest/$ers.fetchworklist | ![Live](images/icons/api_live.png) |
 |A010|[Patient Service Search](explore_endpoint_a010.html) | POST: STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | ![Live](images/icons/api_live.png) |
 |A011|[Create Referral](explore_endpoint_a011.html) | POST: STU3/v1/ReferralRequest/$ers.createReferral | ![Live](images/icons/api_live.png) |
-|A012|[Maintain Referral Letter](explore_endpoint_a012.html) | POST: STU3/v1/ReferralRequest/{UBRN}/$ers.maintainReferralLetter | ![Updated](images/icons/updated.png) ![Live](images/icons/api_live.png) |
+|A012|[Maintain Referral Letter](explore_endpoint_a012.html)<br>![Updated](images/icons/updated.png) | POST: STU3/v1/ReferralRequest/{UBRN}/$ers.maintainReferralLetter | ![Live](images/icons/api_live.png) |
 |A013|[Accept Referral](explore_endpoint_a013.html) | POST: /STU3/v1/ReferralRequest/{ubrn}/$ers.acceptReferral | ![Live](images/icons/api_live.png) |
 |A014|[Reject Referral](explore_endpoint_a014.html) | POST: /STU3/v1/ReferralRequest/{ubrn}/$ers.rejectReferral | ![Live](images/icons/api_live.png) |
 |A015|[Retrieve Appointment Slots](explore_endpoint_a015.html)| GET: /STU3/v1/Slot | ![Live](images/icons/api_live.png) |
 |A016|[Book or Defer Appointment](explore_endpoint_a016.html) | POST:	/STU3/v1/Appointment | ![Live](images/icons/api_live.png) |
 |A019|[Generate Patient Letter](explore_endpoint_a019.html) | POST: /STU3/v1/ReferralRequest/[UBRN]/$ers.generatePatientLetter | ![Live](images/icons/api_live.png) |
 |A020|[Upload File To Document Store](explore_endpoint_a020.html) | POST: /STU3/v1/Binary | ![Live](images/icons/api_live.png) |
-|A021|[Create Referral And Send For Triage](explore_endpoint_a021.html) | POST: /STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | ![Live](images/icons/api_live.png) |
+|A021|[Create Referral And Send For Triage](explore_endpoint_a021.html) | POST: /STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | ![Live](images/icons/api_live.png)|
 |A022|[Cancel Appointment, Action Later](explore_endpoint_a022.html) | POST: /STU3/v1/ReferralRequest/{UBRN}/$ers.CancelAppointmentActionLater | ![Live](images/icons/api_live.png) |
-|A023|Retrieve Advice and Guidance Requests Worklist | GET: /STU3/v1/CommunicationRequest/ | ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png) |
-|A024|Retrieve Advice and Guidance Request Summary | GET: /STU3/v1/CommunicationRequest/ | ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png) |
-|A025|Retrieve Advice and Guidance Conversation | /STU3/v1/Communication?[parameters] | ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png) |
-|A026|Send Advice and Guidance Response |	/STU3/v1/CommunicationRequest//$ers.sendCommunicationToRequester  | ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png) |
-|A027|Convert Advice and Guidance Request to Referral | POST: /STU3/v1/ReferralRequest/$ers.createFromCommunicationRequestActionLater | ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png) |
+|A023|Retrieve Advice and Guidance Requests Worklist<br>![NEW](images/icons/new.png) | GET: /STU3/v1/CommunicationRequest/ | ![Live](images/icons/api_live.png) |
+|A024|Retrieve Advice and Guidance Request Summary<br>![NEW](images/icons/new.png) | GET: /STU3/v1/CommunicationRequest/ | ![Live](images/icons/api_live.png) |
+|A025|Retrieve Advice and Guidance Conversation<br>![NEW](images/icons/new.png) | /STU3/v1/Communication?[parameters] | ![Live](images/icons/api_live.png) |
+|A026|Send Advice and Guidance Response<br>![NEW](images/icons/new.png) |	/STU3/v1/CommunicationRequest//$ers.sendCommunicationToRequester | ![Live](images/icons/api_live.png) |
+|A027|Convert Advice and Guidance Request to Referral<br>![NEW](images/icons/new.png) | POST: /STU3/v1/ReferralRequest/$ers.createFromCommunicationRequestActionLater | ![Live](images/icons/api_live.png) |
 
 ## FHIR v2 APIs (Deprecated)   
 
