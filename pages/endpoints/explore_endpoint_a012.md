@@ -18,10 +18,10 @@ So that I can create the referral letter
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | {{Base URL}}/STU3/v1/ReferralRequest/{{ubrn}}/$ers.maintainReferralLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {Base URL}/STU3/v1/ReferralRequest/{ubrn}/$ers.maintainReferralLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
-- The {{ubrn}} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- The {ubrn} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
 
 
 ## Operation Definition

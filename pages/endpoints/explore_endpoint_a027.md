@@ -18,9 +18,9 @@ The Advice and Guidance Request is “closed” and sent back to the Referrer as
 
 | Method | URL | Authentication |
 | ------ | --- | -------------- |
-| POST | {{Base URL}}/STU3/v1/ReferralRequest/$ers.createFromCommunicationRequestActionLater | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {Base URL}/STU3/v1/ReferralRequest/$ers.createFromCommunicationRequestActionLater | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 ## Operation Definition
 [eRS-sendCommuncationToRequest-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-sendCommuncationToRequest-Operation-1)
@@ -39,7 +39,7 @@ The Advice and Guidance Request is “closed” and sent back to the Referrer as
   - Advice and Guidance Conversation
 
 ## Compliance Requirements
--	This feature checks the version of the CommunicationRequest last viewed (via a parameter denoting the CommunicationRequest version: createFrom=CommunicationRequest/{{ubrn}}/_history/{{version}}). However, it does NOT check that the caller has seen the most recent Communication(s). Therefore it follows that:  
+-	This feature checks the version of the CommunicationRequest last viewed (via a parameter denoting the CommunicationRequest version: createFrom=CommunicationRequest/{ubrn}/_history/{{version}}). However, it does NOT check that the caller has seen the most recent Communication(s). Therefore it follows that:  
   - Supplier systems MUST get the most recent Communication(s) to ensure that they are converting with the most recent Clinical Information to hand.
   -	Supplier systems MUST get the most recent CommuncationRequest to ensure they are converting with the most recent version of the CommuncationRequest.
 -	Currently ALL Advice and Guidance Request attachments are included under SupportingInfo under the ReferralRequest meaning, if you can view the ReferralRequest, you can view the Advice and Guidance Request Clinical Attachments (except any "structured information"). Since this feature adds reference to the Advice and Guidance Request in the Pathway, arguably, there is no need to include these attachments on the ReferralRequest anymore. There is no current business need to make a distinction, and it might be a breaking change to do so. Making this a future Business need might make LR easier to manage. Currently you can only “fetch” the attachments if you have LR with the attachment anyways, so we are somewhat protected.
@@ -51,7 +51,7 @@ The Advice and Guidance Request is “closed” and sent back to the Referrer as
 
 | Name | Cardinality | Type | Description |
 | ---- | ----------- | ---- | ----------- |
-| createFrom | 1..1 | Reference | Identifies the Advice and Guidance Request a Professional wants to update and the version last seen by that Professional. Only the most recent version can be converted.<br><br>Must of value and format ```createFrom=CommunicationRequest/{{ubrn}}/_history/{{version}}``` |
+| createFrom | 1..1 | Reference | Identifies the Advice and Guidance Request a Professional wants to update and the version last seen by that Professional. Only the most recent version can be converted.<br><br>Must of value and format ```createFrom=CommunicationRequest/{ubrn}/_history/{{version}}``` |
 | guidance | 1..1 | String | Response back to the Referrer on the Advice and Guidance Request (Max 2000 char) |
 | guidanceAttachmentFile | 0..* | Resource | Document(s) sent back to the Referrer on the Advice and Guidance Request<br>Must be eRS-DocumentReference-1 |
 | reviewComments | 1..1 | string | Comment the Professional (admin) staff will see on the created Referral (Max 2000 char) |

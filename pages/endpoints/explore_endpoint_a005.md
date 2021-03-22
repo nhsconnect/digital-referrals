@@ -18,9 +18,10 @@ This API gets the referral request identified by the given ID and returns referr
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| GET | {{Base URL}}/STU3/v1/ReferralRequest/{ubrn} | Session Token [(Details)](develop_business_flow_bf001.html) |
+| GET | {Base URL}/STU3/v1/ReferralRequest/{ubrn} | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- The {ubrn} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
 
 
 ## FHIR Structure Definition

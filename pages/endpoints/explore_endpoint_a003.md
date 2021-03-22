@@ -18,9 +18,9 @@ Closes the Professional Session. Used to delete a Professional Session after it 
 
 | Method | URL | Authentication |
 | -------| --- | -------------- |
-| DELETE | {{Base URL}}/v1/ProfessionalSession/{sessionKey} | Session Token [(Details)](develop_business_flow_bf001.html) |
+| DELETE | {Base URL}/v1/ProfessionalSession/{sessionKey} | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 # INPUT
 

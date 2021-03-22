@@ -18,9 +18,9 @@ So that I can securely access e-RS functions through my integrated system
 
 | Method | URL |
 | -------------| --- |
-| POST | {{Base URL}}/v1/ProfessionalSession
+| POST | {Base URL}/v1/ProfessionalSession
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 
 
 ### Prerequisite Conditions

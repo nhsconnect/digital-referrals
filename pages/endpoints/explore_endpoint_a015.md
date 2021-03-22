@@ -20,9 +20,9 @@ The implementation to expose slots uses the “NHS Scheduling” FHIR model and 
 
 | Method  | URL                     | Authentication |
 | ------- | ----------------------- | ---------------- |
-| GET     | {{Base URL}}/STU3/v1/Slot | Session Token [(Details)](develop_business_flow_bf001.html) |
+| GET     | {Base URL}/STU3/v1/Slot | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 
 ## Structure Definition

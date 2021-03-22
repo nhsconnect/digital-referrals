@@ -21,9 +21,10 @@ Note: The AttachmentLogicalID won’t be made available explicitly, but the full
 
 | Method | URL |
 | -------| --- |
-| GET | {{Base URL}}/STU3v1/Binary/{AttachmentLogicalID} |
+| GET | {Base URL}/STU3v1/Binary/{AttachmentLogicalID} |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- {AttachmentLogicalID} = Reference to attachment as provided in the output from [A005 Retrieve Referral Request](explore_endpoint_a005)
 
 ## Operation Definition
 

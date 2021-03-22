@@ -30,7 +30,7 @@ This endpoint must be used with all FHIR2 (DSTU2) endpoints: <br>
 | -------------| --- |
 | GET | v1/ValueSet/{{valueSetId}} |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api  
 - {{valueSetId}} = Desired Value Set from [eRS-Specialty-ValueSet-1](https://data.developer.nhs.uk/specifications/eRS-draftd/Profile.Valueset/ers-specialty-valueset-1.html)
 
 ## Description

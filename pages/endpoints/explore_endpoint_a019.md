@@ -18,10 +18,10 @@ So that the patient has all the necessary details to choose the clinic they want
 
 | Method | URL | Authentication |
 | -------------| --- | ---------------- |
-| POST | {{Base URL}}/STU3/v1/ReferralRequest/{{ubrn}}/$ers.generatePatientLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
+| POST | {Base URL}/STU3/v1/ReferralRequest/{ubrn}/$ers.generatePatientLetter | Session Token [(Details)](develop_business_flow_bf001.html) |
 
-- {{Base URL}} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
-- The {{ubrn}} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
+- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- The {ubrn} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
 
 This endpoint is to be used as part of the [Create Referral](develop_business_flow_bf004.html) workflow.
 
