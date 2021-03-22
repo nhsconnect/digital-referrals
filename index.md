@@ -15,19 +15,15 @@ We want to stimulate and assist your development of applications linked to the N
 
 ## Functionality and Future Roadmap
 #### Currently the e-RS Integration APIs provide the following functionality:
-- [Smartcard Authentication and Authorisation](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf001.html)
-- [Clinical Referral Information](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf002.html)
-- [Create Referral](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html)
-- [Clinical Review (Accept/Reject)](https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html)  
 
-#### Coming Soon:
-- Book Appointment (Q3 2020)
-- Manage Referrals (Q4 2020)
-<br>  
+- [For Referrers](creating_referrals.html)
+- [For Service Providers](receiving_referrals.html)
+- [Complete API Catalogue](explore_endpoint_catalogue.html)
+
+#### Future Roadmap
 The NHS e-Referral Service **Future integration roadmap** is published [here](https://digital.nhs.uk/services/e-referral-service/the-future-of-the-nhs-e-referral-service#future-service-roadmap).
 
 ## The e-Referrals API Hub ##
-
 The site has five main parts. Each aligns to a phase of development and partner engagement with NHS Digital, as shown below.  
 
 <img src="./images/ecosystem/eRS-ecosystem.gif" alt="NHS e-RS API Hub Resources"/>
