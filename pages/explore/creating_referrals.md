@@ -17,7 +17,7 @@ Following creation of a referral to a directly bookable service in e-RS a search
 
 ## Process Diagram
 
-![Creating Referrals](images/explore/creating_referrals.png)
+[![Creating Referrals](images/explore/creating_referrals.png)](images/explore/creating_referrals.png)  
 
 ## The following APIs can be used to create an e-referral
 

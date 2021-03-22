@@ -13,7 +13,7 @@ This page describes the functionality available for receiving e-referrals into o
 
 ## Process Diagram
 
-![Receiving Referrals](images/explore/receiving_referrals.png)  
+[![Receiving Referrals](images/explore/receiving_referrals.png)](images/explore/receiving_referrals.png)  
 
 ## The following APIs are used to receive e-referrals from e-RS
 
