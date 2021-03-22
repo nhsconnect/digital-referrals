@@ -30,9 +30,17 @@ This page describes the functionality available for receiving e-referrals into o
 * [A006 – Retrieve Attachment](explore_endpoint_a006.html) ![Live](images/icons/api_live.png)
 * [A007 – Retrieve Clinical Information](explore_endpoint_a007.html) ![Live](images/icons/api_live.png)
 * [A008 – Retrieve Worklist](explore_endpoint_a008.html) ![Live](images/icons/api_live.png)
+* ASI Worklist *(Coming in Q2 2021)*
 
 ### Clinical Review
 * [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
 * [A014 – Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
 * [A022: Cancel Appointment, Action Later](explore_endpoint_a022.html) ![Live](images/icons/api_live.png)
-* Record triage outcome (for RAS) *(Coming in 2021)*
+* Record triage outcome (for RAS) *(Coming in Q2 2021)*
+
+### Advice & Guidance
+* [A023 - Retrieve Advice and Guidance Requests Worklist](explore_endpoint_a023.html) ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png)
+* [A024 - Retrieve Advice and Guidance Request Summary](explore_endpoint_a024.html) ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png)
+* [A025 - Retrieve Advice and Guidance Conversation](explore_endpoint_a025.html) ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png)
+* [A026 - Send Advice and Guidance Response](explore_endpoint_a026.html) ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png)
+* [A027 - Convert Advice and Guidance Request to Referral](explore_endpoint_a027.html) ![NEW](images/icons/new.png) ![Live](images/icons/api_live.png) |
