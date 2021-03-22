@@ -142,4 +142,5 @@ Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOu
 | INAPPROPRIATE_VALUE | Attachment/document status must be 'current' |
 | DUPLICATE_FILENAME | File names, including extensions, must be unique – there is already a file with the same File name and extension on the Advice and Guidance Request |
 
-Note: other “generic” errors concerning FHIR/JSON errors can also be returned. The above details for the most part, validation errors in the context of the Advice and Guidance Request.
+
+**Note:** other “generic” errors concerning FHIR/JSON errors can also be returned. The above details for the most part, validation errors in the context of the Advice and Guidance Request.

@@ -70,7 +70,7 @@ Notes:
 ### Example Request Header
 ```http
 XAPI_ASID:999000000045
-HTTP_X_SESSION_KEY:pro-api-session:e96357b1-298d-4159-ac58-a8953c3262c6"
+HTTP_X_SESSION_KEY:pro-api-session:e96357b1-298d-4159-ac58-a8953c3262c6
 ```
 
 # OUTPUT
@@ -122,11 +122,6 @@ The output includes
 
 
 
-### Example Response Header
-```http
-
-```
-
 ### Example Response Body
 
 - [A024_Response.json](downloads/json/A024_Response.json)  
@@ -142,7 +137,7 @@ Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOu
 | NO_RELATIONSHIP | User associated with the API session does not have a Legitimate Relationship with the Advice and Guidance Request |
 | PATIENT_ERROR | The Patient cannot be viewed via e-Referrals. |
 | INVALID_REQUEST_TYPE | The UBRN supplied does not correspond to an Advice and Guidance Request |
-| HISTORY_NOT_SUPPORTED | The version number supplied is not the latest version |
+| HISTORY_NOT_SUPPORTED | The version number supplied is not the latest version |  
 
 
-Note the errors in the table above only occur when the incoming message is correct but for business reasons a response cannot be returned.
+**Note:** the errors in the table above only occur when the incoming message is correct but for business reasons a response cannot be returned.

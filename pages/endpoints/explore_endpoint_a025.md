@@ -152,4 +152,4 @@ Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOu
 
 
 
-Note: the above errors are in addition to “generic” errors.
+**Note:** the above errors are in addition to “generic” errors.
