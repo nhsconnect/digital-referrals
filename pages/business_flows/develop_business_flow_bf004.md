@@ -7,4 +7,4 @@ permalink: /develop_business_flow_bf004.html
 summary: "Business flows and their related endpoints"
 ---
 
-This page has been superseded by [Creating e-Referrals for Referring Organisations](/creating_referrals.html).
+This page has been superseded by [Creating e-Referrals for Referring Organisations](creating_referrals.html).

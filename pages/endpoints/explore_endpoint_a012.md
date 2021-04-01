@@ -39,11 +39,11 @@ For scenario 1 the conceptual process is very simple, i.e. upload attachment(s) 
 
 For scenario 2, the API consumer is required to post all the referral letter attachments they wish to be associated to the referral, including any that were already associated.  
 
-   a)	Where a referral already has two referral letter attachments associated, and the API user wishes to add some more files:
+   a)	Where a referral already has two referral letter attachments associated, and the API user wishes to **add some more files**:
       -	the API consumer must upload the additional attachment(s) using A020, and then associate these AND the already associated referral letter attachments via A012
-   b)	Where a referral already has three referral letter attachments associated, and the API user wishes to remove one of these,
-      -	the API consumer must re-associate, via A012, the two attachments that the user wishes to keep AND omit the file the user wishes to remove. By omitting the file, e-RS will dis-associate the referral attachment.
-   c)	Let’s say a referral already has four referral letter attachments associated, and the API user wishes to add some more files and remove some files,
+   b)	Where a referral already has three referral letter attachments associated, and the API user wishes to **remove one of these**,
+      -	the API consumer must re-associate, via A012, the two attachments that the user wishes to keep AND omit the file the user wishes to remove**. By omitting the file, e-RS will dis-associate the referral attachment.
+   c)	Where a referral already has four referral letter attachments associated, and the API user wishes to add some more files and remove some files,
       -	the API consumer must upload the additional attachment(s) using A020, and then associate these AND only those referral letter attachments the user wishes to keep via A012.
 
 In effect A012 completely replaces the set of referral letter attachments previously associated. As such, **it is imperative that the new message must contains all the attachments the user wishes to keep associated.**  
