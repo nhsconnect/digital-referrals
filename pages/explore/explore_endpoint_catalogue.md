@@ -16,7 +16,7 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 |A003|[Delete Professional Session](explore_endpoint_a003.html) | DELETE: /v1/ProfessionalSession/{sessionKey} | ![Live](images/icons/api_live.png) |
 |A004|[Retrieve Reference Data](explore_endpoint_a004.html) | GET: /STU3/v1/CodeSystem/{CodeSystemID} | ![Live](images/icons/api_live.png) |
 |A005|[Retrieve Referral](explore_endpoint_a005.html) | GET: /STU3/v1/ReferralRequest/{id} | ![Live](images/icons/api_live.png) |
-|A006|[Retrieve Attachment](explore_endpoint_a006.html) | GET: /STU3v1/Binary/{AttachmentLogicalID} | ![Live](images/icons/api_live.png) |
+|A006|[Retrieve Attachment](explore_endpoint_a006.html) | GET: /STU3/v1/Binary/{AttachmentLogicalID} | ![Live](images/icons/api_live.png) |
 |A007|[Retrieve Clinical Information](explore_endpoint_a007.html) | GET: /STU3/v1/ReferralRequest/{ubrn}/$ers.generateCRI | ![Live](images/icons/api_live.png) |
 |A008|[Retrieve Worklist](explore_endpoint_a008.html) | POST: /STU3/v1/ReferralRequest/$ers.fetchworklist | ![Live](images/icons/api_live.png) |
 |A010|[Patient Service Search](explore_endpoint_a010.html) | POST: STU3/v1/HealthcareService/$ers.searchHealthcareServicesForPatient | ![Live](images/icons/api_live.png) |
