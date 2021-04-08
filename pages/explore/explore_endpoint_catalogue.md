@@ -30,7 +30,7 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 |A020|[Upload File To Document Store](explore_endpoint_a020.html) | POST: /STU3/v1/Binary | ![Live](images/icons/api_live.png) |
 |A021|[Create Referral And Send For Triage](explore_endpoint_a021.html) | POST: /STU3/v1/ReferralRequest/$ers.createReferralAndSendForTriage | ![Live](images/icons/api_live.png)|
 |A022|[Cancel Appointment, Action Later](explore_endpoint_a022.html) | POST: /STU3/v1/ReferralRequest/{ubrn}/$ers.CancelAppointmentActionLater | ![Live](images/icons/api_live.png) |
-|A023<br>![NEW](images/icons/new.png) | [Retrieve Advice and Guidance Requests Worklist](explore_endpoint_a023.html) | GET: /STU3/v1/CommunicationRequest/ | ![Live](images/icons/api_live.png) |
+|A023<br>![NEW](images/icons/new.png) | [Retrieve Advice and Guidance Requests Worklist](explore_endpoint_a023.html) | GET: /STU3/v1/CommunicationRequest/$ers.fetchworklist | ![Live](images/icons/api_live.png) |
 |A024<br>![NEW](images/icons/new.png) | [Retrieve Advice and Guidance Request Summary](explore_endpoint_a024.html)  | GET: /STU3/v1/CommunicationRequest/ | ![Live](images/icons/api_live.png) |
 |A025<br>![NEW](images/icons/new.png) | [Retrieve Advice and Guidance Conversation](explore_endpoint_a025.html) | GET: /STU3/v1/Communication?[parameters] | ![Live](images/icons/api_live.png) |
 |A026<br>![NEW](images/icons/new.png) | [Send Advice and Guidance Response](explore_endpoint_a026.html) |	POST: /STU3/v1/CommunicationRequest/{ubrn}/$ers.sendCommunicationToRequester | ![Live](images/icons/api_live.png) |
