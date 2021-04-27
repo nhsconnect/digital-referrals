@@ -29,8 +29,8 @@ This page describes the functionality available for receiving e-referrals into o
 * [A005 – Retrieve Referral Request](explore_endpoint_a005.html) ![Live](images/icons/api_live.png)
 * [A006 – Retrieve Attachment](explore_endpoint_a006.html) ![Live](images/icons/api_live.png)
 * [A007 – Retrieve Clinical Information](explore_endpoint_a007.html) ![Live](images/icons/api_live.png)
-* [A008 – Retrieve Worklist](explore_endpoint_a008.html) ![Live](images/icons/api_live.png)
-* ASI Worklist *(Coming in Q2 2021)*
+* [A008 – Retrieve Worklist](explore_endpoint_a008.html) ![Live](images/icons/api_live.png) ![Updated](images/icons/updated.png) ASI worklist now available
+
 
 ### Clinical Review
 * [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)

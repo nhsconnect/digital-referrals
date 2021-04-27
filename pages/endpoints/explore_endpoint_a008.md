@@ -44,7 +44,7 @@ This API lets authorised users retrieve the ‘Referrals for Review’ work list
 
 | Name | Cardinality | Type | Description |
 | ---- | ----------- | ---- | ----------- |
-| listType | 1..1 | CodeableConcept | Indicates the type of list requested, this is currently fixed to 'REFERRALS_FOR_REVIEW'. |
+| listType | 1..1 | CodeableConcept | Indicates the type of list requested, this is currently fixed to either 'REFERRALS_FOR_REVIEW' or 'APPOINTMENT_SLOT_ISSUES'. |
 | service | 0..1 | Identifier | The service identifier |
 | specialtyAssignedIndicator | 0..1 | CodeableConcept | Indicates whether a Specialty is assigned to the Referral Request. If 'Assigned' the 'Specialty' parameter must be present. If 'Not Assigned' the 'specialtyAssignedIndicator' and 'Specialty' parameter must be absent. |
 | specialty | 0..1 | CodeableConcept | The Specialty for the service. If present, the 'specialtyAssignedIndicator' parameter must be set to 'Assigned'. The specialty list must be retrieved dynamically from the e-RS valueset. |

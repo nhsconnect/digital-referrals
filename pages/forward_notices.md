@@ -12,6 +12,7 @@ summary: "Forward notices for the e-Referral APIs"
 
 | Release Version | Date          | Notes |
 | --------------- | ------------- | ------- |
+| Release 10.4    | April 2021    | Addition of the ASI worklist to [A008 Retrieve Worklist](explore_endpoint_a008.html) |
 | Release 10.3    | March 2021    | Release of [Advice and Guidance APIs for Service Providers](receiving_referrals.html) |
 | Release 10.2    | February 2021 | Update to [A012: Maintain Referral Letter](explore_endpoint_a012.html) allowing attachments to be added or deleted after initial upload |
 | Release 9.9     | December 2020 | Release of the [Appointment Booking APIs](creating_referrals.html) |
