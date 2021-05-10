@@ -75,7 +75,7 @@ https://api.dev1.ers.ncrs.nhs.uk/ers-api/STU3/v1/ReferralRequest/$ers.fetchworkl
 ## Response: Success
 If successful, all referrals from the ‘Referrals for Review’ worklist matching the input criteria are returned. The response code `200 (OK)` is returned.
 
-The Response Body is a [eRS-FetchWorklist-List-1]("https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1")
+The Response Body is a [eRS-FetchWorklist-List-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-FetchWorklist-List-1)
 
 ### Example Response Header
 ```http
@@ -157,17 +157,17 @@ The fields within this extension are specific to the Appointment Slot Issues wor
 | eReferralPathwayStart | DateTime when the Pathway associated with the Appointment Request started. |
 | ubrnReceived | DateTime when the Appointment Request was deferred to the Service. |
 | patientContactExpected | Date by when the Patient has been told to expect to be contacted. |
-| clinicalInformationStatus | A Codeable Concept from [https://fhir.nhs.uk/STU3/v1/CodeSystem/eRS-ClinicalInformationStatus-1](https://fhir.nhs.uk/STU3/v1/CodeSystem/eRS-ClinicalInformationStatus-1). |
+| clinicalInformationStatus | A Codeable Concept from [https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicalInformationStatus-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicalInformationStatus-1). |
 | clinicalInfoPrinted | Boolean indicating if the latest Clinical Information has been marked as printed. |
 | service | Reference to an e-RS Service by Service Id. |
-| specialty | Specialty of the Service from CodeableConcept [https://fhir.nhs.uk/STU3/v1/CodeSystem/SPECIALTY] (https://fhir.nhs.uk/STU3/v1/CodeSystem/SPECIALTY). |
+| specialty | Specialty of the Service from CodeableConcept [https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1). |
 | namedClinician | Reference to a Practitioner used within the Service Search by UID in SDS. Only present if service search included 'Named Clinician'. |
-| reason | Reason for Slot Issue from CodeableConcept ' [https://fhir.nhs.uk/STU3/v1/CodeSystem/eRS-ReviewReason-1](https://fhir.nhs.uk/STU3/v1/CodeSystem/eRS-ReviewReason-1) |
+| reason | Reason for Slot Issue from CodeableConcept [https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReviewReason-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReviewReason-1) |
 | patient | Reference to the Patient associated with the Appointment Request by NHS Number. |
 | lastContact | DateTime when the last contact with the Patient was attempted. Only present if there has been such an attempt. |  
 
 
-CodeableConcept [https://_baseURL_/STU3/CodeSystem/eRS-ClinicalInformationStatus-1](https://_baseURL_/STU3/CodeSystem/eRS-ClinicalInformationStatus-1) is new for this worklist. Its values and their meanings are as follows:  
+CodeableConcept [https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicalInformationStatus-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicalInformationStatus-1) is new for this worklist. Its values and their meanings are as follows:  
 
 | Value | Meaning |
 | ---------- | ----------- |
