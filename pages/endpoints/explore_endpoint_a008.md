@@ -12,7 +12,7 @@ summary: false
 #### Status: ![Live](images/icons/api_live.png)
 
 ## Description
-This API lets authorised users retrieve the ‘Referrals for Review’ and/or 'Appointment Slot Issues' work lists.
+This API lets authorised users retrieve the ‘Referrals for Review’ and/or 'Appointment Slot Issues' work lists. 'Referrals for Review' and 'Appointment Slot Issues' are ListTypes as detailed below.
 
 
 ## Resource URL
@@ -30,7 +30,7 @@ This API lets authorised users retrieve the ‘Referrals for Review’ and/or 'A
 ## Prerequisite Conditions
 The user is authenticated with an effective business function of Service Provider Clinician or Service Provider Admin. For a login business function of Service Provider Clinician Admin, the effective business function is Service Provider Clinician since the login is “on behalf of”.
 
-# Referrals for Review
+# ListType: Referrals for Review
 
 ## INPUT
 
@@ -86,6 +86,7 @@ The Response Body is a [eRS-FetchWorklist-List-1]("https://fhir.nhs.uk/STU3/Stru
 ### Example Response Body
 ##### Note: These examples may contain environment specific URLs and test data, these should be replaced with appropriate values for your implementation.  
 
+
 - [A008_Response.json](downloads/json/A008_Response.json)
 
 ## Response: Failure
@@ -104,7 +105,7 @@ Where status code 422 (Unprocessable Entity) is returned then an eRS-OperationOu
 | NO_SUCH_CLINICIAN | The clinician provided is not a recognised professional user in e-RS. | When attempting to filter the worklist by clinician, the provided clinician is not recognised.  Check against existing reference data. |
 | INVALID_VALUE | The specialty assigned value is 'Not Assigned'. | This value may be allowed in future worklists. |
 
-# Appointment Slot Issues
+# ListType: Appointment Slot Issues
 
 
 ## INPUT
@@ -163,9 +164,10 @@ The fields within this extension are specific to the Appointment Slot Issues wor
 | namedClinician | Reference to a Practitioner used within the Service Search by UID in SDS. Only present if service search included 'Named Clinician'. |
 | reason | Reason for Slot Issue from CodeableConcept ' [https://fhir.nhs.uk/STU3/v1/CodeSystem/eRS-ReviewReason-1](https://fhir.nhs.uk/STU3/v1/CodeSystem/eRS-ReviewReason-1) |
 | patient | Reference to the Patient associated with the Appointment Request by NHS Number. |
-| lastContact | DateTime when the last contact with the Patient was attempted. Only present if there has been such an attempt. |
+| lastContact | DateTime when the last contact with the Patient was attempted. Only present if there has been such an attempt. |  
 
-CodeableConcept [https://_baseURL_/STU3/CodeSystem/eRS-ClinicalInformationStatus-1](https://_baseURL_/STU3/CodeSystem/eRS-ClinicalInformationStatus-1) is new for this worklist. Its values and their meanings are as follows:
+
+CodeableConcept [https://_baseURL_/STU3/CodeSystem/eRS-ClinicalInformationStatus-1](https://_baseURL_/STU3/CodeSystem/eRS-ClinicalInformationStatus-1) is new for this worklist. Its values and their meanings are as follows:  
 
 | Value | Meaning |
 | ---------- | ----------- |
