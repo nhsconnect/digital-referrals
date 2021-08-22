@@ -1,5 +1,5 @@
 ---
-title: "A028: Review Review Outcome"
+title: "A028: Record Review Outcome"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -68,7 +68,7 @@ Deceased Checks
 ## Request Operation: Parameters
 
 | Name | Cardinality | Type | Description |
-| ---- | ----------- | ---- | ----------- |
+| ---- | ----------- | ------------- | ----------- |
 | reviewOutcome | 1..1 | coding (eRS-reviewOutcome-1) | The clinical decision being recorded |
 | reviewComments | 1..1 | valueString | Max 2000 characters |
 | reviewAttachmentFile | 0..* | Resource (DocumentReference) |  |
