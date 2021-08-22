@@ -36,9 +36,9 @@ This page describes the functionality available for receiving e-referrals into o
 * [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
 * [A014 – Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
 * [A022: Cancel Appointment, Action Later](explore_endpoint_a022.html) ![Live](images/icons/api_live.png)
-* [A028: Record Review Outcome](explore_endpoint_a028.html) ![Live](images/icons/api_live.png)
+* [A028: Record Review Outcome](explore_endpoint_a028.html) ![Live](images/icons/api_live.png) ![NEW](images/icons/new.png)
 
-### Advice & Guidance ![NEW](images/icons/new.png)
+### Advice & Guidance
 * [A023 - Retrieve Advice and Guidance Requests Worklist](explore_endpoint_a023.html) ![Live](images/icons/api_live.png)
 * [A024 - Retrieve Advice and Guidance Request Summary](explore_endpoint_a024.html) ![Live](images/icons/api_live.png)
 * [A025 - Retrieve Advice and Guidance Conversation](explore_endpoint_a025.html) ![Live](images/icons/api_live.png)
