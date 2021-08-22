@@ -13,7 +13,7 @@ This page describes the functionality available for receiving e-referrals into o
 
 ## Process Diagram
 
-[![Receiving Referrals](images/explore/receiving_referrals.png)](images/explore/receiving_referrals.png)  
+[![Receiving Referrals](images/explore/Receiving Referrals2021.png)](images/explore/Receiving Referrals2021.png)  
 
 ## The following APIs are used to receive e-referrals from e-RS
 
@@ -36,7 +36,7 @@ This page describes the functionality available for receiving e-referrals into o
 * [A013 – Accept Referral](explore_endpoint_a013.html) ![Live](images/icons/api_live.png)
 * [A014 – Reject Referral](explore_endpoint_a014.html) ![Live](images/icons/api_live.png)
 * [A022: Cancel Appointment, Action Later](explore_endpoint_a022.html) ![Live](images/icons/api_live.png)
-* Record triage outcome (for RAS) *(Coming in Q2 2021)*
+* [A028: Record Review Outcome](explore_endpoint_a028.html) ![Live](images/icons/api_live.png)
 
 ### Advice & Guidance ![NEW](images/icons/new.png)
 * [A023 - Retrieve Advice and Guidance Requests Worklist](explore_endpoint_a023.html) ![Live](images/icons/api_live.png)
