@@ -117,6 +117,9 @@ entries:
     - title: "A028: Record Review Outcome"
       url: /explore_endpoint_a028.html
       output: web
+    - title: "A029: Available Actions For User List"
+      url: /explore_endpoint_a029.html
+      output: web
     - title: Generic Error Codes
       url: /explore_error_messages.html
       output: web
