@@ -114,6 +114,9 @@ entries:
     - title: "A027: Convert A&G to Referral"
       url: /explore_endpoint_a027.html
       output: web
+    - title: "A028: Record Review Outcome"
+      url: /explore_endpoint_a028.html
+      output: web
     - title: Generic Error Codes
       url: /explore_error_messages.html
       output: web
