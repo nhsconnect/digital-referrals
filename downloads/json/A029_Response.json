@@ -1,0 +1,48 @@
+{
+    "id": "641e7937-be70-4102-a44e-7e2391e46409",
+    "meta": {
+        "lastUpdated": "2021-08-05T12:11:12.838Z",
+        "profile": [
+            "http://hl7.org/fhir/STU3/StructureDefinition/Bundle"
+        ]
+    },
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://ers-api:445/STU3/v1/Task?focus=ReferralRequest%2F000000103946%2F_history%2F6&intent=proposal&status=ready"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "https://ers-api:445/STU3/v1/Task/5048b6ee-9d69-4d74-a9af-3f7ec79611f5",
+            "resource": {
+                "id": "5048b6ee-9d69-4d74-a9af-3f7ec79611f5",
+                "meta": {
+                    "profile": [
+                        "https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Task-1"
+                    ]
+                },
+                "resourceType": "Task",
+                "status": "ready",
+                "intent": "proposal",
+                "focus": {
+                    "reference": "ReferralRequest/000000103946/_history/6"
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "https://fhir.nhs.uk/STU3/CodeSystem/eRS-AvailableActionsForUser-1",
+                            "code": "RECORD_REVIEW_OUTCOME",
+                            "display": "Record Review Outcome"
+                        }
+                    ]
+                }
+            },
+            "search": {
+                "mode": "match"
+            }
+        }
+    ]
+}

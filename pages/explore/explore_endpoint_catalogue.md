@@ -10,7 +10,7 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 ## Live FHIR v3 APIs  
 
 | ID | Name | Endpoint URL | Status |
-|----|------|--------------|--------|
+|----|------|--------------------|--------|
 |A001|[Create Professional Session](explore_endpoint_a001.html) | POST: /v1/ProfessionalSession | ![Live](images/icons/api_live.png) |
 |A002|[Professional Session Select Role](explore_endpoint_a002.html) | PUT: /v1/ProfessionalSession/{sessionKey} | ![Live](images/icons/api_live.png) |
 |A003|[Delete Professional Session](explore_endpoint_a003.html) | DELETE: /v1/ProfessionalSession/{sessionKey} | ![Live](images/icons/api_live.png) |
@@ -36,6 +36,7 @@ summary: "Catalogue of all currently available external NHS e-Referral Service (
 |A026|[Send Advice and Guidance Response](explore_endpoint_a026.html) |	POST: /STU3/v1/CommunicationRequest/{ubrn}/$ers.sendCommunicationToRequester | ![Live](images/icons/api_live.png) |
 |A027|[Convert Advice and Guidance Request to Referral](explore_endpoint_a027.html) | POST: /STU3/v1/ReferralRequest/$ers.createFromCommunicationRequestActionLater | ![Live](images/icons/api_live.png) |
 |A028<br>![NEW](images/icons/new.png)|[Record Review Outcome](explore_endpoint_a028.html) | POST: /STU3/v1/ReferralRequest/ | ![Live](images/icons/api_live.png) |
+|A029<br>![NEW](images/icons/new.png)|[Available Actions For User List](explore_endpoint_a029.html) | GET: /STU3/v1/Task?focus=ReferralRequest/{ubrn}/_history/int&intent=proposal&status=ready | ![Live](images/icons/api_live.png) |
 
 ## FHIR v2 APIs (Deprecated)   
 
