@@ -30,7 +30,7 @@ In order to connect to the live service APIs a connection agreement must be sign
 ### End User Organisation Acceptable Use Policy (AUP)
 The End User Organisation Acceptable Use Policy (AUP) sets out the obligations of the End User Organisation and those of the Connecting Party in relation to that useage.
 
-Further guidance on the End User Organisation Acceptable Use Policy can be found via [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir#api-description__onboarding).
+Further guidance on the End User Organisation Acceptable Use Policy can be found via the Onboarding section of [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir#api-description__onboarding).
 
 ## Special Terms
 
