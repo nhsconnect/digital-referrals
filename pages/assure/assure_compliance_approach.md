@@ -27,10 +27,10 @@ Once a technical conformance certificate has been issued, it should be embedded 
 ### Connection Agreement
 In order to connect to the live service APIs a connection agreement must be signed by the owner of the connecting system. This should be obtained from [interop.mgmt@nhs.net](mailto:interop.mgmt@nhs.net), signed and returned by email.  
 
-### End User Online Declaration (EUOD)
-The End User Online Declaration (EUOD) comprises questions about the organisation that is completing the Declaration and also statements around conformance to NHS Digital requirements.
+### End User Organisation Acceptable Use Policy (AUP)
+The End User Organisation Acceptable Use Policy (AUP) sets out the obligations of the End User Organisation and those of the Connecting Party in relation to that useage.
 
-Further guidance on completing the EUOD can be found [here](https://nhs-digital.citizenspace.com/onboarding/d72f6cc8/).
+Further guidance on the End User Organisation Acceptable Use Policy can be found via [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir#api-description__onboarding).
 
 ## Special Terms
 
