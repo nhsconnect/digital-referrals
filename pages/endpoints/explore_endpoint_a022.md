@@ -28,7 +28,7 @@ The API allows clinical users to take responsibility for the referral while info
 
 
 ## Operation Definition
-- [eRS-CancelAppointmentActionLater-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/$ers.CancelAppointmentActionLater)  
+- [eRS-cancelAppointmentActionLater-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-cancelAppointmentActionLater-Operation-1)  
 
 ## Prerequisite Conditions
 

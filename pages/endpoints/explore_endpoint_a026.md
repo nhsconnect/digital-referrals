@@ -25,13 +25,13 @@ This endpoint allows a Service Provider Clinician (SPC) or Service Provider Clin
 
 ## Operation Definition
 
-[eRS-sendCommuncationToRequest-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-sendCommuncationToRequest-Operation-1)
+[eRS-SendCommunicationToRequester-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-SendCommunicationToRequester-Operation-1)
 
 #### Input
-[eRS-sendCommunicationToRequester-Request-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-sendCommunicationToRequester-Request-Parameters-1)
+[eRS-SendCommunicationToRequester-Request-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-SendCommunicationToRequester-Request-Parameters-1)
 
 #### Output
-[eRS-sendCommunicationToRequester-Response-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-sendCommunicationToRequester-Response-Parameters-1)
+[eRS-SendCommunicationToRequester-Response-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-SendCommunicationToRequester-Response-Parameters-1)
 
 
 ## Prerequisite Conditions

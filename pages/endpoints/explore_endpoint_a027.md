@@ -23,7 +23,7 @@ The Advice and Guidance Request is “closed” and sent back to the Referrer as
 - {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 
 ## Operation Definition
-[eRS-sendCommuncationToRequest-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-sendCommuncationToRequest-Operation-1)
+[eRS-SendCommunicationToRequester-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-SendCommunicationToRequester-Operation-1)
 
 #### Input
 [eRS-SendCommunicationToRequester-Request-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-SendCommunicationToRequester-Request-Parameters-1)

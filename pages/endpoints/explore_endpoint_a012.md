@@ -25,7 +25,7 @@ So that I can create the referral letter
 
 
 ## Operation Definition
-The Operation Definition for this endpoint is available on the FHIR server: [eRS-maintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-maintainReferralLetter-Operation-1/_history/1.0)
+The Operation Definition for this endpoint is available on the FHIR server: [eRS-MaintainReferralLetter-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-MaintainReferralLetter-Operation-1/_history/1.0)
 
 ## Prerequisite Operations
 Each file to be attached to a referral needs to have been individually uploaded using [A020: Upload file to document store](explore_endpoint_a020.html). A020 will return the e-RS file location of each uploaded file; these are the URLs that need to be passed to the Maintain Referral Letter API so that they can be associated to the referral.

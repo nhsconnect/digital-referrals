@@ -30,7 +30,7 @@ A review outcome is a clinical assessment of the Patient's needs by a Service, a
 [eRS-RecordReviewOutcome-Operation-1](https://fhir.nhs.uk/STU3/OperationDefinition/eRS-RecordReviewOutcome-Operation-1)
 
 #### Input
-[eRS-sendCommunicationToRequester-Request-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-sendCommunicationToRequester-Request-Parameters-1)
+[eRS-SendCommunicationToRequester-Request-Parameters-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-SendCommunicationToRequester-Request-Parameters-1)
 
 
 ## Prerequisite Conditions
@@ -55,7 +55,7 @@ Note: if you wish to associate an attachment, the attachment must have been uplo
 #### MUST
 Deceased Checks
   -	This endpoint does not stop a user recording a Review Outcome if the Patient is deceased. A deceased check cannot be provided by e-RS FHIR API.
-  - Instead, Partners should check for a Date of Death via the Personal Demographics Service (PDS) API before making the call to the e-RS FHIR API.
+  - Instead, Partners must check for a Date of Death via the Personal Demographics Service (PDS) API before making the call to the e-RS FHIR API.
 
 # INPUT
 
