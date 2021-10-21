@@ -24,11 +24,11 @@ For support and enquiries regarding the e-RS development environments, including
 Guidance on using the identity agent and authenticating with NHS Smartcards can be found at [developer.nhs.uk/apis/spine-core/smartcards.html](https://developer.nhs.uk/apis/spine-core/smartcards.html)  
 
 ### Solution Assurance
-#### Email: [functional.assurance@nhs.net](mailto:functional.assurance@nhs.net)  
+#### Email: [ersapi.assurance@nhs.net](mailto:ersapi.assurance@nhs.net)  
 Solution Assurance support healthcare system providers to carry out their own testing and assurance. For more information visit [digital.nhs.uk/services/solution-assurance](https://digital.nhs.uk/services/solution-assurance).
 
 ### Information Standards Service Desk
-For assistance or queries relating to coding products, including SNOMED-CT and ICD, email [information.standards@nhs.net](mailto:information.standards@nhs.net)	or call 0300 303 4777.
+For assistance or queries relating to coding products, including SNOMED-CT and ICD, email [information.standards@nhs.net](mailto:information.standards@nhs.net).
 
 ### Feedback and Complaints
 For information about providing feedback or registering a complaint please visit [https://digital.nhs.uk/about-nhs-digital/contact-us/feedback-and-complaints](https://digital.nhs.uk/about-nhs-digital/contact-us/feedback-and-complaints).

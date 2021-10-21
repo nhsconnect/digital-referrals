@@ -26,10 +26,10 @@ To get connected to the e-RS API Development environment you will need the follo
 - To register your Fully Qualified Domain Name (FQDN) with the NHS DNS team
 - The Identity Agent Client software  
 
-More detailed guidance of the connection process can be found [here](https://digital.nhs.uk/services/path-to-live-environments/development-environment). In all correspondence with NHS Digital please make it clear you are trying to connect to the **e-RS APIs in the development environment (DEV1)**.
+More detailed guidance of the connection process can be found [here](https://digital.nhs.uk/services/path-to-live-environments/development-environment).
 
 ## Development URLs
 Once connected you can access the following [NHS e-Referral Service (e-RS) URLs](https://digital.nhs.uk/services/path-to-live-environments/development-environment#development-nhs-e-referral-service-e-rs-urls) for development and testing.
 
 ## Further assistance
-For further assistance with the connection process please contact [platforms.supportdesk@nhs.net](mailto:platforms.supportdesk@nhs.net). Alternatively, for assistance relating specifically to the e-RS APIs and their functionality please contact [nhserspartners@nhs.net](mailto:nhserspartners@nhs.net).  
+For further assistance with the connection process please contact [itoc.supportdesk@nhs.net](mailto:itoc.supportdesk@nhs.net). Alternatively, for assistance relating specifically to the e-RS APIs and their functionality please contact [nhserspartners@nhs.net](mailto:nhserspartners@nhs.net).  
