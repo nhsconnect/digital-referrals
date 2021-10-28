@@ -11,7 +11,9 @@ summary: false
 
 ## Description
 As a Referring Clinician, Referring Clinician Administrator, Service Provider Clinician or Service Provider Clinician Admin
-I want to maintain and associate referral clinical information files (this endpoint could be used to delete files only)  
+
+I want to maintain and associate referral clinical information files (this endpoint could be used to delete files only)
+
 So that I can create the referral letter  
 
 ## Resource URL

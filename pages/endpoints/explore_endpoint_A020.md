@@ -11,8 +11,10 @@ summary: false
 
 ## Description
 As a Referring Clinician, Referring Clinician Administrator, Service Provider Clinician or Service Provider Clinician Admin
-I want to upload a file to the e-RS document store  
-so that I can then link it to a referral as part of its referral letter  
+
+I want to upload a file to the e-RS document store
+
+So that I can then link it to a referral as part of its referral letter  
 
 ## Resource URL
 
