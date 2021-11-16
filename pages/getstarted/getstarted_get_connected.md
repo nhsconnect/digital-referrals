@@ -19,17 +19,14 @@ To use the e-RS Integration APIs you must:
 To get connected to the e-RS API Development environment you will need the following:
 
 - A connection to the Health and Social Care Network (HSCN) - the secure NHS network (if you do not have a connection or are experiencing problems connecting, contact your network provider)
-- Access to test data (email: testdata@nhs.net)
-- NHS Smartcards - if you do not have a valid smartcard for development please email: platforms.supportdesk@nhs.net
-- To register the messaging product using a Manufacturer, product and version (MPV) form if required
-- To register your message handling service with the Spine by requesting an endpoint (an authorised connection to Spine) to be created unless you have an endpoint administrator in your organisation who can do this for you - please complete the endpoint admin access request form (epr) to manage your own endpoints
+- Access to test data (email: [testdata@nhs.net](mailto:testdata@nhs.net) specifying e-RS FHIR API - Integration environment)
+- NHS Smartcards - if you do not have a valid smartcard for development please email: [itoc.supportdesk@nhs.net](mailto:itoc.supportdesk@nhs.net)
+- To register the messaging product using a Manufacturer, product and version (MPV) form if required (obtained from [itoc.supportdesk@nhs.net](mailto:itoc.supportdesk@nhs.net))
+- To register your message handling service with the Spine by requesting an endpoint (an authorised connection to Spine) to be created unless you have an endpoint administrator in your organisation who can do this for you - please complete the endpoint admin access request form (epr) to manage your own endpoints (obtained from [itoc.supportdesk@nhs.net](mailto:itoc.supportdesk@nhs.net))
 - To register your Fully Qualified Domain Name (FQDN) with the NHS DNS team
 - The Identity Agent Client software  
 
-More detailed guidance of the connection process can be found [here](https://digital.nhs.uk/services/path-to-live-environments/development-environment).
-
-## Development URLs
-Once connected you can access the following [NHS e-Referral Service (e-RS) URLs](https://digital.nhs.uk/services/path-to-live-environments/development-environment#development-nhs-e-referral-service-e-rs-urls) for development and testing.
+More detailed guidance of the connection process can be found [here](https://digital.nhs.uk/services/path-to-live-environments/integration-environment). You can disregard step 4 of 'Before you start' on this page.
 
 ## Further assistance
 For further assistance with the connection process please contact [itoc.supportdesk@nhs.net](mailto:itoc.supportdesk@nhs.net). Alternatively, for assistance relating specifically to the e-RS APIs and their functionality please contact [nhserspartners@nhs.net](mailto:nhserspartners@nhs.net).  
