@@ -21,7 +21,7 @@ These endpoints available for users with the role of Referring Clinician (RC), R
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| GET | {Base URL}/STU3/v1/Communication?based-on=CommunicationRequest/{ubrn}/_history/{{version}}&_include=Communication:requester-practitionerrole:PractitionerRole&_include=Communication:sender-practitionerrole:PractionerRole&_include=Communication:content-reference:DocumentReference | Session Token [(Details)](develop_business_flow_bf001.html) |
+| GET | {Base URL}/STU3/v1/Communication?based-on=CommunicationRequest/{ubrn}/_history/{version}&_include=Communication:requester-practitionerrole:PractitionerRole&_include=Communication:sender-practitionerrole:PractionerRole&_include=Communication:content-reference:DocumentReference | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 - The {ubrn} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance Conversation”
 - {{version}} is the version of the A&G Request to be retrieved (only the most current version will be retrievable)
