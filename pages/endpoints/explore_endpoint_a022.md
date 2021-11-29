@@ -66,15 +66,6 @@ It must be the ID of the latest version of the referral in e-RS.
 |priority|0..1|Code|Optional priority change (eRS-Priority-1)|
 |appointmentCancelledinPAS|0..1|Boolean|Flag whether the appointment has been cancelled in the Patient Administrative System (PAS). Mandatory only if the appointment was to an Indirectly Bookable Service (IBS). If the appointment remains booked on PAS, then an entry will appear on the ‘Indirectly Booked Appointments to Cancel in PAS’ worklist on e-RS for administrative users to resolve later.|
 
-
-### Example URI
-```
-```
-
-### Example Request Header
-```
-```
-
 ### Example Request Body
 [Example Request](downloads/json/A022_Request.json)  
 
@@ -85,12 +76,6 @@ If successful, the referral is accepted, and an indication of success returned w
 - Referral request (https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1)
 - With an eRSAppointment (appointment.status) code and display of "cancelled"
 - UBRN version number
-
-### Example Response Header
-```
-```
-
-### Example Response Body
 
 
 ## Response: Failure

@@ -23,11 +23,11 @@ These endpoints available for users with the role of Referring Clinician (RC), R
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| GET | {Base URL}/STU3/v1/CommunicationRequest/{ubrn}/_history/{{version_number}}<br>OR<br>{Base URL}/STU3/v1/CommunicationRequest/{ubrn} | Session Token [(Details)](develop_business_flow_bf001.html) |
+| GET | {Base URL}/STU3/v1/CommunicationRequest/{ubrn}/_history/{version}<br>OR<br>{Base URL}/STU3/v1/CommunicationRequest/{ubrn} | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 - The {ubrn} represents the unique booking reference number of the Advice and Guidance Request for which the caller is obtaining the “Advice and Guidance summary”
-- {{version_number}} is the version of the Advice and Guidance Request to be retrieved (only the most current version will be retrievable)
-- {Base URL} (Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
+- {version} is the version of the Advice and Guidance Request to be retrieved (only the most current version will be retrievable)
+- {Base URL} is the URL for the test environment you are intending to use.
 
 ## Operation Definition
 - [eRS-CommunicationRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CommunicationRequest-1)  
