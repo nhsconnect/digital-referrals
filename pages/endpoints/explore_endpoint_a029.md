@@ -18,7 +18,7 @@ Currently, the only supported response is the ability to "Record Review Outcome"
 
 | Method       | URL | Authentication |
 | -------------| --- | ---------------- |
-| GET | {Base URL}/STU3/v1/Task?focus=ReferralRequest/{ubrn}/_history/int&intent=proposal&status=ready | Session Token [(Details)](develop_business_flow_bf001.html) |
+| GET | {Base URL}/STU3/v1/Task?focus=ReferralRequest/{ubrn}/_history/{version}&intent=proposal&status=ready | Session Token [(Details)](develop_business_flow_bf001.html) |
 
 - {Base URL} (e.g. for Dev1) = https://api.dev1.ers.ncrs.nhs.uk/ers-api
 - The {ubrn} represents the unique booking reference number of the Referral request
