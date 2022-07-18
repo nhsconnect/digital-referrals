@@ -159,7 +159,7 @@ The fields within this extension are specific to the Appointment Slot Issues wor
 | patientContactExpected | Date by when the Patient has been told to expect to be contacted. |
 | clinicalInformationStatus | A Codeable Concept from [https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicalInformationStatus-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ClinicalInformationStatus-1). |
 | clinicalInfoPrinted | Boolean indicating if the latest Clinical Information has been marked as printed. |
-| service | Reference to an e-RS Service by Service Id. |
+| service | Information regarding e-RS Service including Service Id and name. |
 | specialty | Specialty of the Service from CodeableConcept [https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-Specialty-1). |
 | namedClinician | Reference to a Practitioner used within the Service Search by UID in SDS. Only present if service search included 'Named Clinician'. |
 | reason | Reason for Slot Issue from CodeableConcept [https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReviewReason-1](https://fhir.nhs.uk/STU3/CodeSystem/eRS-ReviewReason-1) |
