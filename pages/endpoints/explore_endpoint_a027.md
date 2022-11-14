@@ -41,11 +41,11 @@ The Advice and Guidance Request is “closed” and sent back to the Referrer as
 ## Compliance Requirements
 -	This feature checks the version of the CommunicationRequest last viewed (via a parameter denoting the CommunicationRequest version: createFrom=CommunicationRequest/{ubrn}/_history/{{version}}). However, it does NOT check that the caller has seen the most recent Communication(s). Therefore it follows that:  
   - Supplier systems MUST get the most recent Communication(s) to ensure that they are converting with the most recent Clinical Information to hand.
-  -	Supplier systems MUST get the most recent CommuncationRequest to ensure they are converting with the most recent version of the CommuncationRequest.
+  -	Supplier systems MUST get the most recent CommunicationRequest to ensure they are converting with the most recent version of the CommunicationRequest.
 -	Currently ALL Advice and Guidance Request attachments are included under SupportingInfo under the ReferralRequest meaning, if you can view the ReferralRequest, you can view the Advice and Guidance Request Clinical Attachments (except any "structured information"). Since this feature adds reference to the Advice and Guidance Request in the Pathway, arguably, there is no need to include these attachments on the ReferralRequest anymore. There is no current business need to make a distinction, and it might be a breaking change to do so. Making this a future Business need might make LR easier to manage. Currently you can only “fetch” the attachments if you have LR with the attachment anyways, so we are somewhat protected.
 
 # INPUT
-[eRS-CreateFromCommuncationrRequestActionLater-Request-Parameters-1 ](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateFromCommuncationrRequestActionLater-Request-Parameters-1)  
+[eRS-CreateFromCommunicationrRequestActionLater-Request-Parameters-1 ](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateFromCommunicationrRequestActionLater-Request-Parameters-1)  
 
 ## Request Operation: Parameters
 
@@ -78,7 +78,7 @@ If successful we return as per [A005: Retrieve Referral Request](https://develop
   -	The FHIR “comment” element will be the value submitted on the reviewComments parameter so that the person picking up the Referral can see the comments added
   -	The FHIR “participant[0].actor.identifier.value” will be the Service which created the Referral
 2. After a newly created Referral converted from an Advice and Guidance Request is processed (e.g. booked, sent for triage etc), the values detailed in (1) may no longer be present due to state changes, but you can still tell if there was an Advice and Guidance Request in the Pathway due to the following:
-  -	The FHIR “supportingInfo[CommunicationRequest]” references the CommuncationRequest from which the Referral was created. This is only “fetchable” if you are allowed to view the Advice and Guidance Request and can be fetched from View Advice and Guidance Summary endpoint
+  -	The FHIR “supportingInfo[CommunicationRequest]” references the CommunicationRequest from which the Referral was created. This is only “fetchable” if you are allowed to view the Advice and Guidance Request and can be fetched from View Advice and Guidance Summary endpoint
   -	The FHIR “supportingInfo[DocumentReference]” references
     -	Any attachments on the Referral (as per existing)
     -	Now includes all Advice and Guidance attachments
