@@ -45,7 +45,7 @@ The Advice and Guidance Request is “closed” and sent back to the Referrer as
 -	Currently ALL Advice and Guidance Request attachments are included under SupportingInfo under the ReferralRequest meaning, if you can view the ReferralRequest, you can view the Advice and Guidance Request Clinical Attachments (except any "structured information"). Since this feature adds reference to the Advice and Guidance Request in the Pathway, arguably, there is no need to include these attachments on the ReferralRequest anymore. There is no current business need to make a distinction, and it might be a breaking change to do so. Making this a future Business need might make LR easier to manage. Currently you can only “fetch” the attachments if you have LR with the attachment anyways, so we are somewhat protected.
 
 # INPUT
-[eRS-CreateFromCommunicationrRequestActionLater-Request-Parameters-1 ](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateFromCommunicationrRequestActionLater-Request-Parameters-1)  
+[eRS-CreateFromCommunicationRequestActionLater-Request-Parameters-1 ](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateFromCommunicationRequestActionLater-Request-Parameters-1)  
 
 ## Request Operation: Parameters
 
