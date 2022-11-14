@@ -2,7 +2,7 @@
   "resourceType": "Parameters",
   "meta": {
     "profile": [
-      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateFromCommuncationRequestActionLater-Request-Parameters-1"
+      "https://fhir.nhs.uk/STU3/StructureDefinition/eRS-CreateFromCommunicationRequestActionLater-Request-Parameters-1"
     ]
   },
   "parameter": [
