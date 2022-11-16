@@ -7,4 +7,4 @@ permalink: /develop_test_data.html
 summary: "Details on synthetic e-Referral test data and how to access it"
 ---
 
-More coming soon.
+Archived.

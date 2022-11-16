@@ -1,13 +1,14 @@
 ---
-title: "Creating e-Referrals for Referring Organisations"
+title: "Creating e-Referrals for Referring Organisations (Archived)"
 keywords: creating referrals, creating e-referrals, create, refer, referring
 sidebar: overview_sidebar
 toc: false
 permalink: /creating_referrals.html
-summary: "How to create new e-referrals from within other systems using the e-RS integration APIs"
 ---
 
-#### Status: ![Deprecated](images/icons/api_deprecated.png)
+## Status:
+
+![Deprecated](images/icons/api_deprecated.png)
 
 This site has now been archived.
 

@@ -1,10 +1,10 @@
 ---
-title: Audit Logs
+title: Audit Logs (Archived)
 keywords: Audit, Logs, Logging
 sidebar: overview_sidebar
 toc: false
 permalink: /audit_logs.html
-summary: "Summary of audit logging requirements"
+summary: "Summary of audit logging requirements (Archived)"
 ---
 
 # Audit logging

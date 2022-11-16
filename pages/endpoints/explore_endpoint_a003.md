@@ -7,7 +7,9 @@ permalink: explore_endpoint_a003.html
 summary: false
 ---
 
-#### Status: ![Deprecated](images/icons/api_deprecated.png)
+## Status: 
+
+![Deprecated](images/icons/api_deprecated.png)
 
 This endpoint has been deprecated, meaning you should not use it for new integrations.
 

@@ -7,7 +7,7 @@ permalink: explore_endpoint_a009.html
 summary: false
 ---
 
-#### Status: ![Retired](images/icons/api_retired.png)
+## Status: ![Retired](images/icons/api_retired.png)
 
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">THIS API IS NO LONGER AVAILABLE</div>
 

@@ -7,7 +7,9 @@ permalink: /receiving_referrals.html
 summary: "How to receive e-referrals into other systems using the e-RS integration APIs"
 ---
 
-#### Status: ![Deprecated](images/icons/api_deprecated.png)
+## Status: 
+
+![Deprecated](images/icons/api_deprecated.png)
 
 This site has now been archived.
 

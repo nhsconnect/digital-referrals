@@ -9,7 +9,9 @@ summary: false
 
 <div style="border: 2px solid #888888; padding: 10px; background: #c3e3c3;">For the new FHIR v3 endpoint, please click <a href="explore_endpoint_a006.html">here</a>.</div>
 
-#### Status: ![Deprecated](images/icons/api_deprecated.png)  
+## Status: 
+
+![Deprecated](images/icons/api_deprecated.png)  
 
 This endpoint has been deprecated, meaning you should not use it for new integrations.
 
