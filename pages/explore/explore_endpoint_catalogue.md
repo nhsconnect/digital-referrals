@@ -3,12 +3,16 @@ title: Endpoint Catalogue (Archived)
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-
+permalink: /explore_endpoint_catalogue.html
 ---
 
 ## APIs In Development
 
-As of November 2022, our new e-RS FHIR API solution should be used for all new Partner integrations. Please navigate to [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) for more information including how to Onboard.
+As of November 2022, our new e-RS FHIR API solution MUST be used for all new Partner integrations.
+
+Please navigate to [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) for more information including how to Onboard.
+
+The below information is intended for use by current/existing Live Partners only.
 
 
 ## Deprecated FHIR v3 API endpoints  
