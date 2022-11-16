@@ -7,6 +7,12 @@ permalink: /receiving_referrals.html
 summary: "How to receive e-referrals into other systems using the e-RS integration APIs"
 ---
 
+#### Status: ![Deprecated](images/icons/api_deprecated.png)
+
+This site has now been archived.
+
+Please visit [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) to learn more about how to integrate with the e-Referral Service (e-RS) FHIR API.
+
 ## Definition
 
 This page describes the functionality available for receiving e-referrals into other software systems including how to retrieve the "Referrals for Review" worklist, the Clinical Referral Information (CRI) and any referral attachments (Sometimes known as "The referral letter") from the NHS e-Referral Service (e-RS). Further APIs also allow sending the result of a clinical review back to e-RS (i.e. Accept or Reject). These APIs have been developed in accordance with the [FHIR STU3](http://hl7.org/fhir/STU3/) specification, guidance for developers is available online [here](http://hl7.org/fhir/STU3/overview-dev.html).

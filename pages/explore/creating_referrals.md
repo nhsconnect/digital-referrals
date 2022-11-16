@@ -7,7 +7,11 @@ permalink: /creating_referrals.html
 summary: "How to create new e-referrals from within other systems using the e-RS integration APIs"
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Deprecated](images/icons/api_deprecated.png)
+
+This site has now been archived.
+
+Please visit [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) to learn more about how to integrate with the e-Referral Service (e-RS) FHIR API.
 
 ## Definition
 
@@ -35,7 +39,7 @@ Following creation of a referral to a directly bookable service in e-RS a search
 * [A021 - Create Referral and Send for Triage](explore_endpoint_a021.html) ![Live](images/icons/api_live.png)
 * [A020 - Upload File To Document Store](explore_endpoint_a020.html) ![Live](images/icons/api_live.png)
 * [A012 - Maintain Referral Letter](explore_endpoint_a012.html) ![Live](images/icons/api_live.png)<br>
-  (Additional attachments can now be added or removed after first upload) ![Updated](images/icons/updated.png) 
+  (Additional attachments can now be added or removed after first upload) ![Updated](images/icons/updated.png)
 * [A019 - Generate Patient Letter](explore_endpoint_a019.html) ![Live](images/icons/api_live.png) with shortlist and details of how to book an appointment
 
 ### Book Appointment

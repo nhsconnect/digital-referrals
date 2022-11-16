@@ -7,9 +7,6 @@ permalink: explore_endpoint_a008_DSTU2.html
 summary: false
 ---
 
-<div style="border: 2px solid #888888; padding: 10px; background: #c3e3c3;">For the new FHIR v3 endpoint, please click <a href="explore_endpoint_a008.html">here</a>.</div>
-
-
 #### Status: ![Deprecated](images/icons/api_deprecated.png)  
 
 This endpoint has been deprecated, meaning you should not use it for new integrations.

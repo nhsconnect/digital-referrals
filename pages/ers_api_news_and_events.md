@@ -1,5 +1,5 @@
 ---
-title: News and Events
+title: News and Events (Archived)
 keywords: news, events
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,9 @@ permalink: /ers_api_news_and_events.html
 summary: "News and events related to the e-Referral APIs"
 ---
 
-###### View the latest [NHS e-Referral Service: Integration Update.](201902_newsletter.html)
+This site has now been archived.
+
+Please visit [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) to learn more about how to integrate with the e-Referral Service (e-RS) FHIR API.
 
 ## 6th February 2019 – Clinical Review Suite: Expressions of Interest for Alpha Partner Engagement
 The NHS e-Referral Service Integration Portfolio has recently completed the functional testing and initial release of their new provider ready Clinical Review Suite of APIs. This suite comprises Alpha versions of service provider clinician and service provider clinician admin, Accept, Reject and Re-direct API endpoints. The earlier developed Accept and Reject APIs have now been supplemented from Release 8.2 with an adaption of the existing NHS e-RS re-direction functionality to represent a single Re-direction Lite or Consultant Action endpoint, which will allow providers to create an internal administration tasks within the professional application interface with a single step. This will allow solution developers to embed next stage Clinical Review actions into their foundation Clinical Referral Information (CRI) with three single buttons, with the ability to enter further, mock re-direction instructions that will transition the referral from the referrals for review worklist to the appointments for booking one. These APIs are now available for Business Partners to connect and review, with expressions of interest sought by the Team for partners, users and stakeholders to work on their early adoption with. If you are interested in helping shape their future enhancement Beta development, please get in contact with the team.

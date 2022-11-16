@@ -1,5 +1,5 @@
 ---
-title: Release Notices
+title: Release Notices (Archived)
 keywords: release, releases, forward notices, notices, announcements
 sidebar: overview_sidebar
 toc: false
@@ -8,7 +8,7 @@ summary: "Forward notices for the e-Referral APIs"
 ---
 
 
-## API Release History
+## API Release History (Archived)
 
 | Release Version | Date          | Notes |
 | --------------- | ------------- | ------- |

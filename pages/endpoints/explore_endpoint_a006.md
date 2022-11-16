@@ -7,10 +7,7 @@ permalink: explore_endpoint_a006.html
 summary: false
 ---
 
-<div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">Notice: This page is under review, some details may be inaccurate</div>
-<div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a006_DSTU2.html">here</a>.</div>
-
-#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+#### Status: ![Deprecated](images/icons/api_deprecated.png)
 
 This endpoint has been deprecated, meaning you should not use it for new integrations.
 
