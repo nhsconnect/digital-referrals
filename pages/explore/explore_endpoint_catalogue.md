@@ -3,7 +3,7 @@ title: Endpoint Catalogue (Archived)
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
-permalink: /explore_endpoint_catalogue.html
+
 ---
 
 ## APIs In Development

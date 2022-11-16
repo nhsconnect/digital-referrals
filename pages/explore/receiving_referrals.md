@@ -1,13 +1,13 @@
 ---
-title: "Receiving and Reviewing e-Referrals for Service Providers"
+title: "Receiving and Reviewing e-Referrals for Service Providers (Archived)"
 keywords: Retrieving Referrals, Retrieve, CRI, attachments, worklist
 sidebar: overview_sidebar
 toc: false
 permalink: /receiving_referrals.html
-summary: "How to receive e-referrals into other systems using the e-RS integration APIs"
+
 ---
 
-## Status: 
+## Status:
 
 ![Deprecated](images/icons/api_deprecated.png)
 

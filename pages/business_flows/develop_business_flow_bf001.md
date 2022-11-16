@@ -1,13 +1,19 @@
 ---
-title: "Authentication and Authorisation"
+title: "Authentication and Authorisation (Archived)"
 keywords: business, flow
 sidebar: overview_sidebar
 toc: false
 permalink: /develop_business_flow_bf001.html
-summary: "Business flows and their related endpoints"
+
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+## Status:
+
+![Deprecated](images/icons/api_deprecated.png)
+
+This site has now been archived.
+
+Please visit [https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) to learn more about how to integrate with the e-Referral Service (e-RS) FHIR API.
 
 ## Definition
 
