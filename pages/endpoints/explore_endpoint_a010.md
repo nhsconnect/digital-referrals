@@ -1,5 +1,5 @@
 ---
-title: "A010: Patient Service Search"
+title: "A010: Patient Service Search (Deprecated)"
 keywords: endpoint, catalogue, worklist, patient, service search
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a010.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 As a Referring Clinician (/Administrator) needing to refer a patient

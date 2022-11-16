@@ -1,5 +1,5 @@
 ---
-title: "A025: Retrieve Advice and Guidance Conversation"
+title: "A025: Retrieve Advice and Guidance Conversation (Deprecated)"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a025.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 This endpoint allows an authenticated user to obtain the Advice and Guidance conversation details amounting to the communication between a Referrer and the Service Provider concerning a given Advice and Guidance Request. This is referenced as a single or set of Communication Resources in FHIR, where each Communication Resource is a single part of a conversation between a requester (the Referrer) or responder (the Service).  

@@ -1,5 +1,5 @@
 ---
-title: "A020: Upload file to the e-RS document store"
+title: "A020: Upload file to the e-RS document store (Deprecated)"
 keywords: endpoint, catalogue, upload, file, referral letter, referrer clinical information
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: /explore_endpoint_a020.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 As a Referring Clinician, Referring Clinician Administrator, Service Provider Clinician or Service Provider Clinician Admin

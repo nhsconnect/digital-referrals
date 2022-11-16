@@ -1,5 +1,5 @@
 ---
-title: "A005: Retrieve Referral Request"
+title: "A005: Retrieve Referral Request (Deprecated)"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
@@ -9,7 +9,12 @@ summary: false
 
 <div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a005_DSTU2.html">here</a>.</div>
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 This API gets the referral request identified by the given ID and returns referral information in the format of [eRS-ReferralRequest-1](https://fhir.nhs.uk/STU3/StructureDefinition/eRS-ReferralRequest-1).

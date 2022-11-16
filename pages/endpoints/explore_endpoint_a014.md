@@ -1,5 +1,5 @@
 ---
-title: "A014: Reject Referral"
+title: "A014: Reject Referral (Deprecated)"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a014.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 Once a referring organisation has booked an appointment and appropriate referral information has been added, the referral is available for the service provider to review (via the Referrals for Review worklist). As part of this review process, a provider can choose to reject the referral if they feel it’s inappropriate for their service or they require additional referral information to make a decision. Users will be able to carry out this action in their preferred system using this API.

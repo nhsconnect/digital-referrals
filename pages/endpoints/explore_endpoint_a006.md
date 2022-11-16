@@ -1,5 +1,5 @@
 ---
-title: "A006: Retrieve Attachment"
+title: "A006: Retrieve Attachment (Deprecated)"
 keywords: endpoint, catalogue
 sidebar: overview_sidebar
 toc: false
@@ -10,7 +10,12 @@ summary: false
 <div style="border: 2px solid #888888; padding: 10px; background: #ffcfcf;">Notice: This page is under review, some details may be inaccurate</div>
 <div style="border: 2px solid #888888; padding: 10px; background: #c7c7c7;">If you are using the deprecated FHIR v2 endpoint, please click <a href="explore_endpoint_a006_DSTU2.html">here</a>.</div>
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 This API lets users retrieve and download linked files for a referral, also known as attachments.

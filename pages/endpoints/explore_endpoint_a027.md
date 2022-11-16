@@ -1,5 +1,5 @@
 ---
-title: "A027: Convert Advice Request to Referral"
+title: "A027: Convert Advice Request to Referral (Deprecated)"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a027.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 This functionality allows a Service Provider to reference an existing Advice and Guidance Request, and if validation passes, allows that Service Provider to create a Referral from that Advice and Guidance Request. As part of the Referral creation, notes, and optionally attachments, for other staff (e.g. Service Provider Clinician Admin staff) are recorded so that the person who picks up the Referral next has some context. The created referral is the responsibility of the Service which created the Referral, until they decide what to do with it (e.g. Book / Defer / Send to another service, cancel etc).  

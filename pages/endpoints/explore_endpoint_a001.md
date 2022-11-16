@@ -7,7 +7,7 @@ permalink: explore_endpoint_a001.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png) and ![Deprecated](images/icons/api_deprecated.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
 
 This endpoint has been deprecated, meaning you should not use it for new integrations.
 

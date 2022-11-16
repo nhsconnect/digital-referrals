@@ -1,5 +1,5 @@
 ---
-title: "A022: Cancel Appointment, Action Later"
+title: "A022: Cancel Appointment, Action Later (Deprecated)"
 keywords: a022, Cancel Appointment Action Later,
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a022.html
 summary: false
 ---
 
-##### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 Once a referring organisation has booked an appointment and appropriate clinical referral information attached, the referral is available for the service provider to review via the Referrals for Review worklist (A008: Retrieve Worklist).  

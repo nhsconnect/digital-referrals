@@ -1,5 +1,5 @@
 ---
-title: "A024: Retrieve Advice and Guidance Request Summary"
+title: "A024: Retrieve Advice and Guidance Request Summary (Deprecated)"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a024.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 This endpoint allows an authenticated user to obtain summary information about a specific Advice and Guidance Request. This is referenced as a CommuncationRequest Resource in FHIR.  

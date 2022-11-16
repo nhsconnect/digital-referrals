@@ -12,6 +12,11 @@ summary: false
 
 #### Status: ![Deprecated](images/icons/api_deprecated.png)  
 
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
+
 ## API
 
 Base URL (Dev1): https://api.dev1.ers.ncrs.nhs.uk/ers-api/  

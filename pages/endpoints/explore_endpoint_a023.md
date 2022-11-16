@@ -1,5 +1,5 @@
 ---
-title: "A023: Retrieve Advice and Guidance Requests Worklist"
+title: "A023: Retrieve Advice and Guidance Requests Worklist (Deprecated)"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a023.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 This API aims to make available e-RS functionality which will allow the retrieval of the “Advice and Guidance Requests” worklist by a Service Provider.

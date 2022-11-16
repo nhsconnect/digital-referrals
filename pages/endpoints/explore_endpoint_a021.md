@@ -1,5 +1,5 @@
 ---
-title: "A021: Create Referral And Send For Triage"
+title: "A021: Create Referral And Send For Triage (Deprecated)"
 keywords: endpoint, catalogue, create referral, send for triage, RAS, shortlist
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a021.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 As a Referring Clinician (/Administrator)  

@@ -1,5 +1,5 @@
 ---
-title: "A026: Send Advice and Guidance Response"
+title: "A026: Send Advice and Guidance Response (Deprecated)"
 keywords:  
 sidebar: overview_sidebar
 toc: false
@@ -7,7 +7,12 @@ permalink: explore_endpoint_a026.html
 summary: false
 ---
 
-#### Status: ![Live](images/icons/api_live.png)
+#### Status: ![Live](images/icons/api_live.png) but ![Deprecated](images/icons/api_deprecated.png)
+
+This endpoint has been deprecated, meaning you should not use it for new integrations.
+
+Instead, please use our newer e-RS FHIR API solution which is documented here:
+[https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)
 
 ## Description
 This endpoint allows a Service Provider Clinician (SPC) or Service Provider Clinician Admin (SPCA) to send a response on an Advice and Guidance Request which is still “in progress”.
